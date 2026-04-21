@@ -1,0 +1,351 @@
+i_PRON would_AUX to_PART buy_VERB a_DET bugatti_PROPN chiron_NOUN ,_PUNCT a_DET bugetti_PROPN divo_NOUN ,_PUNCT a_DET bugatti_PROPN boliok_NOUN ,_PUNCT a_DET new_ADJ house_NOUN for_ADP my_PRON parents_NOUN ,_PUNCT a_DET playstation_PROPN 5_NUM ,_PUNCT a_DET good_ADJ football_NOUN a_PRON would_AUX to_PART buy_VERB bitcoin_PROPN ,_PUNCT nasa_PROPN ,_PUNCT porsche_PROPN ,_PUNCT lamborghini_PROPN ,_PUNCT a_DET jet_NOUN ,_PUNCT a_DET ship_NOUN ,_PUNCT a_DET train_NOUN ,_PUNCT a_DET whirlpool_NOUN ,_PUNCT a_DET big_ADJ city_NOUN ,_PUNCT toys_NOUN for_ADP my_PRON little_ADJ brother_NOUN and_CCONJ little_ADJ sister_NOUN ,_PUNCT ten_NUM telephones_NOUN ,_PUNCT a_DET lot_NOUN of_ADP computer_NOUN games_NOUN and_CCONJ a_DET dog_NOUN ._PUNCT
+
+i_PRON buy_VERB clothes_NOUN for_ADP childrens_NOUN the_PRON haven_AUX '_PART t_PART got_VERB parents_NOUN ._PUNCT
+i_PRON buy_VERB a_DET big_ADJ house_NOUN for_ADP me_PRON ._PUNCT
+
+the_DET absolute_ADV first_ADJ thing_NOUN i_PRON '_AUX d_VERB to_PART is_VERB invest_VERB my_PRON money_NOUN ._PUNCT
+the_DET majority_NOUN ,_PUNCT about_ADV 500_NUM ,_PUNCT 000€_NUM ,_PUNCT i_PRON '_AUX d_AUX invest_VERB into_ADP metals_NOUN like_ADP gold_NOUN and_CCONJ silver_NOUN ,_PUNCT they_PRON '_AUX ve_AUX been_AUX around_ADV forever_ADV and_CCONJ never_ADV really_ADV lost_VERB value_NOUN ,_PUNCT so_ADV that_PRON '_AUX s_AUX a_DET safe_ADJ way_NOUN i_PRON can_AUX keep_VERB all_DET my_PRON money_NOUN ,_PUNCT even_ADV with_ADP inflation_NOUN ._PUNCT
+then_ADV it_PRON would_AUX be_AUX wise_ADJ to_PART invest_VERB about_ADV 100_NUM ,_PUNCT 000€_NUM to_ADP 200_NUM ,_PUNCT 000€_NUM into_ADP certain_ADJ industries_NOUN like_ADP tech_PROPN ._PUNCT
+and_CCONJ then_ADV i_PRON could_AUX buy_VERB a_DET house_NOUN or_CCONJ something_PRON to_PART move_VERB in_ADP with_ADP my_PRON girlfriend_NOUN ._PUNCT
+i_PRON '_AUX m_AUX not_PART a_DET bad_ADJ person_NOUN for_SCONJ caring_VERB about_ADP that_DET money_NOUN first_ADV ,_PUNCT you_PRON '_AUX ll_AUX lose_VERB it_PRON all_DET if_SCONJ you_PRON don_VERB '_PART t_PART and_CCONJ besides_ADP this_DET way_NOUN you_PRON can_AUX support_VERB your_PRON own_ADJ family_NOUN and_CCONJ people_NOUN your_PRON entire_ADJ life_NOUN ,_PUNCT because_SCONJ you_PRON didn_AUX '_PART t_PART just_ADV spend_VERB it_PRON all_DET in_ADP 1_NUM year_NOUN ._PUNCT
+
+within_ADP the_DET imagination_NOUN of_SCONJ winning_VERB one_NUM million_NUM euros_NOUN comes_VERB the_DET feeling_NOUN of_ADP luck_NOUN and_CCONJ danger_NOUN at_ADP the_DET same_ADJ time_NOUN ._PUNCT
+on_ADP one_NUM hand_NOUN i_PRON would_AUX be_AUX very_ADV happy_ADJ if_SCONJ i_PRON won_VERB one_NUM million_NUM euros_NOUN ,_PUNCT because_SCONJ i_PRON could_AUX buy_VERB a_DET lot_NOUN of_ADP things_NOUN ._PUNCT
+for_ADP example_NOUN ,_PUNCT new_ADJ clothes_NOUN ,_PUNCT an_DET own_ADJ house_NOUN or_CCONJ the_DET own_ADJ big_ADJ garten_PROPN i_PRON '_AUX ve_AUX always_ADV dreamed_VERB of_ADP ._PUNCT
+also_ADV i_PRON could_AUX spend_VERB the_DET money_NOUN on_ADP ngo_NOUN '_PART s_PART and_CCONJ help_VERB a_DET lot_NOUN of_ADP people_NOUN ._PUNCT
+or_CCONJ i_PRON would_AUX invest_VERB the_DET money_NOUN for_ADP the_DET future_NOUN ._PUNCT
+but_CCONJ with_ADP all_DET these_DET things_NOUN comes_VERB the_DET risk_NOUN for_SCONJ loosing_VERB it_PRON ._PUNCT
+and_CCONJ with_ADP this_DET loss_NOUN would_AUX come_VERB a_DET lot_NOUN of_ADP anger_NOUN ,_PUNCT sadness_NOUN and_CCONJ depression_NOUN ._PUNCT
+and_CCONJ there_PRON also_ADV would_AUX be_VERB fake_ADJ friends_NOUN who_PRON only_ADV came_VERB to_ADP me_PRON for_ADP the_DET money_NOUN ._PUNCT
+so_ADV as_ADP an_DET result_NOUN i_PRON may_AUX would_AUX keep_VERB this_DET money_NOUN a_DET secret_NOUN ,_PUNCT give_VERB half_NOUN of_ADP it_PRON away_ADP and_CCONJ invest_VERB the_DET other_ADJ half_NOUN into_ADP a_DET happy_ADJ and_CCONJ safe_ADJ life_NOUN ._PUNCT
+
+at_ADP the_DET first_ADJ i_PRON would_AUX by_VERB a_DET nice_ADJ car_NOUN for_ADP my_PRON parents_NOUN and_CCONJ also_ADV a_DET phone_NOUN for_ADP my_PRON sister_NOUN and_CCONJ help_VERB my_PRON dad_NOUN with_ADP the_DET house_NOUN ._PUNCT
+then_ADV buying_VERB myself_PRON a_DET pc_NOUN at_ADP the_DET end_NOUN i_PRON would_AUX spend_VERB the_DET money_NOUN to_ADP charity_NOUN and_CCONJ the_DET rest_NOUN of_ADP the_DET money_NOUN i_PRON will_AUX give_VERB my_PRON dad_NOUN ._PUNCT
+
+i_PRON go_VERB to_ADP the_DET supermarket_NOUN and_CCONJ buy_VERB food_NOUN
+later_ADV i_PRON go_VERB in_ADP the_DET rosmann_NOUN and_CCONJ buy_VERB mack_PROPN up_ADP ._PUNCT
+next_ADV i_PRON buy_VERB a_DET dog_NOUN and_CCONJ a_DET big_ADJ hous_NOUN ,_PUNCT and_CCONJ a_DET much_ADJ robur_NOUN vor_ADP a_DET game_NOUN ._PUNCT
+i_PRON ned_VERB a_DET e_NOUN -_PUNCT scoter_NOUN vor_ADP me_PRON and_CCONJ [_PUNCT names_NOUN ]_PUNCT :_SYM )_PUNCT ._PUNCT
+the_DET rest_NOUN money_NOUN it_PRON '_AUX s_AUX my_PRON money_NOUN but_CCONJ i_PRON don_AUX '_PART t_PART now_ADV wat_SCONJ i_PRON make_VERB wiht_SCONJ this_PRON ._PUNCT
+
+i_PRON do_AUX fifehundrid_NOUN tausend_VERB euros_NOUN for_ADP krank_NOUN kids_NOUN in_ADP a_DET krankhome_NOUN ._PUNCT
+and_CCONJ the_DET last_ADJ money_NOUN for_ADP family_NOUN ._PUNCT
+
+hi_INTJ i_PRON am_AUX [_PUNCT name_NOUN ]_PUNCT i_PRON am_AUX eleven_NUM yearls_NOUN old_ADJ
+i_PRON have_VERB one_NUM million_NUM euros_NOUN i_PRON have_VERB my_PRON million_NUM euros_NOUN spend_NOUN i_PRON have_VERB on_ADP the_DET krepshelpe_NOUN and_CCONJ spend_VERB a_DET krank_NOUN kitz_NOUN vor_ADP my_PRON a_NOUN artrakmatte_NOUN and_CCONJ a_DET cool_ADJ play_NOUN vor_ADP my_PRON a_DET new_ADJ room_NOUN ._PUNCT
+and_CCONJ spending_VERB on_ADP the_DET afrika_PROPN kitz_NOUN and_CCONJ baby_NOUN '_PART s_PART vor_ADP my_PRON brother_NOUN a_DET cool_ADJ plaything_NOUN and_CCONJ a_DET new_ADJ room_NOUN ._PUNCT
+vor_ADP my_PRON sister_NOUN a_DET printses_PROPN aus_PROPN plusch_PROPN and_CCONJ a_DET cool_ADJ room_NOUN ._PUNCT
+
+one_NUM of_ADP the_DET first_ADJ things_NOUN i_PRON would_AUX probably_ADV do_VERB is_VERB go_VERB back_ADV to_ADP my_PRON home_NOUN county_NOUN romania_PROPN and_CCONJ start_VERB a_DET buisnes_PROPN there_ADV that_PRON will_AUX bring_VERB me_PRON a_DET lot_NOUN of_ADP money_NOUN ._PUNCT
+i_PRON would_AUX give_VERB my_PRON parents_NOUN money_NOUN becaus_ADP they_PRON were_AUX always_ADV there_ADV for_ADP me_PRON when_ADV i_PRON needed_VERB them_PRON the_DET most_ADV ._PUNCT
+then_ADV i_PRON would_AUX buy_VERB a_DET big_ADJ house_NOUN with_ADP a_DET big_ADJ pool_NOUN ,_PUNCT a_DET ten_NUM car_NOUN garage_NOUN and_CCONJ a_DET lot_NOUN of_ADP rooms_NOUN ._PUNCT
+to_PART fill_VERB the_DET garage_NOUN first_ADV i_PRON would_AUX buy_VERB a_DET mercedes_PROPN -_PUNCT benz_PROPN cls_PROPN 550_NOUN tuned_VERB from_ADP barabus_PROPN ,_PUNCT then_ADV as_ADP my_PRON second_ADJ car_NOUN i_PRON would_AUX buy_VERB a_DET bmw_PROPN m4_PROPN competition_NOUN tuned_VERB frome_ADP g_NOUN -_PUNCT power_NOUN ._PUNCT
+and_CCONJ the_DET last_ADJ thing_NOUN i_PRON would_AUX do_VERB is_VERB buy_VERB a_DET lot_NOUN of_ADP chlotes_NOUN ,_PUNCT shoes_NOUN ,_PUNCT jewlery_NOUN ,_PUNCT waches_NOUN ,_PUNCT shades_NOUN ._PUNCT
+i_PRON could_AUX do_VERB this_DET whitout_ADP that_DET one_NUM million_NUM but_CCONJ it_PRON would_AUX be_AUX very_ADV helpful_ADJ to_PART start_VERB a_DET buisnes_PROPN ._PUNCT
+
+i_PRON have_VERB 1_NUM million_NUM euros_NOUN my_PRON plann_NOUN is_AUX help_VERB kids_NOUN in_ADP afrika_PROPN ._PUNCT
+a_DET new_ADJ house_NOUN for_ADP the_DET live_ADJ witch_PROPN family_NOUN and_CCONJ a_DET new_ADJ school_NOUN ._PUNCT
+better_ADJ eating_NOUN for_ADP the_DET kids_NOUN ,_PUNCT clean_ADJ water_NOUN ._PUNCT
+and_CCONJ other_ADJ things_NOUN for_ADP the_DET future_NOUN ._PUNCT
+
+after_SCONJ i_PRON received_VERB the_DET money_NOUN ,_PUNCT i_PRON would_AUX seperate_VERB a_DET budget_NOUN of_ADP 10_NUM thousand_NUM euros_NOUN ._PUNCT
+and_CCONJ buy_VERB things_NOUN i_PRON liked_VERB ._PUNCT
+i_PRON would_AUX then_ADV put_VERB away_ADP the_DET rest_NOUN so_SCONJ i_PRON can_AUX pay_VERB for_ADP college_NOUN and_CCONJ help_VERB out_ADP in_ADP the_DET family_NOUN and_CCONJ maybe_ADV ones_NOUN retire_VERB my_PRON parents_NOUN with_ADP the_DET money_NOUN ._PUNCT
+
+hello_INTJ readers_NOUN ._PUNCT
+how_ADV are_AUX you_PRON ?_PUNCT i_PRON '_AUX m_AUX fine_ADJ ._PUNCT
+i_PRON have_AUX won_VERB one_NUM million_NUM euros_NOUN [_PUNCT ?_PUNCT ]_PUNCT ._PUNCT
+because_SCONJ i_PRON fly_VERB tomorow_PROPN in_ADP the_DET usa_PROPN ._PUNCT
+
+when_ADV i_PRON win_VERB one_NUM milion_NOUN dollars_NOUN i_PRON would_AUX do_VERB different_ADJ things_NOUN with_ADP it_PRON ._PUNCT
+a_DET little_ADJ bit_NOUN of_ADP the_DET money_NOUN i_PRON would_AUX spend_VERB for_ADP different_ADJ activities_NOUN to_PART make_VERB some_DET people_NOUN happier_ADJ and_CCONJ not_ADV so_ADV poor_ADJ ._PUNCT
+because_SCONJ i_PRON became_VERB the_DET money_NOUN for_ADP free_ADJ and_CCONJ [_PUNCT ?_PUNCT ]_PUNCT the_DET money_NOUN i_PRON could_AUX make_VERB other_ADJ people_NOUN happy_ADJ ._PUNCT
+with_ADP other_ADJ part_NOUN of_ADP the_DET money_NOUN i_PRON buy_VERB a_DET house_NOUN for_ADP me_PRON and_CCONJ my_PRON family_NOUN then_ADV we_PRON have_VERB a_DET safe_ADJ home_NOUN for_ADP the_DET rest_NOUN of_ADP my_PRON life_NOUN ._PUNCT
+a_DET other_ADJ part_NOUN of_ADP the_DET money_NOUN i_PRON give_VERB to_ADP my_PRON parents_NOUN because_SCONJ they_PRON paid_VERB so_ADV much_ADJ money_NOUN for_ADP me_PRON in_ADP my_PRON life_NOUN and_CCONJ i_PRON want_VERB to_DET give_VERB them_PRON something_PRON back_ADV ._PUNCT
+another_DET part_NOUN from_ADP the_DET money_NOUN i_PRON spend_VERB on_ADP a_DET holiday_NOUN with_ADP my_PRON friends_NOUN or_CCONJ my_PRON family_NOUN to_PART have_VERB a_DET timeout_NOUN from_ADP the_DET life_NOUN at_ADP home_NOUN ._PUNCT
+the_DET rest_NOUN of_ADP the_DET money_NOUN i_PRON do_VERB in_ADP my_PRON bank_NOUN then_ADV i_PRON have_VERB something_PRON in_ADP another_DET part_NOUN of_ADP my_PRON life_NOUN or_CCONJ for_ADP special_ADJ activities_NOUN ._PUNCT
+
+when_ADV i_PRON would_AUX win_VERB one_NUM million_NUM euros_NOUN i_PRON would_AUX spent_VERB some_DET of_ADP the_DET money_NOUN to_ADP a_DET animal_NOUN shelter_NOUN because_SCONJ i_PRON love_VERB animals_NOUN and_CCONJ want_VERB to_PART help_VERB them_PRON ._PUNCT
+then_ADV i_PRON would_AUX help_VERB people_NOUN who_PRON don_AUX '_PUNCT t_PART have_VERB money_NOUN and_CCONJ need_VERB help_NOUN ._PUNCT
+i_PRON would_AUX also_ADV gave_VERB some_DET of_ADP the_DET money_NOUN to_ADP my_PRON family_NOUN because_SCONJ they_PRON buy_VERB me_PRON so_ADV much_ADJ things_NOUN and_CCONJ i_PRON want_VERB to_PART give_VERB some_DET of_ADP this_PRON back_ADV to_ADP them_PRON ._PUNCT
+then_ADV i_PRON would_AUX go_VERB on_ADP vacation_NOUN maybe_ADV to_ADP new_PROPN york_PROPN or_CCONJ to_ADP the_DET beach_NOUN ._PUNCT
+the_DET rest_NOUN of_ADP the_DET money_NOUN i_PRON would_AUX save_VERB for_ADP my_PRON future_NOUN ._PUNCT
+for_ADP example_NOUN for_ADP a_DET car_NOUN or_CCONJ a_DET house_NOUN ._PUNCT
+
+i_PRON see_VERB -_PUNCT geh_INTJ ,_PUNCT was_AUX heißt_ADJ schlitten_PROPN ?_PUNCT
+i_PRON see_VERB a_DET sledge_NOUN uhm_NOUN and_CCONJ the_DET father_NOUN and_CCONJ her_PRON uhm_NOUN ,_PUNCT wie_INTJ heißt_NOUN das_INTJ ,_PUNCT and_CCONJ her_PRON children_NOUN drive_VERB the_DET sledge_NOUN and_CCONJ driving_VERB ,_PUNCT was_AUX heißt_INTJ gegen_INTJ den_DET baum_NOUN fahren_PROPN ?_PUNCT 
+uhm_INTJ ._PUNCT
+uhm_INTJ ,_PUNCT they_PRON -_PUNCT was_AUX heißt_ADJ -_PUNCT they_PRON building_VERB a_DET sledge_NOUN and_CCONJ on_ADP the_DET picture_NOUN two_NUM he_PRON driving_VERB it_PRON ._PUNCT
+and_CCONJ in_ADP the_DET picture_NOUN three_NUM ,_PUNCT sie_INTJ fahren_PROPN gegen_PROPN den_DET baum_PROPN ._PUNCT
+was_AUX heißt_X das_PROPN auf_X englisch_PROPN ?_PUNCT
+tree_NOUN ._PUNCT
+also_ADV ,_PUNCT he_PRON driving_VERB dagegen_PROPN ._PUNCT
+was_AUX heißt_PRON gegen_PROPN ?_PUNCT
+against_ADP the_DET tree_NOUN ._PUNCT
+and_CCONJ it_PRON the_DET sleigh_NOUN is_AUX broken_ADJ ._PUNCT
+you_PRON bring_VERB it_PRON to_ADP home_NOUN ._PUNCT
+uhm_INTJ ._PUNCT
+reparieren_ADJ ._PUNCT
+keine_PROPN ahnung_PROPN was_AUX reparieren_ADJ heißt_NOUN ._PUNCT
+to_PART fix_VERB the_DET sh_NOUN -_PUNCT the_DET sleigh_NOUN and_CCONJ build_VERB a_DET uhm_NOUN vogel_PROPN a_DET birdhouse_NOUN ._PUNCT
+and_CCONJ the_DET and_CCONJ the_DET birds_NOUN come_VERB and_CCONJ eat_VERB food_NOUN at_ADP the_DET house_NOUN ._PUNCT
+the_DET [_PUNCT na_INTJ die_VERB ]_PUNCT people_NOUN die_VERB gucken_INTJ den_INTJ zu_INTJ ._PUNCT 
+look_VERB at_ADP the_DET birds_NOUN ._PUNCT
+uhm_INTJ ._PUNCT
+there_PRON are_VERB so_ADV many_ADJ birds_NOUN are_AUX come_VERB ._PUNCT
+this_DET keine_VERB ahnung_NOUN
+
+i_PRON can_AUX see_VERB in_ADP the_DET picture_NOUN a_DET slide_NOUN uhm_INTJ and_CCONJ a_DET kid_NOUN with_ADP a_DET kids_NOUN with_ADP his_PRON dad_NOUN ._PUNCT
+they_PRON uhm_INTJ ._PUNCT
+uhm_INTJ bauen_NOUN ?_PUNCT
+they_PRON build_VERB a_DET slide_NOUN ._PUNCT
+and_CCONJ was_AUX heißt_ADJ fahren_PROPN ?_PUNCT
+and_CCONJ have_VERB a_DET unfall_NOUN ?_PUNCT
+an_DET accident_NOUN ._PUNCT
+uhm_INTJ ,_PUNCT they_PRON go_VERB at_ADV ,_PUNCT they_PRON go_VERB to_ADP home_NOUN and_CCONJ uhm_INTJ build_VERB a_DET birden_NOUN -_PUNCT nein_NOUN -_PUNCT birden_NOUN house_NOUN ._PUNCT
+yes_INTJ ,_PUNCT 
+uhm_INTJ at_ADP the_DET end_NOUN the_DET birds_NOUN go_VERB to_ADP the_DET hos_NOUN ,_PUNCT house_NOUN ._PUNCT
+they_PRON look_VERB 
+uhm_INTJ also_ADV the_DET kid_NOUN has_AUX got_VERB a_SYM ,_PUNCTi_PRON don_AUX '_PART t_PART know_VERB ._PUNCT
+also_ADV ich_INTJ kann_INTJ das_X nicht_X gut_X beschreiben_NOUN ._PUNCT
+i_PRON can_AUX see_VERB a_DET tree_NOUN here_ADV ._PUNCT
+and_CCONJ a_DET house_NOUN ._PUNCT
+yes_INTJ ._PUNCT
+
+uhum_INTJ ._PUNCT
+uhum_INTJ ._PUNCT
+uhm_INTJ ,_PUNCT there_PRON '_VERB s_VERB ,_PUNCT uhm_INTJ ,_PUNCT in_ADP the_DET first_ADJ picture_NOUN there_PRON '_VERB s_VERB a_DET boy_NOUN and_CCONJ a_DET man_NOUN who_PRON build_VERB a_DET slide_NOUN with_ADP ,_PUNCT uhm_INTJ ,_PUNCT uhm_INTJ with_ADP wood_NOUN ._PUNCT
+yeah_INTJ ,_PUNCT two_NUM picture_NOUN ,_PUNCT or_CCONJ ,_PUNCT
+on_ADP the_DET twoth_NUM pic_NOUN -_PUNCT ,_PUNCT picture_NOUN ,_PUNCT uhm_INTJ ,_PUNCT they_PRON '_AUX re_VERB ,_PUNCT the_DET ,_PUNCT uhm_INTJ ,_PUNCT boy_NOUN and_CCONJ the_DET man_NOUN are_VERB ,_PUNCT uhm_INTJ ,_PUNCT sliding_VERB slide_NOUN ._PUNCT
+and_CCONJ on_ADP the_DET ,_PUNCT uhm_INTJ ,_PUNCT third_ADJ picture_NOUN is_VERB ,_PUNCT uhm_INTJ ,_PUNCT uhm_INTJ is_AUX this_PRON ,_PUNCT they_PRON felt_VERB over_ADP the_DET slide_NOUN and_CCONJ the_DET slide_NOUN is_AUX broken_ADJ ._PUNCT
+and_CCONJ there_PRON '_VERB s_VERB ,_PUNCT yeah_INTJ ,_PUNCT it_PRON '_AUX s_AUX not_PART more_ADJ one_NUM slide_NOUN ._PUNCT
+there_PRON are_VERB lots_NOUN of_ADP wood_NOUN ._PUNCT
+uhm_INTJ the_DET f_NOUN -_PUNCT ,_PUNCT fourth_ADJ bild_NOUN they_PRON '_AUX re_VERB ,_PUNCT the_DET man_NOUN and_CCONJ the_DET boy_NOUN are_AUX ,_PUNCT uhm_INTJ ,_PUNCT going_VERB ,_PUNCT uhm_INTJ ,_PUNCT at_ADP home_NOUN ,_PUNCT uhm_INTJ ,_PUNCT with_ADP the_DET ,_PUNCT uhm_INTJ ,_PUNCT broken_ADJ slide_NOUN ._PUNCT
+on_ADP the_DET ,_PUNCT uhm_INTJ ,_PUNCT five_NUM ,_PUNCT fifth_ADJ picture_NOUN the_DET ,_PUNCT uhm_INTJ ,_PUNCT the_DET boy_NOUN and_CCONJ the_DET man_NOUN are_VERB ,_PUNCT uhm_INTJ ,_PUNCT build_VERB ,_PUNCT a_DET uhm_NOUN ,_PUNCT build_VERB ,_PUNCT build_NOUN ,_PUNCT uhm_INTJ ,_PUNCT from_ADP the_DET broken_ADJ slide_NOUN a_NOUN ,_PUNCT uhm_INTJ ,_PUNCT house_NOUN for_ADP the_DET birds_NOUN ._PUNCT
+in_ADP the_DET sixth_ADJ picture_NOUN ,_PUNCT uhm_INTJ ,_PUNCT the_DET boy_NOUN and_CCONJ ,_PUNCT uhm_INTJ ,_PUNCT the_DET man_NOUN are_AUX sitting_VERB at_ADP home_NOUN ,_PUNCT at_ADP home_NOUN and_CCONJ ,_PUNCT uhm_INTJ ,_PUNCT see_VERB ,_PUNCT uhm_INTJ ,_PUNCT the_DET birds_NOUN ._PUNCT
+they_PRON are_AUX flying_VERB ,_PUNCT uhm_INTJ ,_PUNCT in_ADP the_DET house_NOUN [_PUNCT right_ADV ]_PUNCT around_ADP the_DET house_NOUN ._PUNCT
+i_PRON think_VERB there_PRON '_VERB s_VERB ,_PUNCT uhm_INTJ ,_PUNCT happy_ADJ because_SCONJ ,_PUNCT uhm_INTJ ,_PUNCT the_DET birds_NOUN have_VERB a_DET house_NOUN ._PUNCT
+no_INTJ ._PUNCT
+
+uhm_INTJ ,_PUNCT i_PRON can_AUX see_VERB a_DET child_NOUN and_CCONJ a_DET old_ADJ person_NOUN ._PUNCT
+uhm_INTJ uhm_INTJ ,_PUNCT it_PRON '_AUX s_AUX an_DET adult_NOUN ._PUNCT
+they_PRON are_AUX ,_PUNCT uhm_INTJ ,_PUNCT building_VERB a_DET sleigh_NOUN ._PUNCT
+uhm_INTJ ,_PUNCT on_ADP the_DET second_ADJ picture_NOUN they_PRON '_AUX re_AUX riding_VERB the_DET sleigh_NOUN but_CCONJ ,_PUNCT uhm_INTJ ,_PUNCT the_DET child_NOUN is_AUX on_ADP top_NOUN of_ADP the_DET ,_PUNCT uhm_INTJ ,_PUNCT old_ADJ man_NOUN ._PUNCT
+and_CCONJ on_ADP the_DET third_ADJ picture_NOUN the_DET sleigh_NOUN ,_PUNCT uhm_INTJ ,_PUNCT was_AUX broken_ADJ and_CCONJ ,_PUNCT uhm_INTJ ,_PUNCT both_DET of_ADP them_PRON got_AUX hurt_VERB ._PUNCT
+on_ADP the_DET fourth_ADJ picture_NOUN ,_PUNCT uhm_INTJ ,_PUNCT the_DET child_NOUN and_CCONJ the_DET adult_NOUN are_AUX carrying_VERB the_DET broken_VERB pieces_NOUN ._PUNCT
+on_ADP the_DET fifth_ADJ picture_NOUN ,_PUNCT uhm_INTJ ,_PUNCT they_PRON '_AUX re_AUX building_VERB something_PRON new_ADJ with_ADP those_DET ,_PUNCT uhm_INTJ ,_PUNCT pieces_NOUN ._PUNCT
+on_ADP the_DET sixth_ADJ picture_NOUN ,_PUNCT uhm_INTJ ,_PUNCT they_PRON '_AUX re_AUX looking_VERB out_ADP of_ADP the_DET window_NOUN and_CCONJ they_PRON built_VERB ,_PUNCT uhm_INTJ ,_PUNCT a_DET house_NOUN for_ADP birds_NOUN and_CCONJ they_PRON '_AUX re_AUX looking_VERB at_ADP them_PRON ._PUNCT
+i_PRON can_AUX '_PART t_PART really_ADV tell_VERB ._PUNCT
+yeah_INTJ a_DET little_ADJ bit_NOUN ._PUNCT
+yeah_INTJ ._PUNCT
+because_SCONJ i_PRON can_AUX '_PART t_PART really_ADV see_VERB their_PRON faces_NOUN ._PUNCT
+no_INTJ ,_PUNCT that_PRON '_AUX s_AUX about_ADP it_PRON ._PUNCT
+
+i_PRON can_AUX see_VERB a_DET boy_NOUN and_CCONJ father_NOUN ._PUNCT
+[_PUNCT kann_INTJ ich_INTJ auch_X auf_X deutsch_PROPN reden_X ?_PUNCT ]_PUNCT
+i_PRON can_AUX see_VERB birds_NOUN in_ADP a_DET birdhouse_NOUN ._PUNCT
+i_PRON can_AUX see_VERB a_DET house_NOUN and_CCONJ fenster_NOUN ._PUNCT
+i_PRON can_AUX see_VERB a_DET father_NOUN and_CCONJ a_DET boy_NOUN with_ADP ein_PROPN schlitten_PROPN bauen_NOUN ,_PUNCT oder_INTJ ?_PUNCT
+'_PUNCT uhm_INTJ '_PUNCT two_NUM i_PRON can_AUX see_VERB sch_PROPN -_PUNCT schl_NOUN -_PUNCT schlitten_PROPN fahren_PROPN ._PUNCT
+in_ADP picture_NOUN three_NUM ,_PUNCT fall_NOUN ,_PUNCT she_PRON '_AUX s_AUX on_ADP the_DET boden_PROPN ._PUNCT
+in_ADP picture_NOUN four_NUM boy_NOUN and_CCONJ father_NOUN go_VERB away_ADV ._PUNCT
+in_ADP picture_NOUN five_NUM bauen_PROPN boy_PROPN and_CCONJ father_NOUN the_DET schlitten_PROPN in_ADP a_DET birdhouse_NOUN ._PUNCT
+in_ADP the_DET picture_NOUN six_NUM look_VERB fa_ADV -_PUNCT looking_VERB father_NOUN and_CCONJ boy_NOUN on_ADP the_DET fenster_PROPN to_ADP the_DET birdhouse_NOUN ._PUNCT
+
+i_PRON can_AUX see_VERB a_DET kid_NOUN with_ADP his_PRON father_NOUN ._PUNCT
+and_CCONJ they_PRON '_AUX re_AUX building_VERB something_PRON to_PART slide_VERB with_ADP ._PUNCT
+and_CCONJ in_ADP picture_NOUN three_NUM i_PRON see_VERB them_PRON fall_VERB and_CCONJ the_DET stuff_NOUN breaks_VERB ._PUNCT
+at_ADP picture_NOUN four_NUM i_PRON see_VERB them_PRON carrying_VERB the_DET stuff_NOUN ._PUNCT
+at_ADP picture_NOUN five_NUM i_PRON see_VERB them_PRON building_VERB another_DET thing_NOUN ._PUNCT
+at_ADP picture_NOUN six_NUM the_DET ding_NOUN ,_PUNCT the_DET stuff_NOUN they_PRON built_VERB is_AUX now_ADV full_ADJ with_ADP birds_NOUN in_ADP it_PRON ._PUNCT
+the_DET man_NOUN with_ADP a_NOUN ,_PUNCT the_DET man_NOUN has_VERB a_DET mustache_NOUN ._PUNCT
+he_PRON '_AUX s_AUX bald_ADJ ._PUNCT
+and_CCONJ ,_PUNCT he_PRON has_VERB a_DET little_ADJ bit_NOUN hair_NOUN ,_PUNCT hair_NOUN ,_PUNCT hair_NOUN ._PUNCT
+and_CCONJ the_DET kid_NOUN is_AUX helping_VERB him_PRON ._PUNCT
+but_CCONJ not_PART that_ADV much_ADV helping_VERB because_SCONJ it_PRON broke_VERB immediately_ADV ._PUNCT
+of_INTJ ,_PUNCT at_ADP picture_NOUN four_NUM they_PRON are_AUX both_ADV sad_ADJ ,_PUNCT because_SCONJ their_PRON stuff_NOUN break_VERB ,_PUNCT and_CCONJ at_ADP five_NUM they_PRON '_VERB re_VERB ,_PUNCT they_PRON look_VERB a_DET liitle_NOUN bit_NOUN happy_ADJ because_SCONJ they_PRON are_AUX building_VERB another_DET thing_NOUN ._PUNCT 
+on_ADP picture_NOUN six_NUM they_PRON are_AUX both_ADV happy_ADJ ._PUNCT
+uhuh_INTJ ._PUNCT
+
+in_ADP the_DET first_ADJ picture_NOUN i_PRON can_AUX see_VERB a_DET boy_NOUN and_CCONJ probably_ADV his_PRON dad_NOUN ._PUNCT
+[_PUNCT as_ADP ]_PUNCT '_PUNCT uhm_INTJ '_PUNCT ,_PUNCT in_ADP the_DET background_NOUN you_PRON can_AUX see_VERB some_DET woods_NOUN ._PUNCT
+and_CCONJ yeah_INTJ they_PRON '_AUX re_AUX look_VERB like_SCONJ they_PRON are_AUX building_VERB ,_PUNCT [_PUNCT uhm_INTJ ]_PUNCT ,_PUNCT the_DET schlitten_PROPN ._PUNCT
+i_PRON don_AUX '_PART t_PART know_VERB the_DET word_NOUN ._PUNCT
+the_DET english_ADJ word_NOUN ._PUNCT
+sleigh_NOUN ._PUNCT
+they_PRON '_AUX re_AUX working_VERB on_ADP the_DET sleigh_NOUN ._PUNCT
+on_ADP the_DET second_ADJ picture_NOUN you_PRON can_AUX see_VERB the_DET son_NOUN and_CCONJ the_DET dad_NOUN ._PUNCT
+riding_VERB the_DET sleigh_NOUN ._PUNCT
+on_ADP the_DET third_ADJ picture_NOUN it_PRON looks_VERB like_SCONJ they_PRON crashed_VERB and_CCONJ the_DET sleigh_NOUN got_AUX destroyed_VERB ._PUNCT
+on_ADP the_DET fourth_ADJ picture_NOUN you_PRON can_AUX see_VERB them_PRON disappointed_ADJ and_CCONJ the_DET dad_NOUN angry_ADJ because_SCONJ the_DET sleigh_NOUN '_PUNCT uhm_INTJ '_PUNCT got_AUX destroyed_VERB and_CCONJ they_PRON are_AUX probably_ADV walking_VERB back_ADV home_ADV ._PUNCT
+on_ADP the_DET fifth_ADJ picture_NOUN uhm_INTJ you_PRON can_AUX see_VERB they_PRON are_AUX rebuilding_VERB the_DET sleigh_NOUN and_CCONJ the_DET son_NOUN is_AUX holding_VERB uhm_NOUN a_DET piece_NOUN of_ADP woods_NOUN ._PUNCT
+uhm_INTJ in_ADP the_DET sixth_ADJ picture_NOUN you_PRON can_AUX see_VERB that_SCONJ they_PRON used_VERB the_DET sleigh_NOUN uhm_NOUN to_PART build_VERB a_DET home_NOUN for_ADP the_DET birds_NOUN and_CCONJ they_PRON '_AUX re_AUX happy_ADJ to_PART look_VERB at_ADP it_PRON just_ADV because_SCONJ the_DET birds_NOUN have_VERB now_ADV a_DET new_ADJ home_NOUN ._PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT so_ADV the_DET father_NOUN has_VERB a_DET black_ADJ t_NOUN -_PUNCT shirts_NOUN and_CCONJ a_DET white_ADJ trouser_NOUN ._PUNCT
+the_DET son_NOUN has_VERB a_DET white_ADJ t_NOUN -_PUNCT shirt_NOUN and_CCONJ a_DET white_ADJ trouser_NOUN ._PUNCT
+and_CCONJ the_DET father_NOUN has_VERB a_DET big_ADJ beard_NOUN and_CCONJ ,_PUNCT yeah_INTJ and_CCONJ is_AUX bald_ADJ ._PUNCT
+and_CCONJ the_DET son_NOUN still_ADV has_VERB hair_NOUN ._PUNCT
+and_CCONJ the_DET father_NOUN also_ADV got_VERB big_ADJ eyebrows_NOUN ._PUNCT
+and_CCONJ he_PRON '_AUX s_AUX wearing_VERB black_ADJ shoes_NOUN ._PUNCT
+and_CCONJ the_DET son_NOUN '_AUX s_AUX also_ADV wearing_VERB black_ADJ shoes_NOUN ._PUNCT
+no_INTJ ._PUNCT
+
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT on_ADP the_DET first_ADJ picture_NOUN is_AUX a_DET man_NOUN with_ADP his_PRON son_NOUN ._PUNCT
+and_CCONJ she_PRON ,_PUNCT uhm_INTJ he_PRON repair_VERB -_PUNCT repairing_VERB '_PUNCT uhm_INTJ '_PUNCT the_DET schlitten_PROPN ._PUNCT
+on_ADP the_DET second_ADJ picture_NOUN is_VERB this_DET uhm_NOUN is_AUX the_DET dad_NOUN with_ADP his_PRON son_NOUN ._PUNCT
+and_CCONJ she_PRON is_AUX slide_VERB the_DET '_PUNCT uhm_INTJ '_PUNCT ._PUNCT
+was_AUX ist_X denn_PROPN piste_NOUN ?_PUNCT
+piste_VERB down_ADV ._PUNCT
+on_ADP the_DET second_ADJ picture_NOUN '_PUNCT uhm_INTJ '_PUNCT she_PRON have_AUX has_VERB a_DET crash_NOUN ._PUNCT
+on_ADP picture_NOUN four_NUM he_PRON go_VERB with_ADP the_DET woods_NOUN home_ADV ._PUNCT
+on_ADP picture_NOUN five_NUM '_PUNCT uhm_INTJ '_PUNCT his_PRON dad_NOUN repairing_VERB the_DET schlitten_PROPN ._PUNCT
+on_ADP picture_NOUN sechs_NOUN ,_PUNCT six_NUM '_PUNCT uhm_INTJ '_PUNCT he_PRON has_VERB a_DET bird_NOUN house_NOUN ._PUNCT
+uhm_INTJ ,_PUNCT the_DET man_NOUN ,_PUNCT the_DET old_ADJ man_NOUN has_VERB bart_PROPN and_CCONJ no_DET hairs_NOUN ._PUNCT
+and_CCONJ the_DET kid_NOUN is_AUX very_ADV small_ADJ ._PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ._PUNCT
+uhm_INTJ the_DET ,_PUNCT on_ADP the_DET picture_NOUN one_NUM he_PRON is_AUX feeling_VERB nice_ADJ ._PUNCT
+on_ADP picture_NOUN two_NUM uhm_INTJ the_DET same_ADJ ._PUNCT
+on_ADP picture_NOUN three_NUM '_PUNCT uhm_INTJ '_PUNCT she_PRON feels_VERB ,_PUNCT uhm_INTJ s_X -_PUNCT scary_ADJ ._PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ._PUNCT
+on_ADP picture_NOUN four_NUM are_AUX angry_ADJ ._PUNCT
+on_ADP picture_NOUN five_NUM '_PUNCT uhm_INTJ '_PUNCT not_PART so_ADV happy_ADJ ._PUNCT
+and_CCONJ then_ADV picture_VERB six_NUM very_ADV happy_ADJ ._PUNCT
+no_INTJ ._PUNCT
+
+okay_INTJ ._PUNCT
+okay_INTJ ,_PUNCT '_PUNCT uhm_INTJ '_PUNCT on_ADP the_DET first_ADJ picture_NOUN i_PRON can_AUX see_VERB '_PUNCT uhm_INTJ '_PUNCT a_DET child_NOUN with_ADP i_PRON think_VERB his_PRON father_NOUN and_CCONJ they_PRON are_VERB ,_PUNCT the_DET dad_NOUN is_AUX hammering_VERB something_PRON and_CCONJ uhm_INTJ i_PRON can_AUX see_VERB also_ADV like_ADP in_ADP the_DET background_NOUN some_DET wood_NOUN ._PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT in_ADP the_DET second_ADJ picture_NOUN i_PRON can_AUX see_VERB '_PUNCT uhm_INTJ '_PUNCT the_DET boy_NOUN with_ADP his_PRON dad_NOUN on_ADP the_DET ,_PUNCT [_PUNCT schlitten_PROPN ]_PUNCT '_PUNCT uhm_INTJ '_PUNCT ,_PUNCT on_ADP the_DET ,_PUNCT oh_INTJ ,_PUNCT i_PRON forgot_VERB how_ADV it_PRON ,_PUNCT uhm_INTJ what_PRON '_AUX s_AUX the_DET name_NOUN of_ADP this_DET thing_NOUN they_PRON '_AUX re_AUX riding_VERB i_PRON guess_VERB on_ADP the_DET snow_NOUN ._PUNCT
+and_CCONJ '_PUNCT uhm_INTJ '_PUNCT on_ADP the_DET third_ADJ picture_NOUN i_PRON can_AUX see_VERB that_SCONJ they_PRON had_VERB an_DET accident_NOUN ._PUNCT
+and_CCONJ they_PRON crashed_VERB i_PRON think_VERB into_ADP something_PRON ._PUNCT
+and_CCONJ the_DET schlitten_PROPN is_AUX broken_ADJ ._PUNCT
+and_CCONJ they_PRON '_AUX re_AUX laying_VERB on_ADP the_DET ground_NOUN i_PRON guess_VERB ._PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT on_ADP the_DET fourth_ADJ picture_NOUN i_PRON can_AUX see_VERB the_DET dad_NOUN and_CCONJ the_DET boy_NOUN walking_VERB i_PRON think_VERB back_ADV home_ADV or_CCONJ something_PRON with_ADP the_DET woods_NOUN in_ADP their_PRON hands_NOUN ._PUNCT
+and_CCONJ on_ADP the_DET fifth_ADJ picture_NOUN i_PRON can_AUX see_VERB the_DET dad_NOUN and_CCONJ the_DET boy_NOUN recreating_VERB something_PRON new_ADJ with_ADP it_PRON ._PUNCT
+it_PRON '_VERB s_VERB ,_PUNCT it_PRON looks_VERB like_ADP a_DET little_ADJ house_NOUN for_ADP like_INTJ the_DET birds_NOUN or_CCONJ something_PRON ._PUNCT
+in_ADP the_DET sixth_ADJ picture_NOUN i_PRON can_AUX see_VERB the_DET little_ADJ new_ADJ house_NOUN for_ADP the_DET birds_NOUN and_CCONJ the_DET dad_NOUN and_CCONJ the_DET son_NOUN are_AUX looking_VERB out_ADP of_ADP the_DET window_NOUN how_ADV the_DET birds_NOUN are_AUX flying_VERB to_ADP the_DET house_NOUN ._PUNCT
+'_PUNCT uhum_INTJ '_PUNCT ,_PUNCT '_PUNCT uhm_INTJ '_PUNCT in_ADP the_DET first_ADJ picture_NOUN they_PRON both_DET look_VERB like_ADP very_ADV ,_PUNCT i_PRON don_AUX '_PART t_PART know_VERB normal_ADJ ._PUNCT
+the_DET dad_NOUN is_AUX look_VERB ,_PUNCT the_DET dad_NOUN looks_VERB a_DET little_ADJ bit_NOUN angry_ADJ ._PUNCT
+i_PRON don_AUX '_PART t_PART know_VERB ._PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT in_ADP the_DET second_ADJ picture_NOUN it_PRON looks_VERB like_SCONJ they_PRON have_VERB very_ADV much_ADJ fun_NOUN ._PUNCT
+and_CCONJ in_ADP the_DET third_ADJ picture_NOUN uhm_INTJ ,_PUNCT maybe_ADV they_PRON '_AUX re_AUX in_ADP a_DET shock_NOUN because_SCONJ they_PRON crashed_VERB somewhere_ADV ._PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT on_ADP the_DET fourth_ADJ picture_NOUN they_PRON look_VERB sad_ADJ and_CCONJ i_PRON think_VERB the_DET dad_NOUN is_AUX a_DET little_ADJ bit_NOUN like_ADP angry_ADJ or_CCONJ yeah_INTJ something_PRON like_ADP that_PRON ._PUNCT
+the_DET boy_NOUN looks_VERB very_ADV sad_ADJ in_ADP the_DET fourth_ADJ picture_NOUN ._PUNCT
+on_ADP the_DET fifth_ADJ picture_NOUN the_DET boy_NOUN looks_VERB happy_ADJ again_ADV and_CCONJ the_DET dad_NOUN is_VERB uhm_INTJ i_PRON can_AUX '_PUNCT t_PART see_VERB his_PRON face_NOUN but_CCONJ i_PRON think_VERB he_PRON '_AUX s_AUX happy_ADJ again_ADV i_PRON don_AUX '_PART t_PART know_VERB ._PUNCT
+and_CCONJ on_ADP the_DET sixth_ADJ picture_NOUN they_PRON look_VERB both_ADV very_ADV happy_ADJ because_SCONJ i_PRON think_VERB they_PRON '_AUX re_AUX watching_VERB the_DET birds_NOUN and_CCONJ they_PRON know_VERB that_SCONJ they_PRON did_VERB something_PRON good_ADJ for_ADP the_DET birds_NOUN ._PUNCT
+
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT in_ADP the_DET first_ADJ picture_NOUN '_PUNCT uhm_INTJ '_PUNCT i_PRON see_VERB a_DET young_ADJ boy_NOUN and_CCONJ a_DET old_ADJ man_NOUN ._PUNCT
+they_PRON are_AUX '_PUNCT uhm_INTJ '_PUNCT ,_PUNCT
+they_PRON are_AUX '_PUNCT uhm_INTJ '_PUNCT ,_PUNCT reparieren_ADJ a_DET uhm_NOUN sledge_NOUN and_CCONJ the_DET old_ADJ man_NOUN have_VERB '_PUNCT uhm_INTJ '_PUNCT a_DET hammer_NOUN in_ADP the_DET hand_NOUN ._PUNCT
+uhm_INTJ in_ADP the_DET second_ADJ picture_NOUN i_PRON see_VERB the_DET old_ADJ man_NOUN and_CCONJ the_DET young_ADJ boy_NOUN slide_VERB a_DET mountain_NOUN over_ADV with_ADP the_DET sledge_NOUN ._PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT in_ADP the_DET third_ADJ picture_NOUN '_PUNCT uhm_INTJ '_PUNCT the_DET old_ADJ man_NOUN and_CCONJ the_DET young_ADJ boy_NOUN they_PRON are_VERB ,_PUNCT have_VERB a_PUNCT
+'_PUNCT uhm_INTJ '_PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT unfall_INTJ ,_PUNCT keine_INTJ ahnung_INTJ ._PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT in_ADP the_DET next_ADJ picture_NOUN the_DET old_ADJ man_NOUN they_PRON '_AUX re_AUX ang_ADJ -_PUNCT angry_ADJ and_CCONJ the_DET young_ADJ boy_NOUN is_AUX sad_ADJ because_SCONJ the_DET sledge_NOUN is_AUX '_PUNCT uhm_INTJ '_PUNCT ,_PUNCT
+keine_PROPN ahnung_PROPN ,_PUNCT kaputt_NOUN ._PUNCT
+'_PUNCT uhm_INTJ '_PUNCT ,_PUNCT and_CCONJ and_CCONJ they_PRON go_VERB home_ADV i_PRON think_VERB ._PUNCT
+in_ADP the_DET next_ADJ picture_NOUN they_PRON [_PUNCT back_VERB ]_PUNCT a_ADV ,_PUNCT a_DET birdhouse_NOUN ._PUNCT
+uhm_INTJ '_PUNCT with_ADP the_DET sledge_NOUN ._PUNCT
+and_CCONJ the_DET last_ADJ picture_NOUN there_PRON are_VERB birds_NOUN in_ADP the_DET house_NOUN and_CCONJ the_DET old_ADJ man_NOUN and_CCONJ the_DET young_ADJ boy_NOUN are_AUX happy_ADJ ._PUNCT
+uhm_INTJ ,_PUNCT the_DET young_ADJ boy_NOUN keine_VERB ahnung_INTJ ._PUNCT
+they_PRON ,_PUNCT uhm_INTJ they_PRON wear_VERB a_DET hoodie_NOUN and_CCONJ a_DET jeans_NOUN ._PUNCT
+the_DET old_ADJ man_NOUN have_VERB a_DET '_PUNCT uhm_INTJ '_PUNCT bart_NOUN [_PUNCT ?_PUNCT ]_PUNCT uhm_INTJ and_CCONJ have_VERB no_DET hairs_NOUN on_ADP the_DET head_NOUN ._PUNCT
+and_CCONJ he_PRON wear_VERB a_DET hoodie_NOUN and_CCONJ jeans_NOUN and_CCONJ shoes_NOUN ._PUNCT
+and_CCONJ yes_INTJ ._PUNCT
+
+i_PRON can_AUX see_VERB in_ADP the_DET picture_NOUN a_DET child_NOUN and_CCONJ a_DET man_NOUN and_CCONJ the_DET man_NOUN work_VERB on_ADP the_DET schlitten_PROPN ,_PUNCT sta_NOUN -_PUNCT ,_PUNCT on_ADP the_DET sleigh_NOUN ._PUNCT
+and_CCONJ on_ADP the_DET picture_NOUN two_NUM i_PRON can_AUX see_VERB the_DET man_NOUN and_CCONJ a_DET child_NOUN and_CCONJ the_DET child_NOUN sitting_VERB on_ADP the_DET man_NOUN and_CCONJ they_PRON fahr_VERB the_DET mountain_NOUN up_ADV ._PUNCT
+and_CCONJ on_ADP the_DET picture_NOUN two_NUM i_PRON can_AUX see_VERB a_NOUN ,_PUNCT i_PRON can_AUX see_VERB the_DET man_NOUN and_CCONJ the_DET child_NOUN when_ADV he_PRON ,_PUNCT they_PRON fall_VERB over_ADP the_DET sleigh_NOUN ._PUNCT
+and_CCONJ on_ADP picture_NOUN four_NUM i_PRON can_AUX see_VERB the_DET man_NOUN and_CCONJ the_DET child_NOUN ,_PUNCT they_PRON go_VERB at_ADP home_NOUN with_ADP the_DET sleigh_NOUN ._PUNCT
+and_CCONJ on_ADP picture_NOUN five_NUM make_VERB the_DET child_NOUN and_CCONJ the_DET father_NOUN a_DET birdhouse_NOUN with_ADP the_DET sleigh_NOUN ._PUNCT
+and_CCONJ on_ADP picture_NOUN six_NUM i_PRON can_AUX see_VERB the_DET finished_VERB birdhouse_NOUN with_ADP birds_NOUN and_CCONJ the_DET boy_NOUN and_CCONJ the_DET father_NOUN see_VERB ,_PUNCT i_PRON see_VERB in_ADP the_DET house_NOUN and_CCONJ they_PRON looking_VERB the_DET birds_NOUN ._PUNCT
+the_DET child_NOUN has_VERB long_ADJ hairs_NOUN ,_PUNCT hairs_NOUN and_CCONJ the_DET father_NOUN has_VERB a_DET vest_NOUN on_ADP it_PRON and_CCONJ the_DET father_NOUN has_VERB no_DET hairs_NOUN ._PUNCT
+yes_INTJ ._PUNCT
+yeah_INTJ ._PUNCT
+
+in_ADP the_DET picture_NOUN you_PRON can_AUX see_VERB a_DET man_NOUN and_CCONJ a_DET kid_NOUN and_CCONJ the_DET man_NOUN is_AUX trying_VERB to_PART fix_VERB uhm_INTJ a_INTJ i_PRON think_VERB it_PRON '_AUX s_AUX a_PROPN ._PUNCT
+sledge_NOUN ._PUNCT
+and_CCONJ yeah_INTJ ,_PUNCT the_DET kid_NOUN is_AUX helping_VERB the_DET old_ADJ man_NOUN and_CCONJ yeah_INTJ ._PUNCT
+in_ADP the_DET second_ADJ picture_NOUN you_PRON can_AUX see_VERB the_DET man_NOUN and_CCONJ the_DET kid_NOUN uhm_INTJ sliding_VERB down_ADP a_DET mountain_NOUN i_PRON think_VERB uhm_INTJ on_ADP the_DET sledge_NOUN ._PUNCT
+and_CCONJ yeah_INTJ ,_PUNCT i_PRON think_VERB they_PRON having_VERB fun_NOUN ._PUNCT
+in_ADP the_DET thi_NOUN -_PUNCT ,_PUNCT third_ADJ picture_NOUN you_PRON can_AUX see_VERB the_DET man_NOUN and_CCONJ the_DET kid_NOUN falling_VERB down_ADP the_DET sledge_NOUN and_CCONJ i_PRON think_VERB the_DET sledge_NOUN broke_VERB and_CCONJ yeah_INTJ i_PRON think_VERB they_PRON hurt_VERB ,_PUNCT but_CCONJ it_PRON is_VERB not_PART [_PUNCT ?_PUNCT ]_PUNCT ,_PUNCT yeah_INTJ ._PUNCT
+in_ADP the_DET fourth_ADJ picture_NOUN you_PRON can_AUX see_VERB the_DET kid_NOUN and_CCONJ the_DET old_ADJ man_NOUN uhm_INTJ walking_VERB down_ADV ,_PUNCT up_ADP the_DET mountain_NOUN or_CCONJ back_ADV to_ADP the_DET house_NOUN uhm_INTJ with_ADP the_DET broken_ADJ sledge_NOUN ,_PUNCT yeah_INTJ ._PUNCT
+in_ADP the_DET fifth_ADJ picture_NOUN you_PRON can_AUX see_VERB uhm_INTJ the_DET old_ADJ man_NOUN fixing_VERB again_ADV the_DET sledge_NOUN ,_PUNCT but_CCONJ at_ADP this_DET time_NOUN with_ADP a_DET uhm_NOUN roof_NOUN on_ADP it_PRON ,_PUNCT i_PRON think_VERB ,_PUNCT and_CCONJ yeah_INTJ ._PUNCT
+and_CCONJ the_DET kid_NOUN is_AUX just_ADV standing_VERB next_ADP to_ADP him_PRON ._PUNCT
+uhm_INTJ ._PUNCT
+in_ADP the_DET sixth_ADJ picture_NOUN you_PRON can_AUX see_VERB the_DET man_NOUN uhm_INTJ and_CCONJ the_DET kid_NOUN uhm_INTJ looking_VERB dow_INTJ -_PUNCT ,_PUNCT out_ADP the_DET window_NOUN uhm_INTJ and_CCONJ the_DET sledge_NOUN is_AUX uhm_INTJ a_DET birdhouse_NOUN i_PRON think_VERB and_CCONJ yes_INTJ ._PUNCT
+i_PRON think_VERB uhm_INTJ they_PRON feel_VERB good_ADJ because_SCONJ they_PRON did_VERB something_PRON good_ADJ out_ADP of_ADP the_DET uhm_INTJ broken_ADJ sledge_NOUN and_CCONJ yeah_INTJ ._PUNCT
+i_PRON think_VERB the_DET birds_NOUN are_AUX happy_ADJ about_ADP it_PRON ._PUNCT
+
+in_ADP the_DET picture_NOUN one_NUM i_PRON see_VERB an_DET ,_PUNCT a_DET old_ADJ man_NOUN and_CCONJ a_DET young_ADJ child_NOUN ._PUNCT
+i_PRON think_VERB it_PRON '_AUX s_AUX his_PRON father_NOUN ._PUNCT
+they_PRON are_AUX building_VERB a_DET uhm_NOUN i_PRON think_VERB ,_PUNCT something_PRON like_ADP a_DET toy_NOUN i_PRON don_AUX '_PUNCT t_PART know_VERB uhm_INTJ out_ADP of_ADP some_DET ,_PUNCT oh_INTJ sl_INTJ -_PUNCT ,_PUNCT sledge_NOUN ?_PUNCT
+uhm_INTJ out_ADP of_ADP wood_NOUN ._PUNCT
+they_PRON are_AUX using_VERB a_DET hammer_NOUN and_CCONJ they_PRON are_AUX sitting_VERB ._PUNCT
+in_ADP the_DET second_ADJ picture_NOUN i_PRON see_VERB a_X ,_PUNCT this_DET sledge_NOUN and_CCONJ a_DET father_NOUN wh_ADV -_PUNCT ,_PUNCT where_ADV the_DET child_NOUN is_AUX sitting_VERB on_ADP his_PRON back_NOUN and_CCONJ they_PRON are_AUX sliding_VERB maybe_ADV the_DET ,_PUNCT uhm_INTJ [_PUNCT wait_VERB ]_PUNCT the_DET mountain_NOUN i_PRON think_VERB down_ADP ._PUNCT
+uhm_INTJ in_ADP the_DET picture_NOUN three_NUM i_PRON see_VERB uhm_INTJ a_DET father_NOUN and_CCONJ a_DET child_NOUN ,_PUNCT they_PRON are_AUX flying_VERB because_ADP of_ADP the_DET sledge_NOUN ,_PUNCT it_PRON ,_PUNCT it_PRON broke_VERB i_PRON think_VERB ._PUNCT
+and_CCONJ four_NUM i_PRON see_VERB uhm_INTJ the_DET f_NOUN -_PUNCT ,_PUNCT the_DET father_NOUN he_PRON '_AUX s_AUX maybe_ADV angry_ADJ and_CCONJ the_DET child_NOUN is_AUX uhm_INTJ ,_PUNCT a_DET little_ADJ bit_NOUN sad_ADJ and_CCONJ they_PRON are_AUX holding_VERB the_DET wood_NOUN of_ADP the_DET sledge_NOUN ._PUNCT
+in_ADP the_DET picture_NOUN four_NUM i_PRON see_VERB a_DET father_NOUN and_CCONJ a_DET child_NOUN ._PUNCT
+they_PRON are_AUX building_VERB a_DET bird_NOUN '_PART s_PART house_NOUN ._PUNCT
+the_DET child_NOUN is_AUX helping_VERB and_CCONJ at_ADP the_DET picture_NOUN six_NUM i_PRON see_VERB uhm_INTJ the_DET child_NOUN and_CCONJ the_DET father_NOUN ._PUNCT
+they_PRON '_AUX re_AUX looking_VERB at_ADP the_DET bird_NOUN '_PART s_PART house_NOUN where_ADV the_DET birds_NOUN are_AUX flying_VERB in_ADV ._PUNCT
+yeah_INTJ ._PUNCT
+uhm_INTJ ,_PUNCT the_DET father_NOUN uhm_NOUN has_VERB a_DET beard_NOUN and_CCONJ a_DET uhm_NOUN ,_PUNCT and_CCONJ a_DET black_ADJ shirt_NOUN ,_PUNCT t_NOUN -_PUNCT shirt_NOUN and_CCONJ a_DET white_ADJ long_ADJ shirt_NOUN on_ADV and_CCONJ uhm_INTJ a_NOUN ,_PUNCT white_ADJ ,_PUNCT white_ADJ pants_NOUN and_CCONJ black_ADJ shoes_NOUN and_CCONJ ha_INTJ -_PUNCT ,_PUNCT ha_INTJ -_PUNCT ,_PUNCT is_AUX bald_ADJ and_CCONJ the_DET son_NOUN has_VERB long_ADJ black_ADJ hair_NOUN ._PUNCT
+uhm_INTJ ,_PUNCT he_PRON '_AUX s_AUX concentrated_VERB and_CCONJ wears_VERB white_ADJ t_NOUN -_PUNCT ,_PUNCT white_ADJ shirt_NOUN and_CCONJ white_ADJ pants_NOUN ._PUNCT
+and_CCONJ he_PRON wears_VERB black_ADJ shoes_NOUN too_ADV ._PUNCT
+yeah_INTJ ._PUNCT
+they_PRON are_AUX uhm_INTJ ,_PUNCT doing_VERB something_PRON with_ADP each_DET other_ADJ ._PUNCT
+recycling_NOUN ._PUNCT
+
+okay_INTJ uhm_INTJ in_ADP the_DET first_ADJ picture_NOUN i_PRON can_AUX see_VERB an_DET older_ADJ man_NOUN and_CCONJ a_DET kid_NOUN ,_PUNCT uhm_INTJ i_PRON think_VERB they_PRON are_VERB ,_PUNCT
+darf_INTJ man_NOUN auch_INTJ was_X auf_X deutsch_PROPN sagen_PROPN ,_PUNCT wenn_INTJ man_INTJ das_DET wort_INTJ nicht_INTJ weiß_INTJ ?_PUNCT
+aha_INTJ okay_INTJ ._PUNCT
+okay_INTJ i_PRON think_VERB it_PRON '_AUX s_AUX in_ADP winter_NOUN and_CCONJ they_PRON ,_PUNCT uhm_INTJ ,_PUNCT and_CCONJ ,_PUNCT they_PRON are_VERB ,_PUNCT
+kann_INTJ ich_INTJ doch_X zwei_PROPN worter_NOUN auf_ADP deutsch_PROPN sagen_PROPN ?_PUNCT
+die_DET bauen_NOUN schlitten_PROPN ._PUNCT
+uhm_INTJ and_CCONJ the_DET second_ADJ picture_NOUN i_PRON can_AUX see_VERB that_SCONJ uhm_INTJ they_PRON have_VERB fun_NOUN ._PUNCT
+and_CCONJ they_PRON prove_VERB it_PRON ._PUNCT
+maybe_ADV ._PUNCT
+uhm_INTJ and_CCONJ then_ADV the_DET ,_PUNCT they_PRON have_VERB a_DET unfall_NOUN ?_PUNCT
+uhm_INTJ and_CCONJ the_DET kid_NOUN uhm_INTJ looks_VERB not_PART happy_ADJ ._PUNCT
+uhm_INTJ they_PRON are_AUX going_VERB maybe_ADV at_ADP home_NOUN uhm_INTJ and_CCONJ do_VERB it_PRON again_ADV ._PUNCT
+also_ADV [_PUNCT in_ADP german_PROPN ]_PUNCT uhm_INTJ they_PRON bauen_VERB a_DET new_ADJ sch_NOUN -_PUNCT ,_PUNCT schlitten_PROPN ._PUNCT
+uhm_INTJ ,_PUNCT uhm_INTJ nah_INTJ ,_PUNCT no_INTJ ,_PUNCT they_PRON make_VERB a_DET uhm_INTJ ,_PUNCT birdhouse_NOUN for_ADP the_DET birds_NOUN and_CCONJ now_ADV they_PRON go_VERB at_ADP home_NOUN and_CCONJ look_VERB what_PRON the_DET birds_NOUN do_VERB in_ADP the_DET house_NOUN ._PUNCT
+yeah_INTJ uhm_INTJ the_DET dad_NOUN wears_VERB uhm_INTJ a_DET white_ADJ uhm_NOUN jeans_NOUN and_CCONJ black_ADJ shoes_NOUN and_CCONJ a_DET black_ADJ shirt_NOUN ._PUNCT
+uhm_INTJ and_CCONJ the_DET kid_NOUN is_AUX wearing_VERB uhm_INTJ a_DET white_ADJ uhm_NOUN jeans_NOUN and_CCONJ a_DET white_ADJ uhm_NOUN shirt_NOUN ._PUNCT
+uhm_INTJ i_PRON think_VERB at_ADP the_DET beginning_NOUN they_PRON feel_VERB happy_ADJ ._PUNCT
+uhm_INTJ in_ADP the_DET middle_NOUN of_ADP the_DET story_NOUN i_PRON think_VERB they_PRON are_AUX sad_ADJ and_CCONJ angry_ADJ maybe_ADV because_SCONJ the_DET dad_NOUN looks_VERB like_ADP angry_ADJ ._PUNCT
+and_CCONJ at_ADP the_DET end_NOUN of_ADP the_DET story_NOUN they_PRON look_VERB happy_ADJ because_SCONJ they_PRON do_AUX uhm_INTJ a_DET birdhouse_NOUN ._PUNCT
+uhm_INTJ no_INTJ ._PUNCT
+
+okay_INTJ ._PUNCT
+uhm_INTJ i_PRON can_AUX see_VERB a_DET younger_ADJ boy_NOUN and_CCONJ an_DET older_ADJ man_NOUN i_PRON think_VERB ._PUNCT
+maybe_ADV his_PRON dad_NOUN i_PRON don_AUX '_PART t_PART know_VERB ._PUNCT
+and_CCONJ they_PRON are_AUX building_VERB a_DET sledge_NOUN together_ADV ._PUNCT
+so_ADV uhm_INTJ they_PRON can_AUX use_VERB it_PRON and_CCONJ in_ADP the_DET second_ADJ picture_NOUN they_PRON actually_ADV use_VERB it_PRON ._PUNCT
+but_CCONJ then_ADV uhm_INTJ it_PRON breaks_VERB i_PRON think_VERB and_CCONJ uhm_INTJ the_DET kid_NOUN and_CCONJ his_PRON dad_NOUN i_PRON think_VERB uhm_INTJ fall_VERB off_ADP the_DET sledge_NOUN ._PUNCT
+and_CCONJ in_ADP the_DET fourth_ADJ picture_NOUN uhm_INTJ i_PRON think_VERB they_PRON carry_VERB the_DET broken_VERB pieces_NOUN uhm_INTJ and_CCONJ try_VERB to_PART uhm_ADV replace_VERB them_PRON or_CCONJ maybe_ADV even_ADV use_VERB them_PRON to_PART uhm_ADV renew_VERB the_DET sledge_NOUN ._PUNCT
+and_CCONJ they_PRON built_VERB like_ADP a_DET house_NOUN for_ADP birds_NOUN of_ADP it_PRON ._PUNCT
+uhm_INTJ and_CCONJ yes_INTJ in_ADP the_DET last_ADJ picture_NOUN you_PRON can_AUX see_VERB how_ADV the_DET birds_NOUN uhm_INTJ are_AUX flying_VERB to_ADP this_DET house_NOUN ._PUNCT
+uhum_INTJ ._PUNCT
+uhm_INTJ i_PRON think_VERB the_DET boy_NOUN is_AUX just_ADV wearing_VERB like_ADP a_DET t_NOUN -_PUNCT shirt_NOUN and_CCONJ pants_NOUN uhm_INTJ and_CCONJ the_DET older_ADJ man_NOUN is_VERB i_PRON think_VERB wearing_VERB like_ADP a_DET pullover_NOUN maybe_ADV and_CCONJ also_ADV pants_VERB normal_ADJ shoes_NOUN ._PUNCT
+yes_INTJ ._PUNCT
+uhm_INTJ i_PRON think_VERB uhm_INTJ they_PRON ,_PUNCT especially_ADV in_ADP the_DET first_ADJ picture_NOUN they_PRON are_AUX very_ADV excited_ADJ because_SCONJ uhm_INTJ they_PRON can_AUX try_VERB their_PRON new_ADJ sledge_NOUN ._PUNCT
+and_CCONJ in_ADP the_DET last_ADJ picture_NOUN they_PRON are_AUX also_ADV excited_ADJ because_SCONJ they_PRON built_VERB something_PRON new_ADJ out_ADP of_ADP the_DET broken_ADJ pieces_NOUN ._PUNCT
+uhm_INTJ maybe_ADV in_ADP the_DET like_ADJ third_ADJ and_CCONJ fourth_ADJ picture_NOUN they_PRON '_AUX re_AUX a_DET bit_NOUN disappointed_ADJ because_SCONJ uhm_INTJ their_PRON sledge_NOUN is_AUX broken_ADJ and_CCONJ they_PRON put_VERB hard_ADJ work_NOUN into_ADP it_PRON ._PUNCT
+uhm_INTJ yes_INTJ but_CCONJ overall_ADV i_PRON think_VERB they_PRON '_AUX re_AUX happy_ADJ ._PUNCT
+no_INTJ ,_PUNCT not_PART really_ADV ._PUNCT
+
+uhm_INTJ at_ADP the_DET first_ADJ picture_NOUN i_PRON can_AUX see_VERB a_DET man_NOUN maybe_ADV the_DET father_NOUN and_CCONJ a_DET child_NOUN ._PUNCT
+uhm_INTJ it_PRON looks_VERB like_ADP his_PRON son_NOUN and_CCONJ uhm_INTJ they_PRON '_AUX re_AUX building_VERB a_DET sleigh_NOUN together_ADV ._PUNCT
+and_CCONJ uhm_INTJ in_ADP the_DET second_ADJ picture_NOUN i_PRON can_AUX see_VERB the_DET father_NOUN and_CCONJ the_DET son_NOUN riding_VERB the_DET sleigh_NOUN ._PUNCT
+uhm_INTJ in_ADP the_DET third_ADJ picture_NOUN uhm_INTJ i_PRON can_AUX see_VERB the_DET man_NOUN and_CCONJ the_DET child_NOUN falling_VERB down_ADV and_CCONJ the_DET sleigh_NOUN '_AUX s_AUX falling_VERB apart_ADV ._PUNCT
+uhm_INTJ ,_PUNCT
+in_ADP the_DET fourth_ADJ picture_NOUN uhm_INTJ the_DET man_NOUN and_CCONJ the_DET child_NOUN are_AUX going_VERB home_ADV maybe_ADV ._PUNCT
+uhm_INTJ ,_PUNCT
+and_CCONJ in_ADP the_DET fifth_ADJ picture_NOUN uhm_INTJ the_DET man_NOUN and_CCONJ the_DET son_NOUN are_AUX building_VERB like_ADP a_DET birdhouse_NOUN together_ADV ._PUNCT
+and_CCONJ uhm_INTJ in_ADP the_DET sixth_ADJ picture_NOUN uhm_INTJ they_PRON are_AUX looking_VERB outside_ADV uhm_INTJ through_ADP a_DET window_NOUN and_CCONJ uhm_INTJ looking_VERB ,_PUNCTuhm_INTJ at_ADP the_DET birdhouse_NOUN ._PUNCT
+yeah_INTJ ._PUNCT
+uhm_INTJ i_PRON think_VERB at_ADV first_ADV they_PRON have_VERB fun_NOUN and_CCONJ then_ADV uhm_INTJ the_DET sleigh_NOUN falls_VERB apart_ADV and_CCONJ uhm_INTJ they_PRON look_VERB like_SCONJ they_PRON are_AUX upset_ADJ ._PUNCT
+uhm_INTJ the_DET father_NOUN wears_VERB like_INTJ uhm_INTJ like_ADP a_NOUN ,_PUNCT a_DET pullover_NOUN and_CCONJ uhm_INTJ yeah_INTJ pants_NOUN uhm_INTJ black_ADJ shoes_NOUN ._PUNCT
+and_CCONJ uhm_INTJ i_PRON think_VERB he_PRON '_AUX s_AUX having_VERB a_DET moustache_NOUN ._PUNCT
+yeah_INTJ and_CCONJ the_DET son_NOUN wears_VERB uhm_INTJ like_ADP a_DET t_NOUN -_PUNCT shirt_NOUN i_PRON think_VERB ._PUNCT
+yeah_INTJ and_CCONJ pants_NOUN ._PUNCT
