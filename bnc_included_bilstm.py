@@ -62,9 +62,10 @@ print(f"Total unique tags: {len(all_tags)}")
 print("\nLoading test sentences from external file...")
 
 test_sentences = []
-test_path = "POS-Tagging-Testdaten/Digital Chat Daten Annotiert.txt"
-test_path_2 = "POS-Tagging-Testdaten/Essay 2.txt"
-test_path_3 = "POS-Tagging-Testdaten/CLAWS Verbessert Neu.txt"
+test_path = "POS-Tagger/POS-Tagging-Testdaten/Digital Chat Daten Annotiert.txt"
+test_path_2 = "POS-Tagger/POS-Tagging-Testdaten/Essay 2.txt"
+test_path_3 = "POS-Tagger/POS-Tagging-Testdaten/CLAWS Verbessert Neu.txt"
+test_path_4 = "POS-Tagger/POS-Tagging-Testdaten/Picture Description.txt"
 
 with open(test_path, 'r', encoding='utf-8') as f:
     for line in f:
@@ -91,6 +92,18 @@ with open(test_path_2, 'r', encoding='utf-8') as f:
                 test_sentences.append(sentence)
 
 with open(test_path_3, 'r', encoding='utf-8') as f:
+    for line in f:
+        if line.strip():
+            tokens = line.strip().split()
+            sentence = []
+            for token in tokens:
+                if '_' in token and len(token.rsplit('_', 1)) == 2:
+                    word, tag = token.rsplit('_', 1)
+                    sentence.append((word, tag))
+            if sentence:
+                test_sentences.append(sentence)
+
+with open(test_path_4, 'r', encoding='utf-8') as f:
     for line in f:
         if line.strip():
             tokens = line.strip().split()

@@ -11,7 +11,6 @@ from nltk.corpus import treebank
 import os
 from pathlib import Path
 import lxml.etree as ET
-from torch.utils.tensorboard import SummaryWriter
 import tensorflow as tf
 import datetime
 from sklearn.metrics import f1_score
@@ -26,6 +25,8 @@ xml_files = Path('BNC/Texts').rglob('*.xml')
 all_sentences = []  # List of all sentences
 all_tags = set()
 all_words = set()
+
+print("Loading BNC data from XML files...")
 
 # Load all BNC sentences first
 for xml_file in xml_files:
@@ -65,8 +66,13 @@ print(f"Total unique tags: {len(all_tags)}")
 # Load Tagged Testdata from Liguistik HIWI
 ########################################
 
+print("\nLoading test sentences from external file...")
+
 test_sentences = []
-test_path = "POS-Tagging-Testdaten/CLAWS Verbessert Neu.txt"
+test_path = "POS-Tagger/POS-Tagging-Testdaten/Digital Chat Daten Annotiert.txt"
+test_path_2 = "POS-Tagger/POS-Tagging-Testdaten/Essay 2.txt"
+test_path_3 = "POS-Tagger/POS-Tagging-Testdaten/CLAWS Verbessert Neu.txt"
+test_path_4 = "POS-Tagger/POS-Tagging-Testdaten/Picture Description.txt"
 
 with open(test_path, 'r', encoding='utf-8') as f:
     for line in f:
@@ -74,23 +80,50 @@ with open(test_path, 'r', encoding='utf-8') as f:
             tokens = line.strip().split()
             sentence = []
             for token in tokens:
-                if '_' in token:
+                if '_' in token and len(token.rsplit('_', 1)) == 2:
                     word, tag = token.rsplit('_', 1)
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
+
+with open(test_path_2, 'r', encoding='utf-8') as f:
+    for line in f:
+        if line.strip():
+            tokens = line.strip().split()
+            sentence = []
+            for token in tokens:
+                if '_' in token and len(token.rsplit('_', 1)) == 2:
+                    word, tag = token.rsplit('_', 1)
+                    sentence.append((word, tag))
+            if sentence:
+                test_sentences.append(sentence)
+
+with open(test_path_3, 'r', encoding='utf-8') as f:
+    for line in f:
+        if line.strip():
+            tokens = line.strip().split()
+            sentence = []
+            for token in tokens:
+                if '_' in token and len(token.rsplit('_', 1)) == 2:
+                    word, tag = token.rsplit('_', 1)
+                    sentence.append((word, tag))
+            if sentence:
+                test_sentences.append(sentence)
+
+with open(test_path_4, 'r', encoding='utf-8') as f:
+    for line in f:
+        if line.strip():
+            tokens = line.strip().split()
+            sentence = []
+            for token in tokens:
+                if '_' in token and len(token.rsplit('_', 1)) == 2:
+                    word, tag = token.rsplit('_', 1)
+                    sentence.append((word, tag))
+            if sentence:
+                test_sentences.append(sentence)
+
+
 print(f"Loaded {len(test_sentences):,} sentences from test data.")
-
-# print all tags in test sentences
-test_tags = set(tag for sent in test_sentences for _, tag in sent)
-print(f"Unique tags in test sentences: {test_tags}")
-
-# print all tags that are in all_tags but not in test_tags
-missing_tags = all_tags - test_tags
-print(f"Tags in BNC but not in test sentences: {missing_tags}")
-
-missing_tags_in_train = missing_tags - set(tag for sent in sentences_A for _, tag in sent)
-print(f"Tags in BNC but not in test sentences and not in training sentences: {missing_tags_in_train}")
 
 ########################################
 # Setup
@@ -262,3 +295,5 @@ def evaluate_on_test_sentences(model, test_sentences):
     print(f"Test F1 score on own test sentences: {f1:.4f}")
 
 evaluate_on_test_sentences(viterbi, test_sentences)
+
+print("All done!")
