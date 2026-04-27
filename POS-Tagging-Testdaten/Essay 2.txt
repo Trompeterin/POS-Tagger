@@ -55,7 +55,8 @@ I_PNP think_VVB this_DT0 statement_NN1 is_VBZ wrong_AJ0 ,_PUN because_CJS in_PRP
 But_CJC if_CJS you_PNP like_VVB your_DPS dreams_NN2 and_CJC you_PNP would_VM0 that_CJT your_DPS dreams_NN2 become_VVB true_AJ0 ,_PUN then_CJS you_PNP have_VHB to_TO0 work_VVI for_PRP it_PNP ._PUN 
 So_AV0 in_PRP our_DPS world_NN1 today_AV0 ,_PUN you_PNP can_VM0 live_VVI your_DPS dream_NN1 if_CJS you_PNP want_VVB ._PUN 
 But_CJC not_XX0 all_DT0 people_NN0 have_VHB the_AT0 option_NN1 to_TO0 make_VVI their_DPS dreams_NN2 real_AJ0 ._PUN 
-If_CJS you_PNP work_VVB on_PRP your_DPS dreams_NN2 ,_PUN do_VDB n’t_XX0 give_VVI up_AVP !_PUN The_AT0 Live_NN1 is_VBZ hard_AJ0 ,_PUN but_CJC make_VVB the_AT0 best_AJS ._PUN
+If_CJS you_PNP work_VVB on_PRP your_DPS dreams_NN2 ,_PUN do_VDB n’t_XX0 give_VVI up_AVP !_PUN 
+The_AT0 Live_NN1 is_VBZ hard_AJ0 ,_PUN but_CJC make_VVB the_AT0 best_AJS ._PUN
 
 Essay_2_Gymnasium_Klasse10 
 I_PNP disagree_VVB with_PRP the_AT0 statement_NN1 because_CJS we_PNP have_VHB so_AV0 much_DT0 more_DT0 in_PRP our_DPS world_NN1 then_CJS just_AV0 technology_NN1 or_CJC science_NN1 ._PUN 
@@ -136,7 +137,8 @@ In_PRP our_DPS modern_AJ0 world_NN1 it_PNP gets_VVZ harder_AJC day_NN1 by_PRP da
 It_PNP mostly_AV0 starts_VVZ with_PRP our_DPS parents_NN2 or_CJC social_AJ0 background_NN1 ,_PUN because_CJS we_PNP often_AV0 try_VVB to_TO0 make_VVI them_PNP happy_AJ0 and_CJC to_TO0 fit_VVI in_AVP in_PRP their_DPS exspectations_NN2 ._PUN 
 Especially_AV0 in_PRP school_NN1 we_PNP are_VBB always_AV0 confronted_VVN with_PRP technology_NN1 and_CJC science_NN1 and_CJC learn_VVB things_NN2 the_AT0 way_NN1 they_PNP are_VBB so_CJC there_EX0 is_VBZ often_AV0 no_DT0 room_NN1 to_TO0 think_VVI out_PRP of_PRF the_AT0 box_NN1 ._PUN 
 Now_AV0 a_AT0 day_NN1 we_PNP get_VVB everything_PNI we_PNP need_VVB in_PRP shops_NN2 or_CJC online_AV0 ._PUN 
-Who_PNQ actually_AV0 does_VDZ something_PNI homemade_AJ0 anymore_AV0 ?_PUN I_PNP think_VVB at_PRP one_CRD side_NN1 we_PNP sometimes_AV0 forget_VVB to_TO0 think_VVI for_PRP ourselves_PNX but_CJC also_AV0 try_VVB to_TO0 handle_VVI all_DT0 of_PRF the_AT0 new_AJ0 options_NN2 that_CJT we_PNP have_VHB ._PUN 
+Who_PNQ actually_AV0 does_VDZ something_PNI homemade_AJ0 anymore_AV0 ?_PUN 
+I_PNP think_VVB at_PRP one_CRD side_NN1 we_PNP sometimes_AV0 forget_VVB to_TO0 think_VVI for_PRP ourselves_PNX but_CJC also_AV0 try_VVB to_TO0 handle_VVI all_DT0 of_PRF the_AT0 new_AJ0 options_NN2 that_CJT we_PNP have_VHB ._PUN 
 We_PNP should_VM0 use_VVI AI_NN1 and_CJC all_DT0 these_DT0 stuff_NN1 to_TO0 make_VVI our_DPS everyday_AJ0 life_NN1 easier_AJC and_CJC to_TO0 help_VVI us_PNP out_AVP with_PRP our_DPS dreams_NN2 and_CJC imaginations_NN2 because_CJS they_PNP are_VBB so_AV0 important_AJ0 to_TO0 follow_VVI ._PUN
 
 Essay_2_Gymnasium_Klasse12
