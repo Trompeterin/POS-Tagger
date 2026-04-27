@@ -437,7 +437,7 @@ def evaluate(model, data):
                 all_preds.append(p.item())
                 all_golds.append(g)
     if total == 0 or total is None:
-        print("No valid tags to evaluate.")
+        print("No gold tags to evaluate.")
         return -1
     acc = correct / total
     f1 = f1_score(all_golds, all_preds, average='weighted', zero_division=0)
