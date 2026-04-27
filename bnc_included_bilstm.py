@@ -9,6 +9,7 @@ from pathlib import Path
 import lxml.etree as ET
 from torch.utils.tensorboard import SummaryWriter
 from sklearn.metrics import f1_score
+import re
 
 ########################################
 # Load BNC Data
@@ -56,7 +57,42 @@ print(f"Total unique words: {len(all_words):,}")
 print(f"Total unique tags: {len(all_tags)}")
 
 ########################################
-# Load Tagged Testdata from Liguistik HIWI
+# Load Tagged Testdata and Split into Age Groups
+########################################
+
+test_sentences_klasse_5 = []
+test_sentences_klasse_6 = []
+test_sentences_klasse_7 = []
+test_sentences_klasse_8 = []
+test_sentences_klasse_9 = []
+test_sentences_klasse_10 = []
+test_sentences_klasse_11 = []
+test_sentences_klasse_12 = []
+
+def extract_age_group(sentence):
+    age_pattern = re.compile(r'(\s*Klasse\d+)')
+    match = age_pattern.search(sentence)
+    if match:
+        age = match.group(1).strip()
+        # extract the number from the age string
+        age_number = int(re.search(r'\d+', age).group())
+        # assign to class based on age number and return correct test_sentences group 
+        return age_number
+    return None
+
+def store_sentence_by_age_group(sentence, age_group):
+    match age_group:
+        case 5: test_sentences_klasse_5.append(sentence)
+        case 6: test_sentences_klasse_6.append(sentence)
+        case 7: test_sentences_klasse_7.append(sentence)
+        case 8: test_sentences_klasse_8.append(sentence)
+        case 9: test_sentences_klasse_9.append(sentence)
+        case 10: test_sentences_klasse_10.append(sentence)
+        case 11: test_sentences_klasse_11.append(sentence)
+        case 12: test_sentences_klasse_12.append(sentence)
+
+########################################
+# Load Tagged Testdata 
 ########################################
 
 print("\nLoading test sentences from external file...")
@@ -66,22 +102,50 @@ test_path = "POS-Tagger/POS-Tagging-Testdaten/Digital Chat Daten Annotiert.txt"
 test_path_2 = "POS-Tagger/POS-Tagging-Testdaten/Essay 2.txt"
 test_path_3 = "POS-Tagger/POS-Tagging-Testdaten/CLAWS Verbessert Neu.txt"
 test_path_4 = "POS-Tagger/POS-Tagging-Testdaten/Picture Description.txt"
+test_sentences_essay = []
+test_sentences_chat = []
+test_sentences_picture = []
 
 with open(test_path, 'r', encoding='utf-8') as f:
+    empty = True # so that the first line with metadata is correctly identified as such
+    age_group = None
     for line in f:
         if line.strip():
+            # after each empty line the line starts with meta data about age group and school type of the following sentences
+            if empty:
+                age_group = extract_age_group(line)
+                empty = False
+                if age_group is not None:
+                    continue # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
+            # ignore everything that the instructor says -> I_ZZ0
+            if line.startswith("I_ZZ0"):
+                continue
+            if line.startswith("S_ZZ0"):
+                tokens = tokens[2:]  # remove the first two tokens which is the metadata about who is speaking
             for token in tokens:
                 if '_' in token and len(token.rsplit('_', 1)) == 2:
                     word, tag = token.rsplit('_', 1)
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
+                test_sentences_chat.append(sentence)
+                store_sentence_by_age_group(sentence, age_group)
+        else:
+            empty = True
 
 with open(test_path_2, 'r', encoding='utf-8') as f:
+    empty = True # so that the first line with metadata is correctly identified as such
+    age_group = None
     for line in f:
         if line.strip():
+            # after each empty line the line starts with meta data about age group and school type of the following sentences
+            if empty:
+                age_group = extract_age_group(line)
+                empty = False
+                if age_group is not None:
+                    continue # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
             for token in tokens:
@@ -90,10 +154,23 @@ with open(test_path_2, 'r', encoding='utf-8') as f:
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
+                test_sentences_essay.append(sentence)
+                store_sentence_by_age_group(sentence, age_group)
+        else:
+            empty = True
 
+# Data that was used to test CLAW etc.
 with open(test_path_3, 'r', encoding='utf-8') as f:
+    empty = True # so that the first line with metadata is correctly identified as such
+    age_group = None
     for line in f:
         if line.strip():
+            # after each empty line the line starts with meta data about age group and school type of the following sentences
+            if empty:
+                age_group = extract_age_group(line)
+                empty = False
+                if age_group is not None:
+                    continue # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
             for token in tokens:
@@ -102,10 +179,21 @@ with open(test_path_3, 'r', encoding='utf-8') as f:
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
+                store_sentence_by_age_group(sentence, age_group)
+        else:
+            empty = True
 
 with open(test_path_4, 'r', encoding='utf-8') as f:
+    empty = True # so that the first line with metadata is correctly identified as such
+    age_group = None
     for line in f:
         if line.strip():
+            # after each empty line the line starts with meta data about age group and school type of the following sentences
+            if empty:
+                age_group = extract_age_group(line)
+                empty = False
+                if age_group is not None:
+                    continue # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
             for token in tokens:
@@ -114,6 +202,10 @@ with open(test_path_4, 'r', encoding='utf-8') as f:
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
+                test_sentences_picture.append(sentence)
+                store_sentence_by_age_group(sentence, age_group)
+        else:
+            empty = True
 
 # split test_sentences into test and train sentences randomly
 #random.shuffle(test_sentences)
@@ -126,6 +218,21 @@ print(f"Loaded {len(test_sentences):,} sentences from external test data.")
 # print all tags in test sentences
 test_tags = set(tag for sent in test_sentences for _, tag in sent)
 print(f"Total unique tags in test sentences: {len(test_tags)}")
+
+# print length of each test sentences group
+print(f"Test sentences for essays: {len(test_sentences_essay):,}")
+print(f"Test sentences for chat: {len(test_sentences_chat):,}")
+print(f"Test sentences for picture description: {len(test_sentences_picture):,}")
+
+# print length of each age group test sentences
+print(f"Test sentences for Klasse 5: {len(test_sentences_klasse_5):,}")
+print(f"Test sentences for Klasse 6: {len(test_sentences_klasse_6):,}")
+print(f"Test sentences for Klasse 7: {len(test_sentences_klasse_7):,}")
+print(f"Test sentences for Klasse 8: {len(test_sentences_klasse_8):,}")
+print(f"Test sentences for Klasse 9: {len(test_sentences_klasse_9):,}")
+print(f"Test sentences for Klasse 10: {len(test_sentences_klasse_10):,}")
+print(f"Test sentences for Klasse 11: {len(test_sentences_klasse_11):,}")
+print(f"Test sentences for Klasse 12: {len(test_sentences_klasse_12):,}")
 
 ########################################
 # Setup & Data Loading
@@ -355,8 +462,54 @@ writer.close()
 
 # F1-Score
 # Accuracy
+
+# all testdata 
 print("\nEvaluating model on external test sentences...")
 evaluate(model, test_sentences)
+
+# only essays 
+print("\nEvaluating model on essay test sentences...")
+evaluate(model, test_sentences_essay)
+
+# only picture description
+print("\nEvaluating model on picture description test sentences...")
+evaluate(model, test_sentences_picture)
+
+# only chat
+print("\nEvaluating model on chat test sentences...")
+evaluate(model, test_sentences_chat)
+
+# by age groups 
+print("\nEvaluating model on Klasse 5 test sentences...")
+evaluate(model, test_sentences_klasse_5)
+
+print("\nEvaluating model on Klasse 6 test sentences...")
+evaluate(model, test_sentences_klasse_6)
+
+print("\nEvaluating model on Klasse 7 test sentences...")
+evaluate(model, test_sentences_klasse_7)
+
+print("\nEvaluating model on Klasse 8 test sentences...")
+evaluate(model, test_sentences_klasse_8)
+
+print("\nEvaluating model on Klasse 9 test sentences...")
+evaluate(model, test_sentences_klasse_9)
+
+print("\nEvaluating model on Klasse 10 test sentences...")
+evaluate(model, test_sentences_klasse_10)
+
+print("\nEvaluating model on Klasse 11 test sentences...")
+evaluate(model, test_sentences_klasse_11)
+
+print("\nEvaluating model on Klasse 12 test sentences...")
+evaluate(model, test_sentences_klasse_12)
+
 writer.close()
+
+########################################
+# Analyze errors on external test sentences 
+########################################
+
+# Here will be the code to analyze which tags are most often correct vs incorrect -> Confusion Matrix with all tags over all test data (external)
 
 print("\nDone.")
