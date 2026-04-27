@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 import lxml.etree as ET
 from torch.utils.tensorboard import SummaryWriter
-from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score, precision_score, recall_score
 import re
 
 ########################################
@@ -441,8 +441,12 @@ def evaluate(model, data):
         return -1
     acc = correct / total
     f1 = f1_score(all_golds, all_preds, average='weighted', zero_division=0)
+    precision = precision_score(all_golds, all_preds, average='weighted', zero_division=0)
+    recall = recall_score(all_golds, all_preds, average='weighted', zero_division=0)
     print(f"Test accuracy: {acc:.4f}")
     print(f"Test F1 score: {f1:.4f}")
+    print(f"Test Precision: {precision:.4f}")
+    print(f"Test Recall: {recall:.4f}")
 
 
 ########################################
