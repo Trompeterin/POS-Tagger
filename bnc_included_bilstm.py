@@ -459,16 +459,16 @@ writer = SummaryWriter(log_dir="runs/bnc_bilstm_pos_exploratory_partition_from_a
 print("Training model...")
 train(model, train_data, val_data, epochs=5)
 
-""" print("\nEvaluating model on BNC...")
+print("\nEvaluating model on BNC...")
 evaluate(model, test_data)
-writer.close() """
+writer.close()
 
 
 ########################################
 # Test with own testdata
 ########################################
 
-""" # F1-Score
+# F1-Score
 # Accuracy
 
 # all testdata 
@@ -512,7 +512,7 @@ evaluate(model, test_sentences_klasse_11)
 print("\nEvaluating model on Klasse 12 test sentences...")
 evaluate(model, test_sentences_klasse_12)
 
-writer.close() """
+writer.close()
 
 ########################################
 # Create confusion matrix
@@ -533,12 +533,12 @@ def create_confusion_matrix(model, data, name):
             all_preds.extend(preds.cpu().numpy())
             all_golds.extend(gold_tags)
 
-    # Get unique labels that actually appear in the data
-    unique_labels = sorted(set(all_golds) | set(all_preds))
-    # Map to tag names
-    label_names = [idx2tag[i] for i in unique_labels]
+    # Get unique labels that actually appear in the data, sorted alphabetically by tag name
+    unique_tags = sorted(set(all_golds) | set(all_preds), key=lambda x: idx2tag[x])
+    # Map to tag names (already sorted alphabetically)
+    label_names = [idx2tag[i] for i in unique_tags]
     
-    cm = confusion_matrix(all_golds, all_preds, labels=unique_labels)
+    cm = confusion_matrix(all_golds, all_preds, labels=unique_tags)
     plt.figure(figsize=(16, 14))
     sns.heatmap(cm, annot=False, xticklabels=label_names, yticklabels=label_names, cmap='Blues', cbar_kws={'shrink': 0.8})
     plt.xlabel('Predicted', fontsize=12)
