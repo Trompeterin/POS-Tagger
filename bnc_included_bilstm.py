@@ -8,8 +8,10 @@ import os
 from pathlib import Path
 import lxml.etree as ET
 from torch.utils.tensorboard import SummaryWriter
-from sklearn.metrics import f1_score, precision_score, recall_score
+from sklearn.metrics import f1_score, precision_score, recall_score, confusion_matrix
 import re
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 ########################################
 # Load BNC Data
@@ -457,20 +459,20 @@ writer = SummaryWriter(log_dir="runs/bnc_bilstm_pos_exploratory_partition_from_a
 print("Training model...")
 train(model, train_data, val_data, epochs=5)
 
-print("\nEvaluating model...")
+""" print("\nEvaluating model on BNC...")
 evaluate(model, test_data)
-writer.close()
+writer.close() """
 
 
 ########################################
 # Test with own testdata
 ########################################
 
-# F1-Score
+""" # F1-Score
 # Accuracy
 
 # all testdata 
-print("\nEvaluating model on external test sentences...")
+print("\nEvaluating model on test sentences...")
 evaluate(model, test_sentences)
 
 # only essays 
@@ -510,12 +512,68 @@ evaluate(model, test_sentences_klasse_11)
 print("\nEvaluating model on Klasse 12 test sentences...")
 evaluate(model, test_sentences_klasse_12)
 
-writer.close()
+writer.close() """
 
 ########################################
-# Analyze errors on external test sentences 
+# Create confusion matrix
 ########################################
 
-# Here will be the code to analyze which tags are most often correct vs incorrect -> Confusion Matrix with all tags over all test data (external)
+def create_confusion_matrix(model, data, name): 
+    model.eval()
+    all_preds = []
+    all_golds = []
 
+    with torch.no_grad():
+        for sent in data:
+            words, gold_tags = encode_sentence(sent)
+            X = torch.tensor([words]).to(device)
+            logits = model(X)
+            preds = torch.argmax(logits, dim=-1)[0]
+
+            all_preds.extend(preds.cpu().numpy())
+            all_golds.extend(gold_tags)
+
+    # Get unique labels that actually appear in the data
+    unique_labels = sorted(set(all_golds) | set(all_preds))
+    # Map to tag names
+    label_names = [idx2tag[i] for i in unique_labels]
+    
+    cm = confusion_matrix(all_golds, all_preds, labels=unique_labels)
+    plt.figure(figsize=(16, 14))
+    sns.heatmap(cm, annot=False, xticklabels=label_names, yticklabels=label_names, cmap='Blues', cbar_kws={'shrink': 0.8})
+    plt.xlabel('Predicted', fontsize=12)
+    plt.ylabel('Gold Labels', fontsize=12)
+    plt.xticks(rotation=90, ha='center', fontsize=8)
+    plt.yticks(rotation=0, fontsize=8)
+    plt.title(name + " Confusion Matrix", fontsize=14)
+    plt.tight_layout()
+    plt.savefig(f"{name}_confusion_matrix.png", dpi=150)
+    plt.close()
+
+
+print("\nCreating confusion matrices for test sentences...")
+print("All Test Sentences")
+create_confusion_matrix(model, test_sentences, "All Test Sentences")
+print("Essay Test Sentences")
+create_confusion_matrix(model, test_sentences_essay, "Essay Test Sentences")
+print("Picture Description Test Sentences")
+create_confusion_matrix(model, test_sentences_picture, "Picture Description Test Sentences")
+print("Chat Test Sentences")
+create_confusion_matrix(model, test_sentences_chat, "Chat Test Sentences")
+print("Klasse 5 Test Sentences")
+create_confusion_matrix(model, test_sentences_klasse_5, "Klasse 5 Test Sentences")
+print("Klasse 6 Test Sentences")
+create_confusion_matrix(model, test_sentences_klasse_6, "Klasse 6 Test Sentences")
+print("Klasse 7 Test Sentences")
+create_confusion_matrix(model, test_sentences_klasse_7, "Klasse 7 Test Sentences")
+print("Klasse 8 Test Sentences")
+create_confusion_matrix(model, test_sentences_klasse_8, "Klasse 8 Test Sentences")
+print("Klasse 9 Test Sentences")
+create_confusion_matrix(model, test_sentences_klasse_9, "Klasse 9 Test Sentences")
+print("Klasse 10 Test Sentences")
+create_confusion_matrix(model, test_sentences_klasse_10, "Klasse 10 Test Sentences")
+#print("Klasse 11 Test Sentences")
+#create_confusion_matrix(model, test_sentences_klasse_11, "Klasse 11 Test Sentences") -> no data for this age group
+print("Klasse 12 Test Sentences")
+create_confusion_matrix(model, test_sentences_klasse_12, "Klasse 12 Test Sentences")
 print("\nDone.")
