@@ -547,7 +547,7 @@ def create_confusion_matrix(model, data, name):
     plt.yticks(rotation=0, fontsize=8)
     plt.title(name + " Confusion Matrix", fontsize=14)
     plt.tight_layout()
-    plt.savefig(f"{name}_confusion_matrix.png", dpi=150)
+    plt.savefig(f"{name}_confusion_matrix_bilstm.png", dpi=150)
     plt.close()
 
 
