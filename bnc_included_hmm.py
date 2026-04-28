@@ -11,9 +11,13 @@ from nltk.corpus import treebank
 import os
 from pathlib import Path
 import lxml.etree as ET
+from torch.utils.tensorboard import SummaryWriter
 import tensorflow as tf
 import datetime
-from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score, precision_score, recall_score, confusion_matrix
+import re
+import matplotlib.pyplot as plt
+import seaborn as sns
 import time
 
 ########################################
@@ -25,8 +29,6 @@ xml_files = Path('BNC/Texts').rglob('*.xml')
 all_sentences = []  # List of all sentences
 all_tags = set()
 all_words = set()
-
-print("Loading BNC data from XML files...")
 
 # Load all BNC sentences first
 for xml_file in xml_files:
@@ -63,7 +65,42 @@ print(f"Total unique words: {len(all_words):,}")
 print(f"Total unique tags: {len(all_tags)}")
 
 ########################################
-# Load Tagged Testdata from Liguistik HIWI
+# Load Tagged Testdata and Split into Age Groups
+########################################
+
+test_sentences_klasse_5 = []
+test_sentences_klasse_6 = []
+test_sentences_klasse_7 = []
+test_sentences_klasse_8 = []
+test_sentences_klasse_9 = []
+test_sentences_klasse_10 = []
+test_sentences_klasse_11 = []
+test_sentences_klasse_12 = []
+
+def extract_age_group(sentence):
+    age_pattern = re.compile(r'(\s*Klasse\d+)')
+    match = age_pattern.search(sentence)
+    if match:
+        age = match.group(1).strip()
+        # extract the number from the age string
+        age_number = int(re.search(r'\d+', age).group())
+        # assign to class based on age number and return correct test_sentences group 
+        return age_number
+    return None
+
+def store_sentence_by_age_group(sentence, age_group):
+    match age_group:
+        case 5: test_sentences_klasse_5.append(sentence)
+        case 6: test_sentences_klasse_6.append(sentence)
+        case 7: test_sentences_klasse_7.append(sentence)
+        case 8: test_sentences_klasse_8.append(sentence)
+        case 9: test_sentences_klasse_9.append(sentence)
+        case 10: test_sentences_klasse_10.append(sentence)
+        case 11: test_sentences_klasse_11.append(sentence)
+        case 12: test_sentences_klasse_12.append(sentence)
+
+########################################
+# Load Tagged Testdata 
 ########################################
 
 print("\nLoading test sentences from external file...")
@@ -73,22 +110,50 @@ test_path = "POS-Tagger/POS-Tagging-Testdaten/Digital Chat Daten Annotiert.txt"
 test_path_2 = "POS-Tagger/POS-Tagging-Testdaten/Essay 2.txt"
 test_path_3 = "POS-Tagger/POS-Tagging-Testdaten/CLAWS Verbessert Neu.txt"
 test_path_4 = "POS-Tagger/POS-Tagging-Testdaten/Picture Description.txt"
+test_sentences_essay = []
+test_sentences_chat = []
+test_sentences_picture = []
 
 with open(test_path, 'r', encoding='utf-8') as f:
+    empty = True # so that the first line with metadata is correctly identified as such
+    age_group = None
     for line in f:
         if line.strip():
+            # after each empty line the line starts with meta data about age group and school type of the following sentences
+            if empty:
+                age_group = extract_age_group(line)
+                empty = False
+                if age_group is not None:
+                    continue # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
+            # ignore everything that the instructor says -> I_ZZ0
+            if line.startswith("I_ZZ0"):
+                continue
+            if line.startswith("S_ZZ0"):
+                tokens = tokens[2:]  # remove the first two tokens which is the metadata about who is speaking
             for token in tokens:
                 if '_' in token and len(token.rsplit('_', 1)) == 2:
                     word, tag = token.rsplit('_', 1)
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
+                test_sentences_chat.append(sentence)
+                store_sentence_by_age_group(sentence, age_group)
+        else:
+            empty = True
 
 with open(test_path_2, 'r', encoding='utf-8') as f:
+    empty = True # so that the first line with metadata is correctly identified as such
+    age_group = None
     for line in f:
         if line.strip():
+            # after each empty line the line starts with meta data about age group and school type of the following sentences
+            if empty:
+                age_group = extract_age_group(line)
+                empty = False
+                if age_group is not None:
+                    continue # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
             for token in tokens:
@@ -97,10 +162,23 @@ with open(test_path_2, 'r', encoding='utf-8') as f:
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
+                test_sentences_essay.append(sentence)
+                store_sentence_by_age_group(sentence, age_group)
+        else:
+            empty = True
 
+# Data that was used to test CLAW etc.
 with open(test_path_3, 'r', encoding='utf-8') as f:
+    empty = True # so that the first line with metadata is correctly identified as such
+    age_group = None
     for line in f:
         if line.strip():
+            # after each empty line the line starts with meta data about age group and school type of the following sentences
+            if empty:
+                age_group = extract_age_group(line)
+                empty = False
+                if age_group is not None:
+                    continue # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
             for token in tokens:
@@ -109,10 +187,21 @@ with open(test_path_3, 'r', encoding='utf-8') as f:
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
+                store_sentence_by_age_group(sentence, age_group)
+        else:
+            empty = True
 
 with open(test_path_4, 'r', encoding='utf-8') as f:
+    empty = True # so that the first line with metadata is correctly identified as such
+    age_group = None
     for line in f:
         if line.strip():
+            # after each empty line the line starts with meta data about age group and school type of the following sentences
+            if empty:
+                age_group = extract_age_group(line)
+                empty = False
+                if age_group is not None:
+                    continue # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
             for token in tokens:
@@ -121,9 +210,37 @@ with open(test_path_4, 'r', encoding='utf-8') as f:
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
+                test_sentences_picture.append(sentence)
+                store_sentence_by_age_group(sentence, age_group)
+        else:
+            empty = True
 
+# split test_sentences into test and train sentences randomly
+#random.shuffle(test_sentences)
+#split_index = int(0.5 * len(test_sentences))
+#train_sentences = test_sentences[:split_index]
+#test_sentences = test_sentences[split_index:]
 
-print(f"Loaded {len(test_sentences):,} sentences from test data.")
+print(f"Loaded {len(test_sentences):,} sentences from external test data.")
+#print(f"Loaded {len(train_sentences):,} sentences from external train data.")
+# print all tags in test sentences
+test_tags = set(tag for sent in test_sentences for _, tag in sent)
+print(f"Total unique tags in test sentences: {len(test_tags)}")
+
+# print length of each test sentences group
+print(f"Test sentences for essays: {len(test_sentences_essay):,}")
+print(f"Test sentences for chat: {len(test_sentences_chat):,}")
+print(f"Test sentences for picture description: {len(test_sentences_picture):,}")
+
+# print length of each age group test sentences
+print(f"Test sentences for Klasse 5: {len(test_sentences_klasse_5):,}")
+print(f"Test sentences for Klasse 6: {len(test_sentences_klasse_6):,}")
+print(f"Test sentences for Klasse 7: {len(test_sentences_klasse_7):,}")
+print(f"Test sentences for Klasse 8: {len(test_sentences_klasse_8):,}")
+print(f"Test sentences for Klasse 9: {len(test_sentences_klasse_9):,}")
+print(f"Test sentences for Klasse 10: {len(test_sentences_klasse_10):,}")
+print(f"Test sentences for Klasse 11: {len(test_sentences_klasse_11):,}")
+print(f"Test sentences for Klasse 12: {len(test_sentences_klasse_12):,}")
 
 ########################################
 # Setup
@@ -245,7 +362,7 @@ def viterbi(words):
 
 start_time = time.time()
 # Evaluation
-print("Start evaluation on test set...")
+print("Start evaluation on BNC test set...")
 total_words = 0
 correct_tags = 0
 all_gold_tags = []
@@ -264,8 +381,12 @@ for sent in test_data:
 
 accuracy = correct_tags / total_words
 f1 = f1_score(all_gold_tags, all_pred_tags, average='weighted')
-print(f"Accuracy on test set: {accuracy:.4f}")
-print(f"F1-Score on test set: {f1:.4f}")
+precision = precision_score(all_gold_tags, all_pred_tags, average='weighted')
+recall = recall_score(all_gold_tags, all_pred_tags, average='weighted')
+print(f"Accuracy on BNC test set: {accuracy:.4f}")
+print(f"F1-Score on BNC test set: {f1:.4f}")
+print(f"Precision on BNC test set: {precision:.4f}")
+print(f"Recall on BNC test set: {recall:.4f}")
 
 end_time = time.time()
 print(f"Time taken for evaluation: {end_time - start_time:.2f} seconds")
@@ -288,12 +409,117 @@ def evaluate_on_test_sentences(model, test_sentences):
         pred_tags = model(words)
         all_golds.extend(gold_tags)
         all_preds.extend(pred_tags)
-
+    if len(all_golds) == 0:
+        print("No gold tags found in test sentences. Cannot compute accuracy or F1-Score.")
+        return
     acc = sum(g == p for g, p in zip(all_golds, all_preds)) / len(all_golds)
     f1 = f1_score(all_golds, all_preds, average='weighted', zero_division=0)
-    print(f"Test accuracy on own test sentences: {acc:.4f}")
-    print(f"Test F1 score on own test sentences: {f1:.4f}")
+    precision = precision_score(all_golds, all_preds, average='weighted', zero_division=0)
+    recall = recall_score(all_golds, all_preds, average='weighted', zero_division=0)
+    print(f"Test accuracy: {acc:.4f}")
+    print(f"Test F1 score: {f1:.4f}")
+    print(f"Test Precision: {precision:.4f}")
+    print(f"Test Recall: {recall:.4f}")
 
+# F1-Score
+# Accuracy
+
+# all testdata 
+print("\nEvaluating model on test sentences...")
 evaluate_on_test_sentences(viterbi, test_sentences)
 
-print("All done!")
+# only essays 
+print("\nEvaluating model on essay test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_essay)
+
+# only picture description
+print("\nEvaluating model on picture description test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_picture)
+
+# only chat
+print("\nEvaluating model on chat test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_chat)
+
+# by age groups 
+print("\nEvaluating model on Klasse 5 test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_klasse_5)
+
+print("\nEvaluating model on Klasse 6 test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_klasse_6)
+
+print("\nEvaluating model on Klasse 7 test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_klasse_7)
+
+print("\nEvaluating model on Klasse 8 test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_klasse_8)
+
+print("\nEvaluating model on Klasse 9 test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_klasse_9)
+
+print("\nEvaluating model on Klasse 10 test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_klasse_10)
+
+print("\nEvaluating model on Klasse 11 test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_klasse_11)
+
+print("\nEvaluating model on Klasse 12 test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_klasse_12)
+
+########################################
+# Create confusion matrix
+########################################
+
+# Define unique labels and label names from tags
+unique_labels = sorted(tags)
+label_names = unique_labels
+
+def create_confusion_matrix(model, data, name): 
+    all_preds = []
+    all_golds = []
+    # get predictions and gold tags for all sentences in data
+    for sent in data:
+        words = [w for (w, _) in sent]
+        gold_tags = [t for (_, t) in sent]
+        pred_tags = model(words)
+        all_golds.extend(gold_tags)
+        all_preds.extend(pred_tags)
+    
+    cm = confusion_matrix(all_golds, all_preds, labels=unique_labels)
+    plt.figure(figsize=(16, 14))
+    sns.heatmap(cm, annot=False, xticklabels=label_names, yticklabels=label_names, cmap='Blues', cbar_kws={'shrink': 0.8})
+    plt.xlabel('Predicted', fontsize=12)
+    plt.ylabel('Gold Labels', fontsize=12)
+    plt.xticks(rotation=90, ha='center', fontsize=8)
+    plt.yticks(rotation=0, fontsize=8)
+    plt.title(name + " Confusion Matrix", fontsize=14)
+    plt.tight_layout()
+    plt.savefig(f"{name}_confusion_matrix_hmm.png", dpi=150)
+    plt.close()
+
+
+print("\nCreating confusion matrices for test sentences...")
+print("All Test Sentences")
+create_confusion_matrix(viterbi, test_sentences, "All Test Sentences")
+print("Essay Test Sentences")
+create_confusion_matrix(viterbi, test_sentences_essay, "Essay Test Sentences")
+print("Picture Description Test Sentences")
+create_confusion_matrix(viterbi, test_sentences_picture, "Picture Description Test Sentences")
+print("Chat Test Sentences")
+create_confusion_matrix(viterbi, test_sentences_chat, "Chat Test Sentences")
+print("Klasse 5 Test Sentences")
+create_confusion_matrix(viterbi, test_sentences_klasse_5, "Klasse 5 Test Sentences")
+print("Klasse 6 Test Sentences")
+create_confusion_matrix(viterbi, test_sentences_klasse_6, "Klasse 6 Test Sentences")
+print("Klasse 7 Test Sentences")
+create_confusion_matrix(viterbi, test_sentences_klasse_7, "Klasse 7 Test Sentences")
+print("Klasse 8 Test Sentences")
+create_confusion_matrix(viterbi, test_sentences_klasse_8, "Klasse 8 Test Sentences")
+print("Klasse 9 Test Sentences")
+create_confusion_matrix(viterbi, test_sentences_klasse_9, "Klasse 9 Test Sentences")
+print("Klasse 10 Test Sentences")
+create_confusion_matrix(viterbi, test_sentences_klasse_10, "Klasse 10 Test Sentences")
+#print("Klasse 11 Test Sentences")
+#create_confusion_matrix(viterbi, test_sentences_klasse_11, "Klasse 11 Test Sentences") -> no data for this age group
+print("Klasse 12 Test Sentences")
+create_confusion_matrix(viterbi, test_sentences_klasse_12, "Klasse 12 Test Sentences")
+print("\nDone.")
