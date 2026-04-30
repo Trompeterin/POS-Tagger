@@ -1078,7 +1078,7 @@ S_ZZ0 :_PUN I_PNP ’m_VBB going_VVG to_TO0 meet_VVI my_DPS friends_NN2 ._PUN
 I_ZZ0 :_PUN Oh_ITJ ,_PUN that_DT0 sounds_VVZ nice_AJ0 ._PUN What_PNQ are_VBB you_PNP going_VVG to_TO0 do_VDI ?_PUN
 S_ZZ0 :_PUN We_PRP are_VBB going_VVG to_TO0 watch_VVI a_AT0 movie_NN1 together_AV0 ._PUN
 I_ZZ0 :_PUN Nice_ITJ ._PUN Do_VDB you_PNP have_VHI any_DT0 plans_NN2 for_PRP the_AT0 Christmas_NN1 holidays_NN2 ?_PUN
-S_ZZ0 :_PUN Yes_ITJ ,_PUN i_PNP ’m_VBB going_VVG to_TO0 go_VVI skiing_NN1 in_PRP Austria_NP0 _PUN.
+S_ZZ0 :_PUN Yes_ITJ ,_PUN i_PNP ’m_VBB going_VVG to_TO0 go_VVI skiing_NN1 in_PRP Austria_NP0 ._PUN
 I_ZZ0 :_PUN Oh_ITJ ,_PUN that_DT0 ’s_VBZ great_AJ0 ._PUN I_PNP love_VVB skiing_NN1 ._PUN Have_VHB a_AT0 great_AJ0 time_NN1 ._PUN It_PNP was_VBD nice_AJ0 to_TO0 meet_VVI you_PNP !_PUN
 S_ZZ0 :_PUN Thanks_NN2 ._PUN Nice_AJ0 to_TO0 meet_VVI you_PNP too_AV0 !_PUN
 
@@ -1229,7 +1229,7 @@ S_ZZ0 :_PUN I_PNP honestly_AV0 do_VDB n’t_XX0 know_VVI yet_AV0
 
 Digital_Chat_Gymnasium_Klasse12
 I_ZZ0 :_PUN Hello_ITJ [_PUL name_NN1 ]_PUR ,_PUN how_AVQ has_VHZ your_DPS day_NN1 been_VBN so_AV0 far_AV0 ?_PUN
-S_ZZ0 :_PUN Hi_ITJ [_PUL name_NN1 ]_PUR _PUN, my_DPS day_NN1 has_VHZ been_VBN going_VVG alright_AJ0 so_AV0 far_AV0 ._PUN Nothing_PNI special_AJ0 happened_VVD 
+S_ZZ0 :_PUN Hi_ITJ [_PUL name_NN1 ]_PUR ,_PUN my_DPS day_NN1 has_VHZ been_VBN going_VVG alright_AJ0 so_AV0 far_AV0 ._PUN Nothing_PNI special_AJ0 happened_VVD 
    What_PNQ about_PRP you_PNP ?_PUN
 I_ZZ0 :_PUN Okay_AJ0 ,_PUN my_DPS day_NN1 has_VHZ been_VBN a_AT0 bit_AV0 stressful_AJ0 but_CJC alright_AJ0 ._PUN What_PNQ are_VBB your_DPS plans_NN2 for_PRP this_DT0 afternoon_NN1 ?_PUN
 S_ZZ0 :_PUN Aww_ITJ I_PNP see_VVB ,_PUN try_VVB not_XX0 to_TO0 stress_VVI yourself_PNX too_AV0 much_AV0 ,_PUN right_ITJ ?_PUN For_PRP this_DT0 afternoon_NN1 I_PNP ’m_VBB planning_VVG to_TO0 spend_VVI time_NN1 with_PRP a_AT0 close_AJ0 friend_NN1 of_PRF mine_PNP and_CJC we_PNP are_VBB going_VVG to_TO0 study_VVI together_AV0 later_AV0 because_CJS of_PRF the_AT0 upcoming_AJ0 exams_NN2

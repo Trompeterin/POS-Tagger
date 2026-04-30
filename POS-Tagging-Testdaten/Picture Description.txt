@@ -381,7 +381,7 @@ Uhm_ITJ she_PNP kucking_VVG ,_PUN ah_ ne_ITJ ,_PUN uhm_ITJ sie_PNP ,_PUN
 uhm_ITJ she_PNP uhm_ITJ ,_PUN
 Uhm_ITJ schauen_VVG halt_AV0 zu_PRP dem_AT0 Haus_NN1 hin_AVP ._PUN
 Uhum_ITJ ._PUN
-Uhm_ITJ uhm_ITJ was_DTQ war_VBD nochmal_AV0 die_AT0 Frage_NN1 _PUN?
+Uhm_ITJ uhm_ITJ was_DTQ war_VBD nochmal_AV0 die_AT0 Frage_NN1 ?_PUN
 uhm_ITJ ,_PUN
 uhm_ITJ ,_PUN
 Uhm_ITJ not_XX0 ._PUN
