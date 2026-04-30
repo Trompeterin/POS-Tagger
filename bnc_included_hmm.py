@@ -78,6 +78,14 @@ test_sentences_klasse_11 = []
 test_sentences_klasse_12 = []
 
 def extract_age_group(sentence):
+    """
+    Extracts the age group from the metadata line of the test data.
+    The age group is indicated by a pattern that consists of "Klasse" followed by a number.
+    Args:
+        sentence (str): The input sentence which may contain the age group information.
+    Returns:
+      the number as an integer if found, otherwise returns None.
+    """
     age_pattern = re.compile(r'(\s*Klasse\d+)')
     match = age_pattern.search(sentence)
     if match:
@@ -89,15 +97,29 @@ def extract_age_group(sentence):
     return None
 
 def store_sentence_by_age_group(sentence, age_group):
+    """
+    Stores the given sentence in the appropriate list based on the age group.
+    Args:
+        sentence (list of tuples): The sentence to be stored, where each tuple contains a word and its corresponding tag.
+        age_group (int): The age group number extracted from the metadata.
+    """
     match age_group:
-        case 5: test_sentences_klasse_5.append(sentence)
-        case 6: test_sentences_klasse_6.append(sentence)
-        case 7: test_sentences_klasse_7.append(sentence)
-        case 8: test_sentences_klasse_8.append(sentence)
-        case 9: test_sentences_klasse_9.append(sentence)
-        case 10: test_sentences_klasse_10.append(sentence)
-        case 11: test_sentences_klasse_11.append(sentence)
-        case 12: test_sentences_klasse_12.append(sentence)
+        case 5: 
+            test_sentences_klasse_5.append(sentence)
+        case 6: 
+            test_sentences_klasse_6.append(sentence)
+        case 7: 
+            test_sentences_klasse_7.append(sentence)
+        case 8: 
+            test_sentences_klasse_8.append(sentence)
+        case 9: 
+            test_sentences_klasse_9.append(sentence)
+        case 10: 
+            test_sentences_klasse_10.append(sentence)
+        case 11: 
+            test_sentences_klasse_11.append(sentence)
+        case 12: 
+            test_sentences_klasse_12.append(sentence)
 
 ########################################
 # Load Tagged Testdata 
@@ -167,7 +189,7 @@ with open(test_path_2, 'r', encoding='utf-8') as f:
         else:
             empty = True
 
-# Data that was used to test CLAW etc.
+# Data that was used to test CLAWS etc.
 with open(test_path_3, 'r', encoding='utf-8') as f:
     empty = True # so that the first line with metadata is correctly identified as such
     age_group = None
@@ -327,6 +349,11 @@ print(f"Time taken to count frequencies and precompute log-probabilities: {end_t
 # VITERBI DECODER
 # -----------------------------
 def viterbi(words):
+    """Viterbi algorithm to find the most likely sequence of tags for a given sequence of words.
+    Args:
+        words (list of str): The input sequence of words.
+    Returns:
+        list of str: The most likely sequence of tags corresponding to the input words."""
     N = len(words)
     dp = [{} for _ in range(N)]
     backpointer = [{} for _ in range(N)]
@@ -401,6 +428,11 @@ print(f"Time taken for evaluation: {end_time - start_time:.2f} seconds")
 # Accuracy
 
 def evaluate_on_test_sentences(model, test_sentences):
+    """Evaluates the given model on the provided test sentences and prints accuracy, F1-Score, Precision, and Recall.
+    Args:
+        model (function): The POS tagging model to be evaluated, which takes a list of words and returns a list of predicted tags.
+        test_sentences (list of list of tuples): The test sentences, where each sentence is a list of (word, tag) tuples.
+    """
     all_golds = []
     all_preds = []
     for sent in test_sentences:
@@ -474,6 +506,12 @@ unique_labels = sorted(tags)
 label_names = unique_labels
 
 def create_confusion_matrix(model, data, name): 
+    """Creates and saves a confusion matrix for the given model and test data.
+    Args:        
+        model (function): The POS tagging model to be evaluated, which takes a list of words and returns a list of predicted tags.
+        data (list of list of tuples): The test sentences, where each sentence is a list of (word, tag) tuples.
+        name (str): The name to be used for the title of the confusion matrix and the filename when saving the plot.
+    """
     all_preds = []
     all_golds = []
     # get predictions and gold tags for all sentences in data
@@ -483,8 +521,8 @@ def create_confusion_matrix(model, data, name):
         pred_tags = model(words)
         all_golds.extend(gold_tags)
         all_preds.extend(pred_tags)
-    
-    cm = confusion_matrix(all_golds, all_preds, labels=unique_labels)
+    # we want relative values and not absolute values, so we normalize the confusion matrix by the true labels (gold tags)
+    cm = confusion_matrix(all_golds, all_preds, labels=unique_labels, normalize='true')
     plt.figure(figsize=(16, 14))
     sns.heatmap(cm, annot=False, xticklabels=label_names, yticklabels=label_names, cmap='Blues', cbar_kws={'shrink': 0.8})
     plt.xlabel('Predicted', fontsize=12)

@@ -19,7 +19,7 @@ import seaborn as sns
 
 print("Loading BNC data...")
 
-xml_files = Path('BNC/Texts').rglob('*.xml')
+xml_files = Path("BNC/Texts").rglob("*.xml")
 all_sentences = []  # List of all sentences
 all_tags = set()
 all_words = set()
@@ -28,30 +28,32 @@ all_words = set()
 for xml_file in xml_files:
     tree = ET.parse(xml_file)
     root = tree.getroot()
-    
+
     # Find all sentences (BNC uses <s> tag for sentences)
-    for sentence in root.findall('.//s'):
+    for sentence in root.findall(".//s"):
         word_tag_pairs = []
-        
+
         # Extract words within this sentence
-        for word in sentence.findall('.//w'):
+        for word in sentence.findall(".//w"):
             word_text = word.text
-            pos_tag = word.get('c5')
-            
+            pos_tag = word.get("c5")
+
             if word_text and pos_tag:
                 word_tag_pairs.append((word_text, pos_tag))
                 all_words.add(word_text)
                 all_tags.add(pos_tag)
-        
+
         # Only add non-empty sentences
         if word_tag_pairs:
             all_sentences.append(word_tag_pairs)
 random.seed(42)
 random.shuffle(all_sentences)
-pct = 5  # percentage of sentences to use              
-sentences_A = random.sample(all_sentences,k=max(1, len(all_sentences) * pct // 100))
+pct = 5  # percentage of sentences to use
+sentences_A = random.sample(all_sentences, k=max(1, len(all_sentences) * pct // 100))
 
-print(f"Using {len(sentences_A):,} sentences out of {len(all_sentences):,} total sentences in BNC ({len(sentences_A)/len(all_sentences):.2%})")
+print(
+    f"Using {len(sentences_A):,} sentences out of {len(all_sentences):,} total sentences in BNC ({len(sentences_A)/len(all_sentences):.2%})"
+)
 
 # Check what you got
 print(f"Total sentences: {len(sentences_A):,}")
@@ -72,29 +74,53 @@ test_sentences_klasse_11 = []
 test_sentences_klasse_12 = []
 
 def extract_age_group(sentence):
-    age_pattern = re.compile(r'(\s*Klasse\d+)')
+    """
+    Extracts the age group from the metadata line of the test data.
+    The age group is indicated by a pattern that consists of "Klasse" followed by a number.
+    Args:
+        sentence (str): The input sentence which may contain the age group information.
+    Returns:
+      the number as an integer if found, otherwise returns None.
+    """
+    age_pattern = re.compile(r"(\s*Klasse\d+)")
     match = age_pattern.search(sentence)
     if match:
         age = match.group(1).strip()
         # extract the number from the age string
-        age_number = int(re.search(r'\d+', age).group())
-        # assign to class based on age number and return correct test_sentences group 
+        age_number = int(re.search(r"\d+", age).group())
+        # assign to class based on age number and return correct test_sentences group
         return age_number
     return None
 
+
 def store_sentence_by_age_group(sentence, age_group):
+    """
+    Stores the given sentence in the appropriate list based on the age group.
+    Args:
+        sentence (list of tuples): The sentence to be stored, where each tuple contains a word and its corresponding tag.
+        age_group (int): The age group number extracted from the metadata.
+    """
     match age_group:
-        case 5: test_sentences_klasse_5.append(sentence)
-        case 6: test_sentences_klasse_6.append(sentence)
-        case 7: test_sentences_klasse_7.append(sentence)
-        case 8: test_sentences_klasse_8.append(sentence)
-        case 9: test_sentences_klasse_9.append(sentence)
-        case 10: test_sentences_klasse_10.append(sentence)
-        case 11: test_sentences_klasse_11.append(sentence)
-        case 12: test_sentences_klasse_12.append(sentence)
+        case 5:
+            test_sentences_klasse_5.append(sentence)
+        case 6:
+            test_sentences_klasse_6.append(sentence)
+        case 7:
+            test_sentences_klasse_7.append(sentence)
+        case 8:
+            test_sentences_klasse_8.append(sentence)
+        case 9:
+            test_sentences_klasse_9.append(sentence)
+        case 10:
+            test_sentences_klasse_10.append(sentence)
+        case 11:
+            test_sentences_klasse_11.append(sentence)
+        case 12:
+            test_sentences_klasse_12.append(sentence)
+
 
 ########################################
-# Load Tagged Testdata 
+# Load Tagged Testdata
 ########################################
 
 print("\nLoading test sentences from external file...")
@@ -108,8 +134,8 @@ test_sentences_essay = []
 test_sentences_chat = []
 test_sentences_picture = []
 
-with open(test_path, 'r', encoding='utf-8') as f:
-    empty = True # so that the first line with metadata is correctly identified as such
+with open(test_path, "r", encoding="utf-8") as f:
+    empty = True  # so that the first line with metadata is correctly identified as such
     age_group = None
     for line in f:
         if line.strip():
@@ -118,17 +144,19 @@ with open(test_path, 'r', encoding='utf-8') as f:
                 age_group = extract_age_group(line)
                 empty = False
                 if age_group is not None:
-                    continue # this is not part of the sentences and should not be added
+                    continue  # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
             # ignore everything that the instructor says -> I_ZZ0
             if line.startswith("I_ZZ0"):
                 continue
             if line.startswith("S_ZZ0"):
-                tokens = tokens[2:]  # remove the first two tokens which is the metadata about who is speaking
+                tokens = tokens[
+                    2:
+                ]  # remove the first two tokens which is the metadata about who is speaking
             for token in tokens:
-                if '_' in token and len(token.rsplit('_', 1)) == 2:
-                    word, tag = token.rsplit('_', 1)
+                if "_" in token and len(token.rsplit("_", 1)) == 2:
+                    word, tag = token.rsplit("_", 1)
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
@@ -137,8 +165,8 @@ with open(test_path, 'r', encoding='utf-8') as f:
         else:
             empty = True
 
-with open(test_path_2, 'r', encoding='utf-8') as f:
-    empty = True # so that the first line with metadata is correctly identified as such
+with open(test_path_2, "r", encoding="utf-8") as f:
+    empty = True  # so that the first line with metadata is correctly identified as such
     age_group = None
     for line in f:
         if line.strip():
@@ -147,12 +175,12 @@ with open(test_path_2, 'r', encoding='utf-8') as f:
                 age_group = extract_age_group(line)
                 empty = False
                 if age_group is not None:
-                    continue # this is not part of the sentences and should not be added
+                    continue  # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
             for token in tokens:
-                if '_' in token and len(token.rsplit('_', 1)) == 2:
-                    word, tag = token.rsplit('_', 1)
+                if "_" in token and len(token.rsplit("_", 1)) == 2:
+                    word, tag = token.rsplit("_", 1)
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
@@ -161,9 +189,9 @@ with open(test_path_2, 'r', encoding='utf-8') as f:
         else:
             empty = True
 
-# Data that was used to test CLAW etc.
-with open(test_path_3, 'r', encoding='utf-8') as f:
-    empty = True # so that the first line with metadata is correctly identified as such
+# Data that was used to test CLAWS etc.
+with open(test_path_3, "r", encoding="utf-8") as f:
+    empty = True  # so that the first line with metadata is correctly identified as such
     age_group = None
     for line in f:
         if line.strip():
@@ -172,21 +200,21 @@ with open(test_path_3, 'r', encoding='utf-8') as f:
                 age_group = extract_age_group(line)
                 empty = False
                 if age_group is not None:
-                    continue # this is not part of the sentences and should not be added
+                    continue  # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
             for token in tokens:
-                if '_' in token and len(token.rsplit('_', 1)) == 2:
-                    word, tag = token.rsplit('_', 1)
+                if "_" in token and len(token.rsplit("_", 1)) == 2:
+                    word, tag = token.rsplit("_", 1)
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
                 store_sentence_by_age_group(sentence, age_group)
         else:
-            empty = True
+            empty = True 
 
-with open(test_path_4, 'r', encoding='utf-8') as f:
-    empty = True # so that the first line with metadata is correctly identified as such
+with open(test_path_4, "r", encoding="utf-8") as f:
+    empty = True  # so that the first line with metadata is correctly identified as such
     age_group = None
     for line in f:
         if line.strip():
@@ -195,12 +223,12 @@ with open(test_path_4, 'r', encoding='utf-8') as f:
                 age_group = extract_age_group(line)
                 empty = False
                 if age_group is not None:
-                    continue # this is not part of the sentences and should not be added
+                    continue  # this is not part of the sentences and should not be added
             tokens = line.strip().split()
             sentence = []
             for token in tokens:
-                if '_' in token and len(token.rsplit('_', 1)) == 2:
-                    word, tag = token.rsplit('_', 1)
+                if "_" in token and len(token.rsplit("_", 1)) == 2:
+                    word, tag = token.rsplit("_", 1)
                     sentence.append((word, tag))
             if sentence:
                 test_sentences.append(sentence)
@@ -210,13 +238,13 @@ with open(test_path_4, 'r', encoding='utf-8') as f:
             empty = True
 
 # split test_sentences into test and train sentences randomly
-#random.shuffle(test_sentences)
-#split_index = int(0.5 * len(test_sentences))
-#train_sentences = test_sentences[:split_index]
-#test_sentences = test_sentences[split_index:]
+# random.shuffle(test_sentences)
+# split_index = int(0.5 * len(test_sentences))
+# train_sentences = test_sentences[:split_index]
+# test_sentences = test_sentences[split_index:]
 
 print(f"Loaded {len(test_sentences):,} sentences from external test data.")
-#print(f"Loaded {len(train_sentences):,} sentences from external train data.")
+# print(f"Loaded {len(train_sentences):,} sentences from external train data.")
 # print all tags in test sentences
 test_tags = set(tag for sent in test_sentences for _, tag in sent)
 print(f"Total unique tags in test sentences: {len(test_tags)}")
@@ -241,18 +269,18 @@ print(f"Test sentences for Klasse 12: {len(test_sentences_klasse_12):,}")
 ########################################
 # see if cuda or mps is available, otherwise use cpu
 device = torch.device(
-    "cuda" if torch.cuda.is_available()
-    else "mps" if torch.backends.mps.is_available()
-    else "cpu"
+    "cuda"
+    if torch.cuda.is_available()
+    else "mps" if torch.backends.mps.is_available() else "cpu"
 )
 print("Using device:", device)
 
 all_sentences = sentences_A
-#all_sentences.extend(train_sentences)  # Add external train sentences to the pool for splitting
+# all_sentences.extend(train_sentences)  # Add external train sentences to the pool for splitting
 
 # split for train, val, test
 split1 = int(0.9 * len(all_sentences))
-split2 = int(0.95 * len(all_sentences)) 
+split2 = int(0.95 * len(all_sentences))
 train_data = all_sentences[:split1]
 val_data = all_sentences[split1:split2]
 test_data = all_sentences[split2:]
@@ -293,13 +321,32 @@ idx2tag = {v: k for k, v in tag2idx.items()}
 # Encoding Utilities
 ########################################
 
+
 def encode_sentence(sent):
+    """Encodes a sentence into word indices and tag indices.
+    Unknown words are mapped to the <UNK> index, and unknown tags are also mapped to the <UNK> index.
+
+    Args:        
+        sent (list of tuples): A sentence represented as a list of (word, tag) tuples
+    Returns:        
+        words (list of int): List of word indices corresponding to the input sentence
+        tags (list of int): List of tag indices corresponding to the input sentence
+    """
     words = [word2idx.get(w, word2idx["<UNK>"]) for w, _ in sent]
     # unknown POS tags map to the <UNK> class instead of causing an error
     tags = [tag2idx.get(t, tag2idx["<UNK>"]) for _, t in sent]
     return words, tags
 
+
 def pad_batch(batch):
+    """Pads a batch of sentences to the same length and converts them to tensors.
+    Words are padded with the index for <PAD> and tags are padded with -1 (which will be ignored in the loss function).
+    Args:
+        batch (list of tuples): A batch of sentences, where each sentence is a tuple of (word_indices, tag_indices)
+    Returns:
+        X (torch.Tensor): A tensor of shape (batch_size, max_seq_len) containing the padded word indices
+        Y (torch.Tensor): A tensor of shape (batch_size, max_seq_len) containing the padded tag indices
+    """
     max_len = max(len(x[0]) for x in batch)
     X, Y = [], []
     for words, tags in batch:
@@ -308,11 +355,14 @@ def pad_batch(batch):
         Y.append(tags + [-1] * pad_len)  # -1 will be ignored in loss
     return torch.tensor(X, device=device), torch.tensor(Y, device=device)
 
+
 ########################################
 # Model Definition
 ########################################
 
+
 class BiLSTMTagger(nn.Module):
+    """A simple BiLSTM-based POS tagger."""
     def __init__(self, vocab_size, tagset_size, embedding_dim=100, hidden_dim=128):
         super().__init__()
         self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx=0)
@@ -321,7 +371,7 @@ class BiLSTMTagger(nn.Module):
             hidden_dim // 2,
             num_layers=1,
             bidirectional=True,
-            batch_first=True
+            batch_first=True,
         )
         self.fc = nn.Linear(hidden_dim, tagset_size)
 
@@ -330,7 +380,8 @@ class BiLSTMTagger(nn.Module):
         out, _ = self.lstm(emb)
         logits = self.fc(out)
         return logits
-    
+
+
 ########################################
 # Training Setup
 ########################################
@@ -346,7 +397,17 @@ criterion = nn.CrossEntropyLoss(ignore_index=-1)
 # Training Loop
 ########################################
 
-def train(model, train_data, val_data, epochs=5, batch_size=32): 
+
+def train(model, train_data, val_data, epochs=5, batch_size=32):
+    """Trains the BiLSTM POS tagger on the training data and evaluates on the validation data every 1000 batches.
+    
+    Args:
+        model (nn.Module): The BiLSTMTagger model to be trained
+        train_data (list of list of tuples): The training data, where each sentence is a list of (word, tag) tuples
+        val_data (list of list of tuples): The validation data, where each sentence is a list of (word, tag) tuples
+        epochs (int): The number of epochs to train for
+        batch_size (int): The number of sentences to include in each training batch
+    """
     global_step = 0
 
     for epoch in range(epochs):
@@ -355,7 +416,7 @@ def train(model, train_data, val_data, epochs=5, batch_size=32):
         total_loss = 0
 
         for i in range(0, len(train_data), batch_size):
-            batch = train_data[i:i + batch_size]
+            batch = train_data[i : i + batch_size]
             encoded = [encode_sentence(s) for s in batch]
             X, Y = pad_batch(encoded)
 
@@ -382,6 +443,14 @@ def train(model, train_data, val_data, epochs=5, batch_size=32):
 
 
 def validate(model, data, step, batch_size=32):
+    """Evaluates the model on the validation data and logs the loss and accuracy to TensorBoard.
+    
+    Args:
+        model (nn.Module): The BiLSTMTagger model to be evaluated
+        data (list of list of tuples): The validation data, where each sentence is a list of (word, tag) tuples
+        step (int): The current global step in training, used for logging to TensorBoard
+        batch_size (int): The number of sentences to include in each evaluation batch
+    """
     model.eval()
     correct = 0
     total = 0
@@ -389,15 +458,12 @@ def validate(model, data, step, batch_size=32):
 
     with torch.no_grad():
         for i in range(0, len(data), batch_size):
-            batch = data[i:i + batch_size]
+            batch = data[i : i + batch_size]
             encoded = [encode_sentence(s) for s in batch]
             X, Y = pad_batch(encoded)
 
             logits = model(X)
-            loss = criterion(
-                logits.view(-1, logits.shape[-1]),
-                Y.view(-1)
-            )
+            loss = criterion(logits.view(-1, logits.shape[-1]), Y.view(-1))
             total_loss += loss.item()
 
             preds = torch.argmax(logits, dim=-1)
@@ -418,8 +484,15 @@ def validate(model, data, step, batch_size=32):
 # Evaluation
 ########################################
 
+
 def evaluate(model, data):
+    """Evaluates the model on the test data and prints accuracy, F1 score, precision, and recall.
     
+    Args:
+        model (nn.Module): The BiLSTMTagger model to be evaluated
+        data (list of list of tuples): The test data, where each sentence is a list of (word, tag) tuples
+    """
+
     model.eval()
     correct = 0
     total = 0
@@ -435,16 +508,18 @@ def evaluate(model, data):
 
             for p, g in zip(preds, gold_tags):
                 total += 1
-                correct += (p.item() == g)
+                correct += p.item() == g
                 all_preds.append(p.item())
                 all_golds.append(g)
     if total == 0 or total is None:
         print("No gold tags to evaluate.")
         return -1
     acc = correct / total
-    f1 = f1_score(all_golds, all_preds, average='weighted', zero_division=0)
-    precision = precision_score(all_golds, all_preds, average='weighted', zero_division=0)
-    recall = recall_score(all_golds, all_preds, average='weighted', zero_division=0)
+    f1 = f1_score(all_golds, all_preds, average="weighted", zero_division=0)
+    precision = precision_score(
+        all_golds, all_preds, average="weighted", zero_division=0
+    )
+    recall = recall_score(all_golds, all_preds, average="weighted", zero_division=0)
     print(f"Test accuracy: {acc:.4f}")
     print(f"Test F1 score: {f1:.4f}")
     print(f"Test Precision: {precision:.4f}")
@@ -471,11 +546,11 @@ writer.close()
 # F1-Score
 # Accuracy
 
-# all testdata 
+# all testdata
 print("\nEvaluating model on test sentences...")
 evaluate(model, test_sentences)
 
-# only essays 
+# only essays
 print("\nEvaluating model on essay test sentences...")
 evaluate(model, test_sentences_essay)
 
@@ -487,7 +562,7 @@ evaluate(model, test_sentences_picture)
 print("\nEvaluating model on chat test sentences...")
 evaluate(model, test_sentences_chat)
 
-# by age groups 
+# by age groups
 print("\nEvaluating model on Klasse 5 test sentences...")
 evaluate(model, test_sentences_klasse_5)
 
@@ -518,7 +593,14 @@ writer.close()
 # Create confusion matrix
 ########################################
 
-def create_confusion_matrix(model, data, name): 
+def create_confusion_matrix(model, data, name):
+    """Creates and saves a confusion matrix for the given model and test data using relative values and not the absolute values.
+    
+    Args:
+        model (nn.Module): The BiLSTMTagger model to be evaluated
+        data (list of list of tuples): The test data, where each sentence is a list of (word, tag) tuples
+        name (str): The name to use for the saved confusion matrix image file
+    """
     model.eval()
     all_preds = []
     all_golds = []
@@ -537,13 +619,20 @@ def create_confusion_matrix(model, data, name):
     unique_tags = sorted(set(all_golds) | set(all_preds), key=lambda x: idx2tag[x])
     # Map to tag names (already sorted alphabetically)
     label_names = [idx2tag[i] for i in unique_tags]
-    
-    cm = confusion_matrix(all_golds, all_preds, labels=unique_tags)
+    # not absolute but relative numbers
+    cm = confusion_matrix(all_golds, all_preds, labels=unique_tags, normalize="true")
     plt.figure(figsize=(16, 14))
-    sns.heatmap(cm, annot=False, xticklabels=label_names, yticklabels=label_names, cmap='Blues', cbar_kws={'shrink': 0.8})
-    plt.xlabel('Predicted', fontsize=12)
-    plt.ylabel('Gold Labels', fontsize=12)
-    plt.xticks(rotation=90, ha='center', fontsize=8)
+    sns.heatmap(
+        cm,
+        annot=False,
+        xticklabels=label_names,
+        yticklabels=label_names,
+        cmap="Blues",
+        cbar_kws={"shrink": 0.8},
+    )
+    plt.xlabel("Predicted", fontsize=12)
+    plt.ylabel("Gold Labels", fontsize=12)
+    plt.xticks(rotation=90, ha="center", fontsize=8)
     plt.yticks(rotation=0, fontsize=8)
     plt.title(name + " Confusion Matrix", fontsize=14)
     plt.tight_layout()
@@ -557,7 +646,9 @@ create_confusion_matrix(model, test_sentences, "All Test Sentences")
 print("Essay Test Sentences")
 create_confusion_matrix(model, test_sentences_essay, "Essay Test Sentences")
 print("Picture Description Test Sentences")
-create_confusion_matrix(model, test_sentences_picture, "Picture Description Test Sentences")
+create_confusion_matrix(
+    model, test_sentences_picture, "Picture Description Test Sentences"
+)
 print("Chat Test Sentences")
 create_confusion_matrix(model, test_sentences_chat, "Chat Test Sentences")
 print("Klasse 5 Test Sentences")
@@ -572,8 +663,8 @@ print("Klasse 9 Test Sentences")
 create_confusion_matrix(model, test_sentences_klasse_9, "Klasse 9 Test Sentences")
 print("Klasse 10 Test Sentences")
 create_confusion_matrix(model, test_sentences_klasse_10, "Klasse 10 Test Sentences")
-#print("Klasse 11 Test Sentences")
-#create_confusion_matrix(model, test_sentences_klasse_11, "Klasse 11 Test Sentences") -> no data for this age group
+# print("Klasse 11 Test Sentences")
+# create_confusion_matrix(model, test_sentences_klasse_11, "Klasse 11 Test Sentences") -> no data for this age group
 print("Klasse 12 Test Sentences")
 create_confusion_matrix(model, test_sentences_klasse_12, "Klasse 12 Test Sentences")
 print("\nDone.")
