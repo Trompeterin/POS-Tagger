@@ -132,9 +132,11 @@ test_path = "POS-Tagger/POS-Tagging-Testdaten/Digital Chat Daten Annotiert.txt"
 test_path_2 = "POS-Tagger/POS-Tagging-Testdaten/Essay 2.txt"
 test_path_3 = "POS-Tagger/POS-Tagging-Testdaten/CLAWS Verbessert Neu.txt"
 test_path_4 = "POS-Tagger/POS-Tagging-Testdaten/Picture Description.txt"
+test_path_5 = "POS-Tagger/POS-Tagging-Testdaten/Short Essay.txt"
 test_sentences_essay = []
 test_sentences_chat = []
 test_sentences_picture = []
+test_sentences_short_essay = []
 
 with open(test_path, 'r', encoding='utf-8') as f:
     empty = True # so that the first line with metadata is correctly identified as such
@@ -236,6 +238,29 @@ with open(test_path_4, 'r', encoding='utf-8') as f:
                 store_sentence_by_age_group(sentence, age_group)
         else:
             empty = True
+with open(test_path_5, "r", encoding="utf-8") as f:
+    empty = True  # so that the first line with metadata is correctly identified as such
+    age_group = None
+    for line in f:
+        if line.strip():
+            # after each empty line the line starts with meta data about age group and school type of the following sentences
+            if empty:
+                age_group = extract_age_group(line)
+                empty = False
+                if age_group is not None:
+                    continue  # this is not part of the sentences and should not be added
+            tokens = line.strip().split()
+            sentence = []
+            for token in tokens:
+                if "_" in token and len(token.rsplit("_", 1)) == 2:
+                    word, tag = token.rsplit("_", 1)
+                    sentence.append((word, tag))
+            if sentence:
+                test_sentences.append(sentence)
+                test_sentences_short_essay.append(sentence)
+                store_sentence_by_age_group(sentence, age_group)
+        else:
+            empty = True
 
 # split test_sentences into test and train sentences randomly
 #random.shuffle(test_sentences)
@@ -253,6 +278,7 @@ print(f"Total unique tags in test sentences: {len(test_tags)}")
 print(f"Test sentences for essays: {len(test_sentences_essay):,}")
 print(f"Test sentences for chat: {len(test_sentences_chat):,}")
 print(f"Test sentences for picture description: {len(test_sentences_picture):,}")
+print(f"Test sentences for short essays: {len(test_sentences_short_essay):,}")
 
 # print length of each age group test sentences
 print(f"Test sentences for Klasse 5: {len(test_sentences_klasse_5):,}")
@@ -472,6 +498,10 @@ evaluate_on_test_sentences(viterbi, test_sentences_picture)
 print("\nEvaluating model on chat test sentences...")
 evaluate_on_test_sentences(viterbi, test_sentences_chat)
 
+# only short essay
+print("\nEvaluating model on short essay test sentences...")
+evaluate_on_test_sentences(viterbi, test_sentences_short_essay)
+
 # by age groups 
 print("\nEvaluating model on Klasse 5 test sentences...")
 evaluate_on_test_sentences(viterbi, test_sentences_klasse_5)
@@ -533,31 +563,3 @@ def create_confusion_matrix(model, data, name):
     plt.tight_layout()
     plt.savefig(f"{name}_confusion_matrix_hmm.png", dpi=150)
     plt.close()
-
-
-print("\nCreating confusion matrices for test sentences...")
-print("All Test Sentences")
-create_confusion_matrix(viterbi, test_sentences, "All Test Sentences")
-print("Essay Test Sentences")
-create_confusion_matrix(viterbi, test_sentences_essay, "Essay Test Sentences")
-print("Picture Description Test Sentences")
-create_confusion_matrix(viterbi, test_sentences_picture, "Picture Description Test Sentences")
-print("Chat Test Sentences")
-create_confusion_matrix(viterbi, test_sentences_chat, "Chat Test Sentences")
-print("Klasse 5 Test Sentences")
-create_confusion_matrix(viterbi, test_sentences_klasse_5, "Klasse 5 Test Sentences")
-print("Klasse 6 Test Sentences")
-create_confusion_matrix(viterbi, test_sentences_klasse_6, "Klasse 6 Test Sentences")
-print("Klasse 7 Test Sentences")
-create_confusion_matrix(viterbi, test_sentences_klasse_7, "Klasse 7 Test Sentences")
-print("Klasse 8 Test Sentences")
-create_confusion_matrix(viterbi, test_sentences_klasse_8, "Klasse 8 Test Sentences")
-print("Klasse 9 Test Sentences")
-create_confusion_matrix(viterbi, test_sentences_klasse_9, "Klasse 9 Test Sentences")
-print("Klasse 10 Test Sentences")
-create_confusion_matrix(viterbi, test_sentences_klasse_10, "Klasse 10 Test Sentences")
-#print("Klasse 11 Test Sentences")
-#create_confusion_matrix(viterbi, test_sentences_klasse_11, "Klasse 11 Test Sentences") -> no data for this age group
-print("Klasse 12 Test Sentences")
-create_confusion_matrix(viterbi, test_sentences_klasse_12, "Klasse 12 Test Sentences")
-print("\nDone.")

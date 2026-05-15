@@ -263,10 +263,10 @@ with open(test_path_5, "r", encoding="utf-8") as f:
             empty = True
 
 # split test_sentences into test and train sentences randomly
-# random.shuffle(test_sentences)
-# split_index = int(0.8 * len(test_sentences))
-# train_sentences = test_sentences[:(1-split_index)]
-# test_sentences = test_sentences[split_index:]
+#random.shuffle(test_sentences)
+#split_index = int(0.8 * len(test_sentences))
+#train_sentences = test_sentences[:(1-split_index)]
+#test_sentences = test_sentences[split_index:]
 
 print(f"Loaded {len(test_sentences):,} sentences from external test data.")
 # print(f"Loaded {len(train_sentences):,} sentences from external train data.")
