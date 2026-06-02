@@ -263,22 +263,40 @@ with open(test_path_5, "r", encoding="utf-8") as f:
             empty = True
 
 # split test_sentences into test and train sentences randomly
-#random.shuffle(test_sentences)
-#split_index = int(0.8 * len(test_sentences))
-#train_sentences = test_sentences[:(1-split_index)]
-#test_sentences = test_sentences[split_index:]
+random.shuffle(test_sentences)
+split_index_essay = int(0.8 * len(test_sentences_essay))
+split_index_chat = int(0.8 * len(test_sentences_chat))
+split_index_picture = int(0.8 * len(test_sentences_picture))
+split_index_short_essay = int(0.8 * len(test_sentences_short_essay))
 
-print(f"Loaded {len(test_sentences):,} sentences from external test data.")
-# print(f"Loaded {len(train_sentences):,} sentences from external train data.")
+print(f"Loaded {len(test_sentences):,} sentences from own data.")
 # print all tags in test sentences
 test_tags = set(tag for sent in test_sentences for _, tag in sent)
 print(f"Total unique tags in test sentences: {len(test_tags)}")
 
-# print length of each test sentences group
-print(f"Test sentences for essays: {len(test_sentences_essay):,}")
-print(f"Test sentences for chat: {len(test_sentences_chat):,}")
-print(f"Test sentences for picture description: {len(test_sentences_picture):,}")
-print(f"Test sentences for short essays: {len(test_sentences_short_essay):,}")
+# split sentences into train (80%) and test (20%) by category
+essay_train = test_sentences_essay[:split_index_essay]
+chat_train = test_sentences_chat[:split_index_chat]
+picture_train = test_sentences_picture[:split_index_picture]
+short_essay_train = test_sentences_short_essay[:split_index_short_essay]
+
+essay_test = test_sentences_essay[split_index_essay:]
+chat_test = test_sentences_chat[split_index_chat:]
+picture_test = test_sentences_picture[split_index_picture:]
+short_essay_test = test_sentences_short_essay[split_index_short_essay:]
+
+# remove all train data from test_sentences
+test_sentences = [s for s in test_sentences if s not in essay_train and s not in chat_train and s not in picture_train and s not in short_essay_train]
+
+print(f"Total test sentences after split: {len(test_sentences):,}")
+
+# print test and train for each category
+print(f"Train sentences for essays: {len(essay_train):,}, Test sentences for essays: {len(essay_test):,}")
+print(f"Train sentences for chat: {len(chat_train):,}, Test sentences for chat: {len(chat_test):,}")
+print(f"Train sentences for picture description: {len(picture_train):,}, Test sentences for picture description: {len(picture_test):,}")
+print(f"Train sentences for short essays: {len(short_essay_train):,}, Test sentences for short essays: {len(short_essay_test):,}")
+
+print(f"Total test sentences after split: {len(test_sentences):,}")
 
 # print length of each age group test sentences
 print(f"Test sentences for Klasse 5: {len(test_sentences_klasse_5):,}")
@@ -301,8 +319,9 @@ device = torch.device(
 )
 print("Using device:", device)
 
-all_sentences = sentences_A
-# all_sentences.extend(train_sentences)  # Add external train sentences to the pool for splitting
+all_sentences = sentences_A 
+
+print(f"Total sentences before split: {len(all_sentences):,}")
 
 # split for train, val, test
 split1 = int(0.9 * len(all_sentences))
@@ -310,6 +329,16 @@ split2 = int(0.95 * len(all_sentences))
 train_data = all_sentences[:split1]
 val_data = all_sentences[split1:split2]
 test_data = all_sentences[split2:]
+
+train_data.extend(essay_train)
+train_data.extend(chat_train)
+train_data.extend(picture_train)
+train_data.extend(short_essay_train)
+
+# shuffel train data after adding the test sentences to it
+random.shuffle(train_data)
+
+print(f"Total sentences after split: {len(train_data) + len(val_data) + len(test_data):,}")
 
 
 print(f"Training sentences: {len(train_data):,}")
@@ -578,44 +607,44 @@ evaluate(model, test_sentences)
 
 # only essays
 print("\nEvaluating model on essay test sentences...")
-evaluate(model, test_sentences_essay)
+evaluate(model, essay_test)
 
 # only picture description
 print("\nEvaluating model on picture description test sentences...")
-evaluate(model, test_sentences_picture)
+evaluate(model, picture_test)
 
 # only chat
 print("\nEvaluating model on chat test sentences...")
-evaluate(model, test_sentences_chat)
+evaluate(model, chat_test)
 
 # only short essay
 print("\nEvaluating model on short essay test sentences...")
-evaluate(model, test_sentences_short_essay)
+evaluate(model, short_essay_test)
 
 # by age groups
-print("\nEvaluating model on Klasse 5 test sentences...")
-evaluate(model, test_sentences_klasse_5)
+#print("\nEvaluating model on Klasse 5 test sentences...")
+#evaluate(model, test_sentences_klasse_5)
 
-print("\nEvaluating model on Klasse 6 test sentences...")
-evaluate(model, test_sentences_klasse_6)
+#print("\nEvaluating model on Klasse 6 test sentences...")
+#evaluate(model, test_sentences_klasse_6)
 
-print("\nEvaluating model on Klasse 7 test sentences...")
-evaluate(model, test_sentences_klasse_7)
+#print("\nEvaluating model on Klasse 7 test sentences...")
+#evaluate(model, test_sentences_klasse_7)
 
-print("\nEvaluating model on Klasse 8 test sentences...")
-evaluate(model, test_sentences_klasse_8)
+#print("\nEvaluating model on Klasse 8 test sentences...")
+#evaluate(model, test_sentences_klasse_8)
 
-print("\nEvaluating model on Klasse 9 test sentences...")
-evaluate(model, test_sentences_klasse_9)
+#print("\nEvaluating model on Klasse 9 test sentences...")
+#evaluate(model, test_sentences_klasse_9)
 
-print("\nEvaluating model on Klasse 10 test sentences...")
-evaluate(model, test_sentences_klasse_10)
+#print("\nEvaluating model on Klasse 10 test sentences...")
+#evaluate(model, test_sentences_klasse_10)
 
-print("\nEvaluating model on Klasse 11 test sentences...")
-evaluate(model, test_sentences_klasse_11)
+#print("\nEvaluating model on Klasse 11 test sentences...")
+#evaluate(model, test_sentences_klasse_11)
 
-print("\nEvaluating model on Klasse 12 test sentences...")
-evaluate(model, test_sentences_klasse_12)
+#print("\nEvaluating model on Klasse 12 test sentences...")
+#evaluate(model, test_sentences_klasse_12)
 
 writer.close()
 
