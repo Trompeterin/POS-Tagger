@@ -1,5 +1,6 @@
 import random
 import nltk
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -12,6 +13,10 @@ from sklearn.metrics import f1_score, precision_score, recall_score, confusion_m
 import re
 import matplotlib.pyplot as plt
 import seaborn as sns
+from tqdm.auto import tqdm
+
+from transformers import BertTokenizer, BertModel
+from sklearn.metrics.pairwise import cosine_similarity
 
 ########################################
 # Load BNC Data
@@ -19,7 +24,7 @@ import seaborn as sns
 
 print("Loading BNC data...")
 
-xml_files = Path("BNC/Texts").rglob("*.xml")
+xml_files = Path("Code/BNC/Texts").rglob("*.xml")
 all_sentences = []  # List of all sentences
 all_tags = set()
 all_words = set()
@@ -48,6 +53,7 @@ for xml_file in xml_files:
             all_sentences.append(word_tag_pairs)
 random.seed(42)
 random.shuffle(all_sentences)
+torch.manual_seed(42)
 pct = 5  # percentage of sentences to use
 sentences_A = random.sample(all_sentences, k=max(1, len(all_sentences) * pct // 100))
 
@@ -264,6 +270,10 @@ with open(test_path_5, "r", encoding="utf-8") as f:
 
 # split test_sentences into test and train sentences randomly
 random.shuffle(test_sentences)
+random.shuffle(test_sentences_essay)
+random.shuffle(test_sentences_chat)
+random.shuffle(test_sentences_picture)
+random.shuffle(test_sentences_short_essay)
 split_index_essay = int(0.8 * len(test_sentences_essay))
 split_index_chat = int(0.8 * len(test_sentences_chat))
 split_index_picture = int(0.8 * len(test_sentences_picture))
@@ -319,31 +329,24 @@ device = torch.device(
 )
 print("Using device:", device)
 
-all_sentences = sentences_A 
-
-print(f"Total sentences before split: {len(all_sentences):,}")
+print(f"Total sentences before split: {len(sentences_A):,}")
 
 # split for train, val, test
-split1 = int(0.9 * len(all_sentences))
-split2 = int(0.95 * len(all_sentences))
-train_data = all_sentences[:split1]
-val_data = all_sentences[split1:split2]
-test_data = all_sentences[split2:]
+split1 = int(0.9 * len(sentences_A))
+split2 = int(0.95 * len(sentences_A))
+train_data = sentences_A[:split1]
+val_data = sentences_A[split1:split2]
+test_data = sentences_A[split2:]
 
-train_data.extend(essay_train)
-train_data.extend(chat_train)
-train_data.extend(picture_train)
-train_data.extend(short_essay_train)
+train_data += essay_train + chat_train + picture_train + short_essay_train
+
+print(f"Train sentences: {len(train_data):,}")
+print(f"Validation sentences: {len(val_data):,}")
+print(f"Test sentences: {len(test_data):,}")
 
 # shuffel train data after adding the test sentences to it
 random.shuffle(train_data)
 
-print(f"Total sentences after split: {len(train_data) + len(val_data) + len(test_data):,}")
-
-
-print(f"Training sentences: {len(train_data):,}")
-print(f"Validation sentences: {len(val_data):,}")
-print(f"Testing sentences: {len(test_data):,}")
 # print all tags in training and in testing
 train_tags = set(tag for sent in train_data for _, tag in sent)
 val_tags = set(tag for sent in val_data for _, tag in sent)
@@ -539,7 +542,6 @@ def validate(model, data, step, batch_size=32):
 # Evaluation
 ########################################
 
-
 def evaluate(model, data):
     """Evaluates the model on the test data and prints accuracy, F1 score, precision, and recall.
     
@@ -697,3 +699,69 @@ def create_confusion_matrix(model, data, name):
     plt.tight_layout()
     plt.savefig(f"{name}_confusion_matrix_bilstm.png", dpi=150)
     plt.close()
+
+#print("\nCreating confusion matrix for essay test sentences...")
+#create_confusion_matrix(model, essay_test, "Essay Test Sentences")
+#print("\nCreating confusion matrix for picture description test sentences...")
+#create_confusion_matrix(model, picture_test, "Picture Description Test Sentences")
+#print("\nCreating confusion matrix for chat test sentences...")
+#create_confusion_matrix(model, chat_test, "Chat Test Sentences")
+#print("\nCreating confusion matrix for short essay test sentences...")
+#create_confusion_matrix(model, short_essay_test, "Short Essay Test Sentences")
+
+
+def print_confused_sentences(model, data, target_tags, idx2tag, num_sentences=5):
+    """Prints sentences from the test data where the model confused specific target tags with other tags.
+    
+    Args:
+        model (nn.Module): The BiLSTMTagger model to be evaluated
+        data (list of list of tuples): The test data, where each sentence is a list of (word, tag) tuples
+        target_tags (set of str): The set of target tag names to look for confusion
+        idx2tag (dict): A mapping from tag indices to tag names
+        num_sentences (int): The number of confused sentences to print for each target tag
+    """
+    model.eval()
+    confused_sentences = {tag: [] for tag in target_tags}
+
+    with torch.no_grad():
+        for sent in data:
+            words, gold_tags = encode_sentence(sent)
+            X = torch.tensor([words]).to(device)
+            logits = model(X)
+            preds = torch.argmax(logits, dim=-1)[0]
+
+            for word, gold_idx, pred_idx in zip(
+                [w for w, _ in sent], gold_tags, preds.cpu().numpy()
+            ):
+                gold_tag = idx2tag.get(gold_idx, "<UNK>")
+                pred_tag = idx2tag.get(pred_idx, "<UNK>")
+                if gold_tag in target_tags and pred_tag != gold_tag:
+                    if len(confused_sentences[gold_tag]) < num_sentences:
+                        confused_sentences[gold_tag].append(
+                            (word, gold_tag, pred_tag)
+                        )
+
+    for tag in target_tags:
+        print(f"\nSentences where '{tag}' was confused:")
+        for word, gold, pred  in confused_sentences[tag]:
+            print(f"  Word: '{word}' | Gold: '{gold}' | Predicted: '{pred}'")
+
+# print 5 sentences where tag "VVD", "AVP", "AJC", "VVG" or "VVN" was confused with another tag in essay test sentences
+target_tags = {"VVD", "AVP", "AJC", "VVG", "VVN"}
+print_confused_sentences(model, essay_test, target_tags, idx2tag, num_sentences=5)
+
+# print 5 sentences where tag "AJC", "AV0", "AVP", "NP0", "PNI", "POS", VHZ", "VVD", "VVN" or "VVZ" was confused with another tag in chat sentences
+target_tags_chat = {"AJC", "AV0", "AVP", "NP0", "PNI", "POS", "VHZ", "VVD", "VVN", "VVZ"}
+print_confused_sentences(model, chat_test, target_tags_chat, idx2tag, num_sentences=5)
+
+# print 5 sentences where tag "CJS", "CJT", "TO0", "VDI", "VHI", "VNN-AJ0", "VVN-VVD" was confused with another tag in picture description sentences
+target_tags_picture = {"CJS", "CJT", "TO0", "VDI", "VHI", "VNN-AJ0", "VVN-VVD"}
+print_confused_sentences(model, picture_test, target_tags_picture, idx2tag, num_sentences=5)
+
+# print 5 sentences where tag "AJC", "CJT", "VHG", "VVB", "VVD", "VVG", "VVN" or "VVZ" was confused with another tag in short essay sentences
+target_tags_short_essay = {"AJC", "CJT", "VHG", "VVB", "VVD", "VVG", "VVN", "VVZ"}
+print_confused_sentences(model, short_essay_test, target_tags_short_essay, idx2tag, num_sentences=5)
+
+# combine all "weak" tags from the different categories and print confused sentences for all of them
+all_target_tags = {"CJT", "AJS", "DTQ", "DT0", "EX0", "ITJ", "NP0", "PNX", "POS", "PRP", "VBB", "VDI", "VHI", "VVG", "VVI", "VVN", "VVZ", "XX0", "ZZ0"}
+print_confused_sentences(model, test_sentences, all_target_tags, idx2tag, num_sentences=5)
