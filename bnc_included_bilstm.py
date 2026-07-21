@@ -9,7 +9,7 @@ import os
 from pathlib import Path
 import lxml.etree as ET
 from torch.utils.tensorboard import SummaryWriter
-from sklearn.metrics import f1_score, precision_score, recall_score, confusion_matrix
+from sklearn.metrics import classification_report, f1_score, precision_score, recall_score, confusion_matrix
 import re
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -356,41 +356,89 @@ print(f"Unique tags in testing: {len(test_tags):,}")
 # Vocabulary Construction
 ########################################
 
-word2idx = {"<PAD>": 0, "<UNK>": 1}
-# reserve index 0 for unknown tags so we can map unseen labels to a class
-tag2idx = {"<UNK>": 0}
+#BERT tokenizer and model TODO 
+from transformers import BertTokenizerFast, BertModel
 
+MODEL_NAME = 'bert-base-multilingual-cased'
+tokenizer = BertTokenizerFast.from_pretrained(MODEL_NAME)
+
+tag2idx = {"<UNK>": 0}
 for sent in train_data:
     for word, tag in sent:
-        if word not in word2idx:
-            word2idx[word] = len(word2idx)
         if tag not in tag2idx:
             tag2idx[tag] = len(tag2idx)
-
 idx2tag = {v: k for k, v in tag2idx.items()}
+
+
+#word2idx = {"<PAD>": 0, "<UNK>": 1}
+# reserve index 0 for unknown tags so we can map unseen labels to a class
+#tag2idx = {"<UNK>": 0}
+
+#for sent in train_data:
+#    for word, tag in sent:
+#        if word not in word2idx:
+#            word2idx[word] = len(word2idx)
+#        if tag not in tag2idx:
+#            tag2idx[tag] = len(tag2idx)
+
+#idx2tag = {v: k for k, v in tag2idx.items()}
 
 ########################################
 # Encoding Utilities
 ########################################
 
 
-def encode_sentence(sent):
-    """Encodes a sentence into word indices and tag indices.
-    Unknown words are mapped to the <UNK> index, and unknown tags are also mapped to the <UNK> index.
+#def encode_sentence(sent):
+#    """Encodes a sentence into word indices and tag indices.
+#    Unknown words are mapped to the <UNK> index, and unknown tags are also mapped to the <UNK> index.#
+#
+#    Args:        
+#        sent (list of tuples): A sentence represented as a list of (word, tag) tuples
+#    Returns:        
+#        words (list of int): List of word indices corresponding to the input sentence
+#        tags (list of int): List of tag indices corresponding to the input sentence
+#    """
+#    words = [word2idx.get(w, word2idx["<UNK>"]) for w, _ in sent]
+#    # unknown POS tags map to the <UNK> class instead of causing an error
+#    tags = [tag2idx.get(t, tag2idx["<UNK>"]) for _, t in sent]
+#    return words, tags
 
-    Args:        
-        sent (list of tuples): A sentence represented as a list of (word, tag) tuples
-    Returns:        
-        words (list of int): List of word indices corresponding to the input sentence
-        tags (list of int): List of tag indices corresponding to the input sentence
-    """
-    words = [word2idx.get(w, word2idx["<UNK>"]) for w, _ in sent]
-    # unknown POS tags map to the <UNK> class instead of causing an error
-    tags = [tag2idx.get(t, tag2idx["<UNK>"]) for _, t in sent]
-    return words, tags
 
+def encode_sentence(sent): # TODO
+    words = [w for w, _ in sent]
+    tags = [t for _, t in sent]
 
-def pad_batch(batch):
+    encoding = tokenizer(words, is_split_into_words=True, truncation=True)
+    word_ids = encoding.word_ids()
+
+    label_ids = []
+    prev_word_idx = None
+    for word_idx in word_ids:
+        if word_idx is None:
+            label_ids.append(-1)
+        elif word_idx != prev_word_idx:
+            label_ids.append(tag2idx.get(tags[word_idx], tag2idx["<UNK>"]))
+        else:
+            label_ids.append(-1)
+        prev_word_idx = word_idx
+
+    return encoding["input_ids"], encoding["attention_mask"], label_ids
+
+def pad_batch(batch): # TODO
+    max_len = max(len(x[0]) for x in batch)
+    input_ids, attn_masks, Y = [], [], []
+    for ids, mask, tags in batch:
+        pad_len = max_len - len(ids)
+        input_ids.append(ids + [tokenizer.pad_token_id] * pad_len)
+        attn_masks.append(mask + [0] * pad_len)
+        Y.append(tags + [-1] * pad_len)
+    return (
+        torch.tensor(input_ids, device=device),
+        torch.tensor(attn_masks, device=device),
+        torch.tensor(Y, device=device),
+    )
+
+def pad_batch_old(batch): # this is the old one, swap back, if no improvement is seen with the new one 
     """Pads a batch of sentences to the same length and converts them to tensors.
     Words are padded with the index for <PAD> and tags are padded with -1 (which will be ignored in the loss function).
     Args:
@@ -432,6 +480,29 @@ class BiLSTMTagger(nn.Module):
         out, _ = self.lstm(emb)
         logits = self.fc(out)
         return logits
+    
+
+class BertBiLSTMTagger(nn.Module): # TODO
+    def __init__(self, tagset_size, hidden_dim=128, freeze_bert=True):
+        super().__init__()
+        self.bert = BertModel.from_pretrained(MODEL_NAME)
+        if freeze_bert:
+            for p in self.bert.parameters():
+                p.requires_grad = False
+
+        self.lstm = nn.LSTM(
+            self.bert.config.hidden_size,
+            hidden_dim // 2,
+            num_layers=1,
+            bidirectional=True,
+            batch_first=True,
+        )
+        self.fc = nn.Linear(hidden_dim, tagset_size)
+
+    def forward(self, input_ids, attention_mask):
+        bert_out = self.bert(input_ids=input_ids, attention_mask=attention_mask)
+        out, _ = self.lstm(bert_out.last_hidden_state)
+        return self.fc(out)
 
 ########################################
 # Training Setup
@@ -439,9 +510,22 @@ class BiLSTMTagger(nn.Module):
 
 print("\nSetting up model, optimizer, and loss function...")
 
-model = BiLSTMTagger(len(word2idx), len(tag2idx)).to(device)
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+model = BertBiLSTMTagger(len(tag2idx), freeze_bert=False).to(device)
+optimizer = optim.AdamW([
+    {"params": model.bert.parameters(), "lr": 2e-5},
+    {"params": model.lstm.parameters(), "lr": 1e-3},
+    {"params": model.fc.parameters(), "lr": 1e-3},
+])
 criterion = nn.CrossEntropyLoss(ignore_index=-1)
+
+from transformers import get_linear_schedule_with_warmup
+
+batch_size = 32
+epochs = 5
+total_steps = (len(train_data) // batch_size) * epochs
+scheduler = get_linear_schedule_with_warmup(
+    optimizer, num_warmup_steps=int(0.1 * total_steps), num_training_steps=total_steps
+)
 
 
 ########################################
@@ -469,23 +553,22 @@ def train(model, train_data, val_data, epochs=5, batch_size=32):
         for i in range(0, len(train_data), batch_size):
             batch = train_data[i : i + batch_size]
             encoded = [encode_sentence(s) for s in batch]
-            X, Y = pad_batch(encoded)
+            input_ids, attn_mask, Y = pad_batch(encoded)          # was: X, Y = pad_batch(encoded)
 
             optimizer.zero_grad()
-            logits = model(X)
+            logits = model(input_ids, attn_mask)                  # was: logits = model(X)
             loss = criterion(logits.view(-1, logits.shape[-1]), Y.view(-1))
             loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
             optimizer.step()
+            scheduler.step()
 
             total_loss += loss.item()
-
-            # ---- TensorBoard: batch loss
             writer.add_scalar("Loss/train_batch", loss.item(), global_step)
 
-            # ---- Validation every 1000 batches
             if global_step % 1000 == 0 and global_step > 0:
                 validate(model, val_data, global_step)
-                model.train()  # back to train mode after validation
+                model.train()
 
             global_step += 1
 
@@ -511,21 +594,19 @@ def validate(model, data, step, batch_size=32):
         for i in range(0, len(data), batch_size):
             batch = data[i : i + batch_size]
             encoded = [encode_sentence(s) for s in batch]
-            X, Y = pad_batch(encoded)
+            input_ids, attn_mask, Y = pad_batch(encoded)          # was: X, Y = pad_batch(encoded)
 
-            logits = model(X)
+            logits = model(input_ids, attn_mask)                  # was: logits = model(X)
             loss = criterion(logits.view(-1, logits.shape[-1]), Y.view(-1))
             total_loss += loss.item()
 
             preds = torch.argmax(logits, dim=-1)
-
             mask = Y != -1
             correct += (preds[mask] == Y[mask]).sum().item()
             total += mask.sum().item()
 
     acc = correct / total
     avg_loss = total_loss / max(1, len(data) // batch_size)
-
     print(f"Validation | loss: {avg_loss:.4f}, acc: {acc:.4f}")
     writer.add_scalar("Loss/validation", avg_loss, step)
     writer.add_scalar("Accuracy/validation", acc, step)
@@ -551,29 +632,42 @@ def evaluate(model, data):
 
     with torch.no_grad():
         for sent in data:
-            words, gold_tags = encode_sentence(sent)
-            X = torch.tensor([words]).to(device)
-            logits = model(X)
+            input_ids, attn_mask, gold_tags = encode_sentence(sent)  # now returns 3 things
+            input_ids_t = torch.tensor([input_ids]).to(device)
+            attn_mask_t = torch.tensor([attn_mask]).to(device)
+
+            logits = model(input_ids_t, attn_mask_t)                 # was: model(X)
             preds = torch.argmax(logits, dim=-1)[0]
 
             for p, g in zip(preds, gold_tags):
+                if g == -1:                     # skip padding/subword positions
+                    continue
                 total += 1
                 correct += p.item() == g
                 all_preds.append(p.item())
                 all_golds.append(g)
-    if total == 0 or total is None:
+
+    if total == 0:
         print("No gold tags to evaluate.")
         return -1
     acc = correct / total
     f1 = f1_score(all_golds, all_preds, average="weighted", zero_division=0)
-    precision = precision_score(
-        all_golds, all_preds, average="weighted", zero_division=0
-    )
+    precision = precision_score(all_golds, all_preds, average="weighted", zero_division=0)
     recall = recall_score(all_golds, all_preds, average="weighted", zero_division=0)
     print(f"Test accuracy: {acc:.4f}")
     print(f"Test F1 score: {f1:.4f}")
     print(f"Test Precision: {precision:.4f}")
     print(f"Test Recall: {recall:.4f}")
+
+    # ---- Per-tag breakdown ----
+    present_labels = sorted(set(all_golds) | set(all_preds))
+    print("\nPer-tag classification report:")
+    print(classification_report(
+        all_golds, all_preds,
+        labels=present_labels,
+        target_names=[idx2tag[i] for i in present_labels],
+        zero_division=0,
+    ))
 
 
 ########################################
@@ -660,9 +754,10 @@ def create_confusion_matrix(model, data, name):
 
     with torch.no_grad():
         for sent in data:
-            words, gold_tags = encode_sentence(sent)
-            X = torch.tensor([words]).to(device)
-            logits = model(X)
+            input_ids, attn_mask, gold_tags = encode_sentence(sent)  # now returns 3 things
+            input_ids_t = torch.tensor([input_ids]).to(device)
+            attn_mask_t = torch.tensor([attn_mask]).to(device)
+            logits = model(input_ids_t, attn_mask_t)
             preds = torch.argmax(logits, dim=-1)[0]
 
             all_preds.extend(preds.cpu().numpy())
@@ -717,9 +812,10 @@ def print_confused_sentences(model, data, target_tags, idx2tag, num_sentences=5)
 
     with torch.no_grad():
         for sent in data:
-            words, gold_tags = encode_sentence(sent)
-            X = torch.tensor([words]).to(device)
-            logits = model(X)
+            input_ids, attn_mask, gold_tags = encode_sentence(sent)  # now returns 3 things
+            input_ids_t = torch.tensor([input_ids]).to(device)
+            attn_mask_t = torch.tensor([attn_mask]).to(device)
+            logits = model(input_ids_t, attn_mask_t)
             preds = torch.argmax(logits, dim=-1)[0]
 
             for word, gold_idx, pred_idx in zip(
