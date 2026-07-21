@@ -124,7 +124,6 @@ def store_sentence_by_age_group(sentence, age_group):
         case 12:
             test_sentences_klasse_12.append(sentence)
 
-
 ########################################
 # Load Tagged Testdata
 ########################################
@@ -329,8 +328,6 @@ device = torch.device(
 )
 print("Using device:", device)
 
-print(f"Total sentences before split: {len(sentences_A):,}")
-
 # split for train, val, test
 split1 = int(0.9 * len(sentences_A))
 split2 = int(0.95 * len(sentences_A))
@@ -369,9 +366,6 @@ for sent in train_data:
             word2idx[word] = len(word2idx)
         if tag not in tag2idx:
             tag2idx[tag] = len(tag2idx)
-
-# Do not extend tag set with external test labels; unknown tags are handled
-# by mapping to the <UNK> index above.
 
 idx2tag = {v: k for k, v in tag2idx.items()}
 
@@ -438,7 +432,6 @@ class BiLSTMTagger(nn.Module):
         out, _ = self.lstm(emb)
         logits = self.fc(out)
         return logits
-
 
 ########################################
 # Training Setup
@@ -594,7 +587,6 @@ train(model, train_data, val_data, epochs=5)
 print("\nEvaluating model on BNC...")
 evaluate(model, test_data)
 writer.close()
-
 
 ########################################
 # Test with own testdata
