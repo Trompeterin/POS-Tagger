@@ -24,41 +24,64 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 print("Loading BNC data...")
 
-xml_files = Path("Code/BNC/Texts").rglob("*.xml")
-all_sentences = []  # List of all sentences
-all_tags = set()
-all_words = set()
+xml_files = list(Path("Code/BNC/Texts").rglob("*.xml"))
+pct = 5  # percentage of sentences to use
 
-# Load all BNC sentences first
+# First pass: count how many non-empty sentences exist in the BNC corpus.
+# This lets us keep only a 5% sample in memory instead of loading everything up front.
+total_sentence_count = 0
 for xml_file in xml_files:
     tree = ET.parse(xml_file)
     root = tree.getroot()
 
-    # Find all sentences (BNC uses <s> tag for sentences)
     for sentence in root.findall(".//s"):
         word_tag_pairs = []
-
-        # Extract words within this sentence
         for word in sentence.findall(".//w"):
             word_text = word.text
             pos_tag = word.get("c5")
-
             if word_text and pos_tag:
                 word_tag_pairs.append((word_text, pos_tag))
-                all_words.add(word_text)
-                all_tags.add(pos_tag)
 
-        # Only add non-empty sentences
         if word_tag_pairs:
-            all_sentences.append(word_tag_pairs)
+            total_sentence_count += 1
+
+sample_size = max(1, total_sentence_count * pct // 100)
 random.seed(42)
-random.shuffle(all_sentences)
 torch.manual_seed(42)
-pct = 5  # percentage of sentences to use
-sentences_A = random.sample(all_sentences, k=max(1, len(all_sentences) * pct // 100))
+
+sampled_sentences = []
+seen_sentences = 0
+
+# Second pass: reservoir sample the sentences so only the selected subset is kept in memory.
+for xml_file in xml_files:
+    tree = ET.parse(xml_file)
+    root = tree.getroot()
+
+    for sentence in root.findall(".//s"):
+        word_tag_pairs = []
+        for word in sentence.findall(".//w"):
+            word_text = word.text
+            pos_tag = word.get("c5")
+            if word_text and pos_tag:
+                word_tag_pairs.append((word_text, pos_tag))
+
+        if not word_tag_pairs:
+            continue
+
+        seen_sentences += 1
+        if len(sampled_sentences) < sample_size:
+            sampled_sentences.append(word_tag_pairs)
+        else:
+            replace_idx = random.randrange(seen_sentences)
+            if replace_idx < sample_size:
+                sampled_sentences[replace_idx] = word_tag_pairs
+
+sentences_A = sampled_sentences
+all_words = {word for sent in sentences_A for word, _ in sent}
+all_tags = {tag for sent in sentences_A for _, tag in sent}
 
 print(
-    f"Using {len(sentences_A):,} sentences out of {len(all_sentences):,} total sentences in BNC ({len(sentences_A)/len(all_sentences):.2%})"
+    f"Using {len(sentences_A):,} sentences out of {total_sentence_count:,} total sentences in BNC ({len(sentences_A)/max(1, total_sentence_count):.2%})"
 )
 
 # Check what you got
@@ -404,11 +427,19 @@ idx2tag = {v: k for k, v in tag2idx.items()}
 #    return words, tags
 
 
+MAX_SEQ_LENGTH = 128
+
+
 def encode_sentence(sent): # TODO
     words = [w for w, _ in sent]
     tags = [t for _, t in sent]
 
-    encoding = tokenizer(words, is_split_into_words=True, truncation=True)
+    encoding = tokenizer(
+        words,
+        is_split_into_words=True,
+        truncation=True,
+        max_length=MAX_SEQ_LENGTH,
+    )
     word_ids = encoding.word_ids()
 
     label_ids = []
@@ -425,7 +456,14 @@ def encode_sentence(sent): # TODO
     return encoding["input_ids"], encoding["attention_mask"], label_ids
 
 def pad_batch(batch): # TODO
-    max_len = max(len(x[0]) for x in batch)
+    lengths = [len(ids) for ids, _, _ in batch]
+    max_len = max(lengths)
+    if not hasattr(pad_batch, "_sequence_stats_printed"):
+        print(
+            f"[debug] sequence length stats: min={min(lengths)}, median={np.median(lengths):.1f}, max={max_len}"
+        )
+        pad_batch._sequence_stats_printed = True
+
     input_ids, attn_masks, Y = [], [], []
     for ids, mask, tags in batch:
         pad_len = max_len - len(ids)
@@ -483,10 +521,11 @@ class BiLSTMTagger(nn.Module):
     
 
 class BertBiLSTMTagger(nn.Module): # TODO
-    def __init__(self, tagset_size, hidden_dim=128, freeze_bert=True):
+    def __init__(self, tagset_size, hidden_dim=128, freeze_bert=True): # hidden_dim og: 128
         super().__init__()
         self.bert = BertModel.from_pretrained(MODEL_NAME)
         if freeze_bert:
+            print("Freezing BERT parameters...")
             for p in self.bert.parameters():
                 p.requires_grad = False
 
@@ -510,7 +549,7 @@ class BertBiLSTMTagger(nn.Module): # TODO
 
 print("\nSetting up model, optimizer, and loss function...")
 
-model = BertBiLSTMTagger(len(tag2idx), freeze_bert=False).to(device)
+model = BertBiLSTMTagger(len(tag2idx), hidden_dim=64, freeze_bert=True).to(device)
 optimizer = optim.AdamW([
     {"params": model.bert.parameters(), "lr": 2e-5},
     {"params": model.lstm.parameters(), "lr": 1e-3},
@@ -673,7 +712,7 @@ def evaluate(model, data):
 ########################################
 # Main Execution
 ########################################
-writer = SummaryWriter(log_dir="runs/bnc_bilstm_pos_exploratory_partition_from_all")
+writer = SummaryWriter(log_dir="runs/bnc_bilstm_pos_exploratory")
 
 print("Training model...")
 train(model, train_data, val_data, epochs=5)
