@@ -7,6 +7,7 @@ import torch.optim as optim
 from nltk.corpus import treebank
 import os
 from pathlib import Path
+from copy import deepcopy
 import lxml.etree as ET
 from torch.utils.tensorboard import SummaryWriter
 from sklearn.metrics import classification_report, f1_score, precision_score, recall_score, confusion_matrix
@@ -560,7 +561,9 @@ criterion = nn.CrossEntropyLoss(ignore_index=-1)
 from transformers import get_linear_schedule_with_warmup
 
 batch_size = 32
-epochs = 5
+epochs = 10
+early_stopping_patience = 2
+
 total_steps = (len(train_data) // batch_size) * epochs
 scheduler = get_linear_schedule_with_warmup(
     optimizer, num_warmup_steps=int(0.1 * total_steps), num_training_steps=total_steps
@@ -572,8 +575,8 @@ scheduler = get_linear_schedule_with_warmup(
 ########################################
 
 
-def train(model, train_data, val_data, epochs=5, batch_size=32):
-    """Trains the BiLSTM POS tagger on the training data and evaluates on the validation data every 1000 batches.
+def train(model, train_data, val_data, epochs=5, batch_size=32, patience=2):
+    """Trains the BiLSTM POS tagger and performs early stopping on validation loss.
     
     Args:
         model (nn.Module): The BiLSTMTagger model to be trained
@@ -581,8 +584,12 @@ def train(model, train_data, val_data, epochs=5, batch_size=32):
         val_data (list of list of tuples): The validation data, where each sentence is a list of (word, tag) tuples
         epochs (int): The number of epochs to train for
         batch_size (int): The number of sentences to include in each training batch
+        patience (int): Number of epochs with no validation improvement before stopping
     """
     global_step = 0
+    best_val_loss = float("inf")
+    best_model_state = None
+    epochs_without_improvement = 0
 
     for epoch in range(epochs):
         model.train()
@@ -604,15 +611,33 @@ def train(model, train_data, val_data, epochs=5, batch_size=32):
 
             total_loss += loss.item()
             writer.add_scalar("Loss/train_batch", loss.item(), global_step)
-
-            if global_step % 1000 == 0 and global_step > 0:
-                validate(model, val_data, global_step)
-                model.train()
-
             global_step += 1
 
-        avg_loss = total_loss / (len(train_data) // batch_size)
+        avg_loss = total_loss / max(1, len(train_data) // batch_size)
         print(f"Epoch {epoch+1} | Train loss: {avg_loss:.4f}")
+
+        val_loss, val_acc = validate(model, val_data, global_step)
+        if val_loss < best_val_loss - 1e-4:
+            best_val_loss = val_loss
+            best_model_state = deepcopy(model.state_dict())
+            epochs_without_improvement = 0
+            print(f"New best validation loss: {best_val_loss:.4f} (acc: {val_acc:.4f})")
+        else:
+            epochs_without_improvement += 1
+            print(
+                f"No validation improvement for {epochs_without_improvement}/{patience} epochs "
+                f"(best loss: {best_val_loss:.4f})"
+            )
+
+        if epochs_without_improvement >= patience:
+            print(
+                f"Early stopping triggered after {epoch + 1} epochs with patience={patience}."
+            )
+            break
+
+    if best_model_state is not None:
+        model.load_state_dict(best_model_state)
+        print(f"Restored best model checkpoint from validation loss {best_val_loss:.4f}")
 
 
 def validate(model, data, step, batch_size=32):
@@ -649,6 +674,7 @@ def validate(model, data, step, batch_size=32):
     print(f"Validation | loss: {avg_loss:.4f}, acc: {acc:.4f}")
     writer.add_scalar("Loss/validation", avg_loss, step)
     writer.add_scalar("Accuracy/validation", acc, step)
+    return avg_loss, acc
 
 
 ########################################
@@ -715,7 +741,7 @@ def evaluate(model, data):
 writer = SummaryWriter(log_dir="runs/bnc_bilstm_pos_exploratory")
 
 print("Training model...")
-train(model, train_data, val_data, epochs=5)
+train(model, train_data, val_data, epochs=epochs, patience=early_stopping_patience)
 
 print("\nEvaluating model on BNC...")
 evaluate(model, test_data)
