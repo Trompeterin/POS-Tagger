@@ -359,7 +359,25 @@ train_data = sentences_A[:split1]
 val_data = sentences_A[split1:split2]
 test_data = sentences_A[split2:]
 
+split_index_essay = int(0.1 * len(essay_train))
+split_index_chat = int(0.1 * len(chat_train))
+split_index_picture = int(0.1 * len(picture_train))
+split_index_short_essay = int(0.1 * len(short_essay_train))
+random.shuffle(essay_train)
+random.shuffle(chat_train)
+random.shuffle(picture_train)
+random.shuffle(short_essay_train)
+essay_val = essay_train[:split_index_essay]
+chat_val = chat_train[:split_index_chat]
+picture_val = picture_train[:split_index_picture]
+short_essay_val = short_essay_train[:split_index_short_essay]
+essay_train = essay_train[split_index_essay:]
+chat_train = chat_train[split_index_chat:]
+picture_train = picture_train[split_index_picture:]
+short_essay_train = short_essay_train[split_index_short_essay:]
+
 train_data += essay_train + chat_train + picture_train + short_essay_train
+val_data += essay_val + chat_val + picture_val + short_essay_val
 
 print(f"Train sentences: {len(train_data):,}")
 print(f"Validation sentences: {len(val_data):,}")
@@ -367,6 +385,7 @@ print(f"Test sentences: {len(test_data):,}")
 
 # shuffel train data after adding the test sentences to it
 random.shuffle(train_data)
+random.shuffle(val_data)
 
 # print all tags in training and in testing
 train_tags = set(tag for sent in train_data for _, tag in sent)
@@ -380,7 +399,7 @@ print(f"Unique tags in testing: {len(test_tags):,}")
 # Vocabulary Construction
 ########################################
 
-#BERT tokenizer and model TODO 
+#BERT tokenizer and model 
 from transformers import BertTokenizerFast, BertModel
 
 MODEL_NAME = 'bert-base-multilingual-cased'
@@ -431,7 +450,7 @@ idx2tag = {v: k for k, v in tag2idx.items()}
 MAX_SEQ_LENGTH = 128
 
 
-def encode_sentence(sent): # TODO
+def encode_sentence(sent): 
     words = [w for w, _ in sent]
     tags = [t for _, t in sent]
 
@@ -456,7 +475,7 @@ def encode_sentence(sent): # TODO
 
     return encoding["input_ids"], encoding["attention_mask"], label_ids
 
-def pad_batch(batch): # TODO
+def pad_batch(batch): 
     lengths = [len(ids) for ids, _, _ in batch]
     max_len = max(lengths)
     if not hasattr(pad_batch, "_sequence_stats_printed"):
@@ -522,13 +541,18 @@ class BiLSTMTagger(nn.Module):
     
 
 class BertBiLSTMTagger(nn.Module): # TODO
-    def __init__(self, tagset_size, hidden_dim=128, freeze_bert=True): # hidden_dim og: 128
+    def __init__(self, tagset_size, hidden_dim=128, freeze_bert=True): 
         super().__init__()
         self.bert = BertModel.from_pretrained(MODEL_NAME)
-        if freeze_bert:
-            print("Freezing BERT parameters...")
-            for p in self.bert.parameters():
-                p.requires_grad = False
+        
+        print("Freezing BERT parameters...")
+        for p in self.bert.parameters():
+            p.requires_grad = False
+
+        if not freeze_bert:
+            print("Unfreezing BERT parameters of last 2 layers...")
+            for p in list(self.bert.parameters())[-4:]:  # Unfreeze last 2 layers
+                p.requires_grad = True
 
         self.lstm = nn.LSTM(
             self.bert.config.hidden_size,
@@ -561,8 +585,8 @@ criterion = nn.CrossEntropyLoss(ignore_index=-1)
 from transformers import get_linear_schedule_with_warmup
 
 batch_size = 32
-epochs = 10
-early_stopping_patience = 2
+epochs = 20
+early_stopping_patience = 1
 
 total_steps = (len(train_data) // batch_size) * epochs
 scheduler = get_linear_schedule_with_warmup(
@@ -590,6 +614,7 @@ def train(model, train_data, val_data, epochs=5, batch_size=32, patience=2):
     best_val_loss = float("inf")
     best_model_state = None
     epochs_without_improvement = 0
+    best_epoch = 0
 
     for epoch in range(epochs):
         model.train()
@@ -609,25 +634,29 @@ def train(model, train_data, val_data, epochs=5, batch_size=32, patience=2):
             optimizer.step()
             scheduler.step()
 
+            if global_step % 1000 == 0 and global_step > 0:
+                print(f"Epoch {epoch+1} | Step {global_step} | Training Loss: {loss.item():.4f}")
+                val_loss, val_acc = validate(model, val_data, global_step)
+                model.train()  # switch back to training mode after validation
+                if val_loss < best_val_loss - 1e-4:
+                    best_val_loss = val_loss
+                    best_model_state = deepcopy(model.state_dict())
+                    epochs_without_improvement = 0
+                    best_epoch = epoch
+                    print(f"New best validation loss: {best_val_loss:.4f} at epoch {best_epoch}")
+                elif best_epoch != epoch:
+                    epochs_without_improvement += 1
+                    print(
+                        f"No validation improvement for {epochs_without_improvement} epochs "
+                        f"(best loss: {best_val_loss:.4f})"
+                    )
+
             total_loss += loss.item()
             writer.add_scalar("Loss/train_batch", loss.item(), global_step)
             global_step += 1
 
         avg_loss = total_loss / max(1, len(train_data) // batch_size)
         print(f"Epoch {epoch+1} | Train loss: {avg_loss:.4f}")
-
-        val_loss, val_acc = validate(model, val_data, global_step)
-        if val_loss < best_val_loss - 1e-4:
-            best_val_loss = val_loss
-            best_model_state = deepcopy(model.state_dict())
-            epochs_without_improvement = 0
-            print(f"New best validation loss: {best_val_loss:.4f} (acc: {val_acc:.4f})")
-        else:
-            epochs_without_improvement += 1
-            print(
-                f"No validation improvement for {epochs_without_improvement}/{patience} epochs "
-                f"(best loss: {best_val_loss:.4f})"
-            )
 
         if epochs_without_improvement >= patience:
             print(
