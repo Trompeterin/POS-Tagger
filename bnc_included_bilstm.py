@@ -1,107 +1,145 @@
 import random
-import nltk
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from nltk.corpus import treebank
-import os
 from pathlib import Path
 from copy import deepcopy
+from dataclasses import dataclass
 import lxml.etree as ET
 from torch.utils.tensorboard import SummaryWriter
-from sklearn.metrics import classification_report, f1_score, precision_score, recall_score, confusion_matrix
+from sklearn.metrics import (
+    classification_report, f1_score, precision_score, recall_score, confusion_matrix
+)
 import re
 import matplotlib.pyplot as plt
 import seaborn as sns
-from tqdm.auto import tqdm
+from transformers import BertTokenizerFast, BertModel, get_linear_schedule_with_warmup
 
-from transformers import BertTokenizer, BertModel
-from sklearn.metrics.pairwise import cosine_similarity
+
+########################################
+# Configuration
+########################################
+@dataclass
+class Config:
+    """Configuration for BiLSTM POS Tagger training and evaluation."""
+    # Paths
+    bnc_path: str = "Code/BNC/Texts"
+    test_data_dir: str = "POS-Tagger/POS-Tagging-Testdaten"
+    model_save_path: str = "bilstm_pos_tagger_bnc.pth"
+    tensorboard_log_dir: str = "runs/bnc_bilstm_pos_exploratory"
+    
+    # Data loading
+    bnc_sample_pct: int = 5  # percentage of BNC sentences to use
+    train_val_split: float = 0.9  # 90% train, 10% val from BNC
+    val_test_split: float = 0.95  # 95% train+val, 5% test from BNC
+    own_data_train_split: float = 0.8  # 80% train, 20% test from own data
+    own_data_val_split: float = 0.1  # 10% val from own train data
+    
+    # Model
+    model_name: str = "bert-base-multilingual-cased"
+    max_seq_length: int = 128
+    hidden_dim: int = 64
+    freeze_bert: bool = True
+    
+    # Training
+    batch_size: int = 32
+    epochs: int = 5
+    early_stopping_patience: int = 1
+    learning_rate_bert: float = 2e-5
+    learning_rate_lstm: float = 1e-3
+    learning_rate_fc: float = 1e-3
+    warmup_ratio: float = 0.1
+    max_grad_norm: float = 1.0
+    validation_step_interval: int = 1000
+    
+    # Evaluation
+    random_seed: int = 42
 
 ########################################
 # Load BNC Data
 ########################################
+def load_bnc_data(config: Config):
+    """Loads a random sample of sentences from the BNC corpus, along with their POS tags.
+    
+    Args:
+        config (Config): Configuration object containing paths and sampling parameters
+        
+    Returns:
+        tuple: (sentences, all_words, all_tags) from the BNC corpus
+    """
+    print("Loading BNC data...")
+    
+    xml_files = list(Path(config.bnc_path).rglob("*.xml"))
+    if not xml_files:
+        raise FileNotFoundError(f"No XML files found in {config.bnc_path}")
+    
+    random.seed(config.random_seed)
+    torch.manual_seed(config.random_seed)
 
-print("Loading BNC data...")
-
-xml_files = list(Path("Code/BNC/Texts").rglob("*.xml"))
-pct = 5  # percentage of sentences to use
-
-# First pass: count how many non-empty sentences exist in the BNC corpus.
-# This lets us keep only a 5% sample in memory instead of loading everything up front.
-total_sentence_count = 0
-for xml_file in xml_files:
-    tree = ET.parse(xml_file)
-    root = tree.getroot()
-
-    for sentence in root.findall(".//s"):
-        word_tag_pairs = []
-        for word in sentence.findall(".//w"):
-            word_text = word.text
-            pos_tag = word.get("c5")
-            if word_text and pos_tag:
-                word_tag_pairs.append((word_text, pos_tag))
-
-        if word_tag_pairs:
-            total_sentence_count += 1
-
-sample_size = max(1, total_sentence_count * pct // 100)
-random.seed(42)
-torch.manual_seed(42)
-
-sampled_sentences = []
-seen_sentences = 0
-
-# Second pass: reservoir sample the sentences so only the selected subset is kept in memory.
-for xml_file in xml_files:
-    tree = ET.parse(xml_file)
-    root = tree.getroot()
-
-    for sentence in root.findall(".//s"):
-        word_tag_pairs = []
-        for word in sentence.findall(".//w"):
-            word_text = word.text
-            pos_tag = word.get("c5")
-            if word_text and pos_tag:
-                word_tag_pairs.append((word_text, pos_tag))
-
-        if not word_tag_pairs:
+    # First pass: count non-empty sentences
+    total_sentence_count = 0
+    for xml_file in xml_files:
+        try:
+            tree = ET.parse(xml_file)
+            root = tree.getroot()
+            for sentence in root.findall(".//s"):
+                word_tag_pairs = []
+                for word in sentence.findall(".//w"):
+                    word_text = word.text
+                    pos_tag = word.get("c5")
+                    if word_text and pos_tag:
+                        word_tag_pairs.append((word_text, pos_tag))
+                if word_tag_pairs:
+                    total_sentence_count += 1
+        except ET.ParseError as e:
+            print(f"Warning: Failed to parse {xml_file}: {e}")
             continue
 
-        seen_sentences += 1
-        if len(sampled_sentences) < sample_size:
-            sampled_sentences.append(word_tag_pairs)
-        else:
-            replace_idx = random.randrange(seen_sentences)
-            if replace_idx < sample_size:
-                sampled_sentences[replace_idx] = word_tag_pairs
+    sample_size = max(1, total_sentence_count * config.bnc_sample_pct // 100)
 
-sentences_A = sampled_sentences
-all_words = {word for sent in sentences_A for word, _ in sent}
-all_tags = {tag for sent in sentences_A for _, tag in sent}
+    # Second pass: reservoir sample sentences
+    sampled_sentences = []
+    seen_sentences = 0
+    for xml_file in xml_files:
+        try:
+            tree = ET.parse(xml_file)
+            root = tree.getroot()
+            for sentence in root.findall(".//s"):
+                word_tag_pairs = []
+                for word in sentence.findall(".//w"):
+                    word_text = word.text
+                    pos_tag = word.get("c5")
+                    if word_text and pos_tag:
+                        word_tag_pairs.append((word_text, pos_tag))
+                if not word_tag_pairs:
+                    continue
+                seen_sentences += 1
+                if len(sampled_sentences) < sample_size:
+                    sampled_sentences.append(word_tag_pairs)
+                else:
+                    replace_idx = random.randrange(seen_sentences)
+                    if replace_idx < sample_size:
+                        sampled_sentences[replace_idx] = word_tag_pairs
+        except ET.ParseError as e:
+            print(f"Warning: Failed to parse {xml_file}: {e}")
+            continue
 
-print(
-    f"Using {len(sentences_A):,} sentences out of {total_sentence_count:,} total sentences in BNC ({len(sentences_A)/max(1, total_sentence_count):.2%})"
-)
+    all_words = {word for sent in sampled_sentences for word, _ in sent}
+    all_tags = {tag for sent in sampled_sentences for _, tag in sent}
 
-# Check what you got
-print(f"Total sentences: {len(sentences_A):,}")
-print(f"Total unique words: {len(all_words):,}")
-print(f"Total unique tags: {len(all_tags)}")
+    print(
+        f"Using {len(sampled_sentences):,} sentences out of {total_sentence_count:,} total "
+        f"sentences in BNC ({len(sampled_sentences)/max(1, total_sentence_count):.2%})"
+    )
+    print(f"Total unique words: {len(all_words):,}")
+    print(f"Total unique tags: {len(all_tags)}")
+
+    return sampled_sentences, all_words, all_tags
 
 ########################################
 # Load Tagged Testdata and Split into Age Groups
 ########################################
-
-test_sentences_klasse_5 = []
-test_sentences_klasse_6 = []
-test_sentences_klasse_7 = []
-test_sentences_klasse_8 = []
-test_sentences_klasse_9 = []
-test_sentences_klasse_10 = []
-test_sentences_klasse_11 = []
-test_sentences_klasse_12 = []
 
 def extract_age_group(sentence):
     """
@@ -123,334 +161,94 @@ def extract_age_group(sentence):
     return None
 
 
-def store_sentence_by_age_group(sentence, age_group):
+def store_sentence_by_age_group(sentence, age_group, age_group_sentences: dict):
     """
     Stores the given sentence in the appropriate list based on the age group.
     Args:
         sentence (list of tuples): The sentence to be stored, where each tuple contains a word and its corresponding tag.
         age_group (int): The age group number extracted from the metadata.
+        age_group_sentences (dict): Dictionary with age group keys (5-12) containing lists of sentences.
     """
-    match age_group:
-        case 5:
-            test_sentences_klasse_5.append(sentence)
-        case 6:
-            test_sentences_klasse_6.append(sentence)
-        case 7:
-            test_sentences_klasse_7.append(sentence)
-        case 8:
-            test_sentences_klasse_8.append(sentence)
-        case 9:
-            test_sentences_klasse_9.append(sentence)
-        case 10:
-            test_sentences_klasse_10.append(sentence)
-        case 11:
-            test_sentences_klasse_11.append(sentence)
-        case 12:
-            test_sentences_klasse_12.append(sentence)
+    if age_group in age_group_sentences:
+        age_group_sentences[age_group].append(sentence)
 
 ########################################
 # Load Tagged Testdata
 ########################################
-
-print("\nLoading test sentences from external file...")
-
-test_sentences = []
-test_path = "POS-Tagger/POS-Tagging-Testdaten/Digital Chat Daten Annotiert.txt"
-test_path_2 = "POS-Tagger/POS-Tagging-Testdaten/Essay 2.txt"
-test_path_3 = "POS-Tagger/POS-Tagging-Testdaten/CLAWS Verbessert Neu.txt"
-test_path_4 = "POS-Tagger/POS-Tagging-Testdaten/Picture Description.txt"
-test_path_5 = "POS-Tagger/POS-Tagging-Testdaten/Short Essay.txt"
-test_sentences_essay = []
-test_sentences_chat = []
-test_sentences_picture = []
-test_sentences_short_essay = []
-
-with open(test_path, "r", encoding="utf-8") as f:
-    empty = True  # so that the first line with metadata is correctly identified as such
+def load_test_sentences_from_file(test_path, test_sentences, age_group_sentences=None):
+    """Load test sentences from a file, optionally sorting by age group.
+    
+    Args:
+        test_path (str): Path to the test file
+        test_sentences (list): List to append all sentences to
+        age_group_sentences (dict|None): Dictionary with age group keys (5-12) for grouping by age
+        
+    Returns:
+        list: Sentences loaded from this specific file
+        
+    Raises:
+        FileNotFoundError: If the test file doesn't exist
+    """
+    if not Path(test_path).exists():
+        raise FileNotFoundError(f"Test file not found: {test_path}")
+    
+    print(f"Loading test sentences from {Path(test_path).name}...")
+    test_sentences_subgroup = []
     age_group = None
-    for line in f:
-        if line.strip():
-            # after each empty line the line starts with meta data about age group and school type of the following sentences
-            if empty:
-                age_group = extract_age_group(line)
-                empty = False
-                if age_group is not None:
-                    continue  # this is not part of the sentences and should not be added
-            tokens = line.strip().split()
-            sentence = []
-            # ignore everything that the instructor says -> I_ZZ0
-            if line.startswith("I_ZZ0"):
-                continue
-            if line.startswith("S_ZZ0"):
-                tokens = tokens[
-                    2:
-                ]  # remove the first two tokens which is the metadata about who is speaking
-            for token in tokens:
-                if "_" in token and len(token.rsplit("_", 1)) == 2:
-                    word, tag = token.rsplit("_", 1)
-                    sentence.append((word, tag))
-            if sentence:
-                test_sentences.append(sentence)
-                test_sentences_chat.append(sentence)
-                store_sentence_by_age_group(sentence, age_group)
-        else:
-            empty = True
-
-with open(test_path_2, "r", encoding="utf-8") as f:
-    empty = True  # so that the first line with metadata is correctly identified as such
-    age_group = None
-    for line in f:
-        if line.strip():
-            # after each empty line the line starts with meta data about age group and school type of the following sentences
-            if empty:
-                age_group = extract_age_group(line)
-                empty = False
-                if age_group is not None:
-                    continue  # this is not part of the sentences and should not be added
-            tokens = line.strip().split()
-            sentence = []
-            for token in tokens:
-                if "_" in token and len(token.rsplit("_", 1)) == 2:
-                    word, tag = token.rsplit("_", 1)
-                    sentence.append((word, tag))
-            if sentence:
-                test_sentences.append(sentence)
-                test_sentences_essay.append(sentence)
-                store_sentence_by_age_group(sentence, age_group)
-        else:
-            empty = True
-
-# Data that was used to test CLAWS etc.
-with open(test_path_3, "r", encoding="utf-8") as f:
-    empty = True  # so that the first line with metadata is correctly identified as such
-    age_group = None
-    for line in f:
-        if line.strip():
-            # after each empty line the line starts with meta data about age group and school type of the following sentences
-            if empty:
-                age_group = extract_age_group(line)
-                empty = False
-                if age_group is not None:
-                    continue  # this is not part of the sentences and should not be added
-            tokens = line.strip().split()
-            sentence = []
-            for token in tokens:
-                if "_" in token and len(token.rsplit("_", 1)) == 2:
-                    word, tag = token.rsplit("_", 1)
-                    sentence.append((word, tag))
-            if sentence:
-                test_sentences.append(sentence)
-                store_sentence_by_age_group(sentence, age_group)
-        else:
-            empty = True 
-
-with open(test_path_4, "r", encoding="utf-8") as f:
-    empty = True  # so that the first line with metadata is correctly identified as such
-    age_group = None
-    for line in f:
-        if line.strip():
-            # after each empty line the line starts with meta data about age group and school type of the following sentences
-            if empty:
-                age_group = extract_age_group(line)
-                empty = False
-                if age_group is not None:
-                    continue  # this is not part of the sentences and should not be added
-            tokens = line.strip().split()
-            sentence = []
-            for token in tokens:
-                if "_" in token and len(token.rsplit("_", 1)) == 2:
-                    word, tag = token.rsplit("_", 1)
-                    sentence.append((word, tag))
-            if sentence:
-                test_sentences.append(sentence)
-                test_sentences_picture.append(sentence)
-                store_sentence_by_age_group(sentence, age_group)
-        else:
-            empty = True
-with open(test_path_5, "r", encoding="utf-8") as f:
-    empty = True  # so that the first line with metadata is correctly identified as such
-    age_group = None
-    for line in f:
-        if line.strip():
-            # after each empty line the line starts with meta data about age group and school type of the following sentences
-            if empty:
-                age_group = extract_age_group(line)
-                empty = False
-                if age_group is not None:
-                    continue  # this is not part of the sentences and should not be added
-            tokens = line.strip().split()
-            sentence = []
-            for token in tokens:
-                if "_" in token and len(token.rsplit("_", 1)) == 2:
-                    word, tag = token.rsplit("_", 1)
-                    sentence.append((word, tag))
-            if sentence:
-                test_sentences.append(sentence)
-                test_sentences_short_essay.append(sentence)
-                store_sentence_by_age_group(sentence, age_group)
-        else:
-            empty = True
-
-# split test_sentences into test and train sentences randomly
-random.shuffle(test_sentences)
-random.shuffle(test_sentences_essay)
-random.shuffle(test_sentences_chat)
-random.shuffle(test_sentences_picture)
-random.shuffle(test_sentences_short_essay)
-split_index_essay = int(0.8 * len(test_sentences_essay))
-split_index_chat = int(0.8 * len(test_sentences_chat))
-split_index_picture = int(0.8 * len(test_sentences_picture))
-split_index_short_essay = int(0.8 * len(test_sentences_short_essay))
-
-print(f"Loaded {len(test_sentences):,} sentences from own data.")
-# print all tags in test sentences
-test_tags = set(tag for sent in test_sentences for _, tag in sent)
-print(f"Total unique tags in test sentences: {len(test_tags)}")
-
-# split sentences into train (80%) and test (20%) by category
-essay_train = test_sentences_essay[:split_index_essay]
-chat_train = test_sentences_chat[:split_index_chat]
-picture_train = test_sentences_picture[:split_index_picture]
-short_essay_train = test_sentences_short_essay[:split_index_short_essay]
-
-essay_test = test_sentences_essay[split_index_essay:]
-chat_test = test_sentences_chat[split_index_chat:]
-picture_test = test_sentences_picture[split_index_picture:]
-short_essay_test = test_sentences_short_essay[split_index_short_essay:]
-
-# remove all train data from test_sentences
-test_sentences = [s for s in test_sentences if s not in essay_train and s not in chat_train and s not in picture_train and s not in short_essay_train]
-
-print(f"Total test sentences after split: {len(test_sentences):,}")
-
-# print test and train for each category
-print(f"Train sentences for essays: {len(essay_train):,}, Test sentences for essays: {len(essay_test):,}")
-print(f"Train sentences for chat: {len(chat_train):,}, Test sentences for chat: {len(chat_test):,}")
-print(f"Train sentences for picture description: {len(picture_train):,}, Test sentences for picture description: {len(picture_test):,}")
-print(f"Train sentences for short essays: {len(short_essay_train):,}, Test sentences for short essays: {len(short_essay_test):,}")
-
-print(f"Total test sentences after split: {len(test_sentences):,}")
-
-# print length of each age group test sentences
-print(f"Test sentences for Klasse 5: {len(test_sentences_klasse_5):,}")
-print(f"Test sentences for Klasse 6: {len(test_sentences_klasse_6):,}")
-print(f"Test sentences for Klasse 7: {len(test_sentences_klasse_7):,}")
-print(f"Test sentences for Klasse 8: {len(test_sentences_klasse_8):,}")
-print(f"Test sentences for Klasse 9: {len(test_sentences_klasse_9):,}")
-print(f"Test sentences for Klasse 10: {len(test_sentences_klasse_10):,}")
-print(f"Test sentences for Klasse 11: {len(test_sentences_klasse_11):,}")
-print(f"Test sentences for Klasse 12: {len(test_sentences_klasse_12):,}")
-
-########################################
-# Setup & Data Loading
-########################################
-# see if cuda or mps is available, otherwise use cpu
-device = torch.device(
-    "cuda"
-    if torch.cuda.is_available()
-    else "mps" if torch.backends.mps.is_available() else "cpu"
-)
-print("Using device:", device)
-
-# split for train, val, test
-split1 = int(0.9 * len(sentences_A))
-split2 = int(0.95 * len(sentences_A))
-train_data = sentences_A[:split1]
-val_data = sentences_A[split1:split2]
-test_data = sentences_A[split2:]
-
-split_index_essay = int(0.1 * len(essay_train))
-split_index_chat = int(0.1 * len(chat_train))
-split_index_picture = int(0.1 * len(picture_train))
-split_index_short_essay = int(0.1 * len(short_essay_train))
-random.shuffle(essay_train)
-random.shuffle(chat_train)
-random.shuffle(picture_train)
-random.shuffle(short_essay_train)
-essay_val = essay_train[:split_index_essay]
-chat_val = chat_train[:split_index_chat]
-picture_val = picture_train[:split_index_picture]
-short_essay_val = short_essay_train[:split_index_short_essay]
-essay_train = essay_train[split_index_essay:]
-chat_train = chat_train[split_index_chat:]
-picture_train = picture_train[split_index_picture:]
-short_essay_train = short_essay_train[split_index_short_essay:]
-
-train_data += essay_train + chat_train + picture_train + short_essay_train
-val_data += essay_val + chat_val + picture_val + short_essay_val
-
-print(f"Train sentences: {len(train_data):,}")
-print(f"Validation sentences: {len(val_data):,}")
-print(f"Test sentences: {len(test_data):,}")
-
-# shuffel train data after adding the test sentences to it
-random.shuffle(train_data)
-random.shuffle(val_data)
-
-# print all tags in training and in testing
-train_tags = set(tag for sent in train_data for _, tag in sent)
-val_tags = set(tag for sent in val_data for _, tag in sent)
-test_tags = set(tag for sent in test_data for _, tag in sent)
-print(f"Unique tags in training: {len(train_tags):,}")
-print(f"Unique tags in validation: {len(val_tags):,}")
-print(f"Unique tags in testing: {len(test_tags):,}")
-
-########################################
-# Vocabulary Construction
-########################################
-
-#BERT tokenizer and model 
-from transformers import BertTokenizerFast, BertModel
-
-MODEL_NAME = 'bert-base-multilingual-cased'
-tokenizer = BertTokenizerFast.from_pretrained(MODEL_NAME)
-
-tag2idx = {"<UNK>": 0}
-for sent in train_data:
-    for word, tag in sent:
-        if tag not in tag2idx:
-            tag2idx[tag] = len(tag2idx)
-idx2tag = {v: k for k, v in tag2idx.items()}
+    empty = True
+    
+    with open(test_path, "r", encoding="utf-8") as f:
+        for line in f:
+            if line.strip():
+                # First non-empty line after empty line contains metadata
+                if empty:
+                    age_group = extract_age_group(line)
+                    empty = False
+                    if age_group is not None:
+                        continue
+                
+                # Skip instructor lines
+                if line.startswith("I_ZZ0"):
+                    continue
+                
+                tokens = line.strip().split()
+                if line.startswith("S_ZZ0"):
+                    tokens = tokens[2:]  # Remove speaker metadata
+                
+                sentence = []
+                for token in tokens:
+                    if "_" in token and len(token.rsplit("_", 1)) == 2:
+                        word, tag = token.rsplit("_", 1)
+                        sentence.append((word, tag))
+                
+                if sentence:
+                    test_sentences.append(sentence)
+                    test_sentences_subgroup.append(sentence)
+                    if age_group_sentences is not None:
+                        store_sentence_by_age_group(sentence, age_group, age_group_sentences)
+            else:
+                empty = True
+    
+    return test_sentences_subgroup
 
 
-#word2idx = {"<PAD>": 0, "<UNK>": 1}
-# reserve index 0 for unknown tags so we can map unseen labels to a class
-#tag2idx = {"<UNK>": 0}
+def encode_sentence(sent, tokenizer, tag2idx, max_seq_length):
+    """Encode a sentence into token ids, attention mask and label ids.
 
-#for sent in train_data:
-#    for word, tag in sent:
-#        if word not in word2idx:
-#            word2idx[word] = len(word2idx)
-#        if tag not in tag2idx:
-#            tag2idx[tag] = len(tag2idx)
+    Args:
+        sent (list): List of (word, tag) tuples
+        tokenizer: HuggingFace tokenizer
+        tag2idx (dict): Mapping from tag strings to indices
+        max_seq_length (int): Maximum sequence length for truncation
+        
+    Returns:
+        tuple: (input_ids, attention_mask, label_ids)
+    """
+    if tokenizer is None:
+        raise RuntimeError("Tokenizer must be provided.")
+    if tag2idx is None:
+        tag2idx = {"<UNK>": 0}
 
-#idx2tag = {v: k for k, v in tag2idx.items()}
-
-########################################
-# Encoding Utilities
-########################################
-
-
-#def encode_sentence(sent):
-#    """Encodes a sentence into word indices and tag indices.
-#    Unknown words are mapped to the <UNK> index, and unknown tags are also mapped to the <UNK> index.#
-#
-#    Args:        
-#        sent (list of tuples): A sentence represented as a list of (word, tag) tuples
-#    Returns:        
-#        words (list of int): List of word indices corresponding to the input sentence
-#        tags (list of int): List of tag indices corresponding to the input sentence
-#    """
-#    words = [word2idx.get(w, word2idx["<UNK>"]) for w, _ in sent]
-#    # unknown POS tags map to the <UNK> class instead of causing an error
-#    tags = [tag2idx.get(t, tag2idx["<UNK>"]) for _, t in sent]
-#    return words, tags
-
-
-MAX_SEQ_LENGTH = 128
-
-
-def encode_sentence(sent): 
     words = [w for w, _ in sent]
     tags = [t for _, t in sent]
 
@@ -458,7 +256,7 @@ def encode_sentence(sent):
         words,
         is_split_into_words=True,
         truncation=True,
-        max_length=MAX_SEQ_LENGTH,
+        max_length=max_seq_length,
     )
     word_ids = encoding.word_ids()
 
@@ -468,82 +266,50 @@ def encode_sentence(sent):
         if word_idx is None:
             label_ids.append(-1)
         elif word_idx != prev_word_idx:
-            label_ids.append(tag2idx.get(tags[word_idx], tag2idx["<UNK>"]))
+            label_ids.append(tag2idx.get(tags[word_idx], tag2idx.get("<UNK>", 0)))
         else:
             label_ids.append(-1)
         prev_word_idx = word_idx
 
     return encoding["input_ids"], encoding["attention_mask"], label_ids
 
-def pad_batch(batch): 
+def pad_batch(batch, tokenizer, device, max_seq_length=None):
+    """Pads a batch of sentences to the same length and converts them to tensors.
+    
+    Args:
+        batch (list): List of tuples (input_ids, attention_mask, labels)
+        tokenizer: HuggingFace tokenizer with pad_token_id attribute
+        device (torch.device): Device to place tensors on
+        max_seq_length (int|None): For debug logging (optional)
+        
+    Returns:
+        tuple: (input_ids_tensor, attention_masks_tensor, labels_tensor)
+    """
     lengths = [len(ids) for ids, _, _ in batch]
     max_len = max(lengths)
-    if not hasattr(pad_batch, "_sequence_stats_printed"):
-        print(
-            f"[debug] sequence length stats: min={min(lengths)}, median={np.median(lengths):.1f}, max={max_len}"
-        )
-        pad_batch._sequence_stats_printed = True
-
     input_ids, attn_masks, Y = [], [], []
     for ids, mask, tags in batch:
         pad_len = max_len - len(ids)
         input_ids.append(ids + [tokenizer.pad_token_id] * pad_len)
         attn_masks.append(mask + [0] * pad_len)
         Y.append(tags + [-1] * pad_len)
+    
     return (
         torch.tensor(input_ids, device=device),
         torch.tensor(attn_masks, device=device),
         torch.tensor(Y, device=device),
     )
 
-def pad_batch_old(batch): # this is the old one, swap back, if no improvement is seen with the new one 
-    """Pads a batch of sentences to the same length and converts them to tensors.
-    Words are padded with the index for <PAD> and tags are padded with -1 (which will be ignored in the loss function).
-    Args:
-        batch (list of tuples): A batch of sentences, where each sentence is a tuple of (word_indices, tag_indices)
-    Returns:
-        X (torch.Tensor): A tensor of shape (batch_size, max_seq_len) containing the padded word indices
-        Y (torch.Tensor): A tensor of shape (batch_size, max_seq_len) containing the padded tag indices
-    """
-    max_len = max(len(x[0]) for x in batch)
-    X, Y = [], []
-    for words, tags in batch:
-        pad_len = max_len - len(words)
-        X.append(words + [0] * pad_len)
-        Y.append(tags + [-1] * pad_len)  # -1 will be ignored in loss
-    return torch.tensor(X, device=device), torch.tensor(Y, device=device)
-
 
 ########################################
 # Model Definition
 ########################################
 
-
-class BiLSTMTagger(nn.Module):
-    """A simple BiLSTM-based POS tagger."""
-    def __init__(self, vocab_size, tagset_size, embedding_dim=100, hidden_dim=128):
+class BertBiLSTMTagger(nn.Module):
+    """BiLSTM-based POS tagger with BERT embeddings."""
+    def __init__(self, tagset_size, model_name, hidden_dim=128, freeze_bert=True): 
         super().__init__()
-        self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx=0)
-        self.lstm = nn.LSTM(
-            embedding_dim,
-            hidden_dim // 2,
-            num_layers=1,
-            bidirectional=True,
-            batch_first=True,
-        )
-        self.fc = nn.Linear(hidden_dim, tagset_size)
-
-    def forward(self, x):
-        emb = self.embedding(x)
-        out, _ = self.lstm(emb)
-        logits = self.fc(out)
-        return logits
-    
-
-class BertBiLSTMTagger(nn.Module): # TODO
-    def __init__(self, tagset_size, hidden_dim=128, freeze_bert=True): 
-        super().__init__()
-        self.bert = BertModel.from_pretrained(MODEL_NAME)
+        self.bert = BertModel.from_pretrained(model_name)
         
         print("Freezing BERT parameters...")
         for p in self.bert.parameters():
@@ -569,46 +335,26 @@ class BertBiLSTMTagger(nn.Module): # TODO
         return self.fc(out)
 
 ########################################
-# Training Setup
-########################################
-
-print("\nSetting up model, optimizer, and loss function...")
-
-model = BertBiLSTMTagger(len(tag2idx), hidden_dim=64, freeze_bert=True).to(device)
-optimizer = optim.AdamW([
-    {"params": model.bert.parameters(), "lr": 2e-5},
-    {"params": model.lstm.parameters(), "lr": 1e-3},
-    {"params": model.fc.parameters(), "lr": 1e-3},
-])
-criterion = nn.CrossEntropyLoss(ignore_index=-1)
-
-from transformers import get_linear_schedule_with_warmup
-
-batch_size = 32
-epochs = 20
-early_stopping_patience = 1
-
-total_steps = (len(train_data) // batch_size) * epochs
-scheduler = get_linear_schedule_with_warmup(
-    optimizer, num_warmup_steps=int(0.1 * total_steps), num_training_steps=total_steps
-)
-
-
-########################################
 # Training Loop
 ########################################
 
 
-def train(model, train_data, val_data, epochs=5, batch_size=32, patience=2):
+def train(model, train_data, val_data, optimizer, scheduler, criterion, tokenizer, 
+          tag2idx, device, config: Config, writer):
     """Trains the BiLSTM POS tagger and performs early stopping on validation loss.
     
     Args:
-        model (nn.Module): The BiLSTMTagger model to be trained
-        train_data (list of list of tuples): The training data, where each sentence is a list of (word, tag) tuples
-        val_data (list of list of tuples): The validation data, where each sentence is a list of (word, tag) tuples
-        epochs (int): The number of epochs to train for
-        batch_size (int): The number of sentences to include in each training batch
-        patience (int): Number of epochs with no validation improvement before stopping
+        model (nn.Module): The BertBiLSTMTagger model to be trained
+        train_data (list): Training data sentences
+        val_data (list): Validation data sentences
+        optimizer: Optimizer instance
+        scheduler: Learning rate scheduler
+        criterion: Loss function
+        tokenizer: HuggingFace tokenizer
+        tag2idx (dict): Tag to index mapping
+        device (torch.device): Device to use for training
+        config (Config): Configuration object
+        writer: TensorBoard writer
     """
     global_step = 0
     best_val_loss = float("inf")
@@ -616,34 +362,37 @@ def train(model, train_data, val_data, epochs=5, batch_size=32, patience=2):
     epochs_without_improvement = 0
     best_epoch = 0
 
-    for epoch in range(epochs):
+    for epoch in range(config.epochs):
         model.train()
         random.shuffle(train_data)
         total_loss = 0
 
-        for i in range(0, len(train_data), batch_size):
-            batch = train_data[i : i + batch_size]
-            encoded = [encode_sentence(s) for s in batch]
-            input_ids, attn_mask, Y = pad_batch(encoded)          # was: X, Y = pad_batch(encoded)
+        for i in range(0, len(train_data), config.batch_size):
+            batch = train_data[i : i + config.batch_size]
+            encoded = [encode_sentence(s, tokenizer, tag2idx, config.max_seq_length) 
+                      for s in batch]
+            input_ids, attn_mask, Y = pad_batch(encoded, tokenizer, device)
 
             optimizer.zero_grad()
-            logits = model(input_ids, attn_mask)                  # was: logits = model(X)
+            logits = model(input_ids, attn_mask)
             loss = criterion(logits.view(-1, logits.shape[-1]), Y.view(-1))
             loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=config.max_grad_norm)
             optimizer.step()
             scheduler.step()
 
-            if global_step % 1000 == 0 and global_step > 0:
+            if global_step % config.validation_step_interval == 0 and global_step > 0:
                 print(f"Epoch {epoch+1} | Step {global_step} | Training Loss: {loss.item():.4f}")
-                val_loss, val_acc = validate(model, val_data, global_step)
+                val_loss, val_acc = validate(model, val_data, optimizer, criterion, 
+                                            tokenizer, tag2idx, device, config, 
+                                            global_step, writer)
                 model.train()  # switch back to training mode after validation
                 if val_loss < best_val_loss - 1e-4:
                     best_val_loss = val_loss
                     best_model_state = deepcopy(model.state_dict())
                     epochs_without_improvement = 0
                     best_epoch = epoch
-                    print(f"New best validation loss: {best_val_loss:.4f} at epoch {best_epoch}")
+                    print(f"New best validation loss: {best_val_loss:.4f} at epoch {best_epoch + 1}")
                 elif best_epoch != epoch:
                     epochs_without_improvement += 1
                     print(
@@ -655,12 +404,12 @@ def train(model, train_data, val_data, epochs=5, batch_size=32, patience=2):
             writer.add_scalar("Loss/train_batch", loss.item(), global_step)
             global_step += 1
 
-        avg_loss = total_loss / max(1, len(train_data) // batch_size)
+        avg_loss = total_loss / max(1, len(train_data) // config.batch_size)
         print(f"Epoch {epoch+1} | Train loss: {avg_loss:.4f}")
 
-        if epochs_without_improvement >= patience:
+        if epochs_without_improvement >= config.early_stopping_patience:
             print(
-                f"Early stopping triggered after {epoch + 1} epochs with patience={patience}."
+                f"Early stopping triggered after {epoch + 1} epochs with patience={config.early_stopping_patience}."
             )
             break
 
@@ -669,14 +418,24 @@ def train(model, train_data, val_data, epochs=5, batch_size=32, patience=2):
         print(f"Restored best model checkpoint from validation loss {best_val_loss:.4f}")
 
 
-def validate(model, data, step, batch_size=32):
-    """Evaluates the model on the validation data and logs the loss and accuracy to TensorBoard.
+def validate(model, data, optimizer, criterion, tokenizer, tag2idx, device, 
+             config: Config, step, writer):
+    """Evaluates the model on the validation data and logs metrics to TensorBoard.
     
     Args:
-        model (nn.Module): The BiLSTMTagger model to be evaluated
-        data (list of list of tuples): The validation data, where each sentence is a list of (word, tag) tuples
-        step (int): The current global step in training, used for logging to TensorBoard
-        batch_size (int): The number of sentences to include in each evaluation batch
+        model (nn.Module): The BertBiLSTMTagger model to be evaluated
+        data (list): Validation data sentences
+        optimizer: Optimizer (not used here, but passed for consistency)
+        criterion: Loss function
+        tokenizer: HuggingFace tokenizer
+        tag2idx (dict): Tag to index mapping
+        device (torch.device): Device to use
+        config (Config): Configuration object
+        step (int): Current global step in training
+        writer: TensorBoard writer
+        
+    Returns:
+        tuple: (average_loss, accuracy)
     """
     model.eval()
     correct = 0
@@ -684,12 +443,13 @@ def validate(model, data, step, batch_size=32):
     total_loss = 0
 
     with torch.no_grad():
-        for i in range(0, len(data), batch_size):
-            batch = data[i : i + batch_size]
-            encoded = [encode_sentence(s) for s in batch]
-            input_ids, attn_mask, Y = pad_batch(encoded)          # was: X, Y = pad_batch(encoded)
+        for i in range(0, len(data), config.batch_size):
+            batch = data[i : i + config.batch_size]
+            encoded = [encode_sentence(s, tokenizer, tag2idx, config.max_seq_length) 
+                      for s in batch]
+            input_ids, attn_mask, Y = pad_batch(encoded, tokenizer, device)
 
-            logits = model(input_ids, attn_mask)                  # was: logits = model(X)
+            logits = model(input_ids, attn_mask)
             loss = criterion(logits.view(-1, logits.shape[-1]), Y.view(-1))
             total_loss += loss.item()
 
@@ -698,8 +458,8 @@ def validate(model, data, step, batch_size=32):
             correct += (preds[mask] == Y[mask]).sum().item()
             total += mask.sum().item()
 
-    acc = correct / total
-    avg_loss = total_loss / max(1, len(data) // batch_size)
+    acc = correct / total if total > 0 else 0
+    avg_loss = total_loss / max(1, len(data) // config.batch_size)
     print(f"Validation | loss: {avg_loss:.4f}, acc: {acc:.4f}")
     writer.add_scalar("Loss/validation", avg_loss, step)
     writer.add_scalar("Accuracy/validation", acc, step)
@@ -710,14 +470,18 @@ def validate(model, data, step, batch_size=32):
 # Evaluation
 ########################################
 
-def evaluate(model, data):
-    """Evaluates the model on the test data and prints accuracy, F1 score, precision, and recall.
+def evaluate(model, data, tokenizer, tag2idx, idx2tag, device, config: Config):
+    """Evaluates the model on test data and prints accuracy, F1 score, precision, and recall.
     
     Args:
-        model (nn.Module): The BiLSTMTagger model to be evaluated
-        data (list of list of tuples): The test data, where each sentence is a list of (word, tag) tuples
+        model (nn.Module): The BertBiLSTMTagger model to be evaluated
+        data (list): Test data sentences
+        tokenizer: HuggingFace tokenizer
+        tag2idx (dict): Tag to index mapping
+        idx2tag (dict): Index to tag reverse mapping
+        device (torch.device): Device to use
+        config (Config): Configuration object
     """
-
     model.eval()
     correct = 0
     total = 0
@@ -726,15 +490,16 @@ def evaluate(model, data):
 
     with torch.no_grad():
         for sent in data:
-            input_ids, attn_mask, gold_tags = encode_sentence(sent)  # now returns 3 things
+            input_ids, attn_mask, gold_tags = encode_sentence(sent, tokenizer, tag2idx, 
+                                                              config.max_seq_length)
             input_ids_t = torch.tensor([input_ids]).to(device)
             attn_mask_t = torch.tensor([attn_mask]).to(device)
 
-            logits = model(input_ids_t, attn_mask_t)                 # was: model(X)
+            logits = model(input_ids_t, attn_mask_t)
             preds = torch.argmax(logits, dim=-1)[0]
 
             for p, g in zip(preds, gold_tags):
-                if g == -1:                     # skip padding/subword positions
+                if g == -1:  # skip padding/subword positions
                     continue
                 total += 1
                 correct += p.item() == g
@@ -744,6 +509,7 @@ def evaluate(model, data):
     if total == 0:
         print("No gold tags to evaluate.")
         return -1
+    
     acc = correct / total
     f1 = f1_score(all_golds, all_preds, average="weighted", zero_division=0)
     precision = precision_score(all_golds, all_preds, average="weighted", zero_division=0)
@@ -765,185 +531,293 @@ def evaluate(model, data):
 
 
 ########################################
-# Main Execution
+# Inference Function
 ########################################
-writer = SummaryWriter(log_dir="runs/bnc_bilstm_pos_exploratory")
+def inference(model, sentence, tokenizer, tag2idx, idx2tag=None, device=None, max_seq_length=128):
+    """Perform inference on a token sequence using explicit resources.
 
-print("Training model...")
-train(model, train_data, val_data, epochs=epochs, patience=early_stopping_patience)
+    Args:
+        model (nn.Module): The loaded model
+        sentence (list[str]): Token sequence (words)
+        tokenizer: HuggingFace tokenizer
+        tag2idx (dict): Mapping tag->index used during training
+        idx2tag (dict|None): Reverse mapping index->tag
+        device (torch.device|None): Device to run inference on
+        max_seq_length (int): Maximum sequence length
 
-print("\nEvaluating model on BNC...")
-evaluate(model, test_data)
-writer.close()
+    Returns:
+        list[str]: Predicted tag strings for input tokens
+    """
+    if idx2tag is None:
+        idx2tag = {v: k for k, v in tag2idx.items()}
 
-########################################
-# Test with own testdata
-########################################
+    model_device = device if device is not None else next(model.parameters()).device
+    model.to(model_device)
+    model.eval()
+    
+    with torch.no_grad():
+        sent = [(w, "<UNK>") for w in sentence]
+        input_ids, attn_mask, _ = encode_sentence(sent, tokenizer, tag2idx, max_seq_length)
+        input_ids_t = torch.tensor([input_ids], device=model_device)
+        attn_mask_t = torch.tensor([attn_mask], device=model_device)
 
-# F1-Score
-# Accuracy
+        logits = model(input_ids_t, attn_mask_t)
+        preds = torch.argmax(logits, dim=-1)[0]
 
-# all testdata
-print("\nEvaluating model on test sentences...")
-evaluate(model, test_sentences)
+        predicted_tags = [idx2tag[p.item()] for p in preds if p.item() != -1]
 
-# only essays
-print("\nEvaluating model on essay test sentences...")
-evaluate(model, essay_test)
+    return predicted_tags
 
-# only picture description
-print("\nEvaluating model on picture description test sentences...")
-evaluate(model, picture_test)
-
-# only chat
-print("\nEvaluating model on chat test sentences...")
-evaluate(model, chat_test)
-
-# only short essay
-print("\nEvaluating model on short essay test sentences...")
-evaluate(model, short_essay_test)
-
-# by age groups
-#print("\nEvaluating model on Klasse 5 test sentences...")
-#evaluate(model, test_sentences_klasse_5)
-
-#print("\nEvaluating model on Klasse 6 test sentences...")
-#evaluate(model, test_sentences_klasse_6)
-
-#print("\nEvaluating model on Klasse 7 test sentences...")
-#evaluate(model, test_sentences_klasse_7)
-
-#print("\nEvaluating model on Klasse 8 test sentences...")
-#evaluate(model, test_sentences_klasse_8)
-
-#print("\nEvaluating model on Klasse 9 test sentences...")
-#evaluate(model, test_sentences_klasse_9)
-
-#print("\nEvaluating model on Klasse 10 test sentences...")
-#evaluate(model, test_sentences_klasse_10)
-
-#print("\nEvaluating model on Klasse 11 test sentences...")
-#evaluate(model, test_sentences_klasse_11)
-
-#print("\nEvaluating model on Klasse 12 test sentences...")
-#evaluate(model, test_sentences_klasse_12)
-
-writer.close()
 
 ########################################
-# Create confusion matrix
+# Setup Helper Functions
 ########################################
 
-def create_confusion_matrix(model, data, name):
-    """Creates and saves a confusion matrix for the given model and test data using relative values and not the absolute values.
+def setup_device():
+    """Detects and sets the available device (CUDA, MPS, or CPU).
+    
+    Returns:
+        torch.device: The selected device
+    """
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+    elif torch.backends.mps.is_available():
+        device = torch.device("mps")
+    else:
+        device = torch.device("cpu")
+    print(f"Using device: {device}")
+    return device
+
+
+def load_test_data(config: Config):
+    """Loads and processes all test data from files.
     
     Args:
-        model (nn.Module): The BiLSTMTagger model to be evaluated
-        data (list of list of tuples): The test data, where each sentence is a list of (word, tag) tuples
-        name (str): The name to use for the saved confusion matrix image file
+        config (Config): Configuration object
+        
+    Returns:
+        dict: Dictionary containing processed test data for different categories
     """
-    model.eval()
-    all_preds = []
-    all_golds = []
+    test_data_paths = {
+        "essay": Path(config.test_data_dir) / "Essay 2.txt",
+        "chat": Path(config.test_data_dir) / "Digital Chat Daten Annotiert.txt",
+        "picture": Path(config.test_data_dir) / "Picture Description.txt",
+        "short_essay": Path(config.test_data_dir) / "Short Essay.txt",
+        "claws": Path(config.test_data_dir) / "CLAWS Verbessert Neu.txt",
+    }
+    
+    # Initialize age group dictionary
+    age_group_sentences = {k: [] for k in range(5, 13)}
+    
+    # Load all test files
+    test_sentences_by_category = {}
+    all_test_sentences = []
+    
+    for category, path in test_data_paths.items():
+        test_sentences_by_category[category] = load_test_sentences_from_file(
+            str(path), all_test_sentences, age_group_sentences
+        )
+    
+    return {
+        "all": all_test_sentences,
+        "by_category": test_sentences_by_category,
+        "by_age_group": age_group_sentences,
+    }
 
-    with torch.no_grad():
-        for sent in data:
-            input_ids, attn_mask, gold_tags = encode_sentence(sent)  # now returns 3 things
-            input_ids_t = torch.tensor([input_ids]).to(device)
-            attn_mask_t = torch.tensor([attn_mask]).to(device)
-            logits = model(input_ids_t, attn_mask_t)
-            preds = torch.argmax(logits, dim=-1)[0]
 
-            all_preds.extend(preds.cpu().numpy())
-            all_golds.extend(gold_tags)
+def split_own_data(test_data_dict, config: Config):
+    """Splits own test data into train/val/test splits.
+    
+    Args:
+        test_data_dict (dict): Dictionary from load_test_data()
+        config (Config): Configuration object
+        
+    Returns:
+        dict: Split data with train, val, and test for each category
+    """
+    result = {}
+    
+    for category, sentences in test_data_dict["by_category"].items():
+        random.shuffle(sentences)
+        split_idx_train_test = int(config.own_data_train_split * len(sentences))
+        split_idx_train_val = int(config.own_data_val_split * len(sentences[:split_idx_train_test]))
+        
+        train_data = sentences[:split_idx_train_test]
+        test_data = sentences[split_idx_train_test:]
+        
+        random.shuffle(train_data)
+        val_data = train_data[:split_idx_train_val]
+        train_data = train_data[split_idx_train_val:]
+        
+        result[category] = {
+            "train": train_data,
+            "val": val_data,
+            "test": test_data,
+        }
+    
+    return result
 
-    # Get unique labels that actually appear in the data, sorted alphabetically by tag name
-    unique_tags = sorted(set(all_golds) | set(all_preds), key=lambda x: idx2tag[x])
-    # Map to tag names (already sorted alphabetically)
-    label_names = [idx2tag[i] for i in unique_tags]
-    # not absolute but relative numbers
-    cm = confusion_matrix(all_golds, all_preds, labels=unique_tags, normalize="true")
-    plt.figure(figsize=(16, 14))
-    sns.heatmap(
-        cm,
-        annot=False,
-        xticklabels=label_names,
-        yticklabels=label_names,
-        cmap="Blues",
-        cbar_kws={"shrink": 0.8},
+
+def build_vocabulary(train_data):
+    """Builds tag index mappings from training data.
+    
+    Args:
+        train_data (list): Training sentences
+        
+    Returns:
+        tuple: (tag2idx, idx2tag) dictionaries
+    """
+    tag2idx = {"<UNK>": 0}
+    for sent in train_data:
+        for word, tag in sent:
+            if tag not in tag2idx:
+                tag2idx[tag] = len(tag2idx)
+    idx2tag = {v: k for k, v in tag2idx.items()}
+    return tag2idx, idx2tag
+
+
+def setup_model_and_training(tag2idx, train_data, device, config: Config):
+    """Creates model, optimizer, scheduler, and criterion.
+    
+    Args:
+        tag2idx (dict): Tag to index mapping
+        train_data (list): Training data for calculating total steps
+        device (torch.device): Device for training
+        config (Config): Configuration object
+        
+    Returns:
+        dict: Dictionary with model, optimizer, scheduler, criterion, tokenizer
+    """
+    print("\nSetting up model, optimizer, and loss function...")
+    
+    tokenizer = BertTokenizerFast.from_pretrained(config.model_name)
+    model = BertBiLSTMTagger(
+        len(tag2idx),
+        model_name=config.model_name,
+        hidden_dim=config.hidden_dim,
+        freeze_bert=config.freeze_bert
+    ).to(device)
+    
+    optimizer = optim.AdamW([
+        {"params": model.bert.parameters(), "lr": config.learning_rate_bert},
+        {"params": model.lstm.parameters(), "lr": config.learning_rate_lstm},
+        {"params": model.fc.parameters(), "lr": config.learning_rate_fc},
+    ])
+    
+    criterion = nn.CrossEntropyLoss(ignore_index=-1)
+    
+    # Calculate total steps for scheduler
+    total_steps = (len(train_data) // config.batch_size) * config.epochs
+    scheduler = get_linear_schedule_with_warmup(
+        optimizer,
+        num_warmup_steps=int(config.warmup_ratio * total_steps),
+        num_training_steps=total_steps
     )
-    plt.xlabel("Predicted", fontsize=12)
-    plt.ylabel("Gold Labels", fontsize=12)
-    plt.xticks(rotation=90, ha="center", fontsize=8)
-    plt.yticks(rotation=0, fontsize=8)
-    plt.title(name + " Confusion Matrix", fontsize=14)
-    plt.tight_layout()
-    plt.savefig(f"{name}_confusion_matrix_bilstm.png", dpi=150)
-    plt.close()
-
-#print("\nCreating confusion matrix for essay test sentences...")
-#create_confusion_matrix(model, essay_test, "Essay Test Sentences")
-#print("\nCreating confusion matrix for picture description test sentences...")
-#create_confusion_matrix(model, picture_test, "Picture Description Test Sentences")
-#print("\nCreating confusion matrix for chat test sentences...")
-#create_confusion_matrix(model, chat_test, "Chat Test Sentences")
-#print("\nCreating confusion matrix for short essay test sentences...")
-#create_confusion_matrix(model, short_essay_test, "Short Essay Test Sentences")
+    
+    return {
+        "model": model,
+        "tokenizer": tokenizer,
+        "optimizer": optimizer,
+        "scheduler": scheduler,
+        "criterion": criterion,
+    }
 
 
-def print_confused_sentences(model, data, target_tags, idx2tag, num_sentences=5):
-    """Prints sentences from the test data where the model confused specific target tags with other tags.
+def run_training_and_evaluation(config: Config):
+    """Main training and evaluation pipeline.
     
     Args:
-        model (nn.Module): The BiLSTMTagger model to be evaluated
-        data (list of list of tuples): The test data, where each sentence is a list of (word, tag) tuples
-        target_tags (set of str): The set of target tag names to look for confusion
-        idx2tag (dict): A mapping from tag indices to tag names
-        num_sentences (int): The number of confused sentences to print for each target tag
+        config (Config): Configuration object
     """
-    model.eval()
-    confused_sentences = {tag: [] for tag in target_tags}
+    # Setup device
+    device = setup_device()
+    
+    # Load BNC data
+    print("\n" + "="*50)
+    print("Loading BNC data...")
+    print("="*50)
+    bnc_sentences, _, _ = load_bnc_data(config)
+    
+    # Load and split own test data
+    print("\n" + "="*50)
+    print("Loading own test data...")
+    print("="*50)
+    test_data_dict = load_test_data(config)
+    own_data_splits = split_own_data(test_data_dict, config)
+    
+    # Prepare training/val/test data
+    split1 = int(config.train_val_split * len(bnc_sentences))
+    split2 = int(config.val_test_split * len(bnc_sentences))
+    
+    train_data = bnc_sentences[:split1]
+    val_data = bnc_sentences[split1:split2]
+    test_data_bnc = bnc_sentences[split2:]
+    
+    # Add own data to training and validation
+    for category_data in own_data_splits.values():
+        train_data.extend(category_data["train"])
+        val_data.extend(category_data["val"])
+    
+    random.shuffle(train_data)
+    random.shuffle(val_data)
+    
+    # Print data statistics
+    print(f"\n{'='*50}")
+    print("Data Statistics:")
+    print(f"{'='*50}")
+    print(f"Train sentences: {len(train_data):,}")
+    print(f"Validation sentences: {len(val_data):,}")
+    print(f"Test sentences (BNC): {len(test_data_bnc):,}")
+    
+    for category, splits in own_data_splits.items():
+        print(f"Test sentences ({category}): {len(splits['test']):,}")
+    
+    # Build vocabulary
+    tag2idx, idx2tag = build_vocabulary(train_data)
+    print(f"\nUnique tags: {len(tag2idx)}")
+    
+    # Setup model and training components
+    training_components = setup_model_and_training(tag2idx, train_data, device, config)
+    model = training_components["model"]
+    tokenizer = training_components["tokenizer"]
+    optimizer = training_components["optimizer"]
+    scheduler = training_components["scheduler"]
+    criterion = training_components["criterion"]
+    
+    # Setup TensorBoard
+    writer = SummaryWriter(log_dir=config.tensorboard_log_dir)
+    
+    # Train model
+    print(f"\n{'='*50}")
+    print("Training model...")
+    print(f"{'='*50}")
+    train(model, train_data, val_data, optimizer, scheduler, criterion, tokenizer,
+          tag2idx, device, config, writer)
+    
+    # Save model
+    torch.save({
+        "model_state_dict": model.state_dict(),
+        "idx2tag": idx2tag,
+        "tag2idx": tag2idx,
+    }, config.model_save_path)
+    print(f"\nModel saved to {config.model_save_path}")
+    
+    # Evaluate on all test sets
+    print(f"\n{'='*50}")
+    print("Model Evaluation:")
+    print(f"{'='*50}")
+    
+    print("\nEvaluating on BNC test data...")
+    evaluate(model, test_data_bnc, tokenizer, tag2idx, idx2tag, device, config)
+    
+    for category, splits in own_data_splits.items():
+        print(f"\nEvaluating on {category.upper()} test data...")
+        evaluate(model, splits["test"], tokenizer, tag2idx, idx2tag, device, config)
+    
+    writer.close()
+    print("\nTraining complete!")
 
-    with torch.no_grad():
-        for sent in data:
-            input_ids, attn_mask, gold_tags = encode_sentence(sent)  # now returns 3 things
-            input_ids_t = torch.tensor([input_ids]).to(device)
-            attn_mask_t = torch.tensor([attn_mask]).to(device)
-            logits = model(input_ids_t, attn_mask_t)
-            preds = torch.argmax(logits, dim=-1)[0]
 
-            for word, gold_idx, pred_idx in zip(
-                [w for w, _ in sent], gold_tags, preds.cpu().numpy()
-            ):
-                gold_tag = idx2tag.get(gold_idx, "<UNK>")
-                pred_tag = idx2tag.get(pred_idx, "<UNK>")
-                if gold_tag in target_tags and pred_tag != gold_tag:
-                    if len(confused_sentences[gold_tag]) < num_sentences:
-                        confused_sentences[gold_tag].append(
-                            (word, gold_tag, pred_tag)
-                        )
-
-    for tag in target_tags:
-        print(f"\nSentences where '{tag}' was confused:")
-        for word, gold, pred  in confused_sentences[tag]:
-            print(f"  Word: '{word}' | Gold: '{gold}' | Predicted: '{pred}'")
-
-# print 5 sentences where tag "VVD", "AVP", "AJC", "VVG" or "VVN" was confused with another tag in essay test sentences
-target_tags = {"VVD", "AVP", "AJC", "VVG", "VVN"}
-print_confused_sentences(model, essay_test, target_tags, idx2tag, num_sentences=5)
-
-# print 5 sentences where tag "AJC", "AV0", "AVP", "NP0", "PNI", "POS", VHZ", "VVD", "VVN" or "VVZ" was confused with another tag in chat sentences
-target_tags_chat = {"AJC", "AV0", "AVP", "NP0", "PNI", "POS", "VHZ", "VVD", "VVN", "VVZ"}
-print_confused_sentences(model, chat_test, target_tags_chat, idx2tag, num_sentences=5)
-
-# print 5 sentences where tag "CJS", "CJT", "TO0", "VDI", "VHI", "VNN-AJ0", "VVN-VVD" was confused with another tag in picture description sentences
-target_tags_picture = {"CJS", "CJT", "TO0", "VDI", "VHI", "VNN-AJ0", "VVN-VVD"}
-print_confused_sentences(model, picture_test, target_tags_picture, idx2tag, num_sentences=5)
-
-# print 5 sentences where tag "AJC", "CJT", "VHG", "VVB", "VVD", "VVG", "VVN" or "VVZ" was confused with another tag in short essay sentences
-target_tags_short_essay = {"AJC", "CJT", "VHG", "VVB", "VVD", "VVG", "VVN", "VVZ"}
-print_confused_sentences(model, short_essay_test, target_tags_short_essay, idx2tag, num_sentences=5)
-
-# combine all "weak" tags from the different categories and print confused sentences for all of them
-all_target_tags = {"CJT", "AJS", "DTQ", "DT0", "EX0", "ITJ", "NP0", "PNX", "POS", "PRP", "VBB", "VDI", "VHI", "VVG", "VVI", "VVN", "VVZ", "XX0", "ZZ0"}
-print_confused_sentences(model, test_sentences, all_target_tags, idx2tag, num_sentences=5)
+if __name__ == "__main__":
+    config = Config()
+    run_training_and_evaluation(config)
