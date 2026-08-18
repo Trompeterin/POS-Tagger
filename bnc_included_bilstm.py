@@ -57,6 +57,44 @@ class Config:
     random_seed: int = 42
 
 ########################################
+# Checkpoint handling
+########################################
+def save_checkpoint_safely(model: nn.Module, idx2tag: dict[int, str], tag2idx: dict[str, int], path: str | Path):
+    """Persist a model checkpoint and verify it immediately by reloading it."""
+    save_path = Path(path)
+    save_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = save_path.with_suffix(save_path.suffix + ".tmp")
+
+    payload = {
+        "model_state_dict": model.state_dict(),
+        "idx2tag": idx2tag,
+        "tag2idx": tag2idx,
+    }
+
+    torch.save(payload, tmp_path)
+
+    try:
+        loaded = torch.load(str(tmp_path), map_location="cpu")
+        if not isinstance(loaded, dict):
+            raise TypeError(f"Expected a dict checkpoint, got {type(loaded).__name__}.")
+        required = {"model_state_dict", "idx2tag", "tag2idx"}
+        missing = sorted(required - set(loaded.keys()))
+        if missing:
+            raise KeyError(f"Checkpoint missing required keys: {missing}")
+        # ensure model state can be reloaded into a blank model instance
+        model.load_state_dict(loaded["model_state_dict"])
+    except Exception as exc:
+        if tmp_path.exists():
+            tmp_path.unlink()
+        raise RuntimeError(
+            f"Checkpoint verification failed for '{save_path}'. "
+            "The file is corrupt or incomplete; retrain and save again."
+        ) from exc
+
+    tmp_path.replace(save_path)
+    print(f"Model saved and verified to {save_path}")
+
+########################################
 # Load BNC Data
 ########################################
 def load_bnc_data(config: Config):
@@ -794,13 +832,8 @@ def run_training_and_evaluation(config: Config):
     train(model, train_data, val_data, optimizer, scheduler, criterion, tokenizer,
           tag2idx, device, config, writer)
     
-    # Save model
-    torch.save({
-        "model_state_dict": model.state_dict(),
-        "idx2tag": idx2tag,
-        "tag2idx": tag2idx,
-    }, config.model_save_path)
-    print(f"\nModel saved to {config.model_save_path}")
+    # Save model and verify the saved checkpoint is readable before continuing.
+    save_checkpoint_safely(model, idx2tag, tag2idx, config.model_save_path)
     
     # Evaluate on all test sets
     print(f"\n{'='*50}")
