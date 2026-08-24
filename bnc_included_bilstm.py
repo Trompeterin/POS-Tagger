@@ -28,6 +28,7 @@ class Config:
     test_data_dir: str = "POS-Tagger/POS-Tagging-Testdaten"
     model_save_path: str = "bilstm_pos_tagger_bnc.pth"
     tensorboard_log_dir: str = "runs/bnc_bilstm_pos_exploratory"
+    false_predictions_path: str = "false_predictions.txt"
     
     # Data loading
     bnc_sample_pct: int = 5  # percentage of BNC sentences to use
@@ -508,7 +509,17 @@ def validate(model, data, optimizer, criterion, tokenizer, tag2idx, device,
 # Evaluation
 ########################################
 
-def evaluate(model, data, tokenizer, tag2idx, idx2tag, device, config: Config):
+def evaluate(
+    model,
+    data,
+    tokenizer,
+    tag2idx,
+    idx2tag,
+    device,
+    config: Config,
+    evaluation_name: str = "EVALUATION",
+    false_predictions_path: str | Path | None = None,
+):
     """Evaluates the model on test data and prints accuracy, F1 score, precision, and recall.
     
     Args:
@@ -525,24 +536,52 @@ def evaluate(model, data, tokenizer, tag2idx, idx2tag, device, config: Config):
     total = 0
     all_preds = []
     all_golds = []
+    false_predictions = []
 
     with torch.no_grad():
         for sent in data:
             input_ids, attn_mask, gold_tags = encode_sentence(sent, tokenizer, tag2idx, 
                                                               config.max_seq_length)
+            encoding = tokenizer(
+                [word for word, _ in sent],
+                is_split_into_words=True,
+                truncation=True,
+                max_length=config.max_seq_length,
+            )
             input_ids_t = torch.tensor([input_ids]).to(device)
             attn_mask_t = torch.tensor([attn_mask]).to(device)
 
             logits = model(input_ids_t, attn_mask_t)
             preds = torch.argmax(logits, dim=-1)[0]
 
-            for p, g in zip(preds, gold_tags):
+            sentence_tokens = []
+            sentence_golds = []
+            sentence_preds = []
+            previous_word_id = None
+
+            for position, (p, g) in enumerate(zip(preds, gold_tags)):
                 if g == -1:  # skip padding/subword positions
                     continue
                 total += 1
                 correct += p.item() == g
                 all_preds.append(p.item())
                 all_golds.append(g)
+
+                word_id = encoding.word_ids()[position]
+                if word_id is not None and word_id != previous_word_id:
+                    sentence_tokens.append(sent[word_id][0])
+                    sentence_golds.append(idx2tag.get(g, "<UNK>"))
+                    sentence_preds.append(idx2tag.get(p.item(), "<UNK>"))
+                previous_word_id = word_id
+
+            if sentence_golds and sentence_golds != sentence_preds:
+                false_predictions.append(
+                    (
+                        " ".join(sentence_tokens),
+                        sentence_golds,
+                        sentence_preds,
+                    )
+                )
 
     if total == 0:
         print("No gold tags to evaluate.")
@@ -556,6 +595,17 @@ def evaluate(model, data, tokenizer, tag2idx, idx2tag, device, config: Config):
     print(f"Test F1 score: {f1:.4f}")
     print(f"Test Precision: {precision:.4f}")
     print(f"Test Recall: {recall:.4f}")
+
+    if false_predictions_path is not None:
+        output_path = Path(false_predictions_path)
+        with output_path.open("a", encoding="utf-8") as output_file:
+            output_file.write(f"{evaluation_name.upper()}\n\n")
+            for sentence, gold_tags, predicted_tags in false_predictions:
+                output_file.write(f"Sentence: {sentence}\n")
+                output_file.write(f"Gold tags: {' '.join(gold_tags)}\n")
+                output_file.write(f"Predicted tags: {' '.join(predicted_tags)}\n\n")
+            output_file.write("-" * 108 + "\n\n")
+
 
     # ---- Per-tag breakdown ----
     present_labels = sorted(set(all_golds) | set(all_preds))
@@ -863,6 +913,9 @@ def run_training_and_evaluation(config: Config):
     
     # Save model and verify the saved checkpoint is readable before continuing.
     save_checkpoint_safely(model, idx2tag, tag2idx, config.model_save_path)
+
+    false_predictions_path = Path(config.false_predictions_path)
+    false_predictions_path.write_text("", encoding="utf-8")
     
     # Evaluate on all test sets
     print(f"\n{'='*50}")
@@ -870,11 +923,31 @@ def run_training_and_evaluation(config: Config):
     print(f"{'='*50}")
     
     print("\nEvaluating on BNC test data...")
-    evaluate(model, test_data_bnc, tokenizer, tag2idx, idx2tag, device, config)
+    evaluate(
+        model,
+        test_data_bnc,
+        tokenizer,
+        tag2idx,
+        idx2tag,
+        device,
+        config,
+        evaluation_name="BNC",
+        false_predictions_path=false_predictions_path,
+    )
     
     for category, splits in own_data_splits.items():
         print(f"\nEvaluating on {category.upper()} test data...")
-        evaluate(model, splits["test"], tokenizer, tag2idx, idx2tag, device, config)
+        evaluate(
+            model,
+            splits["test"],
+            tokenizer,
+            tag2idx,
+            idx2tag,
+            device,
+            config,
+            evaluation_name=category,
+            false_predictions_path=false_predictions_path,
+        )
     
     writer.close()
     print("\nTraining complete!")
