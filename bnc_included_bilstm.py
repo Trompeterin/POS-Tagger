@@ -585,6 +585,7 @@ def inference(model, sentence, tokenizer, tag2idx, idx2tag=None, device=None, ma
 
     Returns:
         list[str]: Predicted tag strings for input tokens
+        list[str]: Used tokens during inference
     """
     if idx2tag is None:
         idx2tag = {v: k for k, v in tag2idx.items()}
@@ -595,16 +596,44 @@ def inference(model, sentence, tokenizer, tag2idx, idx2tag=None, device=None, ma
     
     with torch.no_grad():
         sent = [(w, "<UNK>") for w in sentence]
-        input_ids, attn_mask, _ = encode_sentence(sent, tokenizer, tag2idx, max_seq_length)
+        input_ids, attn_mask, label_ids = encode_sentence(sent, tokenizer, tag2idx, max_seq_length)
         input_ids_t = torch.tensor([input_ids], device=model_device)
         attn_mask_t = torch.tensor([attn_mask], device=model_device)
 
         logits = model(input_ids_t, attn_mask_t)
         preds = torch.argmax(logits, dim=-1)[0]
 
-        predicted_tags = [idx2tag[p.item()] for p in preds if p.item() != -1]
+        # tokens corresponding to input_ids
+        tokens_all = tokenizer.convert_ids_to_tokens(input_ids)
 
-    return predicted_tags
+        # merge WordPiece subtokens back to original tokens
+        merged_tokens = []
+        orig_to_merged = []
+        for tok in tokens_all:
+            if tok in ("[CLS]", "[SEP]", "[PAD]"):
+                orig_to_merged.append(None)
+                continue
+            if tok.startswith("##") and merged_tokens:
+                merged_tokens[-1] += tok[2:]
+                orig_to_merged.append(len(merged_tokens) - 1)
+            else:
+                merged_tokens.append(tok)
+                orig_to_merged.append(len(merged_tokens) - 1)
+
+        predicted_tags = []
+        tokens = []
+        for position, pred in enumerate(preds):
+            if label_ids[position] == -1:
+                continue
+            merged_idx = orig_to_merged[position]
+            if merged_idx is None:
+                continue
+            token = merged_tokens[merged_idx]
+            if not tokens or tokens[-1] != token:
+                tokens.append(token)
+                predicted_tags.append(idx2tag.get(pred.item(), "<UNK>"))
+
+    return predicted_tags, tokens
 
 
 ########################################

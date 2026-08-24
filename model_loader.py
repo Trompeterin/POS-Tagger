@@ -3,7 +3,7 @@ from pathlib import Path
 import torch
 
 # Load the bnc_included_bilstm module from the POS-Tagger folder
-module_path = Path(__file__).resolve().parent.parent / "bnc_included_bilstm.py"
+module_path = Path(__file__).resolve().parent.parent / "POS-Tagger" / "bnc_included_bilstm.py"
 spec = importlib.util.spec_from_file_location("bnc_included_bilstm", module_path)
 if spec is None or spec.loader is None:
     raise ImportError(f"Could not load model module from {module_path}")

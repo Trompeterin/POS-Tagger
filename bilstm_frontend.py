@@ -17,7 +17,7 @@ import streamlit as st
 
 TAGGER_ENDPOINT = "http://localhost:8000/predict"
 TAGGER_TIMEOUT_SECONDS = 30.0
-DEFAULT_TEXT = "The quick brown fox jumps over the dog."
+DEFAULT_TEXT = "The quick brown fox jumps over the lazy dog."
 
 
 def _reset_form() -> None:
@@ -75,8 +75,8 @@ def _predict(
 			raise requests.RequestException("Model checkpoint not found")
 
 		model, idx2tag = model_loader.load_checkpoint(str(ckpt))
-		tags = model_loader.predict_sentence(model, idx2tag, _tokens(text))
-		return {"tokens": _tokens(text), "tags": tags}
+		tags, used_tokens = model_loader.predict_sentence(model, idx2tag, _tokens(text))
+		return ({"tokens": _tokens(text), "tags": tags}, used_tokens)
 
 	except requests.RequestException:
 		raise
@@ -166,14 +166,13 @@ def main() -> None:
 			st.warning("Please enter some text first.")
 		else:
 			try:
-				result = _predict(
+				result, used_tokens = _predict(
 					TAGGER_ENDPOINT,
 					text,
 					sorted(st.session_state.selected_sentence_ends),
 					TAGGER_TIMEOUT_SECONDS,
 				)
-				tokens = result.get("tokens") or input_tokens
-				tags = result["tags"]
+				tokens, tags = result.get("tokens"), result.get("tags")
 				if len(tokens) != len(tags):
 					raise ValueError("The number of tokens and tags does not match.")
 				st.session_state.prediction = (tokens, tags)
