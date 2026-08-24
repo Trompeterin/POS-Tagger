@@ -150,6 +150,9 @@ def load_bnc_data(config: Config):
                     word_text = word.text
                     pos_tag = word.get("c5")
                     if word_text and pos_tag:
+                        # if tag of form XXX-YYY keep only XXX
+                        if pos_tag and "-" in pos_tag:
+                            pos_tag = pos_tag.split("-")[0]
                         word_tag_pairs.append((word_text, pos_tag))
                 if not word_tag_pairs:
                     continue
