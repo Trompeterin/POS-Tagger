@@ -671,55 +671,41 @@ def inference(model, sentence, tokenizer, tag2idx, idx2tag=None, device=None, ma
     model.eval()
     
     with torch.no_grad():
-        sent = [(w, "<UNK>") for w in preprocess_sentence(sentence)]
+        words = preprocess_sentence(sentence)
+        sent = [(w, "<UNK>") for w in words]
         input_ids, attn_mask, label_ids = encode_sentence(sent, tokenizer, tag2idx, max_seq_length)
+        encoding = tokenizer(
+            words,
+            is_split_into_words=True,
+            truncation=True,
+            max_length=max_seq_length,
+        )
         input_ids_t = torch.tensor([input_ids], device=model_device)
         attn_mask_t = torch.tensor([attn_mask], device=model_device)
 
         logits = model(input_ids_t, attn_mask_t)
         preds = torch.argmax(logits, dim=-1)[0]
 
-        # tokens corresponding to input_ids
-        tokens_all = tokenizer.convert_ids_to_tokens(input_ids)
-
-        # merge WordPiece subtokens back to original tokens
-        merged_tokens = []
-        orig_to_merged = []
-        for tok in tokens_all:
-            if tok in ("[CLS]", "[SEP]", "[PAD]"):
-                orig_to_merged.append(None)
-                continue
-
-            if tok.startswith("##") and merged_tokens:
-                merged_tokens[-1] += tok[2:]
-                orig_to_merged.append(len(merged_tokens) - 1)
-                continue
-
-            if tok == "'" and merged_tokens:
-                merged_tokens[-1] += "'"
-                orig_to_merged.append(len(merged_tokens) - 1)
-                continue
-
-            if tok in {"s", "t", "m", "d", "re", "ve", "ll"} and merged_tokens and merged_tokens[-1].endswith("'"):
-                merged_tokens[-1] += tok
-                orig_to_merged.append(len(merged_tokens) - 1)
-                continue
-
-            merged_tokens.append(tok)
-            orig_to_merged.append(len(merged_tokens) - 1)
-
+        word_ids = encoding.word_ids()
         predicted_tags = []
         tokens = []
+        previous_word_id = None
+
         for position, pred in enumerate(preds):
             if label_ids[position] == -1:
                 continue
-            merged_idx = orig_to_merged[position]
-            if merged_idx is None:
+
+            word_id = word_ids[position]
+            if word_id is None or word_id == previous_word_id:
                 continue
-            token = merged_tokens[merged_idx]
-            if not tokens or tokens[-1] != token:
-                tokens.append(token)
-                predicted_tags.append(idx2tag.get(pred.item(), "<UNK>"))
+
+            previous_word_id = word_id
+            token = words[word_id]
+            if not token:
+                continue
+
+            tokens.append(token)
+            predicted_tags.append(idx2tag.get(pred.item(), "<UNK>"))
 
     return predicted_tags, tokens
 
