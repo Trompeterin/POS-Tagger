@@ -622,8 +622,31 @@ def evaluate(
 
 
 ########################################
-# Inference Function
+# Inference Function and Helper Functions
 ########################################
+
+def preprocess_sentence(sentence):
+    """Preprocesses a sentence list of tokens into a list of tokens with correct splitting.
+
+    Args:
+        sentence: Input sentence list of tokens (words)
+
+    Returns:
+        list[str]: List of tokens
+    """
+    # then split negations like doesn't into does n't and it's into it 's
+    processed_tokens = []
+    for token in sentence:
+        if re.match(r"\w+n't$", token):
+            processed_tokens.append(token[:-3])
+            processed_tokens.append("n't")
+        elif re.match(r"\w+'\w+$", token):
+            processed_tokens.append(token[:-2])
+            processed_tokens.append(token[-2:])
+        else:
+            processed_tokens.append(token)
+    return processed_tokens
+
 def inference(model, sentence, tokenizer, tag2idx, idx2tag=None, device=None, max_seq_length=128):
     """Perform inference on a token sequence using explicit resources.
 
@@ -648,7 +671,7 @@ def inference(model, sentence, tokenizer, tag2idx, idx2tag=None, device=None, ma
     model.eval()
     
     with torch.no_grad():
-        sent = [(w, "<UNK>") for w in sentence]
+        sent = [(w, "<UNK>") for w in preprocess_sentence(sentence)]
         input_ids, attn_mask, label_ids = encode_sentence(sent, tokenizer, tag2idx, max_seq_length)
         input_ids_t = torch.tensor([input_ids], device=model_device)
         attn_mask_t = torch.tensor([attn_mask], device=model_device)
@@ -666,12 +689,24 @@ def inference(model, sentence, tokenizer, tag2idx, idx2tag=None, device=None, ma
             if tok in ("[CLS]", "[SEP]", "[PAD]"):
                 orig_to_merged.append(None)
                 continue
+
             if tok.startswith("##") and merged_tokens:
                 merged_tokens[-1] += tok[2:]
                 orig_to_merged.append(len(merged_tokens) - 1)
-            else:
-                merged_tokens.append(tok)
+                continue
+
+            if tok == "'" and merged_tokens:
+                merged_tokens[-1] += "'"
                 orig_to_merged.append(len(merged_tokens) - 1)
+                continue
+
+            if tok in {"s", "t", "m", "d", "re", "ve", "ll"} and merged_tokens and merged_tokens[-1].endswith("'"):
+                merged_tokens[-1] += tok
+                orig_to_merged.append(len(merged_tokens) - 1)
+                continue
+
+            merged_tokens.append(tok)
+            orig_to_merged.append(len(merged_tokens) - 1)
 
         predicted_tags = []
         tokens = []
