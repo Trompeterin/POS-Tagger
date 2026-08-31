@@ -39,13 +39,26 @@ def _is_sentence_end_token(token: str) -> bool:
 
 
 def _format_predictions(tokens: list[str], tags: list[str], style: str) -> str:
-	if style == "horizontal":
+	if style == "Horizontal":
 		return " ".join(f"{token}_{tag}" for token, tag in zip(tokens, tags))
-	if style == "vertical":
+	if style == "Vertical":
 		return "\n".join(f"{token}\t{tag}" for token, tag in zip(tokens, tags))
-	return "\n".join(
-		f'<token text="{token}" tag="{tag}" />' for token, tag in zip(tokens, tags)
-	)
+	else:
+		return "\n".join(f'<token text="{token}" tag="{tag}" />' for token, tag in zip(tokens, tags))
+
+
+def _split_into_sentences(tokens: list[str]) -> list[list[str]]:
+	"""Split tokenized input at sentence-ending punctuation."""
+	sentences = []
+	current_sentence = []
+	for token in tokens:
+		current_sentence.append(token)
+		if _is_sentence_end_token(token):
+			sentences.append(current_sentence)
+			current_sentence = []
+	if current_sentence:
+		sentences.append(current_sentence)
+	return sentences
 
 
 def _predict(
@@ -75,8 +88,19 @@ def _predict(
 			raise requests.RequestException("Model checkpoint not found")
 
 		model, idx2tag = model_loader.load_checkpoint(str(ckpt))
-		tags, used_tokens = model_loader.predict_sentence(model, idx2tag, _tokens(text))
-		return ({"tokens": _tokens(text), "tags": tags}, used_tokens)
+		all_tokens = []
+		all_tags = []
+		for sentence_tokens in _split_into_sentences(_tokens(text)):
+			tags, used_tokens = model_loader.predict_sentence(
+				model, idx2tag, sentence_tokens
+			)
+			if len(used_tokens) != len(tags):
+				raise ValueError(
+					"The model returned a different number of tokens and tags for one sentence."
+				)
+			all_tokens.extend(used_tokens)
+			all_tags.extend(tags)
+		return {"tokens": all_tokens, "tags": all_tags}
 
 	except requests.RequestException:
 		raise
@@ -166,7 +190,7 @@ def main() -> None:
 			st.warning("Please enter some text first.")
 		else:
 			try:
-				result, used_tokens = _predict(
+				result = _predict(
 					TAGGER_ENDPOINT,
 					text,
 					sorted(st.session_state.selected_sentence_ends),
