@@ -1,0 +1,11 @@
+torch==2.10.0
+transformers==5.12.1
+tokenizers==0.22.2
+streamlit==1.61.1
+numpy==2.4.2
+pandas==3.0.2
+scikit-learn==1.8.0
+lxml==6.0.2
+matplotlib==3.10.9
+seaborn==0.13.2
+regex==2026.1.15
