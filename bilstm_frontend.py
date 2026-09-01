@@ -82,10 +82,18 @@ def _predict(
 		model_loader = importlib.util.module_from_spec(spec)
 		spec.loader.exec_module(model_loader)
 
-		# try checkpoint in workspace root
-		ckpt = Path(__file__).resolve().parent.parent / "bilstm_pos_tagger_bnc.pth"
-		if not ckpt.exists():
-			raise requests.RequestException("Model checkpoint not found")
+		# resolve checkpoint in multiple realistic locations
+		candidate_paths = [
+			Path(__file__).resolve().parent.parent / "bilstm_pos_tagger_bnc.pth",
+			Path(__file__).resolve().parent / "bilstm_pos_tagger_bnc.pth",
+			Path(__file__).resolve().parent.parent / "POS-Tagger" / "bilstm_pos_tagger_bnc.pth",
+		]
+		ckpt = next((p for p in candidate_paths if p.exists()), None)
+		if ckpt is None:
+			raise requests.RequestException(
+				"Model checkpoint not found. Expected one of: "
+				+ ", ".join(str(p) for p in candidate_paths)
+			)
 
 		model, idx2tag = model_loader.load_checkpoint(str(ckpt))
 		all_tokens = []
