@@ -32,7 +32,7 @@ Short_Essay_Mittelschule_Klasse5
 OK_ITJ !_PUN 
 A_AT0 family_NN1 is_VBZ better_AJC than_CJS to_TO0 be_VBI rich_AJ0 ._PUN 
 And_CJC wenn_AV0 you_PNP are_VBB rich_AJ0 you_PNP ca_VM0 n’t_XX0 to_TO0 be_VBI happy_AJ0 because_CJS you_PNP do_VDB n’t_XX0 have_VHI friends_NN2 ._PUN 
-They_PNP won’l_VVB [_PUL ?_PUN ]_PUR to_TO0 be_VBI friends_NN2 with_PRP you_PNP and_CJC that_CJT s_VBZ why_AVq the_AT0 family_NN1 is_VBZ better_AJC and_CJC love_NN1 ._PUN 
+They_PNP won’l_VVB [_PUL ?_PUN ]_PUR to_TO0 be_VBI friends_NN2 with_PRP you_PNP and_CJC that_CJT s_VBZ why_AVQ the_AT0 family_NN1 is_VBZ better_AJC and_CJC love_NN1 ._PUN 
 To_TO0 have_VHI a_AT0 sister_NN1 or_CJC a_AT0 brother_NN1 is_VBZ very_AV0 nice_AJ0 because_CJS you_PNP can_VM0 play_VVI with_PRP your_DPS brother_NN1 or_CJC sister_NN1 and_CJC then_AV0 you_PNP do_VDB n’t_XX0 be_VBI bored_AJ0 ._PUN 
 But_CJC sometimes_AV0 your_DPS big_AJ0 or_CJC your_DPS big_AJ0 brother_NN1 is_VBZ sometimes_AV0 bossy_AJ0 if_CJS you_PNP do_VDB n’t_XX0 hear_VVI what_DTQ your_DPS big_AJ0 brother_NN1 or_CJC sister_NN1 says_VVZ ._PUN
 
@@ -132,7 +132,7 @@ Imagine_VVB when_AV0 I_PNP the_AT0 winner_NN1 in_PRP the_AT0 lotto_NN1 würde_VM
 And_CJC my_DPS dream_NN1 is_VBZ a_AT0 supermoto_NN1 ._PUN
 
 Short_Essay_Mittelschule_Klasse7 
-If_CJS I_PNP had_VHD won_VVN a_AT0 lottery_NN1 ticket_NN1 ,_PUN I_PNP would_VM0 ’ve_VhB bought_VVN myself_PNX a_AT0 (_PUL kumami_NP0 )_PUR sports_NN2 car_NN1 and_CJC a_AT0 beautiful_AJ0 cottage_NN1 ._PUN 
+If_CJS I_PNP had_VHD won_VVN a_AT0 lottery_NN1 ticket_NN1 ,_PUN I_PNP would_VM0 ’ve_VHB bought_VVN myself_PNX a_AT0 (_PUL kumami_NP0 )_PUR sports_NN2 car_NN1 and_CJC a_AT0 beautiful_AJ0 cottage_NN1 ._PUN 
 And_CJC I_PNP would_VM0 help_VVI my_DPS family_NN1 and_CJC friends_NN2 but_CJC also_AV0 save_VVB some_DT0 for_PRP another_DT0 year_NN1 or_CJC just_AV0 to_TO0 buy_VVI food_NN1 /_PUL groacenies_NN2
 
 Short_Essay_Mittelschule_Klasse7
@@ -153,7 +153,8 @@ And_CJC the_AT0 farm_NN1 has_VHZ tractors_NN2 and_CJC all_DT0 farm-maschinen_NN2
 
 Short_Essay_Mittelschule_Klasse9
 One_CRD of_PRF the_AT0 first_ORD things_NN2 I_PNP would_VM0 probably_AV0 do_VDI is_VBZ go_VVI back_AVP to_PRP my_DPS home_NN1 county_NN1 Romania_NP0 and_CJC start_VVB a_AT0 buisnes_NN1 there_AV0 that_CJT will_VM0 bring_VVI me_PNP a_AT0 lot_NN1 of_PRF money_NN1 ._PUN 
-I_PNP would_VM0 give_VVI my_DPS parents_NN2 money_NN1 becaus_CJS they_PNP were_VBD always_AV0 there_AV0 for_PRP me_PNP when_AV0 I_PNP needed_VVD them_PNP the_AT0 most_AV0. Then_AV0 I_PNP would_VM0 buy_VVI a_AT0 big_AJ0 house_NN1 with_PRP a_AT0 big_AJ0 pool_NN1 ,_PUN a_AT0 ten_CRD car_NN1 garage_NN1 and_CJC a_AT0 lot_NN1 of_PRF rooms_NN2 ._PUN 
+I_PNP would_VM0 give_VVI my_DPS parents_NN2 money_NN1 becaus_CJS they_PNP were_VBD always_AV0 there_AV0 for_PRP me_PNP when_AV0 I_PNP needed_VVD them_PNP the_AT0 most_AV0 ._PUN 
+Then_AV0 I_PNP would_VM0 buy_VVI a_AT0 big_AJ0 house_NN1 with_PRP a_AT0 big_AJ0 pool_NN1 ,_PUN a_AT0 ten_CRD car_NN1 garage_NN1 and_CJC a_AT0 lot_NN1 of_PRF rooms_NN2 ._PUN 
 To_TO0 fill_VVI the_AT0 garage_NN1 first_ORD I_PNP would_VM0 buy_VVI a_AT0 mercedes-Benz_NP0 cls_NP0 550_CRD tuned_VVN from_PRP barabus_NP0 ,_PUN then_AV0 as_PRP my_DPS second_ORD car_NN1 I_PNP would_VM0 buy_VVI a_AT0 BMW_NP0 M4_NP0 Competition_NP0 tuned_VVN frome_PRP g-power_NP0 ._PUN 
 And_CJC the_AT0 last_ORD thing_NN1 I_PNP would_VM0 do_VDI is_VBZ buy_VVI a_AT0 lot_NN1 of_PRF chlotes_NN2 ,_PUN shoes_NN2 ,_PUN Jewlery_NN1 ,_PUN Waches_NN2 ,_PUN Shades_NN2 ._PUN 
 I_PNP could_VM0 do_VDI this_DT0 whitout_PRP that_DT0 one_CRD Million_CRD but_CJC It_PNP would_VM0 be_VBI very_AV0 helpful_AJ0 to_TO0 start_VVI a_AT0 buisnes_NN1 ._PUN 
@@ -882,7 +883,7 @@ Dear_AJ0 Family_NN1 ,_PUN
 Last_ORD week_NN1 I_PNP won_VVD one_CRD million_CRD Euros_NN2 ,_PUN I_PNP did_VDD n’t_XX0 know_VVI how_AVQ but_CJC I_PNP ’m_VBB very_AV0 happy_AJ0 because_CJS I_PNP could_VM0 do_VDI some_DT0 good_AJ0 things_NN2 ._PUN 
 I_PNP wanted_VVD to_TO0 spend_VVI money_NN1 to_PRP people_NN0 who_PNQ are_VBB in_PRP need_NN1 ,_PUN that_DT0 they_PNP became_VVD some_DT0 food_NN1 or_CJC cloths_NN2 and_CJC that_CJT their_DPS children_NN2 can_VM0 go_VVI to_PRP school_NN1 ._PUN 
 For_PRP me_PNP ,_PUN I_PNP wanted_VVD to_TO0 made_VVI my_DPS own_DT0 way_NN1 that_CJT I_PNP can_VM0 worked_VVI in_PRP other_AJ0 countries_NN2 or_CJC that_CJT I_PNP can_VM0 see_VVI the_AT0 wold_NN1 ._PUN 
-_PNP think_VVB this_DT0 is_VBZ fun_NN1 ,_PUN but_CJC when_AV0 I_PNP worked_VVD anywhereelse_AV0 I_PNP will_VM0 help_VVI organisations_NN2 who_PNQ make_VVB people_NN0 who_PNQ need_VVB it_PNP a_AT0 better_AJC life_NN1 ._PUN 
+I_PNP think_VVB this_DT0 is_VBZ fun_NN1 ,_PUN but_CJC when_AV0 I_PNP worked_VVD anywhereelse_AV0 I_PNP will_VM0 help_VVI organisations_NN2 who_PNQ make_VVB people_NN0 who_PNQ need_VVB it_PNP a_AT0 better_AJC life_NN1 ._PUN 
 When_AV0 your_PNP need_VVB help_NN1 your_PNP could_VM0 text_VVI me_PNP with_PRP my_DPS brother_NN1 s_POS college_NN1 or_CJC with_PRP anything_PNI als_AV0 but_CJC I_PNP hope_VVB your_PNP call_VVB me_PNP that_CJT I_PNP could_VM0 visit_VVI my_DPS family_NN1 because_CJS I_PNP love_VVB they_PNP so_AV0 much_DT0 ._PUN 
 Yeah_ITJ ,_PUN well_ITJ I_PNP hope_VVB that_CJT we_PNP can_VM0 find_VVI a_AT0 solution_NN1 for_PRP that_DT0 I_PNP ’m_VBB very_AV0 nice_AJ0 with_PRP new_AJ0 people_NN0 I_PNP have_VHB met_VVN so_CJC I_PNP hope_VVB your_PNP could_VM0 see_VVI them_PNP ._PUN 
 I_PNP love_VVB your_PNP and_CJC see_VVB you_PNP soon_AV0 ._PUN

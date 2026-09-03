@@ -1,5 +1,5 @@
 Digital_Chat_Mittelschule_Klasse5
-I_ZZ0 :_PUN Hi_ITJ [_PUL name_NN1 ]_PUR ,_PUN how_AVQ are_VBB you_PNP feeling_VVG today_AV0?
+I_ZZ0 :_PUN Hi_ITJ [_PUL name_NN1 ]_PUR ,_PUN how_AVQ are_VBB you_PNP feeling_VVG today_AV0 ?_PUN
 S_ZZ0 :_PUN Hi_ITJ it_PNP ’s_VBZ good_AJ0 feeling_NN1
 I_ZZ0 :_PUN That_DT0 ’s_VBZ great_AJ0 !_PUN What_PNQ are_VBB your_DPS plans_NN2 for_PRP the_AT0 afternoon_NN1 ?_PUN
 S_ZZ0 :_PUN With_PRP my_DPS friends_NN2 playing_VVG
@@ -463,7 +463,7 @@ S_ZZ0 :_PUN mathe_NN1
 I_ZZ0 :_PUN What_PNQ are_VBB your_DPS plans_NN2 for_PRP this_DT0 summer_NN1 ?_PUN
 S_ZZ0 :_PUN my_DPS famile_NN1 go_VVB to_PRP cinema_NN1
     wiht_PRP my_DPS
-I_ZZ0 :_PUN Ok_ITJ ,_PUN do_VDB you_PNP like_VVI traveling_VVG ?
+I_ZZ0 :_PUN Ok_ITJ ,_PUN do_VDB you_PNP like_VVI traveling_VVG ?_PUN
 S_ZZ0 :_PUN yes_ITJ
 I_ZZ0 :_PUN Where_AVQ would_VM0 you_PNP like_VVI to_TO0 go_VVI ?_PUN
 S_ZZ0 :_PUN italien_NP0
@@ -610,7 +610,7 @@ I_ZZ0 :_PUN Hi_ITJ ,_PUN [_PUL name_NN1 ]_PUR !_PUN I_PNP ’m_VBB [_PUL name_NN
 S_ZZ0 :_PUN my_DPS school_NN1 year_NN1 was_VBD good_AJ0 because_CJS my_DPS grades_NN2 where_VBD ok_AJ0
 I_ZZ0 :_PUN Cool_ITJ !_PUN What_PNQ is_VBZ your_DPS favorite_AJ0 subject_NN1 ?_PUN
 S_ZZ0 :_PUN my_DPS favorite_AJ0 subject_NN1 is_VBZ cooking_NN1
-I_ZZ0 :_PUN Wow_ITJ !_PUN What_PNQ di_VDB you_PNP like_VVI to_TO0 cook_VVI?
+I_ZZ0 :_PUN Wow_ITJ !_PUN What_PNQ di_VDB you_PNP like_VVI to_TO0 cook_VVI ?_PUN
 S_ZZ0 :_PUN I_PNP like_VVB burgers_NN2
 I_ZZ0 :_PUN What_PNQ are_VBB your_DPS plans_NN2 for_PRP this_DT0 summer_NN1 ?_PUN
 S_ZZ0 :_PUN I_PNP will_VM0 learn_VVI more_AV0 for_PRP school_NN1
@@ -955,7 +955,7 @@ S_ZZ0 :_PUN yes_ITJ i_PNP like_VVB presents_NN2 but_CJC i_PNP do_VDB not_XX0 cel
 I_ZZ0 :_PUN I_PNP see_VVB [_PUL smiley_NN1 ]_PUR
 What_PNQ would_VM0 you_PNP like_VVI to_TO0 get_VVI as_PRP a_AT0 present_NN1 ?_PUN
 S_ZZ0 :_PUN maybe_AV0 a_AT0 new_AJ0 football_NN1
-I_ZZ0 :_PUN Nice_ITJ [_PUL smiley_NN1 _PUR
+I_ZZ0 :_PUN Nice_ITJ [_PUL smiley_NN1 ]_PUR
 
 Digital_Chat_Gymnasium_Klasse8
 I_ZZ0 :_PUN Hello_ITJ [_PUL name_NN1 ]_PUR ,_PUN how_AVQ has_VHZ your_DPS day_NN1 been_VBN so_AV0 far_AV0 ?_PUN
@@ -985,7 +985,7 @@ Digital_Chat_Gymnasium_Klasse8
 I_ZZ0 :_PUN Hi_ITJ [_PUL name_NN1 ]_PUR ,_PUN
 How_AVQ are_VBB you_PNP today_AV0 ?_PUN
 S_ZZ0 :_PUN Hi_ITJ I_PNP am_VBB feeling_VVG good_AJ0 today_AV0
-I_ZZ0 :_PUN How_AVQ do_VDB you_PNP feel_VVI about_PRP your_DPS school_NN1 life_NN1 _PUN?
+I_ZZ0 :_PUN How_AVQ do_VDB you_PNP feel_VVI about_PRP your_DPS school_NN1 life_NN1 ?_PUN
 S_ZZ0 :_PUN my_DPS scholl_NN1 life_NN1 is_VBZ funny_AJ0 because_CJS i_PNP have_VHB fun_NN1 with_PRP my_DPS friends_NN2
 I_ZZ0 :_PUN What_PNQ is_VBZ your_DPS favorite_AJ0 subject_NN1 ?_PUN
 S_ZZ0 :_PUN My_DPS favorite_AJ0 aubject_NN1 is_VBZ mathe_NN1
@@ -1025,7 +1025,7 @@ S_ZZ0 :_PUN Hii_ITJ ,_PUN I_PNP ’m_VBB great_AJ0 !_PUN How_AVQ about_PRP you_P
 I_ZZ0 :_PUN I_PNP ’m_VBB fine_AJ0 ,_PUN thank_VVB you_PNP ._PUN Do_VDB you_PNP have_VHI any_DT0 plans_NN2 for_PRP this_DT0 afternoon_NN1 ?_PUN
 S_ZZ0 :_PUN That_DT0 ’s_VBZ nice_AJ0 to_TO0 hear_VVI ._PUN I_PNP need_VVB to_TO0 prepare_VVI my_DPS speech_NN1 for_PRP a_AT0 presentation_NN1 wich_DTQ takes_VVZ place_NN1 later_AV0 this_DT0 week_NN1 ._PUN
 I_ZZ0 :_PUN Oh_ITJ ,_PUN what_PNQ is_VBZ the_AT0 speech_NN1 about_PRP ?_PUN
-S_ZZ0 :_PUN It_PNP ’s_VBZ about_PRP school_NN1 shootings_NN2 in_PRP the_AT0 US_NP0 ,_PUN i_PNP ’ll_VM0 be_VBI mainly_AV0 talking_VVG about_PRP the_AT0 gun_NN1 laws_NN2 and_CJC compare_VVB them_PNP to_PRP other_AJ0 countries_NN2.
+S_ZZ0 :_PUN It_PNP ’s_VBZ about_PRP school_NN1 shootings_NN2 in_PRP the_AT0 US_NP0 ,_PUN i_PNP ’ll_VM0 be_VBI mainly_AV0 talking_VVG about_PRP the_AT0 gun_NN1 laws_NN2 and_CJC compare_VVB them_PNP to_PRP other_AJ0 countries_NN2 ._PUN
 I_ZZ0 :_PUN Yes_ITJ ,_PUN that_DT0 is_VBZ an_AT0 important_AJ0 topic_NN1 right_AV0 now_AV0 ._PUN Do_VDB you_PNP prepare_VVI your_DPS speech_NN1 for_PRP your_DPS English_NP0 lesson_NN1 or_CJC for_PRP something_PNI else_AV0 ?_PUN
 S_ZZ0 :_PUN No_ITJ ,_PUN it_PNP ’s_VBZ for_PRP the_AT0 subject_NN1 “_POQ SoG_NN1 ”_POQ ._PUN It_PNP s_VBZ a_AT0 political_AJ0 theme_NN1 ,_PUN we_PNP had_VHD to_TO0 find_VVI a_AT0 currently_AV0 important_AJ0 topic_NN1 and_CJC this_DT0 is_VBZ what_PNQ my_DPS group_NN1 and_CJC me_PNP agreed_VVD to_PRP ._PUN
 I_ZZ0 :_PUN That_DT0 ’s_VBZ a_AT0 great_AJ0 choice_NN1 ._PUN Well_ITJ than_AV0 ,_PUN I_PNP wish_VVB you_PNP the_AT0 best_AJS of_PRF luck_NN1 for_PRP your_DPS speech_NN1 ._PUN Thank_VVB you_PNP for_PRP participating_VVG and_CJC have_VHB a_AT0 nice_AJ0 day_NN1 !_PUN
@@ -1220,7 +1220,7 @@ S_ZZ0 :_PUN Lots_PNI of_PRF tests_NN2 and_CJC projects_NN2 for_PRP school_NN1
 I_ZZ0 :_PUN Yeah_ITJ ,_PUN sounds_VVZ stressful_AJ0 ._PUN Are_VBB you_PNP looking_VVG forward_AVP to_PRP the_AT0 holidays_NN2 ?_PUN
 S_ZZ0 :_PUN Definetly_AV0 ._PUN I_PNP just_AV0 need_VVB a_AT0 break_NN1 from_PRP alle_DT0 the_AT0 studying_NN1
   And_CJC Christmas_NN1 is_VBZ just_AV0 nice_AJ0 in_PRP general_AV0
-I_ZZ0 :_PUN Very_AV0 true_AJ0 ._PUN How_AVQ will_VM0 you_PNP be_VBI celebrating_VVG _PUN?
+I_ZZ0 :_PUN Very_AV0 true_AJ0 ._PUN How_AVQ will_VM0 you_PNP be_VBI celebrating_VVG ?_PUN
 S_ZZ0 :_PUN We_PRP will_VM0 visit_VVI some_DT0 family_NN1 and_CJC have_VHB a_AT0 nice_AJ0 dinner_NN1 with_PRP them_PNP
 I_ZZ0 :_PUN Nice_ITJ !_PUN Do_VDB you_PNP have_VHB a_AT0 nig_AJ0 family_NN1 ?_PUN
 S_ZZ0 :_PUN More_AV0 on_PRP the_AT0 small_AJ0 side_NN1 but_CJC it_PNP ’s_VBZ nice_AJ0
@@ -1238,7 +1238,7 @@ S_ZZ0 :_PUN Mostly_AV0 math_NN1 because_CJS it_PNP has_VHZ been_VBN getting_VVG 
 
 Digital_Chat_Gymnasium_Klasse12
 I_ZZ0 :_PUN Hi_ITJ [_PUL name_NN1 ]_PUR ,_PUN
-How_AVQ are_VBB you_PNP today_AV0 _PUN
+How_AVQ are_VBB you_PNP today_AV0 ?_PUN
 S_ZZ0 :_PUN Hi_ITJ ,_PUN I_PNP ’m_VBB good_AJ0 today_AV0 ._PUN Thanks_NN2 for_PRP the_AT0 question_NN1 but_CJC how_AVQ are_VBB you_PNP today_AV0 ?_PUN
 I_ZZ0 :_PUN Nice_ITJ ,_PUN thank_VVB you_PNP too_AV0 !_PUN
 How_AVQ do_VDB you_PNP find_VVI your_DPS school_NN1 life_NN1 ?_PUN
