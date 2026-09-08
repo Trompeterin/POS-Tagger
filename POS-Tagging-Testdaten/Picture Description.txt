@@ -176,16 +176,16 @@ uhm_ITJ ,_PUN
 HÃ¼gel_NN1 ?_PUN
 Hill_NN1 !_PUN
 Uhm_ITJ ,_PUN number_NN1 three_CRD the_AT0 man_NN1 is_VBZ ._PUN
-Is_VBZ out_PRP of_PRF the_AT0 sleigh_NN1 and_CJC the_AT0 boy_NN1 is_VBZ under_PRP the_AT0 man_NN1 ._PUN
+Is_VBZ out_AVP of_PRF the_AT0 sleigh_NN1 and_CJC the_AT0 boy_NN1 is_VBZ under_PRP the_AT0 man_NN1 ._PUN
 Number_NN1 four_CRD ._PUN The_AT0 man_NN1 is_VBZ angry_AJ0 ._PUN
 The_AT0 boy_NN1 is_VBZ behind_PRP the_AT0 man_NN1 ._PUN
 Number_NN1 five_CRD ._PUN
 The_AT0 man_NN1 ,_PUN uhm_ITJ ne_ITJ the_AT0 the_AT0 boy_NN1 helps_VVZ the_AT0 dad_NN1 and_CJC and_CJC she_PNP sleigh_VVB the_AT0 sleigh_NN1 ?_PUN
-Number_NN1 six_CRD the_AT0 man_NN1 and_CJC the_AT0 boy_NN1 see_VVB on_PRP ,_PUN uhm_ITJ see_VVB out_PRP of_PRF the_AT0 window_NN1 and_CJC they_PNP see_VVB uhm_ITJ see_VVB ,_PUN see_VVB uhm_ITJ birds_NN2 ._PUN
+Number_NN1 six_CRD the_AT0 man_NN1 and_CJC the_AT0 boy_NN1 see_VVB on_PRP ,_PUN uhm_ITJ see_VVB out_AVP of_PRF the_AT0 window_NN1 and_CJC they_PNP see_VVB uhm_ITJ see_VVB ,_PUN see_VVB uhm_ITJ birds_NN2 ._PUN
 Okay_ITJ ._PUN
 Uhm_ITJ ._PUN
 Angry_AJ0 and_CJC ,_PUN
-Uhm_ITJ the_AT0 man_NN1 has_VHZ no_DT0 hair_NN1 and_CJC the_AT0 boy_NN1 has_VHZ many_DT0 hair_NN1 ._PUN
+Uhm_ITJ the_AT0 man_NN1 has_VHZ no_AT0 hair_NN1 and_CJC the_AT0 boy_NN1 has_VHZ many_DT0 hair_NN1 ._PUN
 Uhm_ITJ ,_PUN
 No_ITJ ,_PUN she_PNP ’s_VBZ uhm_ITJ ,_PUN the_AT0 man_NN1 is_VBZ happy_AJ0 and_CJC the_AT0 boy_NN1 is_VBZ too_AV0 happy_AJ0 ._PUN
 Uhm_ITJ ,_PUN she_PNP see_VVB the_AT0 birds_NN2 ._PUN
@@ -201,7 +201,7 @@ Then_AV0 uhm_ITJ they_PNP are_VBB uhm_ITJ reparieren_VVB ,_PUN it_PNP ._PUN
 And_CJC they_PNP build_VVB a_AT0 house_NN1 for_PRP birds_NN2 ._PUN
 Good_AJ0 ._PUN
 Uhm_ITJ because_CJS they_PNP made_VVD a_AT0 house_NN1 for_PRP bir_ITJ -_PUN ,_PUN bir_ITJ -_PUN ,_PUN birds_NN2 ._PUN
-The_AT0 man_NN1 look_VVZ a_AT0 bit_AV0 old_AJ0 and_CJC it_PNP looks_VVZ like_PRP it_PNP is_VBZ the_AT0 da_ITJ -_PUN ,_PUN the_AT0 dad_NN1 of_PRF the_AT0 kid_NN1 ._PUN
+The_AT0 man_NN1 look_VVZ a_AT0 bit_AV0 old_AJ0 and_CJC it_PNP looks_VVZ like_CJC it_PNP is_VBZ the_AT0 da_ITJ -_PUN ,_PUN the_AT0 dad_NN1 of_PRF the_AT0 kid_NN1 ._PUN
 And_CJC the_AT0 kid_NN1 looks_VVZ small_AJ0 ._PUN
 And_CJC ,_PUN ja_ITJ ._PUN 
 No_ITJ ._PUN
@@ -251,7 +251,7 @@ And_CJC uhm_ITJ then_AV0 is_VBZ this_DT0 a_AT0 uhm_ITJ bird_NN1 house_NN1 ._PUN
 Yes_ITJ ,_PUN uhm_ITJ ._PUN
 It_PNP ’s_VBZ angry_AJ0 in_PRP the_AT0 picture_NN1 four_CRD ._PUN
 And_CJC uhm_ITJ in_PRP the_AT0 picture_NN1 uhm_ITJ six_CRD it_PNP ’s_VBZ happy_AJ0 ._PUN
-Uhm_ITJ ,_PUN because_CJS uhm_ITJ the_AT0 birds_NN2 have_VHB a_AT0 ,_PUN at_PRP home_AV0 [_PUL sag_VVG ich_PNP jetz_AV0 mal_AV0 ]_PUN ._PUN
+Uhm_ITJ ,_PUN because_CJS uhm_ITJ the_AT0 birds_NN2 have_VHB a_AT0 ,_PUN at_PRP home_NN1 [_PUL sag_VVG ich_PNP jetz_AV0 mal_AV0 ]_PUN ._PUN
 Uhm_ITJ ._PUN
 Uhm_ITJ done_VDN ._PUN
 
@@ -266,7 +266,7 @@ In_PRP picture_NN1 three_CRD they_PNP ,_PUN
 They_PNP fall_VVB over_AVP the_AT0 sleigh_NN1 ._PUN 
 In_PRP picture_NN1 four_CRD th_ITJ -_PUN they_PNP are_VBB not_XX0 happy_AJ0 and_CJC go_VVB home_AV0 ._PUN
 In_PRP picture_NN1 five_CRD they_PNP make_VVB a_AT0 uhm_ITJ bird_NN1 house_NN1 ._PUN
-In_PRP picture_NN1 six_CRD ,_PUN when_AV0 the_AT0 birdhouse_NN1 was_DTQ ready_AJ0 they_PNP see_VVB the_AT0 birds_NN2 in_PRP the_AT0 house_NN1 ._PUN
+In_PRP picture_NN1 six_CRD ,_PUN when_CJS the_AT0 birdhouse_NN1 was_DTQ ready_AJ0 they_PNP see_VVB the_AT0 birds_NN2 in_PRP the_AT0 house_NN1 ._PUN
 Good_AJ0 ._PUN
 Uhm_ITJ ._PUN
 They_PNP ’re_VBB looks_VVZ happy_AJ0 ._PUN
@@ -275,11 +275,11 @@ And_CJC the_AT0 boy_NN1 was_VBD really_AV0 small_AJ0 ._PUN
 No_ITJ ._PUN
 
 Picture_Description_Mittelschule_Klasse7
-At_PRP the_AT0 first_ORD one_CRD I_PNP think_VVB they_PNP ’re_VBB like_ITJ uhm_ITJ making_VVG something_PNI out_PRP of_PRF that_DT0 wood_NN1 ._PUN
+At_PRP the_AT0 first_ORD one_CRD I_PNP think_VVB they_PNP ’re_VBB like_ITJ uhm_ITJ making_VVG something_PNI out_AVP of_PRF that_DT0 wood_NN1 ._PUN
 I_PNP think_VVB they_PNP ’re_VBB making_VVG a_AT0 sleigh_NN1 ._PUN
 The_AT0 second_ORD picture_NN1 they_PNP go_VVB down_AVP a_AT0 hill_NN1 ._PUN
 And_CJC then_AV0 they_PNP crash_VVB and_CJC the_AT0 sleigh_NN1 falls_VVZ apart_AV0 ._PUN
-And_CJC then_AV0 they_PNP bring_VVB it_PNP back_AVP to_PRP uhm_ITJ ,_PUN to_PRP the_AT0 home_NN1 and_CJC make_VVB a_AT0 bird_NN1 ’s_POS house_NN1 out_PRP of_PRF it_PNP ._PUN
+And_CJC then_AV0 they_PNP bring_VVB it_PNP back_AVP to_PRP uhm_ITJ ,_PUN to_PRP the_AT0 home_NN1 and_CJC make_VVB a_AT0 bird_NN1 ’s_POS house_NN1 out_AVP of_PRF it_PNP ._PUN
 And_CJC now_AV0 birds_NN2 live_VVB in_PRP there_AV0 ._PUN
 I_PNP think_VVB frustrated_AJ0 and_CJC sad_AJ0 ._PUN
 And_CJC the_AT0 sixth_ORD picture_NN1 I_PNP think_VVB they_PNP ’re_VBB like_ITJ happy_AJ0 for_PRP the_AT0 birds_NN2 ._PUN
@@ -291,7 +291,7 @@ Uhm_ITJ ,_PUN it_PNP ’s_VBZ a_AT0 man_NN1 fixing_VVG the_AT0 ,_PUN
 Yeah_ITJ a_AT0 sleigh_NN1 ._PUN
 So_ITJ him_PNP and_CJC his_DPS grandson_NN1 can_VM0 go_VVB sleigh_NN1 ,_PUN 
 on_PRP the_AT0 hill_NN1 ._PUN But_CJC then_AV0 after_AV0 ,_PUN
-they_PNP both_AV0 hit_VVD something_PNI or_CJC like_ITJ got_VVD hurt_AJ0 and_CJC fell_VVD ._PUN Then_AV0 later_AV0 the_AT0 grandpa_NN1 was_DTQ mad_AJ0 ,_PUN so_CJC he_PNP decided_VVD to_TO0 fix_VVI it_PNP ,_PUN but_CJC make_VVB it_PNP something_PNI else_AV0 maybe_AV0 like_PRP a_AT0 bird_NN1 house_NN1 ,_PUN so_CJC the_AT0 birds_NN2 can_VM0 stay_VVI in_PRP there_AV0 and_CJC eat_VVB and_CJC stuff_NN1 like_PRP that_DT0 ._PUN
+they_PNP both_AV0 hit_VVD something_PNI or_CJC like_ITJ got_VVD hurt_AJ0 and_CJC fell_VVD ._PUN Then_AV0 later_AV0 the_AT0 grandpa_NN1 was_DTQ mad_AJ0 ,_PUN so_CJS he_PNP decided_VVD to_TO0 fix_VVI it_PNP ,_PUN but_CJC make_VVB it_PNP something_PNI else_AV0 maybe_AV0 like_PRP a_AT0 bird_NN1 house_NN1 ,_PUN so_CJS the_AT0 birds_NN2 can_VM0 stay_VVI in_PRP there_AV0 and_CJC eat_VVB and_CJC stuff_NN1 like_PRP that_DT0 ._PUN
 They_PNP ’re_VBB feeling_VVG relaxed_AJ0 and_CJC really_AV0 happy_AJ0 ._PUN
 So_ITJ ._PUN
 Yeah_ITJ I_PNP think_VVB because_CJS his_DPS work_NN1 paid_VVD off_AVP and_CJC he_PNP made_VVD something_PNI spectacular_AJ0 ,_PUN so_ITJ ._PUN
@@ -300,7 +300,7 @@ And_CJC he_PNP ’s_VBZ bald_AJ0 ,_PUN has_VHZ big_AJ0 eyebrows_NN2 ._PUN
 He_PNP ’s_VBZ wearing_VVG a_AT0 cardigan_NN1 maybe_AV0 ._PUN
 And_CJC it_PNP ’s_VBZ black_AJ0 ._PUN
 so_ITJ the_AT0 pants_NN2 are_VBB white_AJ0 and_CJC the_AT0 shoes_NN2 are_VBB black_AJ0 ._PUN 
-He_PNP ’s_VBZ holding_VVG a_AT0 hammer_NN1 and_CJC yeah_ITJ the_AT0 grandson_NN1 has_VHZ a_AT0 very_AV0 messy_AJ0 hair_NN1 style_NN1 like_PRP he_PNP did_VDD n’t_XX0 brush_VVI it_PNP very_AV0 well_AV0 so_ITJ he_PNP ’s_VHZ ,_PUN has_VHZ ,_PUN
+He_PNP ’s_VBZ holding_VVG a_AT0 hammer_NN1 and_CJC yeah_ITJ the_AT0 grandson_NN1 has_VHZ a_AT0 very_AV0 messy_AJ0 hair_NN1 style_NN1 like_CJS he_PNP did_VDD n’t_XX0 brush_VVI it_PNP very_AV0 well_AV0 so_ITJ he_PNP ’s_VHZ ,_PUN has_VHZ ,_PUN
 Ah_ITJ ,_PUN he_PNP ’s_VBZ short_AJ0 but_CJC he_PNP has_VHZ a_AT0 long_AJ0 shirt_NN1 that_CJT maybe_AV0 looks_VVZ comfy_AJ0 and_CJC real_AV0 poofy_AJ0 ._PUN
 It_PNP ’s_VBZ white_AJ0 same_DT0 with_PRP his_DPS pants_NN2 ._PUN
 And_CJC he_PNP ’s_VBZ helping_VVG his_DPS grandpa_NN1 ._PUN
@@ -312,8 +312,8 @@ In_PRP picture_NN1 two_CRD I_PNP can_VM0 see_VVI uhm_ITJ a_AT0 guy_NN1 on_PRP th
 Uhm_ITJ that_CJT is_VBZ driving_VVG down_AVP the_AT0 hill_NN1 ._PUN
 Ah_ITJ ,_PUN yeah_ITJ !_PUN 
 Uhm_ITJ in_PRP picture_NN1 three_CRD I_PNP can_VM0 see_VVI the_ITJ -_PUN them_PNP crash_VVI ._PUN
-In_PRP picture_NN1 four_CRD they_PNP are_VBB going_VVG home_NN1 ._PUN
-In_PRP picture_NN1 five_CRD they_PNP are_VBB building_VVG something_PNI out_PRP of_PRF the_AT0 sleigh_NN1 ._PUN
+In_PRP picture_NN1 four_CRD they_PNP are_VBB going_VVG home_AV0 ._PUN
+In_PRP picture_NN1 five_CRD they_PNP are_VBB building_VVG something_PNI out_AVP of_PRF the_AT0 sleigh_NN1 ._PUN
 Uhm_ITJ in_PRP picture_NN1 six_CRD I_PNP can_VM0 see_VVI some_DT0 birds_NN2 that_CJT are_VBB in_PRP the_AT0 thing_NN1 they_PNP have_VHB built_VVN ._PUN
 Uhm_ITJ ,_PUN sad_AJ0 ._PUN
 In_PRP picture_NN1 four_CRD ._PUN
@@ -321,10 +321,10 @@ Uhm_ITJ ,_PUN happy_AJ0 ._PUN
 Because_CJS they_PNP see_VVB what_DTQ they_PNP have_VHB built_VVN ._PUN
 Uhum_ITJ ._PUN
 Uhm_ITJ the_AT0 ,_PUN the_AT0 little_AJ0 guy_NN1 looks_VVZ like_PRP a_AT0 kid_NN1 ._PUN
-Like_PRP six_CRD years_NN2 old_AJ0 ._PUN
+Like_ITJ six_CRD years_NN2 old_AJ0 ._PUN
 Uhm_ITJ he_PNP has_VHZ black_AJ0 hair_NN1 ,_PUN it_PNP is_VBZ really_AV0 short_AJ0 and_CJC yeah_ITJ ._PUN
 The_AT0 other_AJ0 guy_NN1 looks_VVZ ,_PUN a_AT0 little_AV0 looks_VVZ older_AJC ._PUN
-Uhm_ITJ he_PNP has_VHZ no_DT0 hair_NN1 and_CJC a_AT0 beard_NN1 ._PUN
+Uhm_ITJ he_PNP has_VHZ no_AT0 hair_NN1 and_CJC a_AT0 beard_NN1 ._PUN
 Yeah_ITJ ._PUN
 Yep_ITJ ._PUN
 
@@ -401,7 +401,7 @@ Uhm_ITJ ,_PUN it_PNP has_VHZ uhm_ITJ long_AJ0 -_PUN ,_PUN longer_AJC hair_NN1 no
 The_AT0 father_NN1 is_VBZ bald_AJ0 he_PNP does_VDZ n’t_XX0 have_VHI any_DT0 hair_NN1 and_CJC he_PNP has_VHZ a_AT0 mustache_NN1 ._PUN
 Yes_ITJ ._PUN
 Uhm_ITJ ._PUN
-In_PRP the_AT0 last_ORD picture_NN1 I_PNP see_VVB them_PNP looking_VVG out_PRP of_PRF the_AT0 window_NN1 ._PUN
+In_PRP the_AT0 last_ORD picture_NN1 I_PNP see_VVB them_PNP looking_VVG out_AVP of_PRF the_AT0 window_NN1 ._PUN
 Yes_ITJ ._PUN
 
 Picture_Description_Mittelschule_Klasse9
@@ -412,7 +412,7 @@ And_CJC there_EX0 ’s_VBZ as_AV0 well_AV0 a_AT0 small_AJ0 kid_NN1 which_DTQ is_
 And_CJC on_PRP the_AT0 background_NN1 there_EX0 are_VBB some_DT0 wood_NN1 ._PUN
 On_PRP the_AT0 second_ORD picture_NN1 uhm_ITJ I_PNP can_VM0 see_VVI where_AVQ the_AT0 old_AJ0 man_NN1 and_CJC the_AT0 kids_NN2 is_VBZ running_VVG down_PRP a_AT0 mountain_NN1 ._PUN
 In_PRP the_AT0 third_ORD picture_NN1 ,_PUN
-uhm_ITJ as_AV0 it_PNP looks_VVZ like_PRP uhm_ITJ the_AT0 sleigh_NN1 fell_VVD down_AVP in_PRP two_CRD different_AJ0 things_NN2 and_CJC the_AT0 old_AJ0 and_CJC the_AT0 young_AJ0 uhm_ITJ kid_NN1 ,_PUN
+uhm_ITJ as_AV0 it_PNP looks_VVZ like_CJS uhm_ITJ the_AT0 sleigh_NN1 fell_VVD down_AVP in_PRP two_CRD different_AJ0 things_NN2 and_CJC the_AT0 old_AJ0 and_CJC the_AT0 young_AJ0 uhm_ITJ kid_NN1 ,_PUN
 Did_VDD a_AT0 ,_PUN
 Crash_NN1 ._PUN So_ITJ ._PUN
 Uhm_ITJ in_PRP the_AT0 fourth_ORD picture_NN1 uhm_ITJ they_PNP are_VBB getting_VVG all_DT0 the_AT0 wood_NN1 together_AV0 and_CJC going_VVG back_AVP ._PUN
@@ -427,14 +427,14 @@ Nothing_PNI ._PUN
 Picture_Description_Mittelschule_Klasse9
 In_PRP the_AT0 first_ORD picture_NN1 I_PNP can_VM0 see_VVI a_AT0 boy_NN1 and_CJC probably_AV0 his_DPS dad_NN1 ._PUN
 [_PUL as_AV0 ]_PUR Uhm_ITJ ,_PUN in_PRP the_AT0 background_NN1 you_PNP can_VM0 see_VVI some_DT0 woods_NN2 ._PUN
-And_CJC yeah_ITJ they_PNP ’re_VBB look_VVB like_PRP they_PNP are_VBB building_VVG ,_PUN
+And_CJC yeah_ITJ they_PNP ’re_VBB look_VVB like_CJS they_PNP are_VBB building_VVG ,_PUN
 [_PUL uhm_ITJ ]_PUR ,_PUN
 the_AT0 Schlitten_NN1 ._PUN
 I_PNP do_VDB n’t_XX0 know_VVI the_AT0 word_NN1 ._PUN The_AT0 English_NP0 word_NN1 ._PUN
 Sleigh_NN1 ._PUN They_PNP ’re_VBB working_VVG on_PRP the_AT0 sleigh_NN1 ._PUN
 On_PRP the_AT0 second_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 son_NN1 and_CJC the_AT0 dad_NN1 ._PUN
 Riding_VVG the_AT0 sleigh_NN1 ._PUN
-On_PRP the_AT0 third_ORD picture_NN1 it_PNP looks_VVZ like_PRP they_PNP crashed_VVD and_CJC the_AT0 sleigh_NN1 got_VVD destroyed_VVN ._PUN
+On_PRP the_AT0 third_ORD picture_NN1 it_PNP looks_VVZ like_CJS they_PNP crashed_VVD and_CJC the_AT0 sleigh_NN1 got_VVD destroyed_VVN ._PUN
 On_PRP the_AT0 fourth_ORD picture_NN1 you_PNP can_VM0 see_VVI them_PNP disappointed_AJ0 and_CJC the_AT0 dad_NN1 angry_AJ0 because_CJS the_AT0 sleigh_NN1 uhm_ITJ got_VVD destroyed_VVN and_CJC they_PNP are_VBB probably_AV0 walking_VVG back_AVP home_AV0 ._PUN
 On_PRP the_AT0 fifth_ORD picture_NN1 uhm_ITJ you_PNP can_VM0 see_VVI they_PNP are_VBB rebuilding_VVG the_AT0 sleigh_NN1 and_CJC the_AT0 son_NN1 is_VBZ holding_VVG  uhm_ITJ a_AT0 piece_NN1 of_PRF woods_NN2 ._PUN
 Uhm_ITJ in_PRP the_AT0 sixth_ORD picture_NN1 you_PNP can_VM0 see_VVI that_CJT they_PNP used_VVD the_AT0 sleigh_NN1 uhm_ITJ to_TO0 build_VVI a_AT0 home_NN1 for_PRP the_AT0 birds_NN2 and_CJC they_PNP ’re_VBB happy_AJ0 to_TO0 look_VVI at_PRP it_PNP just_AV0 because_CJS the_AT0 birds_NN2 have_VHB now_AV0 a_AT0 new_AJ0 home_NN1 ._PUN
@@ -449,16 +449,16 @@ No_ITJ ._PUN
 
 Picture_Description_Mittelschule_Klasse9
 Uhm_ITJ ,_PUN on_PRP the_AT0 first_ORD picture_NN1 is_VBZ a_AT0 man_NN1 with_PRP his_DPS son_NN1 ._PUN
-And_CJC she_PNP ,_PUN uhm_ITJ he_ITJ repair_VVB -_PUN repairing_VVG uhm_ITJ the_AT0 Schlitten_NN1 ._PUN
+And_CJC she_PNP ,_PUN uhm_ITJ he_PNP repair_VVB -_PUN repairing_VVG uhm_ITJ the_AT0 Schlitten_NN1 ._PUN
 On_PRP the_AT0 second_ORD picture_NN1 is_VBZ this_DT0 uhm_ITJ is_VBZ the_AT0 dad_NN1 with_PRP his_DPS son_NN1 ._PUN
 And_CJC she_PNP is_VBZ slide_VVB the_AT0 uhm_ITJ ._PUN Was_DTQ ist_VBZ denn_AV0 Piste_NN1 ?_PUN
 Piste_NN1 down_PRP ._PUN
 On_PRP the_AT0 second_ORD picture_NN1 uhm_ITJ she_PNP have_VHB has_VHZ a_AT0 crash_NN1 ._PUN
 On_PRP picture_NN1 four_CRD he_PNP go_VVB with_PRP the_AT0 woods_NN2 home_AV0 ._PUN
 On_PRP picture_NN1 five_CRD uhm_ITJ his_DPS dad_NN1 repairing_VVG the_AT0 Schlitten_NN1 ._PUN
-On_PRP picture_NN1 sechs_CRD ,_PUN six_CRD uhm_ITJ he_ITJ has_VHZ a_AT0 bird_NN1 house_NN1 ._PUN
+On_PRP picture_NN1 sechs_CRD ,_PUN six_CRD uhm_ITJ he_PNP has_VHZ a_AT0 bird_NN1 house_NN1 ._PUN
 Uhm_ITJ ,_PUN
-The_AT0 man_NN1 ,_PUN the_AT0 old_AJ0 man_NN1 has_VHZ Bart_NN1 and_CJC no_DT0 hairs_NN1 ._PUN
+The_AT0 man_NN1 ,_PUN the_AT0 old_AJ0 man_NN1 has_VHZ Bart_NN1 and_CJC no_AT0 hairs_NN1 ._PUN
 And_CJC the_AT0 kid_NN1 is_VBZ very_AV0 small_AJ0 ._PUN
 Uhm_ITJ ._PUN
 Uhm_ITJ the_AT0 ,_PUN on_PRP the_AT0 picture_NN1 one_CRD he_PNP is_VBZ feeling_VVG nice_AJ0 ._PUN
@@ -498,16 +498,16 @@ Picture_Description_Mittelschule_Klasse9
 At_PRP the_AT0 first_ORD picture_NN1 I_PNP can_VM0 see_VVI one_CRD man_NN1 and_CJC one_CRD child_NN1 ._PUN
 The_AT0 man_NN1 is_VBZ ,_PUN is_VBZ working_VVG on_PRP a_AT0 ,_PUN is_VBZ working_VVG with_PRP a_AT0 hammer_NN1 ._PUN
 He_PNP looks_VVZ a_AT0 bit_AV0 angry_AJ0 ._PUN
-At_PRP the_AT0 second_ORD picture_NN1 I_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC the_AT0 chi_ITJ -_PUN child_NN1 when_AV0 they_PNP are_VBB skiing_VVG at_PRP a_AT0 mountain_NN1 ._PUN
+At_PRP the_AT0 second_ORD picture_NN1 I_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC the_AT0 chi_ITJ -_PUN child_NN1 when_CJS they_PNP are_VBB skiing_VVG at_PRP a_AT0 mountain_NN1 ._PUN
 At_PRP the_AT0 third_ORD picture_NN1 I_PNP can_VM0 see_VVI the_AT0 man_NN1 is_VBZ falling_VVG down_AVP at_PRP the_AT0 ground_NN1 and_CJC the_AT0 child_NN1 lays_VVZ down_AVP at_PRP the_AT0 ground_NN1 also_AV0 ._PUN
 At_PRP the_AT0 fourth_ORD picture_NN1 I_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC the_AT0 child_NN1 uhm_ITJ dragging_VVG some_DT0 wood_NN1 ._PUN
 At_PRP the_AT0 fifth_ORD picture_NN1 the_AT0 man_NN1 is_VBZ sawing_VVG a_AT0 bit_NN1 of_PRF wood_NN1 ._PUN
 At_PRP the_AT0 last_ORD picture_NN1 I_PNP can_VM0 see_VVI many_DT0 birds_NN2 ._PUN
 The_AT0 man_NN1 and_CJC the_AT0 child_NN1 are_VBB looking_VVG fro_ITJ -_PUN from_PRP the_AT0 window_NN1 at_PRP the_AT0 birds_NN2 ._PUN
-The_AT0 man_NN1 has_VHZ a_AT0 a_AT0 T-shirt_NN1 on_PRP on_PRP ._PUN
+The_AT0 man_NN1 has_VHZ a_AT0 a_AT0 T-shirt_NN1 on_AVP on_AVP ._PUN
 The_AT0 the_AT0 child_NN1 has_VHZ a_AT0 pullover_NN1 ._PUN
 They_PNP are_VBB both_AV0 uhm_ITJ wearing_VVG long_AJ0 trousers_NN2 and_CJC shoes_NN2 uhm_ITJ ._PUN
-The_AT0 man_NN1 has_VHZ no_DT0 hairs_NN1 ._PUN
+The_AT0 man_NN1 has_VHZ no_AT0 hairs_NN1 ._PUN
 I_PNP can_VM0 not_XX0 say_VVI much_DT0 more_DT0 ._PUN
 At_PRP a_AT0 few_DT0 of_PRF the_AT0 pictures_NN2 they_PNP are_VBB looking_VVG happy_AJ0 but_CJC on_PRP two_CRD or_CJC three_CRD pictures_NN2 they_PNP are_VBB looking_VVG a_AT0 bit_AV0 sad_AJ0 or_CJC angry_AJ0 ._PUN
 For_AV0 example_AV0 at_PRP this_DT0 picture_NN1 he_PNP is_VBZ looking_VVG a_AT0 bit_AV0 angry_AJ0 and_CJC he_PNP is_VBZ looking_VVG a_AT0 bit_AV0 sad_AJ0 ._PUN
@@ -540,11 +540,11 @@ Uhm_ITJ ,_PUN in_PRP the_AT0 third_ORD picture_NN1 they_PNP ,_PUN the_AT0 sleigh
 And_CJC two_CRD people_NN0 fall_VVB ._PUN
 On_PRP the_AT0 fourth_ORD picture_NN1 they_PNP clean_VVB the_AT0 sleigh_NN1 and_CJC put_VVB it_PNP away_AV0 ._PUN
 Uhm_ITJ on_PRP the_AT0 fifth_ORD they_PNP make_VVB a_AT0 new_AJ0 one_PNI ._PUN
-And_CJC in_PRP the_AT0 last_ORD picture_NN1 there_EX0 ’s_VBZ the_AT0 two_CRD same_DT0 people_NN0 who_PNQ look_VVB out_PRP of_PRF a_AT0 window_NN1 and_CJC birds_NN2 ._PUN
+And_CJC in_PRP the_AT0 last_ORD picture_NN1 there_EX0 ’s_VBZ the_AT0 two_CRD same_DT0 people_NN0 who_PNQ look_VVB out_AVP of_PRF a_AT0 window_NN1 and_CJC birds_NN2 ._PUN
 They_PNP are_VBB eating_VVG ._PUN
 uhm_ITJ ,_PUN the_AT0 house_NN1 from_PRP the_AT0 birds_NN2 ._PUN
 Uhm_ITJ ,_PUN At_PRP the_AT0 picture_NN1 four_CRD they_PNP sad_AJ0 [_PUL maybe_AV0 ]_PUR and_CJC on_PRP the_AT0 sixth_ORD they_PNP happy_AJ0 ._PUN
-Because_CJS they_PNP make_VVB something_PNI new_AJ0 uhm_ITJ out_PRP of_PRF the_AT0 broken_AJ0 sleigh_NN1 ._PUN
+Because_CJS they_PNP make_VVB something_PNI new_AJ0 uhm_ITJ out_AVP of_PRF the_AT0 broken_AJ0 sleigh_NN1 ._PUN
 No_ITJ ._PUN
 
 Picture_Description_Mittelschule_Klasse9
@@ -566,7 +566,7 @@ Picture_Description_Mittelschule_Klasse9
 Yes_ITJ ._PUN
 Uhm_ITJ I_PNP can_VM0 see_VVI a_AT0 man_NN1 and_CJC a_AT0 kid_NN1 ,_PUN and_CJC the_AT0 man_NN1 uhm_ITJ repair_VVB the_AT0 Sch_ITJ -_PUN Schlitten_NN1 of_PRF the_AT0 kid_NN1 ._PUN
 Yes_ITJ ._PUN
-By_PRP number_NN1 two_CRD I_PNP can_VM0 see_VVB the_AT0 man_NN1 and_CJC the_AT0 kid_NN1 when_AV0 they_PNP drive_VVB with_PRP the_AT0 Schlitten_NN1 ._PUN
+By_PRP number_NN1 two_CRD I_PNP can_VM0 see_VVB the_AT0 man_NN1 and_CJC the_AT0 kid_NN1 when_CJS they_PNP drive_VVB with_PRP the_AT0 Schlitten_NN1 ._PUN
 Uhm_ITJ number_NN1 three_CRD they_PNP crashed_VVD ._PUN
 Number_NN1 four_CRD they_PNP go_VVB uhm_ITJ ,_PUN yeah_ITJ their_DPS Schlitten_NN1 is_VBZ uhm_ITJ ,_PUN yeah_ITJ the_AT0 Schlitten_NN1 crashed_VVD ._PUN
 Number_NN1 five_CRD they_PNP ,_PUN they_PNP repair_VVB the_AT0 Schlitten_NN1 and_CJC make_VVB a_AT0 ,_PUN
@@ -592,7 +592,7 @@ So_ITJ the_AT0 old_AJ0 man_NN1 and_CJC with_PRP the_AT0 hairs_NN1 and_CJC a_AT0 
 Uhm_ITJ in_PRP the_AT0 first_ORD picture_NN1 they_PNP uhm_ITJ maybe_AV0 they_PNP ’re_VBB have_VHB fun_NN1 build_VVB this_DT0 and_CJC on_PRP the_AT0 second_ORD picture_NN1 they_PNP have_VHB fun_NN1 very_AV0 much_DT0 fun_NN1 ._PUN
 Uhm_ITJ on_PRP the_AT0 third_ORD picture_NN1 they_PNP shocked_AJ0 because_CJS they_PNP fly_VVB and_CJC on_PRP the_AT0 fourth_ORD picture_NN1 they_PNP ,_PUN the_AT0 old_AJ0 man_NN1 is_VBZ sad_AJ0 maybe_AV0 and_CJC the_AT0 ,_PUN but_CJC the_AT0 boy_NN1 is_VBZ yeah_ITJ normal_AJ0 ._PUN
 They_PNP they_PNP go_VVB normally_AV0 ,_PUN the_AT0 old_AJ0 man_NN1 is_VBZ a_AT0 bit_AV0 uhm_ITJ ,_PUN
-yeah_ITJ ,_PUN a_AT0 bit_AV0 uhm_ITJ smaller_AJC and_CJC on_PRP the_AT0 five_CRD picture_NN1 they_PNP very_AV0 focused_AJ0 on_PRP the_AT0 ,_PUN on_PRP building_VVG this_DT0 birdhouse_NN1 and_CJC on_PRP the_AT0 sixth_ORD picture_NN1 they_PNP very_AV0 happy_AJ0 looking_VVG out_PRP of_PRF the_AT0 window_NN1 ._PUN
+yeah_ITJ ,_PUN a_AT0 bit_AV0 uhm_ITJ smaller_AJC and_CJC on_PRP the_AT0 five_CRD picture_NN1 they_PNP very_AV0 focused_AJ0 on_PRP the_AT0 ,_PUN on_PRP building_VVG this_DT0 birdhouse_NN1 and_CJC on_PRP the_AT0 sixth_ORD picture_NN1 they_PNP very_AV0 happy_AJ0 looking_VVG out_AVP of_PRF the_AT0 window_NN1 ._PUN
 
 Picture_Description_Mittelschule_Klasse10
 Uhm_ITJ ,_PUN I_PNP think_VVB in_PRP the_AT0 first_ORD picture_NN1 there_EX0 are_VBB the_AT0 dad_NN1 and_CJC the_AT0 kid_NN1 build_VVB a_AT0 ,_PUN building_VVG a_AT0 sledge_NN1 uhm_ITJ with_PRP a_AT0 hammer_NN1 uhm_ITJ ja_ITJ [_PUL ..._PUN ]_PUR
@@ -601,7 +601,7 @@ Uhm_ITJ the_AT0 kid_NN1 sit_VVB on_PRP the_AT0 back_NN1 from_PRP the_AT0 dad_NN1
 In_PRP the_AT0 third_ORD picture_NN1 there_EX0 is_VBZ the_AT0 dad_NN1 and_CJC the_AT0 kid_NN1 ._PUN I_PNP do_VDB n’t_XX0 know_VVI ._PUN I_PNP think_VVB they_PNP crashed_VVD or_CJC something_PNI like_PRP that_DT0 ._PUN
 And_CJC ,_PUN ja_ITJ ._PUN
 The_AT0 sledge_NN1 broke_VVD ._PUN
-On_PRP the_AT0 th_ITJ -_PUN uhm_ITJ third_ORD and_CJC on_PRP the_AT0 uhm_ITJ fourth_ORD picture_NN1 they_PNP are_VBB going_VVG home_AV0 and_CJC building_VVG uhm_ITJ out_PRP of_PRF the_AT0 sledge_NN1 a_AT0 house_NN1 for_PRP birds_NN2 ._PUN
+On_PRP the_AT0 th_ITJ -_PUN uhm_ITJ third_ORD and_CJC on_PRP the_AT0 uhm_ITJ fourth_ORD picture_NN1 they_PNP are_VBB going_VVG home_AV0 and_CJC building_VVG uhm_ITJ out_AVP of_PRF the_AT0 sledge_NN1 a_AT0 house_NN1 for_PRP birds_NN2 ._PUN
 And_CJC then_AV0 they_PNP ’re_VBB looking_VVG at_PRP them_PNP from_PRP the_AT0 window_NN1 ._PUN
 Uhm_ITJ ,_PUN I_PNP think_VVB in_PRP the_AT0 first_ORD picture_NN1 they_PNP ’re_VBB look_VVB really_AV0 interested_AJ0 and_CJC ,_PUN
 focused_AJ0 on_PRP uhm_ITJ the_AT0 building_VVG the_AT0 sledge_NN1 ._PUN 
@@ -629,11 +629,11 @@ And_CJC they_PNP ’re_VBB laying_VVG on_PRP the_AT0 ground_NN1 I_PNP guess_VVB 
 Uhm_ITJ ,_PUN on_PRP the_AT0 fourth_ORD picture_NN1 I_PNP can_VM0 see_VVI the_AT0 dad_NN1 and_CJC the_AT0 boy_NN1 walking_VVG I_PNP think_VVB back_AVP home_AV0 or_CJC something_PNI with_PRP the_AT0 woods_NN2 in_PRP their_DPS hands_NN2 ._PUN
 And_CJC on_PRP the_AT0 fifth_ORD picture_NN1 I_PNP can_VM0 see_VVI the_AT0 dad_NN1 and_CJC the_AT0 boy_NN1 recreating_VVG something_PNI new_AJ0 with_PRP it_PNP ._PUN
 It_PNP ’s_VBZ ,_PUN it_PNP looks_VVZ like_PRP a_AT0 little_AJ0 house_NN1 for_PRP like_ITJ the_AT0 birds_NN2 or_CJC something_PNI ._PUN
-In_PRP the_AT0 sixth_ORD picture_NN1 I_PNP can_VM0 see_VVI the_AT0 little_AJ0 new_AJ0 house_NN1 for_PRP the_AT0 birds_NN2 and_CJC the_AT0 dad_NN1 and_CJC the_AT0 son_NN1 are_VBB looking_VVG out_PRP of_PRF the_AT0 window_NN1 how_AVQ the_AT0 birds_NN2 are_VBB flying_VVG to_PRP the_AT0 house_NN1 ._PUN
+In_PRP the_AT0 sixth_ORD picture_NN1 I_PNP can_VM0 see_VVI the_AT0 little_AJ0 new_AJ0 house_NN1 for_PRP the_AT0 birds_NN2 and_CJC the_AT0 dad_NN1 and_CJC the_AT0 son_NN1 are_VBB looking_VVG out_AVP of_PRF the_AT0 window_NN1 how_AVQ the_AT0 birds_NN2 are_VBB flying_VVG to_PRP the_AT0 house_NN1 ._PUN
 Uhum_ITJ ,_PUN uhm_ITJ in_PRP the_AT0 first_ORD picture_NN1 they_PNP both_AV0 look_VVB like_ITJ very_AV0 ,_PUN
 I_PNP do_VDB n’t_XX0 know_VVI normal_AJ0 ._PUN
 The_AT0 dad_NN1 is_VBZ look_VVB ,_PUN the_AT0 dad_NN1 looks_VVZ a_AT0 little_AV0 bit_AV0 angry_AJ0 ._PUN I_PNP do_VDB n’t_XX0 know_VVI ._PUN
-Uhm_ITJ ,_PUN in_PRP the_AT0 second_ORD picture_NN1 it_PNP looks_VVZ like_PRP they_PNP have_VHB very_AV0 much_DT0 fun_NN1 ._PUN
+Uhm_ITJ ,_PUN in_PRP the_AT0 second_ORD picture_NN1 it_PNP looks_VVZ like_CJS they_PNP have_VHB very_AV0 much_DT0 fun_NN1 ._PUN
 And_CJC in_PRP the_AT0 third_ORD picture_NN1 uhm_ITJ ,_PUN maybe_AV0 they_PNP ’re_VBB in_PRP a_AT0 shock_NN1 because_CJS they_PNP crashed_VVD somewhere_AV0 ._PUN
 Uhm_ITJ ,_PUN on_PRP the_AT0 fourth_ORD picture_NN1 they_PNP look_VVB sad_AJ0 and_CJC I_PNP think_VVB the_AT0 dad_NN1 is_VBZ a_AT0 little_AV0 bit_AV0 like_ITJ angry_AJ0 or_CJC yeah_ITJ something_PNI like_PRP that_DT0 ._PUN
 The_AT0 boy_NN1 looks_VVZ very_AV0 sad_AJ0 in_PRP the_AT0 fourth_ORD picture_NN1 ._PUN
@@ -656,8 +656,8 @@ Uhm_ITJ with_PRP the_AT0 sledge_NN1 ._PUN
 And_CJC the_AT0 last_ORD picture_NN1 there_EX0 are_VBB birds_NN2 in_PRP the_AT0 house_NN1 and_CJC the_AT0 old_AJ0 man_NN1 and_CJC the_AT0 young_AJ0 boy_NN1 are_VBB happy_AJ0 ._PUN
 Uhm_ITJ ,_PUN the_AT0 young_AJ0 boy_NN1 keine_XX0 Ahnung_NN1 ._PUN
 They_PNP ,_PUN uhm_ITJ they_PNP wear_VVB a_AT0 hoodie_NN1 and_CJC a_AT0 jeans_NN2 ._PUN
-The_AT0 old_AJ0 man_NN1 have_VHB a_AT0 uhm_ITJ Bart_NN1 [_PUL ?_PUN ]_PUR uhm_ITJ and_CJC have_VHB no_DT0 hairs_NN1 on_PRP the_AT0 head_NN1 ._PUN
-And_CJC he_ITJ wear_VVB a_AT0 hoodie_NN1 and_CJC jeans_NN2 and_CJC shoes_NN2 ._PUN
+The_AT0 old_AJ0 man_NN1 have_VHB a_AT0 uhm_ITJ Bart_NN1 [_PUL ?_PUN ]_PUR uhm_ITJ and_CJC have_VHB no_AT0 hairs_NN1 on_PRP the_AT0 head_NN1 ._PUN
+And_CJC he_PNP wear_VVB a_AT0 hoodie_NN1 and_CJC jeans_NN2 and_CJC shoes_NN2 ._PUN
 And_CJC yes_ITJ ._PUN
 
 Picture_Description_Mittelschule_Klasse10
@@ -672,12 +672,12 @@ On_PRP the_AT0 second_ORD picture_NN1 uhm_ITJ is_VBZ a_AT0 is_VBZ the_AT0 man_NN
 They_PNP are_VBB sliding_VVG with_PRP the_AT0 Schlitten_NN1 ._PUN
 And_CJC then_AV0 on_PRP the_AT0 third_ORD picture_NN1 the_AT0 man_NN1 and_CJC the_AT0 child_NN1 are_VBB uhm_ITJ fall_VVB -_PUN falling_VVG down_AVP and_CJC the_AT0 Schlitten_NN1 is_VBZ broken_AJ0 ._PUN 
 On_PRP the_AT0 fourth_ORD picture_NN1 uhm_ITJ they_PNP are_VBB uhm_ITJ ,_PUN
-bring_VVB the_AT0 uhm_ITJ the_AT0 parts_NN2 of_PRF the_AT0 Schlitten_NN1 at_PRP home_AV0 ._PUN
+bring_VVB the_AT0 uhm_ITJ the_AT0 parts_NN2 of_PRF the_AT0 Schlitten_NN1 at_PRP home_NN1 ._PUN
 On_PRP the_AT0 fifth_ORD picture_NN1 they_PNP uhm_ITJ make_VVB from_PRP the_AT0 ,_PUN
 uhm_ITJ parts_NN2 of_PRF the_AT0 Schlitten_NN1 a_AT0 home_NN1 for_PRP birds_NN2 and_CJC in_PRP the_AT0 six_CRD -_PUN sixth_ORD picture_NN1 -_PUN picture_NN1 they_PNP are_VBB look_VVB -_PUN looking_VVG at_PRP the_AT0 birds_NN2 they_PNP are_VBB uhm_ITJ eating_VVG there_AV0 ._PUN
 Genau_ITJ ._PUN
 Uhm_ITJ ._PUN The_AT0 man_NN1 I_PNP think_VVB it_PNP ’s_VBZ the_AT0 father_NN1 of_PRF the_AT0 young_AJ0 man_NN1 ,_PUN
-Uhm_ITJ he_ITJ do_VDB n’t_XX0 have_VHI much_DT0 hairs_NN1 on_PRP the_AT0 head_NN1 but_CJC he_PNP have_VHB much_DT0 Bart_NN1 and_CJC the_AT0 young_AJ0 child_NN1 have_VHB black_AJ0 hairs_NN1 and_CJC yes_ITJ ._PUN
+Uhm_ITJ he_PNP do_VDB n’t_XX0 have_VHI much_DT0 hairs_NN1 on_PRP the_AT0 head_NN1 but_CJC he_PNP have_VHB much_DT0 Bart_NN1 and_CJC the_AT0 young_AJ0 child_NN1 have_VHB black_AJ0 hairs_NN1 and_CJC yes_ITJ ._PUN
 
 Picture_Description_Mittelschule_Klasse10
 I_PNP can_VM0 see_VVI a_AT0 a_AT0 old_AJ0 man_NN1 with_PRP a_AT0 boy_NN1 and_CJC they_PNP worked_VVD ._PUN
@@ -711,10 +711,10 @@ In_PRP picture_NN1 five_CRD they_PNP ,_PUN uhm_ITJ ,_PUN
 reparate_VVB the_AT0 sledge_NN1 and_CJC build_VVB a_AT0 house_NN1 for_PRP the_AT0 birds_NN2 ,_PUN
 uhm_ITJ ,_PUN for_PRP them_PNP ._PUN
 Uhm_ITJ and_CJC in_PRP the_AT0 last_ORD picture_NN1 the_AT0 house_NN1 for_PRP the_AT0 birds_NN2 are_VBB finished_AJ0 ._PUN
-Uhm_ITJ ._PUN The_AT0 man_NN1 is_VBZ uhm_ITJ big_AJ0 and_CJC have_VHB no_DT0 hairs_NN1 on_PRP the_AT0 head_NN1 ._PUN
+Uhm_ITJ ._PUN The_AT0 man_NN1 is_VBZ uhm_ITJ big_AJ0 and_CJC have_VHB no_AT0 hairs_NN1 on_PRP the_AT0 head_NN1 ._PUN
 Uhm_ITJ ,_PUN he_PNP have_VHB a_AT0 Bart_NN1 and_CJC the_AT0 little_AJ0 man_NN1 are_VBB probably_AV0 his_DPS son_NN1 with_PRP uhm_ITJ ,_PUN yeah_ITJ hairs_NN1 on_PRP their_DPS head_NN1 ,_PUN and_CJC yeah_ITJ ._PUN
 Uhm_ITJ ,_PUN in_PRP picture_NN1 two_CRD uhm_ITJ they_PNP have_VHB much_DT0 fun_NN1 with_PRP the_AT0 sledge_NN1 ._PUN
-And_CJC in_PRP picture_NN1 three_CRD they_PNP fall_VVB on_PRP the_AT0 ground_NN1 so_CJC probably_AV0 they_PNP sad_AJ0 that_CJT the_AT0 sledge_NN1 are_VBB broken_AJ0 ._PUN
+And_CJC in_PRP picture_NN1 three_CRD they_PNP fall_VVB on_PRP the_AT0 ground_NN1 so_CJS probably_AV0 they_PNP sad_AJ0 that_CJT the_AT0 sledge_NN1 are_VBB broken_AJ0 ._PUN
 Picture_NN1 four_CRD the_AT0 dad_NN1 is_VBZ angry_AJ0 about_PRP -_PUN about_PRP it_PNP ._PUN
 In_PRP the_AT0 last_ORD picture_NN1 they_PNP are_VBB happy_AJ0 that_CJT the_AT0 birds_NN2 have_VHB a_AT0 house_NN1 ._PUN
 
@@ -746,17 +746,17 @@ In_PRP the_AT0 second_ORD picture_NN1 they_PNP ’re_VBB both_AV0 uhm_ITJ going_
 In_PRP the_AT0 third_ORD picture_NN1 they_PNP both_AV0 crashed_VVD uhm_ITJ and_CJC they_PNP ,_PUN the_AT0 thing_NN1 they_PNP built_VVD it_PNP uhm_ITJ shattered_VVD and_CJC they_PNP both_AV0 fell_VVD to_PRP the_AT0 ground_NN1 ._PUN
 Picture_NN1 four_CRD they_PNP ,_PUN they_PNP brought_VVD all_DT0 their_DPS stuff_NN1 [_PUL that_DT0 broke_VVD down_AVP ]_PUR back_AVP to_PRP their_DPS house_NN1 ._PUN
 Uhm_ITJ in_PRP the_AT0 fifth_ORD picture_NN1 they_PNP started_VVD from_PRP uhm_ITJ building_VVG from_PRP the_AT0 wood_NN1 a_AT0 bird_NN1 s’_POS house_NN1 ._PUN
-And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 the_AT0 man_NN1 and_CJC the_AT0 boy_NN1 uhm_ITJ are_VBB looking_VVG out_PRP of_PRF the_AT0 window_NN1 and_CJC uhm_ITJ they_PNP ’re_VBB seeing_VVG birds_NN2 uhm_ITJ into_PRP that_DT0 house_NN1 ._PUN
+And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 the_AT0 man_NN1 and_CJC the_AT0 boy_NN1 uhm_ITJ are_VBB looking_VVG out_AVP of_PRF the_AT0 window_NN1 and_CJC uhm_ITJ they_PNP ’re_VBB seeing_VVG birds_NN2 uhm_ITJ into_PRP that_DT0 house_NN1 ._PUN
 to_TO0 get_VVI some_DT0 shelter_NN1 or_CJC food_NN1 ._PUN
 Uhm_ITJ ._PUN The_AT0 boy_NN1 is_VBZ very_AV0 small_AJ0 ._PUN
 got_VVN a_AT0 little_AV0 bit_AV0 longer_AJC hair_NN1 ._PUN
 got_VVN black_AJ0 shoes_NN2 and_CJC is_VBZ uhm_ITJ dressed_VVN all_DT0 white_AJ0 ._PUN
 Uhm_ITJ ._PUN The_AT0 man_NN1 he_PNP got_VVN a_AT0 beard_NN1 and_CJC very_AV0 big_AJ0 eyebrows_NN2 ._PUN
 He_PNP ’s_VBZ wearing_VVG a_AT0 black_AJ0 shirt_NN1 ._PUN
-And_CJC white_AJ0 pants_NN2 and_CJC he_PNP ’s_VBZ a_AT0 little_AV0 bit_AV0 uhm_ITJ stronger-built_AJ0 ,_PUN like_PRP he_PNP got_VVN a_AT0 strong_AJ0 ,_PUN he_PNP ’s_VBZ a_AT0 little_AJ0 bit_NN1 more_AV0 fat_AJ0 I_PNP would_VM0 say_VVI ._PUN
+And_CJC white_AJ0 pants_NN2 and_CJC he_PNP ’s_VBZ a_AT0 little_AV0 bit_AV0 uhm_ITJ stronger-built_AJ0 ,_PUN like_CJS he_PNP got_VVN a_AT0 strong_AJ0 ,_PUN he_PNP ’s_VBZ a_AT0 little_AJ0 bit_NN1 more_AV0 fat_AJ0 I_PNP would_VM0 say_VVI ._PUN
 Uhm_ITJ ._PUN
 Ja_ITJ ._PUN
-Uhm_ITJ ._PUN In_PRP the_AT0 first_ORD picture_NN1 I_PNP think_VVB they_PNP ’re_VBB both_AV0 uhm_ITJ like_PRP excited_AJ0 that_AV0 they_PNP ’re_VBB going_VVG to_TO0 finish_VVI the_AT0 build_NN1 ._PUN
+Uhm_ITJ ._PUN In_PRP the_AT0 first_ORD picture_NN1 I_PNP think_VVB they_PNP ’re_VBB both_AV0 uhm_ITJ like_ITJ excited_AJ0 that_AV0 they_PNP ’re_VBB going_VVG to_TO0 finish_VVI the_AT0 build_NN1 ._PUN
 Uhm_ITJ ._PUN In_PRP the_AT0 second_ORD picture_NN1 they_PNP ’re_VBB both_AV0 probably_AV0 having_VHG a_AT0 lot_NN1 of_PRF fun_NN1 ._PUN
 Like_ITJ ,_PUN they_PNP ’re_VBB probably_AV0 feeling_VVG like_ITJ happiness_NN1 ,_PUN some_DT0 joy_NN1 ._PUN
 And_CJC the_AT0 third_ORD picture_NN1 they_PNP ’re_VBB like_ITJ ,_PUN
@@ -808,7 +808,7 @@ Uhm_ITJ the_AT0 man_NN1 wear_VVB a_AT0 white_AJ0 shirt_NN1 and_CJC a_AT0 white_A
 [_PUL ?_PUN ]_PUR
 And_CJC the_AT0 Kind_NN1 kid_NN1 wear_VVB an_AT0 white_AJ0 trousers_NN2 and_CJC an_AT0 white_AJ0 shirt_NN1 ._PUN
 Uhm_ITJ the_AT0 you_PNP can_VM0 rebuild_VVI things_NN2 ._PUN
-Where_AVQ ,_PUN ne_ITJ ,_PUN you_PNP can_VM0 rebuild_VVI things_NN2 when_AV0 they_PNP are_VBB ka_ITJ -_PUN uhm_ITJ broked_AJ0 ._PUN
+Where_AVQ ,_PUN ne_ITJ ,_PUN you_PNP can_VM0 rebuild_VVI things_NN2 when_CJS they_PNP are_VBB ka_ITJ -_PUN uhm_ITJ broked_AJ0 ._PUN
 Yes_ITJ I_PNP liked_VVD the_AT0 story_NN1 because_CJS they_PNP had_VHD an_AT0 an_AT0 birdhouse_NN1 built_VVN and_CJC I_PNP like_VVB birds_NN2 ._PUN
 
 Picture_Description_Realschule_Klasse5
@@ -906,8 +906,8 @@ The_AT0 one_PNI this_DT0 is_VBZ I_PNP think_VVB it_PNP ’s_VBZ the_AT0 father_N
 And_CJC the_AT0 other_NN1 I_PNP think_VVB this_DT0 is_VBZ the_AT0 son_NN1 of_PRF the_AT0 father_NN1 ._PUN
 Winter_NN1 clothes_NN2 ._PUN
 Uhm_ITJ a_AT0 winter_NN1 jacket_NN1 and_CJC snow_NN1 pants_NN2 ._PUN
-The_AT0 father_NN1 has_VHZ no_DT0 hair_NN1 and_CJC the_AT0 son_NN1 have_VHB black_AJ0 hair_NN1 ._PUN
-When_AV0 it_PNP broke_VVD do_VDB n’t_XX0 pull_VVB it_PNP in_PRP there_AV0 ._PUN
+The_AT0 father_NN1 has_VHZ no_AT0 hair_NN1 and_CJC the_AT0 son_NN1 have_VHB black_AJ0 hair_NN1 ._PUN
+When_CJS it_PNP broke_VVD do_VDB n’t_XX0 pull_VVB it_PNP in_PRP there_AV0 ._PUN
 do_VDB n’t_XX0 pull_VVB it_PNP put_VVB it_PNP back_AVP ._PUN
 And_CJC build_VVB what_DTQ new_AJ0 ._PUN
 Yeah_ITJ ._PUN
@@ -921,12 +921,12 @@ Riding_VVG the_AT0 sleigh_NN1 ._PUN
 Uhm_ITJ ,_PUN
 In_PRP the_AT0 dritt_ORD uhm_ITJ I_PNP can_VM0 see_VVI picture_NN1 uhm_ITJ is_VBZ the_AT0 sleigh_NN1 uhm_ITJ kabumm_AJ0 and_CJC the_AT0 father_NN1 and_CJC the_AT0 kid_NN1 feeling_VVG on_PRP the_AT0 boat_NN1 then_AV0 ._PUN
 In_PRP the_AT0 viertel_ORD picture_NN1 I_PNP can_VM0 see_VVI going_VVG the_AT0 kid_NN1 and_CJC the_AT0 father_NN1 mit_PRP den_AT0 uhm_ITJ kaputten_AJ0 sleigh_NN1 uhm_ITJ the_AT0 the_AT0 Werkstatt_NN1 ._PUN
-And_CJC sie_PNP in_PRP the_AT0 fifty_CRD I_PNP can_VM0 see_VVI the_AT0 father_NN1 bau_VVZ den_AT0 a_AT0 [_PUL new_AJ0 new_AJ0 ]_PUR a_AT0 sleiv_NN1 für_PRP die_AT0 uhm_ITJ no_DT0 sleigh_NN1 ._PUN
+And_CJC sie_PNP in_PRP the_AT0 fifty_CRD I_PNP can_VM0 see_VVI the_AT0 father_NN1 bau_VVZ den_AT0 a_AT0 [_PUL new_AJ0 new_AJ0 ]_PUR a_AT0 sleiv_NN1 für_PRP die_AT0 uhm_ITJ no_AT0 sleigh_NN1 ._PUN
 And_CJC the_AT0 kid_NN1 uhm_ITJ [_PUL ?_PUN ]_PUR the_AT0 bird_NN1 ._PUN
 Uhm_ITJ ,_PUN [_PUL ?_PUN ]_PUR
 Uhm_ITJ the_AT0 the_AT0 father_NN1 and_CJC the_AT0 kid_NN1 building_VVG a_AT0 sleigh_NN1 and_CJC this_DT0 is_VBZ kaput_AJ0 and_CJC you_PNP building_VVG uhm_ITJ a_AT0 [_PUL new_AJ0 ?_PUN ]_PUR sleigh_NN1 this_DT0 is_VBZ uhm_ITJ die_AT0 Vögel_NN2 ._PUN 
 Yes_ITJ yeah_ITJ no_ITJ ._PUN
-weil_CJS die_PNP sie_PNP uhm_ITJ die_PNP wollten_VVD fahren_VVI and_CJC this_DT0 [_PUL ?_PUN ]_PUR riding_VVG and_CJC no_ITJ jetzt_AV0 no_XX0 riding_VVG ._PUN
+weil_CJS die_PNP sie_PNP uhm_ITJ die_PNP wollten_VVD fahren_VVI and_CJC this_DT0 [_PUL ?_PUN ]_PUR riding_VVG and_CJC no_ITJ jetzt_AV0 no_AT0 riding_VVG ._PUN
 
 Picture_Description_Realschule_Klasse5
 Hi_ITJ I_PNP see_VVB on_PRP the_AT0 first_ORD picture_NN1 a_AT0 man_NN1 and_CJC a_AT0 boy_NN1 ._PUN
@@ -949,7 +949,7 @@ Uhum_ITJ ._PUN
 
 Picture_Description_Realschule_Klasse5
 I_PNP see_VVB a_AT0 father_NN1 with_PRP a_AT0 boy_NN1 and_CJC they_PNP are_VBB make_VVB a_AT0 sleigh_NN1 ._PUN
-Then_AV0 when_AV0 they_PNP are_VBB f_ITJ -_PUN finished_AJ0 they_PNP are_VBB go_VVB to_PRP the_AT0 snow_NN1 and_CJC and_CJC fahren_VVB halt_AV0 den_AT0 Berg_NN1 runter_PRP ._PUN
+Then_AV0 when_CJS they_PNP are_VBB f_ITJ -_PUN finished_AJ0 they_PNP are_VBB go_VVB to_PRP the_AT0 snow_NN1 and_CJC and_CJC fahren_VVB halt_AV0 den_AT0 Berg_NN1 runter_PRP ._PUN
 Then_AV0 the_AT0 sleigh_NN1 go_VVB kaputt_AJ0 weil_CJS sie_PNP gegen_PRP einen_AT0 Baum_NN1 fahren_VVB ._PUN
 Uhm_ITJ ,_PUN
 The_AT0 sleigh_NN1 go_VVB kaputt_AJ0 because_CJS they_PNP are_VBB fallen_VVN gegen_PRP a_AT0 tree_NN1 ._PUN
@@ -963,13 +963,13 @@ They_PNP ’re_VBB die_PNP uhm_ITJ ,_PUN
 Uhm_ITJ da_AV0 sind_VBB die_PNP uhm_ITJ not_XX0 happy_AJ0 uhm_ITJ sa_ITJ -_PUN but_CJC sad_AJ0 because_CJS the_AT0 sleigh_NN1 is_VBZ kaputt_AJ0 gegangen_VVD ._PUN
 Die_PNP uhm_ITJ the_AT0 father_NN1 has_VHZ have_VHB a_AT0 be_ITJ -_PUN have_VHB a_AT0 pullover_NN1 and_CJC a_AT0 jeans_NN2 ._PUN
 And_CJC the_AT0 boy_NN1 have_VHB a_AT0 pullover_NN1 and_CJC a_AT0 jeans_NN2 too_AV0 ._PUN
-The_AT0 father_NN1 have_VHB no_DT0 hair_NN1 and_CJC this_DT0 uhm_ITJ the_AT0 boy_NN1 have_VHB ,_PUN
+The_AT0 father_NN1 have_VHB no_AT0 hair_NN1 and_CJC this_DT0 uhm_ITJ the_AT0 boy_NN1 have_VHB ,_PUN
 Black_AJ0 hair_NN1 ._PUN
 Uhm_ITJ ,_PUN
 Uhm_ITJ give_VVB not_XX0 auf_AVP ._PUN
 Yes_ITJ ._PUN
 Uhm_ITJ the_AT0 story_NN1 zeigt_VVZ einem_PNP halt_AV0 ,_PUN dass_CJS uhm_ITJ du_PNP you_PNP ’re_VBB not_XX0 give_VVB up_AVP but_CJC uhm_ITJ make_VVB weiter_AVP ._PUN
-And_CJC when_AV0 etwas_PNI nicht_XX0 funktioniert_VVB ,_PUN dann_AV0 probiers_VVB weiter_AV0 ._PUN
+And_CJC when_CJS etwas_PNI nicht_XX0 funktioniert_VVB ,_PUN dann_AV0 probiers_VVB weiter_AV0 ._PUN
 
 Picture_Description_Realschule_Klasse5
 So_ITJ and_CJC I_PNP see_VVB on_PRP the_AT0 picture_NN1 a_AT0 man_NN1 and_CJC a_AT0 boy_NN1 ._PUN
@@ -1004,7 +1004,7 @@ On_PRP the_AT0 picture_NN1 number_NN1 three_CRD I_PNP can_VM0 see_VVB a_AT0 man_
 The_AT0 sledge_NN1 is_VBZ broke_AJ0 ._PUN
 On_PRP the_AT0 first_ORD picture_NN1 on_PRP the_AT0 four_CRD -_PUN on_PRP picture_NN1 number_NN1 four_CRD I_PNP can_VM0 see_VVI a_AT0 man_NN1 and_CJC a_AT0 boy_NN1 they_PNP tragen_VVG the_AT0 rest_NN1 of_PRF the_AT0 sledge_NN1
 On_PRP the_AT0 fi_ITJ -_PUN on_PRP the_AT0 picture_NN1 number_NN1 five_CRD I_PNP can_VM0 see_VVI a_AT0 man_NN1 and_CJC a_AT0 boy_NN1 ._PUN
-The_AT0 building_VVG aus_PRP the_AT0 sledge_NN1 are_VBB home_NN1 for_PRP the_AT0 [_PUL birds_NN2 ]_PUR ._PUN
+The_AT0 building_VVG aus_PRP the_AT0 sledge_NN1 are_AT0 home_NN1 for_PRP the_AT0 [_PUL birds_NN2 ]_PUR ._PUN
 On_PRP the_AT0 picture_NN1 number_NN1 six_CRD I_PNP can_VM0 see_VVI birds_NN2 and_CJC they_PNP co_ITJ -_PUN they_PNP come_VVB to_PRP this_DT0 large_AJ0 house_NN1 ._PUN
 Birdhouse_NN1 ._PUN
 Uhm_ITJ the_AT0 birds_NN2 are_VBB happy_AJ0 ._PUN
@@ -1013,7 +1013,7 @@ Why_AVQ uhm_ITJ they_PNP have_VHB a_AT0 lot_NN1 of_PRF birds_NN2 in_PRP their_DP
 
 Picture_Description_Realschule_Klasse5
 Hi_ITJ uhm_ITJ I_PNP ’m_VBB [_PUL name_NN1 ]_PUR ._PUN In_PRP the_AT0 picture_NN1 I_PNP can_VM0 see_VVI people_NN0 building_VVG a_AT0 sled_NN1 ._PUN
-Sled_NN1 out_PRP of_PRF wood_NN1 ._PUN
+Sled_NN1 out_AVP of_PRF wood_NN1 ._PUN
 One_CRD guy_NN1 is_VBZ bald_AJ0 with_PRP a_AT0 black_AJ0 t-shirt_NN1 ._PUN
 But_CJC he_PNP ’s_VBZ an_AT0 adult_NN1 with_PRP a_AT0 hammer_NN1 ._PUN
 And_CJC the_AT0 other_AJ0 person_NN1 is_VBZ a_AT0 kid_NN1 with_PRP black_AJ0 hair_NN1 and_CJC a_AT0 white_AJ0 t-shirt_NN1 ._PUN
@@ -1023,16 +1023,16 @@ The_AT0 kid_NN1 is_VBZ on_PRP top_PRP of_PRF the_AT0 adult_NN1 ._PUN
 [_PUL while_CJS ]_PUN the_AT0 adult_NN1 is_VBZ laying_VVG on_PRP the_AT0 sled_NN1 ._PUN
 But_CJC in_PRP the_AT0 third_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 child_NN1 and_CJC the_AT0 adult_NN1 falling_VVG and_CJC people_NN0 in_PRP the_AT0 background_NN1 [_PUL ?_PUN ]_PUR and_CJC there_EX0 ’s_VBZ a_AT0 sled_NN1 broken_VVN on_PRP top_PRP of_PRF the_AT0 snow_NN1
 In_PRP the_AT0 next_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 same_DT0 two_CRD people_NN0 with_PRP a_AT0 white_AJ0 shirt_NN1 [_PUL shirt_NN1 ]_PUR and_CJC a_AT0 black_AJ0 shirt_NN1 and_CJC walking_VVG with_PRP the_AT0 broken_AJ0 planks_NN2 in_PRP their_DPS hands_NN2 in_PRP snow_NN1 ._PUN
-In_PRP the_AT0 next_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 same_DT0 two_CRD people_NN0 people_NN0 with_PRP no_DT0 hair_NN1 and_CJC with_PRP hair_NN1 hair_NN1 ._PUN
-And_CJC it_PNP looks_VVZ like_PRP they_PNP are_VBB building_VVG something_PNI maybe_AV0 a_AT0 birdhouse_NN1 ._PUN
+In_PRP the_AT0 next_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 same_DT0 two_CRD people_NN0 people_NN0 with_PRP no_AT0 hair_NN1 and_CJC with_PRP hair_NN1 hair_NN1 ._PUN
+And_CJC it_PNP looks_VVZ like_CJS they_PNP are_VBB building_VVG something_PNI maybe_AV0 a_AT0 birdhouse_NN1 ._PUN
 In_PRP the_AT0 last_ORD picture_NN1 you_PNP can_VM0 see_VVI see_VVI them_PNP inside_AV0 of_PRF a_AT0 house_NN1 looking_VVG through_PRP a_AT0 window_NN1 window_NN1 and_CJC the_AT0 window_NN1 sill_NN1 is_VBZ covered_VVN with_PRP snow_NN1 ._PUN
-[_PUL Uh_ITJ ]_PUR and_CJC the_AT0 outside_NN1 is_VBZ also_AV0 covered_VVN with_PRP snow_NN1 and_CJC it_PNP looks_VVZ like_PRP the_AT0 house_NN1 is_VBZ white_AJ0 ._PUN
+[_PUL Uh_ITJ ]_PUR and_CJC the_AT0 outside_NN1 is_VBZ also_AV0 covered_VVN with_PRP snow_NN1 and_CJC it_PNP looks_VVZ like_CJS the_AT0 house_NN1 is_VBZ white_AJ0 ._PUN
 [_PUL ?_PUN ]_PUR
 And_CJC he_PNP then_AV0 you_PNP can_VM0 see_VVI the_AT0 birds_NN2 birds_NN2 ._PUN
 There_EX0 are_VBB four_CRD birds_NN2 also_AV0 white_AJ0 ._PUN
-[_PUL It_PNP ]_PUR flying_VVG into_PRP a_AT0 birdhouse_NN1 that_CJT is_VBZ made_VVN out_PRP of_PRF this_DT0 sled_NN1 sle_ITJ -_PUN ._PUN
+[_PUL It_PNP ]_PUR flying_VVG into_PRP a_AT0 birdhouse_NN1 that_CJT is_VBZ made_VVN out_AVP of_PRF this_DT0 sled_NN1 sle_ITJ -_PUN ._PUN
 It_PNP ’s_VBZ good_AJ0 ._PUN
-I_PNP think_VVB that_CJT it_PNP shows_VVZ you_PNP can_VM0 if_CJS someone_PNI if_CJS something_PNI breaks_VVZ you_PNP can_VM0 make_VVI something_PNI else_AV0 out_PRP of_PRF it_PNP and_CJC make_VVB someone_PNI else_AV0 happy_AJ0 ._PUN
+I_PNP think_VVB that_CJT it_PNP shows_VVZ you_PNP can_VM0 if_CJS someone_PNI if_CJS something_PNI breaks_VVZ you_PNP can_VM0 make_VVI something_PNI else_AV0 out_AVP of_PRF it_PNP and_CJC make_VVB someone_PNI else_AV0 happy_AJ0 ._PUN
 Happy_AJ0 ._PUN
 They_PNP are_VBB happy_AJ0 and_CJC yeah_ITJ they_PNP ’re_VBB also_AV0 happy_AJ0 going_VVG down_PRP the_AT0 mountain_NN1 and_CJC then_AV0 they_PNP ’re_VBB maybe_AV0 upset_AJ0 in_PRP the_AT0 third_ORD and_CJC fourth_ORD picture_NN1 because_CJS the_AT0 sled_NN1 broke_VVD ._PUN
 In_PRP the_AT0 fifth_ORD and_CJC in_PRP the_AT0 sixth_ORD picture_NN1 they_PNP are_VBB happy_AJ0 again_AV0 and_CJC the_AT0 birds_NN2 are_VBB also_AV0 happy_AJ0 ._PUN
@@ -1044,10 +1044,10 @@ Picture_Description_Realschule_Klasse7
 	And_CJC ,_PUN
 	then_AV0 in_PRP the_AT0 third_ORD picture_NN1 I_PNP can_VM0 see_VVI how_AVQ the_AT0 sledge_NN1 broke_VVD uhm_ITJ broke_VVD and_CJC the_AT0 adult_AJ0 man_NN1 and_CJC the_AT0 little_AJ0 boy_NN1 flew_VVD away_AV0 ._PUN
 	Then_AV0 in_PRP the_AT0 fourth_ORD picture_NN1 I_PNP see_VVB them_PNP carrying_VVG the_AT0 planks_NN2 and_CJC the_AT0 stuff_NN1 of_PRF the_AT0 sledge_NN1 uhm_ITJ away_AV0 ._PUN
-	In_PRP the_AT0 fifth_ORD picture_NN1 it_PNP seems_VVZ like_PRP the_AT0 little_AJ0 boy_NN1 and_CJC the_AT0 man_NN1 are_VBB building_VVG a_AT0 birdhouse_NN1 out_PRP of_PRF the_AT0 sledge_NN1 ._PUN
+	In_PRP the_AT0 fifth_ORD picture_NN1 it_PNP seems_VVZ like_CJS the_AT0 little_AJ0 boy_NN1 and_CJC the_AT0 man_NN1 are_VBB building_VVG a_AT0 birdhouse_NN1 out_AVP of_PRF the_AT0 sledge_NN1 ._PUN
 	And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 ,_PUN 
 	uhm_ITJ you_PNP can_VM0 see_VVI them_PNP sitting_VVG in_PRP a_AT0 house_NN1 and_CJC outside_AV0 there_EX0 are_VBB birds_NN2 in_PRP the_AT0 self-built_AJ0 uhm_ITJ house_NN1 for_PRP the_AT0 birds_NN2 yeah_ITJ ._PUN
-	uhm_ITJ it_PNP looks_VVZ like_PRP that_CJT the_AT0 man_NN1 has_VHZ a_AT0 beard_NN1 ._PUN
+	uhm_ITJ it_PNP looks_VVZ like_CJS that_CJT the_AT0 man_NN1 has_VHZ a_AT0 beard_NN1 ._PUN
 	uhm_ITJ ._PUN
 	I_PNP do_VDB n’t_XX0 know_VVI the_AT0 word_NN1 ._PUN
 	uhm_ITJ ._PUN
@@ -1079,7 +1079,7 @@ Picture_Description_Realschule_Klasse7
 	He_PNP bringing_VVG maybe_AV0 in_PRP ,_PUN in_PRP the_AT0 house_NN1 and_CJC yeah_ITJ ._PUN
 	In_PRP the_AT0 picture_NN1 five_CRD ,_PUN 
 	uhm_ITJ in_PRP the_AT0 picture_NN1 five_CRD he_PNP ,_PUN the_AT0 ,_PUN the_AT0 man_NN1 and_CJC the_AT0 children_NN2 build_NN1 the_AT0 sleigh_NN1 to_PRP a_AT0 uhm_ITJ to_PRP a_AT0 house_NN1 f_ITJ -_PUN ,_PUN for_PRP the_AT0 birds_NN2 ._PUN
-	And_CJC in_PRP picture_NN1 six_CRD I_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC the_AT0 children_NN2 who_PNQ l_ITJ -_PUN ,_PUN look_VVB ,_PUN look_VVB out_PRP of_PRF the_AT0 win_ITJ -_PUN window_NN1 and_CJC see_VVB the_AT0 birds_NN2 in_PRP the_AT0 birdhouse_NN1 ._PUN
+	And_CJC in_PRP picture_NN1 six_CRD I_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC the_AT0 children_NN2 who_PNQ l_ITJ -_PUN ,_PUN look_VVB ,_PUN look_VVB out_AVP of_PRF the_AT0 win_ITJ -_PUN window_NN1 and_CJC see_VVB the_AT0 birds_NN2 in_PRP the_AT0 birdhouse_NN1 ._PUN
 	uhm_ITJ ._PUN
 	The_AT0 man_NN1 is_VBZ a_AT0 older_AJC man_NN1 who_PNQ hava_VHB a_AT0 uhm_ITJ who_PNQ have_VHB a_AT0 long_AJ0 shirt_NN1 and_CJC ,_PUN
 	uhm_ITJ ._PUN
@@ -1096,7 +1096,7 @@ Picture_Description_Realschule_Klasse7
 	Here_AV0 on_PRP the_AT0 uhm_ITJ second_ORD picture_NN1 uhm_ITJ is_VBZ the_AT0 father_NN1 and_CJC the_AT0 child_NN1 uhm_ITJ on_PRP the_AT0 sleigh_NN1 and_CJC slide_VVB down_PRP the_AT0 mountain_NN1 or_CJC the_AT0 uhm_ITJ place_NN1 where_AVQ they_PNP are_VBB ._PUN
 	uhm_ITJ yes_ITJ on_PRP the_AT0 third_ORD picture_NN1 uhm_ITJ the_AT0 sleigh_NN1 uhm_ITJ explode_VVZ or_CJC uhm_ITJ they_PNP hidden_VVN a_AT0 rock_NN1 or_CJC something_PNI and_CJC they_PNP uhm_ITJ f_ITJ -_PUN uhm_ITJ fell_VVD down_AVP ._PUN
 	And_CJC on_PRP the_AT0 uhm_ITJ fourth_ORD picture_NN1 the_AT0 father_NN1 is_VBZ angry_AJ0 and_CJC the_AT0 child_NN1 is_VBZ uhm_ITJ sad_AJ0 and_CJC they_PNP had_VHD uhm_ITJ the_AT0 uhm_ITJ the_AT0 sleigh_NN1 in_PRP ,_PUN in_PRP ,_PUN 
-	The_AT0 destroyed_VVD uhm_ITJ sleigh_NN1 in_PRP ,_PUN in_PRP their_DPS uhm_ITJ in_PRP his_DPS ,_PUN in_PRP his_DPS hands_NN2 and_CJC go_VVB at_PRP uhm_ITJ at_PRP home_AV0 ._PUN
+	The_AT0 destroyed_AJ0 uhm_ITJ sleigh_NN1 in_PRP ,_PUN in_PRP their_DPS uhm_ITJ in_PRP his_DPS ,_PUN in_PRP his_DPS hands_NN2 and_CJC go_VVB at_PRP uhm_ITJ at_PRP home_AV0 ._PUN
 	On_PRP the_AT0 fifth_ORD picture_NN1 they_PNP build_VVB the_AT0 sleigh to_PRP an_AT0 uhm_ITJ birdhouse_NN1 ._PUN
 	And_CJC on_PRP the_AT0 sixth_ORD ,_PUN sixth_ORD picture_NN1 the_AT0 birds_NN2 eat_VVB in_PRP the_AT0 new_AJ0 sleigh_NN1 and_CJC the_AT0 father_NN1 and_CJC the_AT0 child_NN1 looking_VVG to_PRP the_AT0 birds_NN2 ._PUN
 	Yes_ITJ ._PUN
@@ -1136,7 +1136,7 @@ Picture_Description_Realschule_Klasse7
 	In_PRP the_AT0 first_ORD picture_NN1 ,_PUN in_PRP the_AT0 upper_AJ0 right_AJ0 corner_NN1 and_CJC uhm_ITJ on_PRP the_AT0 right_NN1 ,_PUN there_EX0 are_VBB wooden_AJ0 planks_NN2 I_PNP think_VVB ._PUN
 	In_PRP the_AT0 middle_NN1 ,_PUN there_EX0 are_VBB two_CRD persons_NN2 ,_PUN a_AT0 little_AJ0 boy_NN1 and_CJC an_AT0 older_AJC man_NN1 ._PUN
 	The_AT0 older_AJC man_NN1 is_VBZ ho_ITJ -_PUN is_VBZ holding_VVG a_AT0 hammer_NN1 and_CJC ,_PUN
-	on_PRP ,_PUN down_PRP at_PRP the_AT0 picture_NN1 ,_PUN there_EX0 is_VBZ a_AT0 saw_NN1 and_CJC it_PNP looks_VVZ like_PRP they_PNP are_VBB building_VVG a_AT0 sleigh_NN1 ._PUN
+	on_PRP ,_PUN down_PRP at_PRP the_AT0 picture_NN1 ,_PUN there_EX0 is_VBZ a_AT0 saw_NN1 and_CJC it_PNP looks_VVZ like_CJS they_PNP are_VBB building_VVG a_AT0 sleigh_NN1 ._PUN
 	In_PRP the_AT0 second_ORD picture_NN1 ,_PUN the_AT0 boy_NN1 and_CJC the_AT0 older_AJC man_NN1 are_VBB in_PRP the_AT0 middle_NN1 of_PRF the_AT0 picture_NN1 and_CJC are_VBB riding_VVG on_PRP the_AT0 sleigh_NN1 I_PNP think_VVB down_PRP a_AT0 hill_NN1 ._PUN
 	The_AT0 older_AJC man_NN1 is_VBZ laying_VVG on_PRP the_AT0 sleigh_NN1 and_CJC the_AT0 younger_AJC boy_NN1 is_VBZ sitting_VVG on_PRP the_AT0 older_AJC man_NN1 ._PUN
 	In_PRP the_AT0 third_ORD picture_NN1 it_PNP ,_PUN uhm_ITJ they_PNP are_VBB crashing_VVG on_PRP the_AT0 left_AJ0 side_NN1 and_CJC on_PRP the_AT0 ,_PUN on_PRP the_AT0 lower_AJC uhm_ITJ left_AJ0 corner_NN1 ,_PUN uhm_ITJ there_EX0 is_VBZ the_AT0 broken_AJ0 sleigh_NN1 ._PUN
@@ -1145,7 +1145,7 @@ Picture_Description_Realschule_Klasse7
 	On_PRP the_AT0 fourth_ORD picture_NN1 ,_PUN the_AT0 older_AJC man_NN1 is_VBZ ,_PUN is_VBZ on_PRP his_DPS knees_NN2 and_CJC he_PNP ’s_VBZ holding_VVG a_AT0 saw_NN1 and_CJC he_PNP ’s_VBZ building_VVG another_DT0 sleigh_NN1 ,_PUN
 	With_PRP a_AT0 like_ITJ uhm_ITJ or_CJC he_PNP ’s_VBZ ,_PUN it_PNP ’s_VBZ like_PRP a_AT0 [_PUL ?_PUN ]_PUR ,_PUN
 	Left_AV0 ,_PUN on_PRP the_AT0 left_AJ0 side_NN1 of_PRF the_AT0 man_NN1 ,_PUN there_EX0 is_VBZ the_AT0 little_AJ0 boy_NN1 holding_VVG a_AT0 wooden_AJ0 plank_NN1 ._PUN
-	And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 ,_PUN the_AT0 ,_PUN on_PRP the_AT0 right_AJ0 side_NN1 ,_PUN the_AT0 older_AJC man_NN1 and_CJC the_AT0 younger_AJC boy_NN1 are_VBB looking_VVG out_PRP of_PRF the_AT0 window_NN1 ._PUN
+	And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 ,_PUN the_AT0 ,_PUN on_PRP the_AT0 right_AJ0 side_NN1 ,_PUN the_AT0 older_AJC man_NN1 and_CJC the_AT0 younger_AJC boy_NN1 are_VBB looking_VVG out_AVP of_PRF the_AT0 window_NN1 ._PUN
 	And_CJC on_PRP the_AT0 left_AJ0 side_NN1 on_PRP the_AT0 upper_AJ0 left_AJ0 corner_NN1 ,_PUN there_EX0 are_VBB birds_NN2 and_CJC the_AT0 sleigh_NN1 is_VBZ uhm_ITJ crafted_VVN into_PRP a_AT0 uhm_ITJ a_AT0 birdhouse_NN1 ._PUN
 	uhm_ITJ the_AT0 older_AJC man_NN1 ha_ITJ -_PUN is_VBZ bald_AJ0 and_CJC has_VHZ ,_PUN has_VHZ a_AT0 beard_NN1 and_CJC he_PNP ’s_VBZ like_ITJ wearing_VVG a_AT0 ,_PUN a_AT0 jacket_NN1 ._PUN
 	The_AT0 boy_NN1 uhm_ITJ is_VBZ wearing_VVG a_AT0 pullover_NN1 ._PUN
@@ -1184,8 +1184,8 @@ Picture_Description_Realschule_Klasse7
 	They_PNP build_VVB a_AT0 sleigh_NN1 ._PUN
 	In_PRP the_AT0 background_NN1 ,_PUN I_PNP can_VM0 see_VVI a_AT0 ,_PUN 
 	I_PNP see_VVB wood_NN1 and_CJC a_AT0 saw_NN1 and_CJC hammer_NN1 ._PUN
-	In_PRP the_AT0 twoth_ORD picture_NN1 ,_PUN uhm_ITJ the_AT0 second_ORD picture_NN1 ,_PUN I_PNP can_VM0 see_VVI the_AT0 grandpa_NN1 and_CJC the_AT0 child_NN1 they_PNP ride_VVB the_AT0 sleigh_NN1 on_PRP a_AT0 mountain_NN1 but_CJC they_PNP crashed_VVD with_PRP a_AT0 ,_PUN with_PRP a_AT0 tree_NN1 and_CJC the_AT0 sh_ITJ -_PUN sleigh_NN1 is_VBZ destroyed_VVD ._PUN
-	They_PNP both_AV0 fall_VVB from_PRP the_AT0 sleigh_NN1 over_PRP ._PUN
+	In_PRP the_AT0 twoth_ORD picture_NN1 ,_PUN uhm_ITJ the_AT0 second_ORD picture_NN1 ,_PUN I_PNP can_VM0 see_VVI the_AT0 grandpa_NN1 and_CJC the_AT0 child_NN1 they_PNP ride_VVB the_AT0 sleigh_NN1 on_PRP a_AT0 mountain_NN1 but_CJC they_PNP crashed_VVD with_PRP a_AT0 ,_PUN with_PRP a_AT0 tree_NN1 and_CJC the_AT0 sh_ITJ -_PUN sleigh_NN1 is_VBZ destroyed_VVN ._PUN
+	They_PNP both_AV0 fall_VVB from_PRP the_AT0 sleigh_NN1 over_AVP ._PUN
 	In_PRP the_AT0 third_ORD picture_NN1 ,_PUN I_PNP can_VM0 see_VVI the_AT0 grandpa_NN1 and_CJC the_AT0 child_NN1 they_PNP are_VBB sadly_AJ0 and_CJC have_VHB the_AT0 destroyed_AJ0 sleigh_NN1 ._PUN
 	At_PRP the_AT0 five_CRD picture_NN1 ,_PUN I_PNP can_VM0 see_VVI they_PNP build_VVB a_AT0 birdhouse_NN1 of_PRF the_AT0 sleigh_NN1 ._PUN
 	And_CJC then_AV0 they_PNP are_VBB in_PRP the_AT0 house_NN1 and_CJC can_VM0 see_VVI the_AT0 birds_NN2 who_PNQ go_VVB in_PRP	the_AT0 birdhouse_NN1 of_PRF the_AT0 sleigh_NN1 and_CJC eat_VVB corns_NN2 ._PUN
@@ -1194,7 +1194,7 @@ Picture_Description_Realschule_Klasse7
 	The_AT0 grandpa_NN1 see_VVB angry_AJ0 ._PUN
 	The_AT0 child_NN1 ,_PUN 
 	also_AV0 ,_PUN they_PNP have_VHB black_AJ0 hair_NN1 ,_PUN a_AT0 white_AJ0 pullover_NN1 ._PUN
-	And_CJC the_AT0 grandpa_NN1 have_VHB a_AT0 white_AJ0 Hose_NN1 and_CJC a_AT0 Glatz_ITJ -_PUN no_DT0 hairs_NN1 on_PRP the_AT0 head_NN1 ._PUN
+	And_CJC the_AT0 grandpa_NN1 have_VHB a_AT0 white_AJ0 Hose_NN1 and_CJC a_AT0 Glatz_ITJ -_PUN no_AT0 hairs_NN1 on_PRP the_AT0 head_NN1 ._PUN
 	Uhm_ITJ he_PNP ha_ITJ -_PUN the_AT0 grandpa_NN1 has_VHZ a_AT0 Bart_NN1 ._PUN
 	
 Picture_Description_Realschule_Klasse7
@@ -1221,7 +1221,7 @@ Picture_Description_Realschule_Klasse7
 	A_AT0 birdhouse_NN1 ,_PUN
 	uhm_ITJ with_PRP the_AT0 Teils_NN2 from_PRP the_AT0 sleigh_NN1 ._PUN
 	The_AT0 father_NN1 is_VBZ ,_PUN is_VBZ working_VVG with_PRP the_AT0 saw_NN1 and_CJC the_AT0 son_NN1 is_VBZ holding_VVG one_CRD Teil_NN1 ._PUN
-	And_CJC at_PRP the_AT0 sixth_ORD picture_NN1 ,_PUN they_PNP are_VBB looking_VVG out_PRP of_PRF the_AT0 window_NN1 in_PRP their_DPS house_NN1 ._PUN
+	And_CJC at_PRP the_AT0 sixth_ORD picture_NN1 ,_PUN they_PNP are_VBB looking_VVG out_AVP of_PRF the_AT0 window_NN1 in_PRP their_DPS house_NN1 ._PUN
 	And_CJC at_PRP the_AT0 birdhouse_NN1 are_VBB eating_VVG birds_NN2 ,_PUN birds_NN2 ._PUN
 	uhm_ITJ it_PNP ’s_VBZ cool_AJ0 because_CJS they_PNP build_VVB a_AT0 ._PUN
 	They_PNP uhm_ITJ do_VDB n’t_XX0 do_VDI it_PNP in_PRP the_AT0 trash_NN1 son_ITJ -_PUN uhm_ITJ becau_ITJ -_PUN ,_PUN
@@ -1267,12 +1267,12 @@ Picture_Description_Realschule_Klasse7
 	In_PRP the_AT0 first_ORD picture_NN1 ,_PUN I_PNP can_VM0 see_VVI a_AT0 boy_NN1 and_CJC a_AT0 ,_PUN his_DPS grandfather_NN1 uhm_ITJ building_VVG a_AT0 sleigh_NN1 ._PUN
 	uhm_ITJ in_PRP the_AT0 second_ORD picture_NN1 ,_PUN the_AT0 boy_NN1 and_CJC the_AT0 man_NN1 are_VBB riding_VVG down_PRP a_AT0 hill_NN1 ._PUN
 	And_CJC on_PRP the_AT0 third_ORD picture_NN1 ,_PUN they_PNP are_VBB crashed_VVN ._PUN
-	And_CJC the_AT0 sleigh_NN1 is_VBZ destroyed_AJ0 and_CJC the_AT0 man_NN1 and_CJC the_AT0 boy_NN1 are_VBB falling_VVG off_AVP the_AT0 sleigh_NN1 ._PUN
+	And_CJC the_AT0 sleigh_NN1 is_VBZ destroyed_VVN and_CJC the_AT0 man_NN1 and_CJC the_AT0 boy_NN1 are_VBB falling_VVG off_AVP the_AT0 sleigh_NN1 ._PUN
 	In_PRP the_AT0 fourth_ORD picture_NN1 ,_PUN there_EX0 are_VBB ,_PUN 
 	Was_DTQ heißt_VVZ nehmen_VVI ?_PUN
 	Ah_ITJ ,_PUN
 	They_PNP are_VBB taking_VVG	the_AT0 destroyed_AJ0 sleigh_NN1 to_PRP the_AT0 home_NN1 and_CJC changed_VVD it_PNP to_PRP a_AT0 bird_NN1 house_NN1 ._PUN
-	And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 ,_PUN they_PNP are_VBB looking_VVG out_PRP of_PRF the_AT0 window_NN1 and_CJC watching_VVG the_AT0 birds_NN2 ._PUN
+	And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 ,_PUN they_PNP are_VBB looking_VVG out_AVP of_PRF the_AT0 window_NN1 and_CJC watching_VVG the_AT0 birds_NN2 ._PUN
 	Yeah_ITJ ,_PUN it_PNP ’s_VBZ a_AT0 happy-end-story_NN1 ._PUN
 	
 Picture_Description_Realschule_Klasse9
@@ -1281,11 +1281,10 @@ Uhm_ITJ ,_PUN it_PNP ’s_VBZ a_AT0 ,_PUN there_EX0 are_VBB six_CRD uhm_ITJ smal
 Uhm_ITJ ._PUN
 On_PRP the_AT0 first_ORD picture_NN1 you_PNP can_VM0 see_VVI a_AT0 child_NN1 and_CJC a_AT0 grown_AJ0 man_NN1 who_PNQ are_VBB building_VVG a_AT0 sledge_NN1 ._PUN
 In_PRP the_AT0 second_ORD picture_NN1 they_PNP ’re_VBB riding_VVG the_AT0 sledge_NN1 down_PRP the_AT0 hill_NN1 ._PUN
-And_CJC in_PRP the_AT0 third_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 plot_NN1 twist_VVB ._PUN 
-They_PNP ’re_VBB having_VHG an_AT0 accident_NN1 and_CJC uhm_ITJ they_PNP ’re_VBB falling_VVG down_PRP the_AT0 hill_NN1 and_CJC their_DPS s_ITJ -_PUN ,_PUN sleigh_NN1 breaks_VVZ in_PRP the_AT0 pieces_NN2 ._PUN
+And_CJC in_PRP the_AT0 third_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 plot_NN1 twist_VVB. They_PNP ’re_VBB having_VHG an_AT0 accident_NN1 and_CJC uhm_ITJ they_PNP ’re_VBB falling_VVG down_PRP the_AT0 hill_NN1 and_CJC their_DPS s_ITJ -_PUN ,_PUN sleigh_NN1 breaks_VVZ in_PRP the_AT0 pieces_NN2 ._PUN
 In_PRP the_AT0 four_CRD ,_PUN fourth_ORD picture_NN1 you_PNP can_VM0 see_VVI them_PNP uhm_ITJ going_VVG home_AV0 with_PRP the_AT0 pieces_NN2 of_PRF the_AT0 sledge_NN1 and_CJC I_PNP think_VVB they_PNP are_VBB maybe_AV0 angry_AJ0 and_CJC disappointed_AJ0 uhm_ITJ because_CJS their_DPS idea_NN1 did_VDD n’t_XX0 work_NN1 out_AVP ._PUN
 In_PRP the_AT0 fifth_ORD picture_NN1 you_PNP can_VM0 see_VVI them_PNP transforming_VVG the_AT0 sleigh_NN1 into_PRP something_PNI different_AJ0 and_CJC in_PRP the_AT0 sixth_ORD picture_NN1 you_PNP can_VM0 see_VVI that_CJT they_PNP ’re_VBB uhm_ITJ ,_PUN have_VHB transformed_VVN the_AT0 sledge_NN1 into_PRP a_AT0 birdhouse_NN1 where_AVQ they_PNP can_VM0 uhm_ITJ where_AVQ it_PNP ’s_VBZ to_TO0 ,_PUN I_PNP do_VDB n’t_XX0 ,_PUN to_TO0 feed_VVI the_AT0 birds_NN2 and_CJC the_AT0 uhm_ITJ creatures_NN2 outside_AV0 ._PUN
-And_CJC you_PNP can_VM0 see_VVI them_PNP watching_VVG in_PRP their_DPS house_NN1 out_PRP the_AT0 window_NN1 and_CJC they_PNP watch_VVB the_AT0 birds_NN2 ,_PUN birds_NN2 who_PNQ are_VBB now_AV0 eating_VVG uhm_ITJ out_PRP of_PRF the_AT0 sleigh_NN1 ._PUN
+And_CJC you_PNP can_VM0 see_VVI them_PNP watching_VVG in_PRP their_DPS house_NN1 out_AVP the_AT0 window_NN1 and_CJC they_PNP watch_VVB the_AT0 birds_NN2 ,_PUN birds_NN2 who_PNQ are_VBB now_AV0 eating_VVG uhm_ITJ out_AVP of_PRF the_AT0 sleigh_NN1 ._PUN
 Yes_ITJ ._PUN
 I_PNP think_VVB the_AT0 story_NN1 is_VBZ uhm_ITJ interesting_AJ0 and_CJC I_PNP think_VVB the_AT0 meaning_NN1 of_PRF the_AT0 story_NN1 is_VBZ that_CJT you_PNP can_VM0 always_AV0 uhm_ITJ there_EX0 ’s_VBZ always_AV0 a_AT0 second_ORD option_NN1 and_CJC if_CJS the_AT0 first_ORD thing_NN1 does_VDZ n’t_XX0 work_VVI out_AVP you_PNP should_VM0 try_VVI it_PNP again_AV0 and_CJC maybe_AV0 for_PRP a_AT0 different_AJ0 purpose_NN1 ._PUN
 I_PNP think_VVB they_PNP ’re_VBB pretty_AV0 happy_AJ0 with_PRP it_PNP and_CJC they_PNP ’re_VBB build_VVB something_PNI for_PRP others_NN2 too_AV0 ,_PUN other_AJ0 creatures_NN2 ,_PUN animals_NN2 ,_PUN and_CJC not_XX0 only_AV0 something_PNI for_PRP themselves_PNX ,_PUN but_CJC for_PRP the_AT0 birds_NN2 too_AV0 ._PUN
@@ -1316,14 +1315,14 @@ Uhm_ITJ ._PUN The_AT0 young_AJ0 kid_NN1 has_VHZ short_AJ0 hairs_NN1 and_CJC it_P
 No_ITJ ._PUN
 
 Picture_Description_Realschule_Klasse9
-Uhm_ITJ uhm_ITJ and_CJC uhm_ITJ ._PUN The_AT0 story_NN1 is_VBZ about_PRP a_AT0 boy_NN1 and_CJC uhm_ITJ the_AT0 father_NN1 I_PNP think_VVB and_CJC they_PNP are_VBB uhm_ITJ ,_PUN and_CJC they_PNP build_VVB a_AT0 sleigh_NN1 and_CJC uhm_ITJ then_AV0 uhm_ITJ when_AV0 they_PNP are_VBB uhm_ITJ when_AV0 the_AT0 sleigh_NN1 is_VBZ uhm_ITJ ready_AJ0 then_AV0 they_PNP uhm_ITJ ,_PUN
+Uhm_ITJ uhm_ITJ and_CJC uhm_ITJ ._PUN The_AT0 story_NN1 is_VBZ about_PRP a_AT0 boy_NN1 and_CJC uhm_ITJ the_AT0 father_NN1 I_PNP think_VVB and_CJC they_PNP are_VBB uhm_ITJ ,_PUN and_CJC they_PNP build_VVB a_AT0 sleigh_NN1 and_CJC uhm_ITJ then_AV0 uhm_ITJ when_CJS they_PNP are_VBB uhm_ITJ when_CJS the_AT0 sleigh_NN1 is_VBZ uhm_ITJ ready_AJ0 then_AV0 they_PNP uhm_ITJ ,_PUN
 Then_AV0 they_PNP uhm_ITJ drive_VVB uhm_ITJ the_AT0 uhm_ITJ hill_NN1 down_PRP with_PRP the_AT0 sleigh_NN1 and_CJC have_VHB fun_NN1 ._PUN
 Uhm_ITJ ._PUN After_AV0 that_DT0 uhm_ITJ the_AT0 sleigh_NN1 uhm_ITJ smashed_VVD a_AT0 tree_NN1 or_CJC something_PNI and_CJC uhm_ITJ the_AT0 man_NN1 and_CJC the_AT0 boy_NN1 uhm_ITJ fell_VVD down_AVP from_PRP the_AT0 sleigh_NN1 ._PUN
 Uhm_ITJ ._PUN
 Then_AV0 they_PNP ’re_VBB uhm_ITJ ,_PUN then_AV0 they_PNP are_VBB not_XX0 very_AV0 happy_AJ0 and_CJC uhm_ITJ go_VVB ,_PUN go_VVB back_AVP to_PRP their_DPS house_NN1 with_PRP with_PRP the_AT0 uhm_ITJ rest_NN1 of_PRF the_AT0 sleigh_NN1 and_CJC then_AV0 they_PNP build_VVB the_AT0 sleigh_NN1 to_PRP uhm_ITJ a_AT0 bir_ITJ -_PUN ,_PUN bird_NN1 hotel_NN1 ._PUN
 Uhm_ITJ ._PUN And_CJC so_ITJ the_AT0 birds_NN2 can_VM0 eat_VVI the_AT0 food_NN1 and_CJC they_PNP are_VBB happy_AJ0 and_CJC the_AT0 boy_NN1 and_CJC the_AT0 man_NN1 uhm_ITJ are_VBB in_PRP the_AT0 house_NN1 and_CJC uhm_ITJ look_VVB at_PRP the_AT0 birds_NN2 there_AV0 which_DTQ eat_VVB uhm_ITJ food_NN1 ._PUN
 Uhm_ITJ ._PUN
-The_AT0 man_NN1 uhm_ITJ has_VHZ no_DT0 hairs_NN1 on_PRP the_AT0 head_NN1 and_CJC have_VHB a_AT0 black_AJ0 jacket_NN1 uhm_ITJ ,_PUN black_AJ0 shoes_NN2 and_CJC a_AT0 white_AJ0 trousers_NN2 ._PUN
+The_AT0 man_NN1 uhm_ITJ has_VHZ no_AT0 hairs_NN1 on_PRP the_AT0 head_NN1 and_CJC have_VHB a_AT0 black_AJ0 jacket_NN1 uhm_ITJ ,_PUN black_AJ0 shoes_NN2 and_CJC a_AT0 white_AJ0 trousers_NN2 ._PUN
 Uhm_ITJ ._PUN The_AT0 boy_NN1 is_VBZ tiny_AJ0 ,_PUN uhm_ITJ uhm_ITJ very_AV0 small_AJ0 ,_PUN small_AJ0 and_CJC uhm_ITJ uhm_ITJ the_AT0 boy_NN1 has_VHZ a_AT0 ,_PUN have_VHB a_AT0 pullover_NN1 ,_PUN a_AT0 white_AJ0 pullover_NN1 and_CJC white_AJ0 trousers_NN2 ._PUN
 Then_AV0 ,_PUN yes_ITJ ._PUN
 Uhm_ITJ ._PUN
@@ -1333,11 +1332,11 @@ Yes_ITJ ._PUN
 Picture_Description_Realschule_Klasse9
 I_PNP can_VM0 see_VVI in_PRP the_AT0 picture_NN1 a_AT0 child_NN1 and_CJC a_AT0 man_NN1 and_CJC the_AT0 man_NN1 work_VVB on_PRP the_AT0 Schlitten_NN1 ,_PUN sta_ITJ -_PUN ,_PUN on_PRP the_AT0 sleigh_NN1 ._PUN
 And_CJC on_PRP the_AT0 picture_NN1 two_CRD I_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC a_AT0 child_NN1 and_CJC the_AT0 child_NN1 sitting_VVG on_PRP the_AT0 man_NN1 and_CJC they_PNP fahr_VVB the_AT0 mountain_NN1 up_PRP ._PUN
-And_CJC on_PRP the_AT0 picture_NN1 two_CRD I_PNP can_VM0 see_VVI a_AT0 ,_PUN I_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC the_AT0 child_NN1 when_AV0 he_ITJ ,_PUN they_PNP fall_VVB over_PRP the_AT0 sleigh_NN1 ._PUN 
+And_CJC on_PRP the_AT0 picture_NN1 two_CRD I_PNP can_VM0 see_VVI a_AT0 ,_PUN I_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC the_AT0 child_NN1 when_CJS he_PNP ,_PUN they_PNP fall_VVB over_AVP the_AT0 sleigh_NN1 ._PUN 
 And_CJC on_PRP picture_NN1 four_CRD I_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC the_AT0 child_NN1 ,_PUN they_PNP go_VVB at_PRP home_NN1 with_PRP the_AT0 sleigh_NN1 ._PUN
 And_CJC on_PRP picture_NN1 five_CRD make_VVB the_AT0 child_NN1 and_CJC the_AT0 father_NN1 a_AT0 birdhouse_NN1 with_PRP the_AT0 sleigh_NN1 ._PUN
 And_CJC on_PRP picture_NN1 six_CRD I_PNP can_VM0 see_VVI the_AT0 finished_AJ0 birdhouse_NN1 with_PRP birds_NN2 and_CJC the_AT0 boy_NN1 and_CJC the_AT0 father_NN1 see_VVB ,_PUN I_PNP see_VVB in_PRP the_AT0 house_NN1 and_CJC they_PNP looking_VVG the_AT0 birds_NN2 ._PUN
-The_AT0 child_NN1 has_VHZ long_AJ0 hairs_NN1 ,_PUN hairs_NN1 and_CJC the_AT0 father_NN1 has_VHZ a_AT0 vest_NN1 on_PRP it_PNP and_CJC the_AT0 father_NN1 has_VHZ no_DT0 hairs_NN1 ._PUN
+The_AT0 child_NN1 has_VHZ long_AJ0 hairs_NN1 ,_PUN hairs_NN1 and_CJC the_AT0 father_NN1 has_VHZ a_AT0 vest_NN1 on_AVP it_PNP and_CJC the_AT0 father_NN1 has_VHZ no_AT0 hairs_NN1 ._PUN
 Yes_ITJ ._PUN
 Yeah_ITJ ._PUN
 
@@ -1351,8 +1350,8 @@ In_PRP the_AT0 thi_ITJ -_PUN ,_PUN third_ORD picture_NN1 you_PNP can_VM0 see_VVB
 In_PRP the_AT0 fourth_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 kid_NN1 and_CJC the_AT0 old_AJ0 man_NN1 uhm_ITJ walking_VVG down_PRP ,_PUN up_PRP the_AT0 mountain_NN1 or_CJC back_AVP to_PRP the_AT0 house_NN1 uhm_ITJ with_PRP the_AT0 broken_AJ0 sledge_NN1 ,_PUN yeah_ITJ ._PUN
 In_PRP the_AT0 fifth_ORD picture_NN1 you_PNP can_VM0 see_VVI uhm_ITJ the_AT0 old_AJ0 man_NN1 fixing_VVG again_AV0 the_AT0 sledge_NN1 ,_PUN but_CJC at_PRP this_DT0 time_NN1 with_PRP a_AT0 uhm_ITJ roof_NN1 on_PRP it_PNP ,_PUN I_PNP think_VVB ,_PUN and_CJC yeah_ITJ ._PUN 
 And_CJC the_AT0 kid_NN1 is_VBZ just_AV0 standing_VVG next_PRP to_PRP him_PNP ._PUN
-Uhm_ITJ ._PUN In_PRP the_AT0 sixth_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 man_NN1 uhm_ITJ and_CJC the_AT0 kid_NN1 uhm_ITJ looking_VVG dow_ITJ -_PUN ,_PUN out_PRP the_AT0 window_NN1 uhm_ITJ and_CJC the_AT0 sledge_NN1 is_VBZ uhm_ITJ a_AT0 birdhouse_NN1 I_PNP think_VVB and_CJC yes_ITJ ._PUN
-I_PNP think_VVB uhm_ITJ they_PNP feel_VVB good_AJ0 because_CJS they_PNP did_VDD something_PNI good_AJ0 out_PRP of_PRF the_AT0 uhm_ITJ broken_AJ0 sledge_NN1 and_CJC yeah_ITJ ._PUN
+Uhm_ITJ ._PUN In_PRP the_AT0 sixth_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 man_NN1 uhm_ITJ and_CJC the_AT0 kid_NN1 uhm_ITJ looking_VVG dow_ITJ -_PUN ,_PUN out_AVP the_AT0 window_NN1 uhm_ITJ and_CJC the_AT0 sledge_NN1 is_VBZ uhm_ITJ a_AT0 birdhouse_NN1 I_PNP think_VVB and_CJC yes_ITJ ._PUN
+I_PNP think_VVB uhm_ITJ they_PNP feel_VVB good_AJ0 because_CJS they_PNP did_VDD something_PNI good_AJ0 out_AVP of_PRF the_AT0 uhm_ITJ broken_AJ0 sledge_NN1 and_CJC yeah_ITJ ._PUN
 I_PNP think_VVB the_AT0 birds_NN2 are_VBB happy_AJ0 about_PRP it_PNP ._PUN
 
 Picture_Description_Realschule_Klasse9
@@ -1379,10 +1378,10 @@ Uhm_ITJ ._PUN The_AT0 story_NN1 is_VBZ that_CJT they_PNP use_VVB it_PNP ,_PUN th
 Picture_Description_Realschule_Klasse9
 Hi_ITJ ,_PUN uhm_ITJ ,_PUN today_AV0 I_PNP ’m_VBB talking_VVG about_PRP some_DT0 pictures_NN2 ._PUN
 Uhm_ITJ ._PUN
-So_ITJ I_PNP think_VVB the_AT0 pictures_NN2 are_VBB like_PRP a_AT0 comic_NN1 and_CJC uhm_ITJ in_PRP the_AT0 first_ORD picture_NN1 I_PNP can_VM0 see_VVI uhm_ITJ a_AT0 man_NN1 and_CJC a_AT0 boy_NN1 building_VVG something_PNI and_CJC uhm_ITJ it_PNP ’s_VBZ like_PRP a_AT0 ,_PUN a_AT0 thing_NN1 where_AVQ you_PNP uhm_ITJ slide_VVB down_PRP when_AV0 it_PNP ’s_VBZ winter_NN1 ._PUN
+So_ITJ I_PNP think_VVB the_AT0 pictures_NN2 are_VBB like_PRP a_AT0 comic_NN1 and_CJC uhm_ITJ in_PRP the_AT0 first_ORD picture_NN1 I_PNP can_VM0 see_VVI uhm_ITJ a_AT0 man_NN1 and_CJC a_AT0 boy_NN1 building_VVG something_PNI and_CJC uhm_ITJ it_PNP ’s_VBZ like_PRP a_AT0 ,_PUN a_AT0 thing_NN1 where_AVQ you_PNP uhm_ITJ slide_VVB down_PRP when_CJS it_PNP ’s_VBZ winter_NN1 ._PUN
 Like_PRP a_AT0 sledge_NN1 ._PUN
 Uhm_ITJ ._PUN And_CJC on_PRP the_AT0 second_ORD picture_NN1 they_PNP ’re_VBB uhm_ITJ ,_PUN they_PNP ’re_VBB sliding_VVG down_PRP uhm_ITJ with_PRP the_AT0 sledge_NN1 ._PUN
-And_CJC uhm_ITJ then_AV0 the_AT0 sledge_NN1 got_VVD broken_VVN and_CJC the_AT0 man_NN1 and_CJC the_AT0 boy_NN1 fell_VVD off_AVP the_AT0 sledge_NN1 ._PUN
+And_CJC uhm_ITJ then_AV0 the_AT0 sledge_NN1 got_VVD broken_AJ0 and_CJC the_AT0 man_NN1 and_CJC the_AT0 boy_NN1 fell_VVD off_AVP the_AT0 sledge_NN1 ._PUN
 And_CJC uhm_ITJ after_AV0 that_DT0 they_PNP uhm_ITJ carry_VVB the_AT0 ,_PUN the_AT0 woods_NN2 from_PRP the_AT0 sledge_NN1 and_CJC uhm_ITJ trying_VVG to_TO0 build_VVI a_AT0 new_AJ0 one_PNI ._PUN
 And_CJC uhm_ITJ on_PRP the_AT0 last_ORD picture_NN1 they_PNP ’re_VBB at_PRP home_NN1 and_CJC uhm_ITJ from_PRP the_AT0 uhm_ITJ thing_NN1 they_PNP uhm_ITJ ,_PUN from_PRP the_AT0 woods_NN2 they_PNP made_VVD a_AT0 uhm_ITJ uhm_ITJ a_AT0 little_AJ0 house_NN1 for_PRP the_AT0 birds_NN2 uhm_ITJ where_AVQ they_PNP can_VM0 go_VVI and_CJC uhm_ITJ and_CJC inside_AV0 it_PNP it_PNP uhm_ITJ there_EX0 ’s_VBZ water_NN1 and_CJC uhm_ITJ some_DT0 food_NN1 I_PNP think_VVB ._PUN 
 Yes_ITJ and_CJC uhm_ITJ in_PRP my_DPS opinion_NN1 the_AT0 uhm_ITJ comic_NN1 is_VBZ cool_AJ0 because_CJS uhm_ITJ it_PNP ’s_VBZ not_XX0 so_AV0 hard_AJ0 to_TO0 understand_VVI and_CJC also_AV0 uhm_ITJ I_PNP think_VVB that_DT0 ’s_VBZ a_AT0 cool_AJ0 activity_NN1 to_TO0 build_VVI something_PNI with_PRP uhm_ITJ woods_NN2 ._PUN
@@ -1393,14 +1392,14 @@ And_CJC I_PNP also_AV0 like_VVB to_TO0 build_VVI some_DT0 things_NN2 uhm_ITJ wit
 
 Picture_Description_Realschule_Klasse9
 Uhm_ITJ ._PUN In_PRP this_DT0 picture_NN1 I_PNP can_VM0 see_VVI a_AT0 man_NN1 and_CJC a_AT0 little_AJ0 boy_NN1 ._PUN
-They_PNP are_VBB building_VVG a_AT0 sledge_NN1 out_PRP of_PRF wood_NN1 ._PUN
+They_PNP are_VBB building_VVG a_AT0 sledge_NN1 out_AVP of_PRF wood_NN1 ._PUN
 In_PRP the_AT0 second_ORD picture_NN1 they_PNP are_VBB uhm_ITJ riding_VVG down_PRP a_AT0 hill_NN1 and_CJC they_PNP seem_VVB like_ITJ to_TO0 have_VHI really_AV0 fun_NN1 ._PUN
 But_CJC uhm_ITJ after_AV0 that_DT0 the_AT0 sledge_NN1 broke_VVD and_CJC they_PNP were_VBD falling_VVG down_PRP the_AT0 hill_NN1 ._PUN
-And_CJC they_PNP were_VBD really_AV0 sad_AJ0 and_CJC angry_AJ0 ,_PUN but_CJC they_PNP had_VHD a_AT0 new_AJ0 idea_NN1 and_CJC in_PRP picture_NN1 five_CRD they_PNP built_VVB uhm_ITJ a_AT0 birdhouse_NN1 out_PRP of_PRF a_AT0 sledge_NN1 and_CJC in_PRP the_AT0 si_ITJ -_PUN ,_PUN uhm_ITJ in_PRP picture_NN1 six_CRD they_PNP are_VBB looking_VVG out_PRP of_PRF the_AT0 window_NN1 and_CJC stare_VVB at_PRP the_AT0 birdhouse_NN1 and_CJC they_PNP seem_VVB really_AV0 happy_AJ0 now_AV0 ._PUN
+And_CJC they_PNP were_VBD really_AV0 sad_AJ0 and_CJC angry_AJ0 ,_PUN but_CJC they_PNP had_VHD a_AT0 new_AJ0 idea_NN1 and_CJC in_PRP picture_NN1 five_CRD they_PNP built_VVB uhm_ITJ a_AT0 birdhouse_NN1 out_AVP of_PRF a_AT0 sledge_NN1 and_CJC in_PRP the_AT0 si_ITJ -_PUN ,_PUN uhm_ITJ in_PRP picture_NN1 six_CRD they_PNP are_VBB looking_VVG out_AVP of_PRF the_AT0 window_NN1 and_CJC stare_VVB at_PRP the_AT0 birdhouse_NN1 and_CJC they_PNP seem_VVB really_AV0 happy_AJ0 now_AV0 ._PUN
 Uhm_ITJ ._PUN So_ITJ ,_PUN the_AT0 father_NN1 has_VHZ a_AT0 beard_NN1 and_CJC uhm_ITJ I_PNP think_VVB it_PNP ’s_VBZ like_ITJ a_AT0 pullover_NN1 in_PRP black_AJ0 and_CJC the_AT0 boy_NN1 has_VHZ uhm_ITJ black_AJ0 hair_NN1 and_CJC is_VBZ wearing_VVG a_AT0 jacket_NN1 ,_PUN or_CJC it_PNP seems_VVZ like_ITJ a_AT0 jacket_NN1 ._PUN Maybe_AV0 it_PNP could_VM0 be_VBI a_AT0 pullover_NN1 too_AV0 ._PUN
 Uhm_ITJ ._PUN Yeah_ITJ ,_PUN I_PNP think_VVB the_AT0 father_NN1 is_VBZ a_AT0 very_AV0 uhm_ITJ helpful_AJ0 father_NN1 and_CJC handsome_AJ0 ._PUN
 And_CJC the_AT0 boy_NN1 is_VBZ like_ITJ yeah_ITJ a_AT0 little_AJ0 boy_NN1 ,_PUN maybe_AV0 he_PNP ’s_VBZ four_CRD or_CJC five_CRD ,_PUN I_PNP do_VDB n’t_XX0 know_VVI ._PUN
-And_CJC she_PNP ’s_VBZ very_AV0 happy_AJ0 about_PRP sh_ITJ -_PUN ,_PUN uhm_ITJ his_DPS father_NN1 because_CJS uhm_ITJ he_ITJ ’s_VBZ building_VVG with_PRP him_PNP many_DT0 things_NN2 ,_PUN he_PNP spend_VVB uhm_ITJ with_PRP his_DPS time_NN1 ._PUN
+And_CJC she_PNP ’s_VBZ very_AV0 happy_AJ0 about_PRP sh_ITJ -_PUN ,_PUN uhm_ITJ his_DPS father_NN1 because_CJS uhm_ITJ he_PNP ’s_VBZ building_VVG with_PRP him_PNP many_DT0 things_NN2 ,_PUN he_PNP spend_VVB uhm_ITJ with_PRP his_DPS time_NN1 ._PUN
 So_ITJ ,_PUN yeah_ITJ ._PUN
 I_PNP think_VVB it_PNP ’s_VBZ a_AT0 really_AV0 happy_AJ0 family_NN1 ._PUN
 Uhm_ITJ ,_PUN no_ITJ ._PUN I_PNP think_VVB that_DT0 is_VBZ [_PUL ?_PUN ]_PUR ._PUN
@@ -1413,7 +1412,7 @@ A_AT0 s_ITJ -_PUN ,_PUN sledge_NN1 ._PUN
 And_CJC uhm_ITJ in_PRP picture_NN1 two_CRD the_AT0 children_NN2 and_CJC his_DPS father_NN1 uhm_ITJ ride_VVB on_PRP a_AT0 hill_NN1 on_PRP his_DPS sledge_NN1 ._PUN
 And_CJC in_PRP picture_NN1 three_CRD uhm_ITJ the_AT0 children_NN2 and_CJC his_DPS father_NN1 uhm_ITJ ride_VVB with_PRP his_DPS uhm_ITJ sledge_NN1 into_PRP a_AT0 uhm_ITJ ,_PUN into_PRP ,_PUN
 In_PRP picture_NN1 four_CRD the_AT0 children_NN2 and_CJC his_DPS father_NN1 uhm_ITJ are_VBB sad_AJ0 and_CJC she_PNP go_VVB home_AV0 with_PRP the_AT0 ,_PUN uhm_ITJ sledge_NN1 ._PUN
-In_PRP picture_NN1 five_CRD uhm_ITJ he_ITJ build_NN1 a_AT0 new_AJ0 Sch_ITJ -_PUN ,_PUN sledge_NN1 ._PUN
+In_PRP picture_NN1 five_CRD uhm_ITJ he_PNP build_NN1 a_AT0 new_AJ0 Sch_ITJ -_PUN ,_PUN sledge_NN1 ._PUN
 No_ITJ he_PNP built_VVD a_AT0 ,_PUN he_PNP built_VVD with_PRP this_DT0 sledge_NN1 a_AT0 birdhouse_NN1 ._PUN
 And_CJC in_PRP picture_NN1 six_CRD uhm_ITJ she_PNP uhm_ITJ look_VVB at_PRP the_AT0 bird_NN1 s’_POS house_NN1 and_CJC with_PRP the_AT0 birds_NN2 ._PUN
 Uhm_ITJ ,_PUN
@@ -1449,7 +1448,7 @@ I_PNP do_VDB n’t_XX0 know_VVI ._PUN
 Ah_ITJ ._PUN
 [_PUL Also_AV0 ]_PUR the_AT0 father_NN1 has_VHZ a_AT0 black_AJ0 shirt_NN1 and_CJC white_AJ0 t_ITJ -_PUN ,_PUN white_AJ0 t_ITJ -_PUN ,_PUN trousers_NN2 ._PUN
 And_CJC the_AT0 son_NN1 has_VHZ a_AT0 white_AJ0 shirt_NN1 and_CJC white_AJ0 trousers_NN2 and_CJC too_AV0 the_AT0 both_DT0 has_VHZ black_AJ0 shoes_NN2 ._PUN
-In_PRP picture_NN1 one_CRD they_PNP has_VHZ happy_AJ0 because_CJS he_ITJ build_VVB the_AT0 sleigh_NN1 ._PUN
+In_PRP picture_NN1 one_CRD they_PNP has_VHZ happy_AJ0 because_CJS he_PNP build_VVB the_AT0 sleigh_NN1 ._PUN
 Then_AV0 in_PRP picture_NN1 f_ITJ -_PUN ,_PUN two_CRD they_PNP has_VHZ so_AV0 fun_NN1 because_CJS the_AT0 sleigh_NN1 was_VBD fast_AJ0 ._PUN
 And_CJC then_AV0 they_PNP fell_VVD over_AVP and_CJC the_AT0 sleigh_NN1 was_VBD over_PRP ._PUN
 And_CJC in_PRP picture_NN1 four_CRD there_EX0 was_VBD the_AT0 father_NN1 angry_AJ0 and_CJC the_AT0 son_NN1 was_DTQ sad_AJ0 ._PUN
@@ -1540,7 +1539,7 @@ Uhm_ITJ in_PRP the_AT0 fourth_ORD picture_NN1 is_VBZ the_AT0 father_NN1 and_CJC 
 Uhm_ITJ I_PNP think_VVB they_PNP ’re_VBB disappointed_AJ0 about_PRP that_DT0 ._PUN
 In_PRP the_AT0 fifth_ORD picture_NN1 they_PNP ’re_VBB building_VVG a_AT0 new_AJ0 uhm_ITJ ,_PUN not_XX0 a_AT0 new_AJ0 sledge_NN1 ,_PUN uhm_ITJ ,_PUN
 They_PNP ’re_VBB building_VVG a_AT0 house_NN1 on_PRP top_PRP of_PRF the_AT0 sledge_NN1 on_PRP top_PRP of_PRF the_AT0 rest_NN1 of_PRF the_AT0 sledge_NN1 ._PUN
-Uhm_ITJ picture_NN1 six_CRD it_PNP ’s_VBZ a_AT0 new_AJ0 home_AV0 for_PRP the_AT0 birds_NN2 ._PUN
+Uhm_ITJ picture_NN1 six_CRD it_PNP ’s_VBZ a_AT0 new_AJ0 home_NN1 for_PRP the_AT0 birds_NN2 ._PUN
 They_PNP ’re_VBB living_VVG in_PRP there_AV0 and_CJC the_AT0 father_NN1 and_CJC his_DPS son_NN1 are_VBB looking_VVG out_AVP the_AT0 window_NN1 ._PUN
 Uhm_ITJ the_AT0 son_NN1 I_PNP do_VDB n’t_XX0 know_VVI has_VHZ I_PNP think_VVB a_AT0 shirt_NN1 with_PRP long_AJ0 sleeves_NN2 ._PUN
 Nein_ITJ ,_PUN oder_CJC doch_ITJ ._PUN 
@@ -1566,7 +1565,7 @@ And_CJC the_AT0 boy_NN1 is_VBZ uhm_ITJ in_PRP front_PRP of_PRF him_PNP or_CJC ,_
 And_CJC in_PRP the_AT0 second_ORD picture_NN1 there_EX0 is_VBZ the_AT0 man_NN1 or_CJC the_AT0 dad_NN1 on_PRP the_AT0 sledge_NN1 with_PRP his_DPS son_NN1 on_PRP his_DPS back_NN1 and_CJC they_PNP are_VBB sliding_VVG down_PRP ._PUN
 Uhm_ITJ on_PRP the_AT0 third_ORD Bil_ITJ -_PUN ,_PUN picture_NN1 uhm_ITJ is_VBZ the_AT0 man_NN1 falling_VVG down_AVP and_CJC the_AT0 son_NN1 too_AV0 and_CJC the_AT0 sledge_NN1 broke_VVD ._PUN
 On_PRP the_AT0 fourth_ORD picture_NN1 is_VBZ the_AT0 s_ITJ -_PUN ,_PUN uhm_ITJ is_VBZ the_AT0 uhm_ITJ dad_NN1 and_CJC the_AT0 son_NN1 uhm_ITJ ,_PUN uhm_ITJ picking_VVG up_AVP the_AT0 things_NN2 and_CJC go_VVB away_AV0 or_CJC go_VVB home_AV0 ._PUN
-And_CJC on_PRP the_AT0 fifth_ORD picture_NN1 the_AT0 son_NN1 holds_VVZ the_AT0 ,_PUN the_AT0 last_ORD thing_NN1 uhm_ITJ and_CJC the_AT0 dad_NN1 is_VBZ repairing_VVG the_AT0 sledge_NN1 and_CJC it_PNP ’s_VBZ to_TO0 ,_PUN oh_ITJ no_DT0 he_PNP ,_PUN he_PNP ’s_VBZ building_VVG it_PNP to_PRP a_AT0 li_ITJ -_PUN ,_PUN little_AJ0 house_NN1 for_PRP the_AT0 uhm_ITJ ,_PUN for_PRP the_AT0 ,_PUN
+And_CJC on_PRP the_AT0 fifth_ORD picture_NN1 the_AT0 son_NN1 holds_VVZ the_AT0 ,_PUN the_AT0 last_ORD thing_NN1 uhm_ITJ and_CJC the_AT0 dad_NN1 is_VBZ repairing_VVG the_AT0 sledge_NN1 and_CJC it_PNP ’s_VBZ to_TO0 ,_PUN oh_ITJ no_ITJ he_PNP ,_PUN he_PNP ’s_VBZ building_VVG it_PNP to_PRP a_AT0 li_ITJ -_PUN ,_PUN little_AJ0 house_NN1 for_PRP the_AT0 uhm_ITJ ,_PUN for_PRP the_AT0 ,_PUN
 Uhm_ITJ ,_PUN 
 Vögel_NN2 ,_PUN yes_ITJ ._PUN
 And_CJC then_AV0 the_AT0 ,_PUN the_AT0 dad_NN1 and_CJC the_AT0 son_NN1 are_VBB looking_VVG to_PRP this_DT0 house_NN1 with_PRP the_AT0 V_ITJ -_PUN ,_PUN Vögel_NN2 ._PUN
@@ -1591,13 +1590,13 @@ Was_DTQ heißt_VVZ Schlitten_NN1 ?_PUN
 Ah_ITJ ja_ITJ ._PUN
 He_PNP is_VBZ knocking_VVG with_PRP a_AT0 ,_PUN
 Ich_PNP weiß_VVB nicht_XX0 was_DTQ Hammer_NN1 heißt_VVZ ._PUN
-Okay_ITJ ,_PUN he_ITJ is_VBZ fix_VVB a_AT0 sledge_NN1 and_CJC his_DPS son_NN1 he_ITJ is_VBZ help_VVB him_PNP I_PNP think_VVB ._PUN
+Okay_ITJ ,_PUN he_PNP is_VBZ fix_VVB a_AT0 sledge_NN1 and_CJC his_DPS son_NN1 he_PNP is_VBZ help_VVB him_PNP I_PNP think_VVB ._PUN
 And_CJC in_PRP picture_NN1 two_CRD they_PNP ’re_VBB uhm_ITJ I_PNP think_VVB they_PNP are_VBB on_PRP a_AT0 hill_NN1 and_CJC uhm_ITJ ,_PUN
 They_PNP are_VBB on_PRP the_AT0 sledge_NN1 and_CJC uhm_ITJ yeah_ITJ they_PNP ride_VVB with_PRP the_AT0 sledge_NN1 ._PUN
 In_PRP picture_NN1 three_CRD uhm_ITJ they_PNP ’re_VBB I_PNP think_VVB crashing_VVG in_PRP something_PNI and_CJC then_AV0 the_AT0 sledge_NN1 is_VBZ ,_PUN
 They_PNP fall_VVB uhm_ITJ from_PRP the_AT0 sledge_NN1 and_CJC he_PNP is_VBZ ,_PUN
 Ja_ITJ ,_PUN kaputt_AJ0 ._PUN
-In_PRP picture_NN1 four_CRD they_PNP ’re_VBB ,_PUN uhm_ITJ they_PNP ’re_VBB bringing_VVG the_AT0 sledge_NN1 uhm_ITJ at_PRP home_AV0 and_CJC uhm_ITJ are_VBB going_VVG to_TO0 fix_VVI it_PNP I_PNP think_VVB ._PUN
+In_PRP picture_NN1 four_CRD they_PNP ’re_VBB ,_PUN uhm_ITJ they_PNP ’re_VBB bringing_VVG the_AT0 sledge_NN1 uhm_ITJ at_PRP home_NN1 and_CJC uhm_ITJ are_VBB going_VVG to_TO0 fix_VVI it_PNP I_PNP think_VVB ._PUN
 And_CJC in_PRP picture_NN1 five_CRD they_PNP fix_VVB it_PNP again_AV0 ._PUN
 And_CJC in_PRP picture_NN1 six_CRD they_PNP have_VHB a_AT0 house_NN1 for_PRP birds_NN2 and_CJC the_AT0 birds_NN2 fly_VVB inside_AV0 the_AT0 house_NN1 ._PUN
 Uhm_ITJ the_AT0 man_NN1 are_VBB wearing_VVG a_AT0 black_AJ0 shirt_NN1 and_CJC a_AT0 white_AJ0 trousers_NN2 and_CJC black_AJ0 shoes_NN2 ._PUN
@@ -1613,7 +1612,7 @@ No_ITJ ._PUN
 Picture_Description_Gymnasium_Klasse6
 I_PNP can_VM0 see_VVI two_CRD people_NN0 and_CJC there_EX0 is_VBZ snow_NN1 and_CJC they_PNP are_VBB building_VVG a_AT0 ,_PUN
 A_AT0 house_NN1 for_PRP birds_NN2 ._PUN
-Uhm_ITJ they_PNP have_VHB t-shirts_NN2 and_CJC trousers_NN2 and_CJC shoes_NN2 on_PRP ._PUN
+Uhm_ITJ they_PNP have_VHB t-shirts_NN2 and_CJC trousers_NN2 and_CJC shoes_NN2 on_AVP ._PUN
 They_PNP are_VBB happy_AJ0 and_CJC here_AV0 they_PNP are_VBB scared_AJ0 ._PUN
 And_CJC here_AV0 they_PNP are_VBB sad_AJ0 that_CJT they_PNP ’re_VBB fall_VVN from_PRP the_AT0 sledge_NN1 ._PUN
 And_CJC with_PRP sledge_NN1 they_PNP ’re_VBB drive_VVB from_PRP a_AT0 hill_NN1 ._PUN
@@ -1623,21 +1622,23 @@ Picture_Description_Gymnasium_Klasse8
 Uhm_ITJ on_PRP the_AT0 first_ORD picture_NN1 I_PNP see_VVB a_AT0 little_AJ0 boy_NN1 and_CJC a_AT0 man_NN1 uhm_ITJ which_DTQ are_VBB building_VVG on_PRP the_AT0 sledge_NN1 ._PUN
 On_PRP the_AT0 second_ORD uhm_ITJ picture_NN1 I_PNP see_VVB that_CJT the_AT0 boy_NN1 sits_VVZ on_PRP the_AT0 man_NN1 on_PRP the_AT0 sledge_NN1 ._PUN
 And_CJC they_PNP are_VBB going_VVG to_TO0 come_VVB down_PRP the_AT0 mountain_NN1 ,_PUN moun_ITJ -_PUN ,_PUN like_ITJ a_AT0 moun_ITJ -_PUN ,_PUN mountain_NN1 ._PUN
-In_PRP the_AT0 third_ORD picture_NN1 I_PNP see_VVB how_AVQ they_PNP crash_VVB so_CJC they_PNP take_VVB a_AT0 uhm_ITJ salto_NN1 or_CJC Ã¼ber_NN1 ,_PUN also_AV0 ,_PUN
+In_PRP the_AT0 third_ORD picture_NN1 I_PNP see_VVB how_AVQ they_PNP crash_VVB so_CJS they_PNP take_VVB a_AT0 uhm_ITJ salto_NN1 or_CJC Ã¼ber_NN1 ,_PUN also_AV0 ,_PUN
 Uhm_ITJ in_PRP the_AT0 fourth_ORD picture_NN1 I_PNP see_VVB uhm_ITJ that_CJT they_PNP are_VBB going_VVG home_AV0 with_PRP the_AT0 sledge_NN1 ._PUN
 In_PRP the_AT0 fifth_ORD picture_NN1 I_PNP see_VVB them_PNP where_AVQ they_PNP uhm_ITJ repair_VVB the_AT0 sledge_NN1 ._PUN
 Uhm_ITJ the_AT0 man_NN1 has_VHZ a_AT0 big_AJ0 metal_AJ0 thing_NN1 and_CJC the_AT0 little_AJ0 boy_NN1 has_VHZ a_AT0 big_AJ0 uhm_ITJ Stock_NN1 ,_PUN stick_NN1 in_PRP his_DPS ha_ITJ -_PUN ,_PUN hand_NN1
-And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 I_PNP see_VVB uhm_ITJ they_PNP are_VBB in_PRP the_AT0 house_NN1 and_CJC look_VVB out_PRP for_PRP their_DPS new_AJ0 house_NN1 for_PRP the_AT0 little_AJ0 birds_NN2 ._PUN
+And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 I_PNP see_VVB uhm_ITJ they_PNP are_VBB in_PRP the_AT0 house_NN1 and_CJC look_VVB out_AVP for_PRP their_DPS new_AJ0 house_NN1 for_PRP the_AT0 little_AJ0 birds_NN2 ._PUN
 I_PNP think_VVB uhm_ITJ they_PNP crashed_VVD their_DPS sledge_NN1 and_CJC then_AV0 they_PNP built_VVD a_AT0 house_NN1 for_PRP the_AT0 uhm_ITJ birds_NN2 ._PUN
-It_PNP ’s_VBZ ,_PUN it_PNP ’s_VBZ good_AJ0 because_CJS it_PNP was_VBD crashed_VVN ,_PUN so_CJC it_PNP ’s_VBZ broken_AJ0 and_CJC now_AV0 they_PNP use_VVB it_PNP for_PRP a_AT0 house_NN1 ._PUN
+It_PNP ’s_VBZ ,_PUN it_PNP ’s_VBZ good_AJ0 because_CJS it_PNP was_VBD crashed_VVN ,_PUN so_CJS it_PNP ’s_VBZ broken_AJ0 and_CJC now_AV0 they_PNP use_VVB it_PNP for_PRP a_AT0 house_NN1 ._PUN
 
 Picture_Description_Gymnasium_Klasse8
-And_CJC in_PRP the_AT0 first_ORD picture_NN1 I_PNP see_VVB a_AT0 man_NN1 with_PRP his_DPS kid_NN1 possibly_AV0 that_CJT are_VBB uhm_ITJ ,_PUN I_PNP think_VVB they_PNP ’re_VBB making_VVG ,_PUN doing_VDG sledge_NN1 ._PUN
-And_CJC uhm_ITJ in_PRP the_AT0 second_ORD picture_NN1 I_PNP see_VVB that_CJT the_AT0 man_NN1 the_AT0 child_NN1 is_VBZ uhm_ITJ is_VBZ on_PRP the_AT0 uhm_ITJ hill_NN1 and_CJC going_VVG down_PRP with_PRP the_AT0 sledge_NN1 ._PUN
+And_CJC in_PRP the_AT0 first_ORD picture_NN1 I_PNP see_VVB a_AT0 man_NN1 with_PRP his_DPS kid_NN1 possibly_AV0 that_CJT are_VBB uhm_ITJ ,_PUN I_PNP
+ think_VVB they_PNP ’re_VBB making_VVG ,_PUN doing_VDG sledge_NN1 ._PUN
+And_CJC uhm_ITJ in_PRP the_AT0 second_ORD picture_NN1 I_PNP see_VVB that_CJT the_AT0 man_NN1 the_AT0 child_NN1 is_VBZ uhm_ITJ is_VBZ on_PRP the_AT0 uhm_ITJ hill_NN1 and_CJC going_VVG down_PRP with_PRP the_AT0 sledge_NN1 ._
 Uhm_ITJ and_CJC in_PRP the_AT0 third_ORD picture_NN1 I_PNP see_VVB that_CJT they_PNP both_AV0 crash_NN1 into_PRP something_PNI and_CJC the_AT0 sledge_NN1 is_VBZ like_ITJ uhm_ITJ it_PNP ’s_VBZ broken_AJ0 ?_PUN
 And_CJC in_PRP the_AT0 ,_PUN in_PRP the_AT0 fourth_ORD picture_NN1 I_PNP see_VVB that_CJT the_AT0 man_NN1 and_CJC the_AT0 kid_NN1 are_VBB taking_VVG the_AT0 uhm_ITJ broken_AJ0 things_NN2 uhm_ITJ with_PRP ,_PUN with_PRP ,_PUN with_PRP them_PNP to_TO0 do_VDI anything_PNI else_AV0 with_PRP them_PNP I_PNP think_VVB ._PUN
 In_PRP the_AT0 fifth_ORD picture_NN1 I_PNP see_VVB that_CJT they_PNP building_VVG some_DT0 ,_PUN some_DT0 things_NN2 with_PRP the_AT0 ,_PUN with_PRP the_AT0 wo_ITJ -_PUN ,_PUN wood_NN1 that_CJT they_PNP have_VHB from_PRP the_AT0 sledge_NN1 and_CJC the_AT0 kid_NN1 is_VBZ helping_VVG ._PUN
-Uhm_ITJ ,_PUN In_PRP the_AT0 sixth_ORD picture_NN1 they_PNP ha_ITJ -_PUN ,_PUN they_PNP are_VBB in_PRP the_AT0 house_NN1 and_CJC looking_VVG at_PRP that_DT0 uhm_ITJ at_PRP that_DT0 house_NN1 for_PRP the_AT0 uhm_ITJ birds_NN2 that_CJT they_PNP built_VVD ._PUN
+Uhm_ITJ ,_PUN
+In_PRP the_AT0 sixth_ORD picture_NN1 they_PNP ha_ITJ -_PUN ,_PUN they_PNP are_VBB in_PRP the_AT0 house_NN1 and_CJC looking_VVG at_PRP that_DT0 uhm_ITJ at_PRP that_DT0 house_NN1 for_PRP the_AT0 uhm_ITJ birds_NN2 that_CJT they_PNP built_VVD ._PUN
 Uhm_ITJ I_PNP think_VVB they_PNP uhm_ITJ have_VHB ,_PUN they_PNP ,_PUN they_PNP could_VM0 have_VHB built_VVN another_DT0 sleigh_NN1 with_PRP that_DT0 ,_PUN but_CJC they_PNP have_VHB decided_VVN to_TO0 build_VVI a_AT0 birdhouse_NN1 and_CJC a_AT0 good_AJ0 thing_NN1 for_PRP the_AT0 birds_NN2 ._PUN
 
 Picture_Description_Gymnasium_Klasse8
@@ -1647,7 +1648,7 @@ Uhm_ITJ on_PRP uhm_ITJ on_PRP picture_NN1 two_CRD uhm_ITJ the_AT0 boy_NN1 and_CJ
 And_CJC on_PRP the_AT0 third_ORD picture_NN1 uhm_ITJ I_PNP think_VVB they_PNP crash_VVB in_PRP something_PNI ._PUN
 Uhm_ITJ on_PRP the_AT0 f_ITJ -_PUN ,_PUN uhm_ITJ on_PRP the_AT0 fou_ITJ -_PUN ,_PUN  fourth_ORD picture_NN1 uhm_ITJ the_AT0 man_NN1 is_VBZ angry_AJ0 or_CJC so_AV0 ._PUN
 Then_AV0 they_PNP uhm_ITJ ,_PUN I_PNP think_VVB they_PNP go_VVB home_AV0 or_CJC so_AV0 maybe_AV0 ._PUN
-Uhm_ITJ on_PRP the_AT0 fi_ITJ -_PUN ,_PUN fifth_ORD picture_NN1 uhm_ITJ they_PNP build_VVB uhm_ITJ a_AT0 ,_PUN uhm_ITJ they_PNP build_VVB something_PNI out_PRP of_PRF the_AT0 sledge_NN1 ._PUN 
+Uhm_ITJ on_PRP the_AT0 fi_ITJ -_PUN ,_PUN fifth_ORD picture_NN1 uhm_ITJ they_PNP build_VVB uhm_ITJ a_AT0 ,_PUN uhm_ITJ they_PNP build_VVB something_PNI out_AVP of_PRF the_AT0 sledge_NN1 ._PUN 
 And_CJC uhm_ITJ at_PRP the_AT0 sixth_ORD picture_NN1 uhm_ITJ it_PNP ’s_VBZ uhm_ITJ ,_PUN the_AT0 sledge_NN1 is_VBZ a_AT0 uhm_ITJ ,_PUN uhm_ITJ it_PNP ,_PUN
 On_PRP the_AT0 si_ITJ -_PUN ,_PUN
 Uhm_ITJ for_PRP uhm_ITJ ,_PUN birds_NN2 ,_PUN and_CJC they_PNP eat_VVB in_PRP it_PNP ,_PUN maybe_AV0 ._PUN
@@ -1665,7 +1666,7 @@ And_CJC in_PRP picture_NN1 six_CRD you_PNP can_VM0 see_VVI that_CJT they_PNP are
 I_PNP think_VVB ,_PUN they_PNP ’re_VBB recycling_VVG something_PNI and_CJC ,_PUN
 
 Picture_Description_Gymnasium_Klasse8
-And_CJC I_PNP see_VVB on_PRP picture_NN1 one_CRD that_CJT a_AT0 man_NN1 with_PRP a_AT0 kid_NN1 is_VBZ making_VVG the_AT0 sledge_NN1 uhm_ITJ good_AJ0 cause_CJS uhm_ITJ he_ITJ ,_PUN I_PNP think_VVB the_AT0 kid_NN1 felled_VVD with_PRP uhm_ITJ with_PRP the_AT0 sledge_NN1 and_CJC the_AT0 sledge_NN1 broke_AJ0 ._PUN
+And_CJC I_PNP see_VVB on_PRP picture_NN1 one_CRD that_CJT a_AT0 man_NN1 with_PRP a_AT0 kid_NN1 is_VBZ making_VVG the_AT0 sledge_NN1 uhm_ITJ good_AJ0 cause_CJS uhm_ITJ he_PNP ,_PUN I_PNP think_VVB the_AT0 kid_NN1 felled_VVD with_PRP uhm_ITJ with_PRP the_AT0 sledge_NN1 and_CJC the_AT0 sledge_NN1 broke_AJ0 ._PUN
 And_CJC on_PRP picture_NN1 two_CRD they_PNP have_VHB pre_ITJ -_PUN ,_PUN repaired_VVN it_PNP and_CJC uhm_ITJ they_PNP uhm_ITJ s_ITJ -_PUN ,_PUN uhm_ITJ are_VBB on_PRP snow_NN1 with_PRP the_AT0 sledge_NN1 ._PUN
 On_PRP picture_NN1 three_CRD they_PNP felled_VVD uhm_ITJ again_AV0 down_AVP and_CJC the_AT0 sledge_NN1 broked_VVD ._PUN
 On_PRP picture_NN1 four_CRD they_PNP go_VVB home_AV0 to_TO0 make_VVI uhm_ITJ the_AT0 sledge_NN1 against_PRP repair_NN1 ._PUN 
@@ -1696,7 +1697,7 @@ And_CJC on_PRP the_AT0 picture_NN1 I_PNP see_VVB a_AT0 man_NN1 and_CJC a_AT0 boy
 In_PRP the_AT0 second_ORD picture_NN1 they_PNP sleigh_VVB down_PRP the_AT0 s_ITJ -_PUN ,_PUN yeah_ITJ the_AT0 hill_NN1 ._PUN
 In_PRP the_AT0 third_ORD picture_NN1 the_AT0 sledge_NN1 uhm_ITJ breaks_VVZ and_CJC they_PNP fall_VVB down_AVP both_AV0 of_PRF them_PNP ._PUN
 In_PRP the_AT0 fourth_ORD picture_NN1 they_PNP pick_VVB up_AVP the_AT0 rests_NN2 from_PRP the_AT0 sledge_NN1 ._PUN
-And_CJC in_PRP the_AT0 fifth_ORD picture_NN1 they_PNP do_VDB a_AT0 bird_NN1 house_NN1 out_PRP of_PRF it_PNP ._PUN
+And_CJC in_PRP the_AT0 fifth_ORD picture_NN1 they_PNP do_VDB a_AT0 bird_NN1 house_NN1 out_AVP of_PRF it_PNP ._PUN
 And_CJC yeah_ITJ in_PRP the_AT0 sixth_ORD picture_NN1 they_PNP ’re_VBB looking_VVG at_PRP the_AT0 birds_NN2 ._PUN 
 Uhm_ITJ it_PNP ’s_VBZ a_AT0 nice_AJ0 story_NN1 I_PNP think_VVB ,_PUN it_PNP ’s_VBZ good_AJ0 that_CJT they_PNP recycled_VVD the_AT0 sledge_NN1 instead_PRP of_PRF throwing_VVG it_PNP away_AV0 ._PUN
 
@@ -1717,7 +1718,7 @@ And_CJC the_AT0 man_NN1 has_VHZ got_VVN a_AT0 ,_PUN uhm_ITJ uhm_ITJ has_VHZ got_
 And_CJC on_PRP the_AT0 second_ORD picture_NN1 I_PNP can_VM0 see_VVI uhm_ITJ the_AT0 man_NN1 and_CJC the_AT0 child_NN1 on_PRP the_AT0 sledge_NN1 and_CJC they_PNP are_VBB uhm_ITJ going_VVG down_PRP a_AT0 ,_PUN they_PNP are_VBB going_VVG down_PRP ._PUN
 Yeah_ITJ the_AT0 hill_NN1 ._PUN
 And_CJC on_PRP the_AT0 third_ORD picture_NN1 I_PNP can_VM0 see_VVI they_PNP fell_VVD down_AVP von_PRP ,_PUN off_AVP the_AT0 sledge_NN1 and_CJC uhm_ITJ the_AT0 sledge_NN1 is_VBZ damaged_AJ0 ._PUN
-And_CJC on_PRP the_AT0 fourth_ORD picture_NN1 I_PNP can_VM0 see_VVI they_PNP uhm_ITJ ,_PUN uhm_ITJ they_PNP walk_VVB maybe_AV0 at_PRP home_AV0 ._PUN
+And_CJC on_PRP the_AT0 fourth_ORD picture_NN1 I_PNP can_VM0 see_VVI they_PNP uhm_ITJ ,_PUN uhm_ITJ they_PNP walk_VVB maybe_AV0 at_PRP home_NN1 ._PUN
 And_CJC on_PRP the_AT0 fifth_ORD picture_NN1 they_PNP are_VBB building_VVG uhm_ITJ something_PNI new_AJ0 of_PRF the_AT0 sledge_NN1 ._PUN
 Uhm_ITJ I_PNP think_VVB it_PNP ’s_VBZ a_AT0 house_NN1 for_PRP uhm_ITJ birds_NN2 ._PUN
 And_CJC on_PRP the_AT0 sixth_ORD picture_NN1 there_EX0 are_VBB birds_NN2 in_PRP the_AT0 uhm_ITJ house_NN1 and_CJC the_AT0 man_NN1 and_CJC the_AT0 child_NN1 are_VBB inside_AV0 the_AT0 house_NN1 ,_PUN inside_AV0 a_AT0 big_AJ0 house_NN1 ._PUN
@@ -1748,24 +1749,24 @@ Uhm_ITJ they_PNP ’re_VBB looking_VVG at_PRP the_AT0 birdhouse_NN1 that_CJT the
 Uhum_ITJ ._PUN
 So_ITJ uhm_ITJ the_AT0 father_NN1 is_VBZ bald_AJ0 and_CJC he_PNP has_VHZ like_ITJ ,_PUN
 a_AT0 shirt_NN1 ,_PUN a_AT0 black_AJ0 shirt_NN1 with_PRP white_AJ0 sleeves_NN2 and_CJC he_PNP ’s_VBZ wearing_VVG regular_AJ0 pants_NN2 and_CJC black_AJ0 shoes_NN2 and_CJC the_AT0 boy_NN1 is_VBZ wearing_VVG like_ITJ also_AV0 a_AT0 sweatshirt_NN1 maybe_AV0 it_PNP ’s_VBZ white_AJ0 and_CJC he_PNP ,_PUN he_PNP also_AV0 has_VHZ black_AJ0 shoes_NN2 and_CJC he_PNP ’s_VHZ got_VVN f_ITJ -_PUN fluffy_AJ0 black_AJ0 hair_NN1 ._PUN
-Uhm_ITJ yes_ITJ maybe_AV0 that_CJT if_CJS someth_ITJ -_PUN ,_PUN if_CJS you_PNP try_VVB to_TO0 do_VDB something_PNI and_CJC it_PNP does_VDZ n’t_XX0 work_VVI out_AVP the_AT0 way_NN1 that_CJT you_PNP want_VVB you_PNP can_VM0 maybe_AV0 try_VVI and_CJC in_PRP this_DT0 case_NN1 build_VVB something_PNI new_AJ0 from_PRP this_DT0 so_CJC you_PNP ’re_VBB not_XX0 just_AV0 upset_AJ0 and_CJC have_VHB lost_VVN something_PNI but_CJC that_CJT you_PNP maybe_AV0 learn_VVB something_PNI new_AJ0 and_CJC achieve_VVB something_PNI that_CJT ’s_VBZ still_AV0 good_AJ0 ._PUN
+Uhm_ITJ yes_ITJ maybe_AV0 that_CJT if_CJS someth_ITJ -_PUN ,_PUN if_CJS you_PNP try_VVB to_TO0 do_VDB something_PNI and_CJC it_PNP does_VDZ n’t_XX0 work_VVI out_AVP the_AT0 way_NN1 that_CJT you_PNP want_VVB you_PNP can_VM0 maybe_AV0 try_VVI and_CJC in_PRP this_DT0 case_NN1 build_VVB something_PNI new_AJ0 from_PRP this_DT0 so_CJS you_PNP ’re_VBB not_XX0 just_AV0 upset_AJ0 and_CJC have_VHB lost_VVN something_PNI but_CJC that_CJT you_PNP maybe_AV0 learn_VVB something_PNI new_AJ0 and_CJC achieve_VVB something_PNI that_CJT ’s_VBZ still_AV0 good_AJ0 ._PUN
 Uhm_ITJ I_PNP do_VDB n’t_XX0 think_VVI so_AV0 ._PUN I_PNP think_VVB it_PNP ,_PUN it_PNP ’s_VBZ a_AT0 pretty_AV0 funny_AJ0 story_NN1 because_PRP of_PRF the_AT0 face_NN1 expressions_NN2 ._PUN
-But_CJC ,_PUN no_XX0 ._PUN
+But_CJC ,_PUN no_ITJ ._PUN
 
 Picture_Description_Gymnasium_Klasse10
 Okay_ITJ so_ITJ in_PRP the_AT0 first_ORD picture_NN1 you_PNP can_VM0 see_VVI uhm_ITJ an_AT0 adult_AJ0 person_NN1 and_CJC a_AT0 young_AJ0 person_NN1 who_PNQ are_VBB working_VVG on_PRP a_AT0 sledge_NN1 uhm_ITJ and_CJC they_PNP building_VVG the_AT0 sledge_NN1 ._PUN
 And_CJC in_PRP the_AT0 second_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 two_CRD persons_NN2 uhm_ITJ driving_VVG with_PRP the_AT0 sledge_NN1 ._PUN
 Uhm_ITJ I_PNP think_VVB hill_NN1 down_PRP because_CJS uhm_ITJ it_PNP looks_VVZ like_PRP it_PNP ._PUN
-Uhm_ITJ in_PRP the_AT0 picture_NN1 three_CRD it_PNP looks_VVZ like_PRP they_PNP had_VHD an_AT0 accident_NN1 because_CJS uhm_ITJ the_AT0 sledge_NN1 is_VBZ broken_AJ0 and_CJC they_PNP are_VBB flying_VVG ._PUN
+Uhm_ITJ in_PRP the_AT0 picture_NN1 three_CRD it_PNP looks_VVZ like_CJS they_PNP had_VHD an_AT0 accident_NN1 because_CJS uhm_ITJ the_AT0 sledge_NN1 is_VBZ broken_AJ0 and_CJC they_PNP are_VBB flying_VVG ._PUN
 Uhm_ITJ in_PRP the_AT0 picture_NN1 four_CRD uhm_ITJ you_PNP can_VM0 see_VVI that_CJT they_PNP are_VBB uhm_ITJ ,_PUN
 They_PNP had_VHD picked_VVN up_AVP the_AT0 broken_AJ0 sledge_NN1 and_CJC they_PNP look_VVB a_AT0 bit_AV0 sad_AJ0 ._PUN
-Uhm_ITJ and_CJC uhm_ITJ in_PRP the_AT0 picture_NN1 five_CRD they_PNP are_VBB building_VVG uhm_ITJ some_DT0 -_PUN something_PNI different_AJ0 out_PRP of_PRF the_AT0 sledge_NN1 ._PUN
+Uhm_ITJ and_CJC uhm_ITJ in_PRP the_AT0 picture_NN1 five_CRD they_PNP are_VBB building_VVG uhm_ITJ some_DT0 -_PUN something_PNI different_AJ0 out_AVP of_PRF the_AT0 sledge_NN1 ._PUN
 And_CJC in_PRP picture_NN1 six_CRD uhm_ITJ you_PNP can_VM0 see_VVI that_CJT they_PNP build_VVB a_AT0 house_NN1 for_PRP the_AT0 birds_NN2 where_AVQ you_PNP can_VM0 put_VVI food_NN1 in_PRP for_PRP the_AT0 birds_NN2 and_CJC they_PNP uhm_ITJ watch_VVB the_AT0 birds_NN2 eating_VVG ._PUN
 Yes_ITJ so_ITJ the_AT0 adult_AJ0 person_NN1 is_VBZ wearing_VVG uhm_ITJ a_AT0 black_AJ0 t-shirt_NN1 and_CJC white_AJ0 pants_NN2 ._PUN 
 Uhm_ITJ the_AT0 young_AJ0 person_NN1 is_VBZ wearing_VVG uhm_ITJ a_AT0 white_AJ0 shirt_NN1 and_CJC white_AJ0 pants_NN2 and_CJC both_AV0 have_VHB uhm_ITJ black_AJ0 shoes_NN2 ._PUN
 Uhm_ITJ I_PNP think_VVB in_PRP picture_NN1 one_CRD and_CJC two_CRD they_PNP are_VBB really_AV0 excited_AJ0 uhm_ITJ because_PRP of_PRF the_AT0 sledge_NN1 and_CJC then_AV0 uhm_ITJ in_PRP picture_NN1 three_CRD and_CJC four_CRD they_PNP ’re_VBB a_AT0 bit_AV0 sad_AJ0 or_CJC also_AV0 mad_AJ0 because_CJS it_PNP broke_VVD ._PUN
 But_CJC in_PRP picture_NN1 five_CRD and_CJC six_CRD uhm_ITJ I_PNP think_VVB they_PNP are_VBB really_AV0 excited_AJ0 again_AV0 because_CJS they_PNP figured_VVD out_AVP something_PNI new_AJ0 they_PNP could_VM0 do_VDI with_PRP the_AT0 sledge_NN1 ._PUN
-Uhm_ITJ I_PNP think_VVB it_PNP was_VBD really_AV0 smart_AJ0 to_TO0 build_VVI something_PNI new_AJ0 out_PRP of_PRF the_AT0 broken_AJ0 sledge_NN1 and_CJC not_XX0 uhm_ITJ just_AV0 throw_VVB it_PNP away_AV0 ._PUN
+Uhm_ITJ I_PNP think_VVB it_PNP was_VBD really_AV0 smart_AJ0 to_TO0 build_VVI something_PNI new_AJ0 out_AVP of_PRF the_AT0 broken_AJ0 sledge_NN1 and_CJC not_XX0 uhm_ITJ just_AV0 throw_VVB it_PNP away_AV0 ._PUN
 
 Picture_Description_Gymnasium_Klasse10
 Okay_ITJ ._PUN
@@ -1781,7 +1782,7 @@ Uhum_ITJ ._PUN
 Uhm_ITJ I_PNP think_VVB the_AT0 boy_NN1 is_VBZ just_AV0 wearing_VVG like_ITJ a_AT0 t-shirt_NN1 and_CJC pants_NN2 uhm_ITJ and_CJC the_AT0 older_AJC man_NN1 is_VBZ I_PNP think_VVB wearing_VVG like_ITJ a_AT0 pullover_NN1 maybe_AV0 and_CJC also_AV0 pants_NN2 normal_AJ0 shoes_NN2 ._PUN
 Yes_ITJ ._PUN
 Uhm_ITJ I_PNP think_VVB uhm_ITJ they_PNP ,_PUN especially_AV0 in_PRP the_AT0 first_ORD picture_NN1 they_PNP are_VBB very_AV0 excited_AJ0 because_CJS uhm_ITJ they_PNP can_VM0 try_VVI their_DPS new_AJ0 sledge_NN1 ._PUN
-And_CJC in_PRP the_AT0 last_ORD picture_NN1 they_PNP are_VBB also_AV0 excited_AJ0 because_CJS they_PNP built_VVD something_PNI new_AJ0 out_PRP of_PRF the_AT0 broken_AJ0 pieces_NN2 ._PUN
+And_CJC in_PRP the_AT0 last_ORD picture_NN1 they_PNP are_VBB also_AV0 excited_AJ0 because_CJS they_PNP built_VVD something_PNI new_AJ0 out_AVP of_PRF the_AT0 broken_AJ0 pieces_NN2 ._PUN
 Uhm_ITJ maybe_AV0 in_PRP the_AT0 like_ITJ third_ORD and_CJC fourth_ORD picture_NN1 they_PNP ’re_VBB a_AT0 bit_AV0 disappointed_AJ0 because_CJS uhm_ITJ their_DPS sledge_NN1 is_VBZ broken_AJ0 and_CJC they_PNP put_VVD hard_AJ0 work_NN1 into_PRP it_PNP ._PUN
 Uhm_ITJ yes_ITJ but_CJC overall_AV0 I_PNP think_VVB they_PNP ’re_VBB happy_AJ0 ._PUN
 No_ITJ ,_PUN not_XX0 really_AV0 ._PUN
@@ -1798,7 +1799,7 @@ And_CJC in_PRP the_AT0 fifth_ORD picture_NN1 uhm_ITJ the_AT0 man_NN1 and_CJC the
 And_CJC uhm_ITJ in_PRP the_AT0 sixth_ORD picture_NN1 uhm_ITJ they_PNP are_VBB looking_VVG outside_AV0 uhm_ITJ through_PRP a_AT0 window_NN1 and_CJC uhm_ITJ looking_VVG ,_PUN
 uhm_ITJ at_PRP the_AT0 birdhouse_NN1 ._PUN
 Yeah_ITJ ._PUN
-Uhm_ITJ I_PNP think_VVB at_PRP first_ORD they_PNP have_VHB fun_NN1 and_CJC then_AV0 uhm_ITJ the_AT0 sleigh_NN1 falls_VVZ apart_AV0 and_CJC uhm_ITJ they_PNP look_VVB like_PRP they_PNP are_VBB upset_AJ0 ._PUN
+Uhm_ITJ I_PNP think_VVB at_PRP first_ORD they_PNP have_VHB fun_NN1 and_CJC then_AV0 uhm_ITJ the_AT0 sleigh_NN1 falls_VVZ apart_AV0 and_CJC uhm_ITJ they_PNP look_VVB like_CJS they_PNP are_VBB upset_AJ0 ._PUN
 Uhm_ITJ the_AT0 father_NN1 wears_VVZ like_ITJ uhm_ITJ like_ITJ a_AT0 ,_PUN
 a_AT0 pullover_NN1 and_CJC uhm_ITJ yeah_ITJ pants_NN2 uhm_ITJ black_AJ0 shoes_NN2 ._PUN
 And_CJC uhm_ITJ I_PNP think_VVB he_PNP ’s_VBZ having_VHG a_AT0 moustache_NN1 ._PUN
@@ -1816,28 +1817,28 @@ In_PRP the_AT0 next_ORD picture_NN1 uhm_ITJ they_PNP are_VBB creating_VVG or_CJC
 h_ITJ -_PUN house_NN1 for_PRP birds_NN2 with_PRP the_AT0 wood_NN1 from_PRP the_AT0 sled_NN1 ._PUN
 And_CJC then_AV0 they_PNP go_VVB in_PRP the_AT0 house_NN1 and_CJC uhm_ITJ look_VVB ,_PUN and_CJC then_AV0 they_PNP are_VBB looking_VVG outside_AV0 and_CJC they_PNP could_VM0 see_VVI their_DPS house_NN1 for_PRP the_AT0 birds_NN2 and_CJC there_EX0 are_VBB many_DT0 birds_NN2 who_PNQ eat_VVB something_PNI in_PRP the_AT0 house_NN1 ._PUN
 Uhm_ITJ I_PNP think_VVB in_PRP the_AT0 ,_PUN the_AT0 boy_NN1 and_CJC the_AT0 father_NN1 are_VBB happy_AJ0 because_CJS they_PNP could_VM0 spend_VVI time_NN1 together_AV0 and_CJC f_ITJ -_PUN ,_PUN make_VVB activities_NN2 together_AV0 ._PUN
-But_CJC when_AV0 they_PNP have_VHB the_AT0 crash_NN1 they_PNP are_VBB n’t_XX0 so_AV0 happy_AJ0 because_CJS they_PNP built_VVD the_AT0 sled_NN1 by_PRP themselves_PNX and_CJC now_AV0 ,_PUN
+But_CJC when_CJS they_PNP have_VHB the_AT0 crash_NN1 they_PNP are_VBB n’t_XX0 so_AV0 happy_AJ0 because_CJS they_PNP built_VVD the_AT0 sled_NN1 by_PRP themselves_PNX and_CJC now_AV0 ,_PUN
 Uhm_ITJ yes_ITJ ._PUN
-And_CJC ,_PUN but_CJC then_AV0 they_PNP are_VBB happy_AJ0 to_TO0 build_VVI a_AT0 new_AJ0 home_NN1 for_PRP the_AT0 birds_NN2 and_CJC when_AV0 they_PNP saw_VVD their_DPS house_NN1 they_PNP are_VBB happy_AJ0 that_CJT they_PNP make_VVB something_PNI good_AJ0 ._PUN
+And_CJC ,_PUN but_CJC then_AV0 they_PNP are_VBB happy_AJ0 to_TO0 build_VVI a_AT0 new_AJ0 home_NN1 for_PRP the_AT0 birds_NN2 and_CJC when_CJS they_PNP saw_VVD their_DPS house_NN1 they_PNP are_VBB happy_AJ0 that_CJT they_PNP make_VVB something_PNI good_AJ0 ._PUN
 Uhm_ITJ ,_PUN
-I_PNP would_VM0 say_VVI that_CJT when_AV0 something_PNI bad_AJ0 happens_VVZ then_AV0 you_PNP could_VM0 make_VVI something_PNI good_AJ0 out_PRP of_PRF it_PNP ._PUN
-So_ITJ because_PRP of_PRF the_AT0 crash_NN1 the_AT0 sled_NN1 is_VBZ destroyed_AJ0 and_CJC then_AV0 they_PNP made_VVD something_PNI new_AJ0 out_PRP of_PRF it_PNP ._PUN
+I_PNP would_VM0 say_VVI that_CJT when_CJS something_PNI bad_AJ0 happens_VVZ then_AV0 you_PNP could_VM0 make_VVI something_PNI good_AJ0 out_AVP of_PRF it_PNP ._PUN
+So_ITJ because_PRP of_PRF the_AT0 crash_NN1 the_AT0 sled_NN1 is_VBZ destroyed_VVN and_CJC then_AV0 they_PNP made_VVD something_PNI new_AJ0 out_AVP of_PRF it_PNP ._PUN
 
 Picture_Description_Gymnasium_Klasse10
 Uhm_ITJ you_PNP can_VM0 see_VVI a_AT0 cartoon_NN1 ._PUN
 In_PRP the_AT0 first_ORD picture_NN1 you_PNP can_VM0 see_VVI an_AT0 old_AJ0 man_NN1 and_CJC a_AT0 little_AJ0 child_NN1 building_VVG a_AT0 sled_NN1 ._PUN
 In_PRP the_AT0 background_NN1 there_EX0 are_VBB some_DT0 wood_NN1 planks_NN2 and_CJC in_PRP the_AT0 middle_NN1 there_EX0 are_VBB some_DT0 tools_NN2 to_TO0 cut_VVI and_CJC make_VVI the_AT0 sled_NN1 ._PUN
 In_PRP the_AT0 second_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 old_AJ0 man_NN1 lying_VVG on_PRP the_AT0 sled_NN1 and_CJC the_AT0 little_AJ0 boy_NN1 sitting_VVG on_PRP his_DPS back_NN1 and_CJC they_PNP ,_PUN they_PNP ’re_VBB driving_VVG a_AT0 snow_NN1 hill_NN1 ,_PUN hill_NN1 down_PRP ._PUN
-In_PRP the_AT0 third_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC the_AT0 child_NN1 flying_VVG around_PRP and_CJC the_AT0 parts_NN2 of_PRF the_AT0 sled_NN1 are_VBB destroyed_AJ0 and_CJC fly_VVB around_PRP too_AV0 ._PUN
+In_PRP the_AT0 third_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC the_AT0 child_NN1 flying_VVG around_PRP and_CJC the_AT0 parts_NN2 of_PRF the_AT0 sled_NN1 are_VBB destroyed_VVN and_CJC fly_VVB around_PRP too_AV0 ._PUN
 In_PRP the_AT0 fourth_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 old_AJ0 man_NN1 and_CJC the_AT0 little_AJ0 child_NN1 walking_VVG and_CJC carrying_VVG the_AT0 parts_NN2 of_PRF the_AT0 s_ITJ -_PUN uhm_ITJ destroyed_AJ0 sled_NN1 ._PUN
 In_PRP the_AT0 fifth_ORD picture_NN1 you_PNP can_VM0 see_VVI how_AVQ the_AT0 old_AJ0 man_NN1 is_VBZ cutting_VVG the_AT0 sled_NN1 and_CJC the_AT0 little_AJ0 boy_NN1 is_VBZ holding_VVG a_AT0 plank_NN1 and_CJC they_PNP ’re_VBB building_VVG uhm_ITJ a_AT0 roof_NN1 on_PRP the_AT0 sled_NN1 ._PUN
 Uhm_ITJ on_PRP the_AT0 sixth_ORD picture_NN1 you_PNP can_VM0 see_VVI the_AT0 sled_NN1 with_PRP the_AT0 roof_NN1 on_PRP a_AT0 stick_NN1 and_CJC it_PNP is_VBZ for_PRP birds_NN2 ._PUN
-It_PNP ’s_VBZ used_VVN for_PRP birds_NN2 ,_PUN and_CJC in_PRP the_AT0 background_NN1 there_EX0 are_VBB the_AT0 big_AJ0 man_NN1 and_CJC the_AT0 little_AJ0 child_NN1 watching_VVG out_PRP of_PRF a_AT0 window_NN1 and_CJC watching_VVG the_AT0 birds_NN2 ._PUN
+It_PNP ’s_VBZ used_VVN for_PRP birds_NN2 ,_PUN and_CJC in_PRP the_AT0 background_NN1 there_EX0 are_VBB the_AT0 big_AJ0 man_NN1 and_CJC the_AT0 little_AJ0 child_NN1 watching_VVG out_AVP of_PRF a_AT0 window_NN1 and_CJC watching_VVG the_AT0 birds_NN2 ._PUN
 Uhm_ITJ I_PNP think_VVB in_PRP the_AT0 first_ORD picture_NN1 uhm_ITJ and_CJC in_PRP the_AT0 second_ORD picture_NN1 they_PNP are_VBB e_ITJ -_PUN ,_PUN excited_AJ0 to_TO0 build_VVI the_AT0 sled_NN1 and_CJC drive_VVI it_PNP because_CJS it_PNP ’s_VBZ just_AV0 a_AT0 good_AJ0 thing_NN1 to_TO0 do_VDI ._PUN
-And_CJC then_AV0 they_PNP are_VBB first_ORD of_PRF all_DT0 scared_AJ0 and_CJC sad_AJ0 because_CJS it_PNP got_VVD destroyed_AJ0 and_CJC they_PNP have_VHB to_TO0 build_VVI it_PNP new_AJ0 ._PUN
+And_CJC then_AV0 they_PNP are_VBB first_ORD of_PRF all_DT0 scared_AJ0 and_CJC sad_AJ0 because_CJS it_PNP got_VVD destroyed_VVN and_CJC they_PNP have_VHB to_TO0 build_VVI it_PNP new_AJ0 ._PUN
 And_CJC I_PNP think_VVB in_PRP the_AT0 end_NN1 they_PNP ’re_VBB happy_AJ0 because_CJS they_PNP ’ve_VHB fou_ITJ -_PUN ,_PUN found_VVD a_AT0 good_AJ0 use_NN1 for_PRP it_PNP and_CJC it_PNP will_VM0 stay_VVI long_AJ0 ._PUN
 Yes_ITJ I_PNP do_VDB ._PUN
-I_PNP think_VVB the_AT0 meaning_NN1 is_VBZ if_CJS something_PNI gets_VVZ destroyed_AJ0 or_CJC if_CJS ,_PUN if_CJS something_PNI ’s_VBZ bad_AJ0 you_PNP can_VM0 make_VVI something_PNI beautiful_AJ0 out_PRP of_PRF it_PNP again_AV0 ._PUN
+I_PNP think_VVB the_AT0 meaning_NN1 is_VBZ if_CJS something_PNI gets_VVZ destroyed_VVN or_CJC if_CJS ,_PUN if_CJS something_PNI ’s_VBZ bad_AJ0 you_PNP can_VM0 make_VVI something_PNI beautiful_AJ0 out_AVP of_PRF it_PNP again_AV0 ._PUN
 
 Picture_Description_Gymnasium_Klasse10
 Uhm_ITJ in_PRP the_AT0 first_ORD picture_NN1 you_PNP can_VM0 see_VVI a_AT0 man_NN1 that_CJT is_VBZ building_VVG a_AT0 uhm_ITJ ,_PUN
@@ -1853,13 +1854,13 @@ Uhm_ITJ maybe_AV0 they_PNP got_VVD hurt_AJ0 ._PUN
 And_CJC ,_PUN yes_ITJ ._PUN
 And_CJC sad_AJ0 maybe_AV0 ._PUN
 Uhm_ITJ ,_PUN
-Uhm_ITJ maybe_AV0 when_AV0 something_PNI bad_AJ0 happens_VVZ that_CJT in_PRP the_AT0 end_NN1 it_PNP will_VM0 be_VBI good_AJ0 and_CJC yes_ITJ ._PUN
+Uhm_ITJ maybe_AV0 when_CJS something_PNI bad_AJ0 happens_VVZ that_CJT in_PRP the_AT0 end_NN1 it_PNP will_VM0 be_VBI good_AJ0 and_CJC yes_ITJ ._PUN
 
 Picture_Description_Gymnasium_Klasse10
 Uhm_ITJ on_PRP this_DT0 picture_NN1 we_PNP can_VM0 see_VVI uhm_ITJ a_AT0 boy_NN1 and_CJC a_AT0 man_NN1 and_CJC I_PNP think_VVB the_AT0 man_NN1 is_VBZ uhm_ITJ the_AT0 father_NN1 of_PRF the_AT0 boy_NN1 ._PUN
 And_CJC uhm_ITJ he_PNP uhm_ITJ wants_VVZ to_TO0 repair_VVI his_DPS sleigh_NN1 ,_PUN like_ITJ uhm_ITJ the_AT0 sleigh_NN1 of_PRF the_AT0 boy_NN1 ._PUN
 And_CJC the_AT0 ,_PUN in_PRP the_AT0 second_ORD picture_NN1 we_PNP can_VM0 see_VVI that_CJT uhm_ITJ the_AT0 man_NN1 and_CJC uhm_ITJ the_AT0 boy_NN1 have_VHB uhm_ITJ fun_NN1 and_CJC they_PNP play_VVB with_PRP the_AT0 uhm_ITJ sleigh_NN1 ._PUN
-And_CJC in_PRP the_AT0 third_ORD picture_NN1 we_PNP can_VM0 see_VVI that_CJT uhm_ITJ the_AT0 sleigh_NN1 got_VVD destroyed_AJ0 because_CJS uhm_ITJ I_PNP think_VVB they_PNP had_VHD an_AT0 accident_NN1 ._PUN
+And_CJC in_PRP the_AT0 third_ORD picture_NN1 we_PNP can_VM0 see_VVI that_CJT uhm_ITJ the_AT0 sleigh_NN1 got_VVD destroyed_VVN because_CJS uhm_ITJ I_PNP think_VVB they_PNP had_VHD an_AT0 accident_NN1 ._PUN
 And_CJC uhm_ITJ the_AT0 boy_NN1 and_CJC the_AT0 man_NN1 fall_VVB over_AVP and_CJC uhm_ITJ in_PRP the_AT0 fourth_ORD picture_NN1 we_PNP can_VM0 see_VVI uhm_ITJ that_CJT uhm_ITJ they_PNP are_VBB uhm_ITJ sad_AJ0 because_CJS the_AT0 sleigh_NN1 was_VBD uhm_ITJ broke_VVN ,_PUN it_PNP was_VBD broken_VVN and_CJC uhm_ITJ I_PNP think_VVB they_PNP went_VVD home_AV0 ._PUN
 Uhm_ITJ in_PRP the_AT0 uhm_ITJ fifth_ORD picture_NN1 we_PNP can_VM0 see_VVI that_CJT uhm_ITJ ,_PUN
 the_AT0 ,_PUN the_AT0 dad_NN1 uhm_ITJ use_VVB uhm_ITJ the_AT0 uhm_ITJ the_AT0 wood_NN1 uhm_ITJ the_AT0 wood_NN1 uhm_ITJ things_NN2 to_TO0 uhm_ITJ create_VVI uhm_ITJ something_PNI ._PUN
@@ -1878,7 +1879,7 @@ Uhm_ITJ in_PRP picture_NN1 one_CRD you_PNP can_VM0 see_VVI a_AT0 man_NN1 and_CJC
 The_AT0 man_NN1 is_VBZ holding_VVG a_AT0 hammer_NN1 and_CJC they_PNP are_VBB maybe_AV0 repairing_VVG or_CJC building_VVG a_AT0 sledge_NN1 ._PUN
 Uhm_ITJ ,_PUN
 In_PRP picture_NN1 two_CRD they_PNP are_VBB uhm_ITJ riding_VVG the_AT0 sledge_NN1 maybe_AV0 down_PRP a_AT0 hill_NN1 ._PUN
-In_PRP picture_NN1 number_NN1 three_CRD they_PNP crashed_VVD and_CJC uhm_ITJ the_AT0 s_ITJ -_PUN ,_PUN uhm_ITJ the_AT0 sledge_NN1 is_VBZ destroyed_AJ0 and_CJC they_PNP are_VBB falling_VVG off_AVP ._PUN
+In_PRP picture_NN1 number_NN1 three_CRD they_PNP crashed_VVD and_CJC uhm_ITJ the_AT0 s_ITJ -_PUN ,_PUN uhm_ITJ the_AT0 sledge_NN1 is_VBZ destroyed_VVN and_CJC they_PNP are_VBB falling_VVG off_AVP ._PUN
 In_PRP picture_NN1 number_NN1 four_CRD they_PNP ,_PUN they_PNP uhm_ITJ transport_VVB the_AT0 broken_AJ0 parts_NN2 from_PRP uhm_ITJ the_AT0 sledge_NN1 home_AV0 ._PUN
 In_PRP picture_NN1 number_NN1 five_CRD they_PNP rebuild_VVB it_PNP as_AV0 maybe_AV0 a_AT0 home_NN1 for_PRP uhm_ITJ for_PRP birds_NN2 ._PUN
 And_CJC in_PRP picture_NN1 number_NN1 six_CRD you_PNP can_VM0 see_VVI uhm_ITJ the_AT0 sledge_NN1 as_AV0 a_AT0 birdhouse_NN1 and_CJC the_AT0 man_NN1 and_CJC the_AT0 boy_NN1 are_VBB inside_AV0 uhm_ITJ in_PRP are_VBB uhm_ITJ at_PRP home_AV0 and_CJC watching_VVG outside_AV0 the_AT0 window_NN1 at_PRP the_AT0 birdhouse_NN1 ._PUN
@@ -1891,9 +1892,9 @@ Picture_NN1 number_NN1 two_CRD uhm_ITJ they_PNP are_VBB happy_AJ0 to_TO0 ride_VV
 Picture_NN1 number_NN1 three_CRD they_PNP are_VBB uhm_ITJ maybe_AV0 shocked_AJ0 ._PUN 
 Picture_NN1 number_NN1 four_CRD they_PNP ’re_VBB uhm_ITJ the_AT0 man_NN1 is_VBZ angry_AJ0 and_CJC the_AT0 boy_NN1 is_VBZ uhm_ITJ maybe_AV0 ,_PUN maybe_AV0 he_PNP is_VBZ shocked_AJ0 from_PRP picture_NN1 number_NN1 three_CRD ._PUN 
 Picture_NN1 number_NN1 five_CRD uhm_ITJ the_AT0 boy_NN1 looks_VVZ normal_AJ0 and_CJC the_AT0 man_NN1 is_VBZ maybe_AV0 ,_PUN
-I_PNP do_VDB n’t_XX0 know_VVI how_AVQ he_ITJ looks_VVZ but_CJC maybe_AV0 he_PNP ’s_VBZ ,_PUN
+I_PNP do_VDB n’t_XX0 know_VVI how_AVQ he_PNP looks_VVZ but_CJC maybe_AV0 he_PNP ’s_VBZ ,_PUN
 Maybe_AV0 he_PNP ’s_VBZ happy_AJ0 to_TO0 build_VVI a_AT0 new_AJ0 home_NN1 for_PRP birds_NN2 ._PUN
-And_CJC in_PRP picture_NN1 number_NN1 six_CRD uhm_ITJ they_PNP laugh_VVB so_ITJ uhm_ITJ ,_PUN so_CJC they_PNP ’re_VBB happy_AJ0 too_AV0 ._PUN
+And_CJC in_PRP picture_NN1 number_NN1 six_CRD uhm_ITJ they_PNP laugh_VVB so_ITJ uhm_ITJ ,_PUN so_CJS they_PNP ’re_VBB happy_AJ0 too_AV0 ._PUN
 No_ITJ ._PUN
 
 Picture_Description_Gymnasium_Klasse10
@@ -1910,7 +1911,7 @@ And_CJC uhm_ITJ the_AT0 father_NN1 look_VVB very_AV0 angry_AJ0 ._PUN
 And_CJC the_AT0 children_NN2 look_VVB I_PNP ,_PUN s_ITJ -_PUN ,_PUN sad_AJ0 ._PUN
 And_CJC in_PRP the_AT0 uhm_ITJ fi_ITJ -_PUN ,_PUN fifth_ORD picture_NN1 ._PUN
 Uhm_ITJ the_AT0 father_NN1 uhm_ITJ pulled_VVD uhm_ITJ from_PRP the_AT0 sled_NN1 a_AT0 home_NN1 for_PRP the_AT0 bird_NN1 ,_PUN birds_NN2 ._PUN
-And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 uhm_ITJ se_ITJ -_PUN ,_PUN sixth_ORD picture_NN1 uhm_ITJ they_PNP are_VBB at_PRP home_AV0 and_CJC uhm_ITJ the_AT0 birds_NN2 come_VVB to_PRP the_AT0 ho_ITJ -_PUN uhm_ITJ to_PRP the_AT0 home_NN1 ._PUN
+And_CJC in_PRP the_AT0 sixth_ORD picture_NN1 uhm_ITJ se_ITJ -_PUN ,_PUN sixth_ORD picture_NN1 uhm_ITJ they_PNP are_VBB at_PRP home_NN1 and_CJC uhm_ITJ the_AT0 birds_NN2 come_VVB to_PRP the_AT0 ho_ITJ -_PUN uhm_ITJ to_PRP the_AT0 home_NN1 ._PUN
 And_CJC I_PNP think_VVB there_EX0 are_VBB ,_PUN uhm_ITJ in_PRP the_AT0 home_NN1 is_VBZ uhm_ITJ food_NN1 ,_PUN for_PRP uhm_ITJ for_PRP the_AT0 birds_NN2 ._PUN
 Uhm_ITJ the_AT0 story_NN1 has_VHZ a_AT0 happy_AJ0 end_NN1 ._PUN
 
@@ -1918,7 +1919,7 @@ Picture_Description_Gymnasium_Klasse12
 Uhm_ITJ ,_PUN
 So_ITJ it_PNP uhm_ITJ ,_PUN you_PNP can_VM0 see_VVI a_AT0 cartoon_NN1 uhm_ITJ that_CJT kind_AV0 of_AV0 depicts_VVZ a_AT0 story_NN1 uhm_ITJ with_PRP uhm_ITJ I_PNP think_VVB six_CRD different_AJ0 slides_NN2 or_CJC pictures_NN2 ._PUN
 And_CJC in_PRP the_AT0 first_ORD picture_NN1 you_PNP can_VM0 see_VVI a_AT0 man_NN1 and_CJC a_AT0 younger_AJC boy_NN1 ,_PUN uhm_ITJ potentially_AV0 a_AT0 father_NN1 with_PRP his_DPS child_NN1 or_CJC a_AT0 grandfather_NN1 with_PRP his_DPS grandson_NN1 ._PUN 
-And_CJC they_PNP are_VBB crafting_VVG something_PNI together_AV0 or_CJC building_VVG something_PNI out_PRP of_PRF wood_NN1 and_CJC it_PNP looks_VVZ like_PRP they_PNP are_VBB building_VVG a_AT0 sleigh_NN1 I_PNP think_VVB it_PNP ’s_VBZ called_VVN ._PUN
+And_CJC they_PNP are_VBB crafting_VVG something_PNI together_AV0 or_CJC building_VVG something_PNI out_AVP of_PRF wood_NN1 and_CJC it_PNP looks_VVZ like_CJS they_PNP are_VBB building_VVG a_AT0 sleigh_NN1 I_PNP think_VVB it_PNP ’s_VBZ called_VVN ._PUN
 Uhm_ITJ and_CJC then_AV0 in_PRP the_AT0 second_ORD picture_NN1 you_PNP can_VM0 see_VVI how_AVQ they_PNP uhm_ITJ fly_VVB off_AVP a_AT0 hill_NN1 probably_AV0 uhm_ITJ and_CJC they_PNP are_VBB both_AV0 sitting_VVG on_PRP the_AT0 sleigh_NN1
 Uhm_ITJ in_PRP the_AT0 third_ORD picture_NN1 you_PNP can_VM0 see_VVI how_AVQ uhm_ITJ the_AT0 sleigh_NN1 gets_VVZ destroyed_VVN because_CJS they_PNP fall_VVB to_PRP the_AT0 ground_NN1 ._PUN
 And_CJC uhm_ITJ they_PNP both_AV0 ,_PUN yeah_ITJ as_AV0 I_PNP said_VVD fall_VVB to_PRP the_AT0 ground_NN1 ._PUN
@@ -1926,10 +1927,10 @@ And_CJC on_PRP the_AT0 fourth_ORD picture_NN1 they_PNP pick_VVB up_AVP the_AT0 w
 And_CJC you_PNP can_VM0 see_VVI how_AVQ they_PNP then_AV0 use_VVB this_DT0 wood_NN1 to_PRP build_VVI something_PNI different_AJ0 ._PUN
 Uhm_ITJ so_ITJ they_PNP build_VVB a_AT0 house_NN1 for_PRP birds_NN2 I_PNP think_VVB ._PUN
 And_CJC in_PRP the_AT0 last_ORD picture_NN1 you_PNP can_VM0 see_VVI how_AVQ they_PNP look_VVB outside_AV0 of_PRF their_DPS window_NN1 uhm_ITJ at_PRP this_DT0 house_NN1 that_CJT they_PNP built_VVD and_CJC they_PNP look_VVB very_AV0 happy_AJ0 ._PUN
-And_CJC I_PNP guess_VVB the_AT0 story_NN1 should_VM0 just_AV0 show_VVI how_AVQ even_AV0 uhm_ITJ when_AV0 you_PNP fail_VVB or_CJC when_AV0 something_PNI you_PNP started_VVD or_CJC planned_VVD does_VDZ n’t_XX0 work_VVB out_AVP you_PNP can_VM0 still_AV0 make_VVI the_AT0 best_AJS of_PRF it_PNP and_CJC you_PNP can_VM0 try_VVI to_TO0 create_VVI something_PNI new_AJ0 out_PRP of_PRF the_AT0 situation_NN1 ._PUN
+And_CJC I_PNP guess_VVB the_AT0 story_NN1 should_VM0 just_AV0 show_VVI how_AVQ even_AV0 uhm_ITJ when_CJS you_PNP fail_VVB or_CJC when_CJS something_PNI you_PNP started_VVD or_CJC planned_VVD does_VDZ n’t_XX0 work_VVB out_AVP you_PNP can_VM0 still_AV0 make_VVI the_AT0 best_AJS of_PRF it_PNP and_CJC you_PNP can_VM0 try_VVI to_TO0 create_VVI something_PNI new_AJ0 out_AVP of_PRF the_AT0 situation_NN1 ._PUN
 So_ITJ I_PNP think_VVB it_PNP ’s_VBZ very_AV0 nice_AJ0 ._PUN
 Ah_ITJ okay_ITJ ._PUN
-Uhm_ITJ so_ITJ the_AT0 older_AJC man_NN1 is_VBZ bald_AJ0 uhm_ITJ so_CJC that_DT0 ’s_VBZ why_AVQ I_PNP assumed_VVD that_CJT he_PNP was_VBD probably_AV0 older_AJC and_CJC he_PNP has_VHZ a_AT0 beard_NN1 uhm_ITJ and_CJC you_PNP ca_VM0 n’t_XX0 really_AV0 see_VVI much_DT0 of_PRF his_DPS face_NN1 but_CJC his_DPS facial_AJ0 expressions_NN2 look_VVB more_AV0 serious_AJ0 I_PNP would_VM0 say_VVI ._PUN
+Uhm_ITJ so_ITJ the_AT0 older_AJC man_NN1 is_VBZ bald_AJ0 uhm_ITJ so_CJS that_DT0 ’s_VBZ why_AVQ I_PNP assumed_VVD that_CJT he_PNP was_VBD probably_AV0 older_AJC and_CJC he_PNP has_VHZ a_AT0 beard_NN1 uhm_ITJ and_CJC you_PNP ca_VM0 n’t_XX0 really_AV0 see_VVI much_DT0 of_PRF his_DPS face_NN1 but_CJC his_DPS facial_AJ0 expressions_NN2 look_VVB more_AV0 serious_AJ0 I_PNP would_VM0 say_VVI ._PUN
 Uhm_ITJ and_CJC he_PNP also_AV0 wears_VVZ more_AV0 traditional_AJ0 clothing_NN1 ._PUN
 And_CJC the_AT0 boy_NN1 uhm_ITJ has_VHZ black_AJ0 hair_NN1 and_CJC also_AV0 wears_VVZ basically_AV0 the_AT0 same_DT0 clothing_NN1 as_AV0 the_AT0 older_AJC man_NN1 but_CJC just_AV0 in_PRP smaller_AJC ._PUN
 Uhm_ITJ and_CJC they_PNP both_AV0 look_VVB very_AV0 normal_AJ0 I_PNP would_VM0 say_VVI ._PUN
@@ -1938,8 +1939,8 @@ Uhm_ITJ yeah_ITJ ._PUN
 Picture_Description_Gymnasium_Klasse12
 Uhm_ITJ so_ITJ I_PNP can_VM0 see_VVI uhm_ITJ I_PNP think_VVB uhm_ITJ what_DTQ I_PNP think_VVB is_VBZ a_AT0 comic_NN1 ._PUN
 And_CJC uhm_ITJ there_EX0 are_VBB in_PRP total_NN1 six_CRD uhm_ITJ pictures_NN2 ._PUN
-And_CJC uhm_ITJ on_PRP the_AT0 first_ORD one_PNI we_PNP can_VM0 see_VVI uhm_ITJ a_AT0 little_AJ0 boy_NN1 uhm_ITJ with_PRP maybe_AV0 his_DPS father_NN1 uhm_ITJ so_CJC an_AT0 older_AJC man_NN1 ._PUN
-And_CJC uhm_ITJ they_PNP ’re_VBB building_VVG a_AT0 sleigh_NN1 uhm_ITJ out_PRP of_PRF wood_NN1 I_PNP think_VVB ,_PUN uhm_ITJ there_EX0 ’s_VBZ also_AV0 a_AT0 hammer_NN1 and_CJC a_AT0 saw_NN1 uhm_ITJ which_DTQ they_PNP use_VVB to_TO0 uhm_ITJ build_VVI it_PNP ._PUN
+And_CJC uhm_ITJ on_PRP the_AT0 first_ORD one_PNI we_PNP can_VM0 see_VVI uhm_ITJ a_AT0 little_AJ0 boy_NN1 uhm_ITJ with_PRP maybe_AV0 his_DPS father_NN1 uhm_ITJ so_CJS an_AT0 older_AJC man_NN1 ._PUN
+And_CJC uhm_ITJ they_PNP ’re_VBB building_VVG a_AT0 sleigh_NN1 uhm_ITJ out_AVP of_PRF wood_NN1 I_PNP think_VVB ,_PUN uhm_ITJ there_EX0 ’s_VBZ also_AV0 a_AT0 hammer_NN1 and_CJC a_AT0 saw_NN1 uhm_ITJ which_DTQ they_PNP use_VVB to_TO0 uhm_ITJ build_VVI it_PNP ._PUN
 And_CJC uhm_ITJ then_AV0 in_PRP the_AT0 second_ORD picture_NN1 uhm_ITJ I_PNP can_VM0 see_VVI uhm_ITJ the_AT0 two_CRD riding_VVG the_AT0 sleigh_NN1 maybe_AV0 in_PRP the_AT0 snow_NN1 on_PRP a_AT0 hill_NN1 uhm_ITJ together_AV0 ._PUN
 So_ITJ the_AT0 father_NN1 uhm_ITJ is_VBZ gripping_VVG onto_PRP the_AT0 sleigh_NN1 uhm_ITJ while_CJS his_DPS son_NN1 is_VBZ sitting_VVG on_PRP top_PRP of_PRF him_PNP uhm_ITJ and_CJC they_PNP ’re_VBB riding_VVG down_PRP at_PRP a_AT0 very_AV0 high_AJ0 speed_NN1 ._PUN
 On_PRP the_AT0 third_ORD picture_NN1 uhm_ITJ I_PNP can_VM0 see_VVI that_CJT something_PNI must_VM0 have_VHI happened_VVN uhm_ITJ at_PRP this_DT0 point_NN1 because_CJS the_AT0 sleigh_NN1 uhm_ITJ broke_VVD uhm_ITJ down_AVP completely_AV0 and_CJC the_AT0 two_CRD are_VBB falling_VVG to_PRP the_AT0 ground_NN1 ._PUN
@@ -1951,27 +1952,27 @@ So_ITJ uhm_ITJ they_PNP kind_AV0 of_AV0 made_VVD uhm_ITJ the_AT0 sleigh_NN1 to_T
 Uhm_ITJ maybe_AV0 they_PNP put_VVD some_DT0 food_NN1 in_PRP there_AV0 ._PUN
 And_CJC uhm_ITJ we_PNP can_VM0 see_VVI them_PNP watching_VVG through_PRP the_AT0 window_NN1 uhm_ITJ and_CJC looking_VVG at_PRP the_AT0 birds_NN2 that_CJT are_VBB gathering_VVG on_PRP this_DT0 new_AJ0 construction_NN1 on_PRP ,_PUN on_PRP the_AT0 birdhouse_NN1 ._PUN
 What_DTQ ,_PUN sorry_ITJ ?_PUN
-Uhm_ITJ I_PNP mean_VVB there_EX0 were_VBD some_DT0 problems_NN2 along_PRP the_AT0 way_NN1 but_CJC I_PNP think_VVB overall_AV0 uhm_ITJ they_PNP kind_AV0 of_AV0 made_VVD the_AT0 best_AJS out_PRP of_PRF the_AT0 situation_NN1 they_PNP were_VBD confronted_VVN with_PRP so_CJC I_PNP think_VVB it_PNP ’s_VBZ a_AT0 happy_AJ0 end_NN1 ._PUN
+Uhm_ITJ I_PNP mean_VVB there_EX0 were_VBD some_DT0 problems_NN2 along_PRP the_AT0 way_NN1 but_CJC I_PNP think_VVB overall_AV0 uhm_ITJ they_PNP kind_AV0 of_AV0 made_VVD the_AT0 best_AJS out_AVP of_PRF the_AT0 situation_NN1 they_PNP were_VBD confronted_VVN with_PRP so_CJS I_PNP think_VVB it_PNP ’s_VBZ a_AT0 happy_AJ0 end_NN1 ._PUN
 Okay_ITJ thank_VVB you_PNP very_AV0 much_DT0 ._PUN
 
 Picture_Description_Gymnasium_Klasse12
 And_CJC on_PRP the_AT0 ,_PUN in_PRP the_AT0 first_ORD picture_NN1 I_PNP uhm_ITJ ,_PUN there_EX0 is_VBZ a_AT0 man_NN1 and_CJC he_PNP is_VBZ like_ITJ working_VVG on_PRP a_AT0 sledge_NN1 with_PRP a_AT0 little_AJ0 child_NN1 and_CJC the_AT0 child_NN1 is_VBZ trying_VVG to_TO0 support_VVI and_CJC help_VVI him_PNP and_CJC he_PNP s_ITJ -_PUN uhm_ITJ stands_VVZ beside_PRP it_PNP ._PUN
-And_CJC in_PRP the_AT0 background_NN1 there_EX0 ’s_VBZ ,_PUN there_EX0 are_VBB like_ITJ uhm_ITJ parts_NN2 of_PRF wood_NN1 I_PNP think_VVB cause_CJS the_AT0 sledge_NN1 is_VBZ made_VVN of_PRF wood_NN1 and_CJC the_AT0 man_NN1 ,_PUN the_AT0 man_NN1 looks_VVZ like_PRP he_PNP ’s_VBZ uhm_ITJ working_VVG hard_AV0 and_CJC he_PNP ’s_VBZ the_AT0 ,_PUN in_PRP the_AT0 ,_PUN in_PRP his_DPS face_NN1 experiences_VVZ like_PRP he_PNP ’s_VBZ uhm_ITJ ,_PUN it_PNP ’s_VBZ hard_AJ0 for_PRP him_PNP to_TO0 do_VDI these_DT0 things_NN2 it_PNP ’s_VBZ not_XX0 like_PRP he_PNP ’s_VBZ smiling_VVG ._PUN
-And_CJC uhm_ITJ yeah_ITJ the_AT0 child_NN1 just_AV0 looks_VVZ uhm_ITJ neutral_AJ0 he_ITJ does_VDZ n’t_XX0 smile_VVI or_CJC just_AV0 anything_PNI else_AV0 ._PUN
-Should_VM0 I_PNP describe_VVI every_DT0 picture_NN1 just_AV0 like_ITJ go_VVB on_AVP ?_PUN
-Okay_ITJ ,_PUN in_PRP the_AT0 second_ORD picture_NN1 the_AT0 man_NN1 and_CJC the_AT0 child_NN1 are_VBB on_PRP the_AT0 sledge_NN1 together_AV0 and_CJC it_PNP looks_VVZ like_PRP they_PNP ’re_VBB uhm_ITJ going_VVG up_PRP so_ITJ like_ITJ down_PRP like_ITJ it_PNP ’s_VBZ on_PRP the_AT0 hill_NN1 and_CJC the_AT0 child_NN1 is_VBZ on_PRP the_AT0 back_NN1 of_PRF the_AT0 man_NN1 and_CJC uhm_ITJ the_AT0 child_NN1 looks_VVZ happy_AJ0 ._PUN
-On_PRP the_AT0 third_ORD picture_NN1 the_AT0 man_NN1 and_CJC the_AT0 child_NN1 uhm_ITJ look_VVB like_PRP they_PNP are_VBB flying_VVG uhm_ITJ down_PRP and_CJC like_ITJ on_PRP the_AT0 left_AJ0 side_NN1 is_VBZ the_AT0 uhm_ITJ the_AT0 part_NN1 where_AVQ they_PNP uhm_ITJ were_VBD like_ITJ going_VVG down_PRP ._PUN 
-And_CJC it_PNP all_DT0 fell_VVD apart_AV0 so_ITJ like_ITJ the_AT0 s_ITJ -_PUN whole_AJ0 sledge_NN1 just_AV0 fell_VVD apart_AV0 and_CJC they_PNP ’re_VBB falling_VVG down_AVP and_CJC ,_PUN and_CJC they_PNP do_VDB n’t_XX0 look_VVI hurt_AJ0 but_CJC it_PNP ’s_VBZ like_ITJ ,_PUN it_PNP does_VDZ n’t_XX0 look_VVI like_PRP they_PNP uhm_ITJ like_PRP the_AT0 sledge_NN1 survived_VVD this_DT0 whole_AJ0 thing_NN1 ._PUN
+And_CJC in_PRP the_AT0 background_NN1 there_EX0 ’s_VBZ ,_PUN there_EX0 are_VBB like_ITJ uhm_ITJ parts_NN2 of_PRF wood_NN1 I_PNP think_VVB cause_CJS the_AT0 sledge_NN1 is_VBZ made_VVN of_PRF wood_NN1 and_CJC the_AT0 man_NN1 ,_PUN the_AT0 man_NN1 looks_VVZ like_CJS he_PNP ’s_VBZ uhm_ITJ working_VVG hard_AV0 and_CJC he_PNP ’s_VBZ the_AT0 ,_PUN in_PRP the_AT0 ,_PUN in_PRP his_DPS face_NN1 experiences_VVZ like_CJS he_PNP ’s_VBZ uhm_ITJ ,_PUN it_PNP ’s_VBZ hard_AJ0 for_PRP him_PNP to_TO0 do_VDI these_DT0 things_NN2 it_PNP ’s_VBZ not_XX0 like_CJS he_PNP ’s_VBZ smiling_VVG ._PUN
+And_CJC uhm_ITJ yeah_ITJ the_AT0 child_NN1 just_AV0 looks_VVZ uhm_ITJ neutral_AJ0 he_PNP does_VDZ n’t_XX0 smile_VVI or_CJC just_AV0 anything_PNI else_AV0 ._PUN
+Should_VM0 I_PNP describe_VVI every_AT0 picture_NN1 just_AV0 like_ITJ go_VVB on_AVP ?_PUN
+Okay_ITJ ,_PUN in_PRP the_AT0 second_ORD picture_NN1 the_AT0 man_NN1 and_CJC the_AT0 child_NN1 are_VBB on_PRP the_AT0 sledge_NN1 together_AV0 and_CJC it_PNP looks_VVZ like_CJS they_PNP ’re_VBB uhm_ITJ going_VVG up_PRP so_ITJ like_ITJ down_PRP like_ITJ it_PNP ’s_VBZ on_PRP the_AT0 hill_NN1 and_CJC the_AT0 child_NN1 is_VBZ on_PRP the_AT0 back_NN1 of_PRF the_AT0 man_NN1 and_CJC uhm_ITJ the_AT0 child_NN1 looks_VVZ happy_AJ0 ._PUN
+On_PRP the_AT0 third_ORD picture_NN1 the_AT0 man_NN1 and_CJC the_AT0 child_NN1 uhm_ITJ look_VVB like_CJS they_PNP are_VBB flying_VVG uhm_ITJ down_PRP and_CJC like_ITJ on_PRP the_AT0 left_AJ0 side_NN1 is_VBZ the_AT0 uhm_ITJ the_AT0 part_NN1 where_AVQ they_PNP uhm_ITJ were_VBD like_ITJ going_VVG down_PRP ._PUN 
+And_CJC it_PNP all_DT0 fell_VVD apart_AV0 so_ITJ like_ITJ the_AT0 s_ITJ -_PUN whole_AJ0 sledge_NN1 just_AV0 fell_VVD apart_AV0 and_CJC they_PNP ’re_VBB falling_VVG down_AVP and_CJC ,_PUN and_CJC they_PNP do_VDB n’t_XX0 look_VVI hurt_AJ0 but_CJC it_PNP ’s_VBZ like_ITJ ,_PUN it_PNP does_VDZ n’t_XX0 look_VVI like_CJS they_PNP uhm_ITJ like_CJS the_AT0 sledge_NN1 survived_VVD this_DT0 whole_AJ0 thing_NN1 ._PUN
 On_PRP the_AT0 fourth_ORD picture_NN1 the_AT0 um_ITJ child_NN1 and_CJC the_AT0 man_NN1 just_AV0 carry_VVB the_AT0 wood_NN1 that_CJT ’s_VBZ left_VVN from_PRP the_AT0 sledge_NN1 that_CJT just_AV0 fell_VVD apart_AV0 and_CJC just_AV0 is_VBZ only_AV0 in_PRP parts_NN2 ._PUN 
 And_CJC uhm_ITJ they_PNP just_AV0 carry_VVB it_PNP like_ITJ going_VVG home_AV0 and_CJC the_AT0 man_NN1 looks_VVZ uhm_ITJ angry_AJ0 and_CJC still_AV0 unhappy_AJ0 and_CJC the_AT0 child_NN1 looks_VVZ a_AT0 little_AV0 bit_AV0 sad_AJ0 ._PUN
 In_PRP ,_PUN on_PRP the_AT0 fifth_ORD picture_NN1 the_AT0 uhm_ITJ man_NN1 is_VBZ like_ITJ putting_VVG a_AT0 ,_PUN
 I_PNP do_VDB n’t_XX0 know_VVI the_AT0 word_NN1 anymore_AV0 I_PNP forgot_VVD uhm_ITJ ,_PUN
 Yeah_ITJ on_PRP the_AT0 roof_NN1 ,_PUN yes_ITJ ._PUN
-He_PNP puts_VVZ a_AT0 roof_NN1 on_PRP the_AT0 sledge_NN1 so_CJC it_PNP looks_VVZ like_PRP a_AT0 house_NN1 for_PRP birds_NN2 and_CJC the_AT0 child_NN1 is_VBZ uhm_ITJ again_AV0 supporting_VVG and_CJC helping_VVG him_PNP by_PRP holding_VVG uhm_ITJ a_AT0 part_NN1 of_PRF it_PNP ._PUN
-And_CJC on_PRP the_AT0 sixth_ORD picture_NN1 there_EX0 ’s_VBZ uhm_ITJ this_DT0 part_NN1 of_PRF the_AT0 sledge_NN1 with_PRP the_AT0 roof_NN1 on_PRP it_PNP outside_AV0 and_CJC the_AT0 uhm_ITJ little_AJ0 birds_NN2 are_VBB in_PRP it_PNP and_CJC like_ITJ ,_PUN it_PNP ’s_VBZ ,_PUN I_PNP think_VVB it_PNP ’s_VBZ a_AT0 feeding_NN1 house_NN1 and_CJC the_AT0 child_NN1 and_CJC the_AT0 man_NN1 are_VBB looking_VVG out_PRP of_PRF the_AT0 window_NN1 and_CJC looking_VVG happy_AJ0 and_CJC looking_VVG at_PRP the_AT0 house_NN1 ._PUN
-So_ITJ uhm_ITJ it_PNP looks_VVZ like_PRP they_PNP had_VHD a_AT0 plan_NN1 and_CJC want_VVB to_TO0 do_VDI something_PNI like_ITJ with_PRP the_AT0 sledge_NN1 uhm_ITJ and_CJC want_VVB like_ITJ maybe_AV0 it_PNP ’s_VBZ snowing_VVG and_CJC they_PNP al_ITJ -_PUN also_AV0 build_VVB it_PNP together_AV0 so_CJC it_PNP ’s_VBZ just_AV0 a_AT0 thing_NN1 that_CJT they_PNP do_VDB together_AV0 so_CJC it_PNP ’s_VBZ all_DT0 like_ITJ uhm_ITJ the_AT0 child_NN1 is_VBZ always_AV0 helping_VVG him_PNP ._PUN
-And_CJC in_PRP the_AT0 end_NN1 it_PNP ’s_VBZ like_ITJ broken_AJ0 but_CJC they_PNP still_AV0 uhm_ITJ managed_VVD to_TO0 do_VDI something_PNI useful_AJ0 of_PRF it_PNP and_CJC uhm_ITJ do_VDB it_PNP still_AV0 together_AV0 even_CJS though_CJS it_PNP broke_VVD and_CJC it_PNP ’s_VBZ not_XX0 like_ITJ you_PNP made_VVD it_PNP wrong_AJ0 or_CJC like_ITJ it_PNP does_VDZ n’t_XX0 look_VVI like_PRP the_AT0 father_NN1 is_VBZ uhm_ITJ saying_VVG anything_PNI to_PRP the_AT0 child_NN1 like_ITJ uhm_ITJ he_PNP did_VDD or_CJC the_AT0 child_NN1 did_VDD anything_PNI wrong_AJ0 ._PUN 
-And_CJC uhm_ITJ yeah_ITJ it_PNP ,_PUN it_PNP ’s_VBZ still_AV0 they_PNP did_VDD everything_PNI together_AV0 like_ITJ on_PRP the_AT0 sixth_ORD picture_NN1 there_EX0 ’s_VBZ uhm_ITJ watching_VVG together_AV0 and_CJC they_PNP ,_PUN uhm_ITJ it_PNP happened_VVD something_PNI bad_AJ0 like_ITJ it_PNP ’s_VBZ broken_AJ0 but_CJC they_PNP did_VDD something_PNI good_AJ0 o_ITJ -_PUN out_PRP of_PRF it_PNP 
+He_PNP puts_VVZ a_AT0 roof_NN1 on_PRP the_AT0 sledge_NN1 so_CJS it_PNP looks_VVZ like_PRP a_AT0 house_NN1 for_PRP birds_NN2 and_CJC the_AT0 child_NN1 is_VBZ uhm_ITJ again_AV0 supporting_VVG and_CJC helping_VVG him_PNP by_PRP holding_VVG uhm_ITJ a_AT0 part_NN1 of_PRF it_PNP ._PUN
+And_CJC on_PRP the_AT0 sixth_ORD picture_NN1 there_EX0 ’s_VBZ uhm_ITJ this_DT0 part_NN1 of_PRF the_AT0 sledge_NN1 with_PRP the_AT0 roof_NN1 on_PRP it_PNP outside_AV0 and_CJC the_AT0 uhm_ITJ little_AJ0 birds_NN2 are_VBB in_PRP it_PNP and_CJC like_ITJ ,_PUN it_PNP ’s_VBZ ,_PUN I_PNP think_VVB it_PNP ’s_VBZ a_AT0 feeding_NN1 house_NN1 and_CJC the_AT0 child_NN1 and_CJC the_AT0 man_NN1 are_VBB looking_VVG out_AVP of_PRF the_AT0 window_NN1 and_CJC looking_VVG happy_AJ0 and_CJC looking_VVG at_PRP the_AT0 house_NN1 ._PUN
+So_ITJ uhm_ITJ it_PNP looks_VVZ like_CJS they_PNP had_VHD a_AT0 plan_NN1 and_CJC want_VVB to_TO0 do_VDI something_PNI like_ITJ with_PRP the_AT0 sledge_NN1 uhm_ITJ and_CJC want_VVB like_ITJ maybe_AV0 it_PNP ’s_VBZ snowing_VVG and_CJC they_PNP al_ITJ -_PUN also_AV0 build_VVB it_PNP together_AV0 so_CJS it_PNP ’s_VBZ just_AV0 a_AT0 thing_NN1 that_CJT they_PNP do_VDB together_AV0 so_CJS it_PNP ’s_VBZ all_DT0 like_ITJ uhm_ITJ the_AT0 child_NN1 is_VBZ always_AV0 helping_VVG him_PNP ._PUN
+And_CJC in_PRP the_AT0 end_NN1 it_PNP ’s_VBZ like_ITJ broken_AJ0 but_CJC they_PNP still_AV0 uhm_ITJ managed_VVD to_TO0 do_VDI something_PNI useful_AJ0 of_PRF it_PNP and_CJC uhm_ITJ do_VDB it_PNP still_AV0 together_AV0 even_CJS though_CJS it_PNP broke_VVD and_CJC it_PNP ’s_VBZ not_XX0 like_ITJ you_PNP made_VVD it_PNP wrong_AJ0 or_CJC like_ITJ it_PNP does_VDZ n’t_XX0 look_VVI like_CJS the_AT0 father_NN1 is_VBZ uhm_ITJ saying_VVG anything_PNI to_PRP the_AT0 child_NN1 like_ITJ uhm_ITJ he_PNP did_VDD or_CJC the_AT0 child_NN1 did_VDD anything_PNI wrong_AJ0 ._PUN 
+And_CJC uhm_ITJ yeah_ITJ it_PNP ,_PUN it_PNP ’s_VBZ still_AV0 they_PNP did_VDD everything_PNI together_AV0 like_ITJ on_PRP the_AT0 sixth_ORD picture_NN1 there_EX0 ’s_VBZ uhm_ITJ watching_VVG together_AV0 and_CJC they_PNP ,_PUN uhm_ITJ it_PNP happened_VVD something_PNI bad_AJ0 like_ITJ it_PNP ’s_VBZ broken_AJ0 but_CJC they_PNP did_VDD something_PNI good_AJ0 o_ITJ -_PUN out_AVP of_PRF it_PNP 
 
 Picture_Description_Gymnasium_Klasse12
 So_ITJ on_PRP the_AT0 first_ORD picture_NN1 there_EX0 is_VBZ a_AT0 older_AJC man_NN1 and_CJC a_AT0 child_NN1 ._PUN
@@ -1983,27 +1984,27 @@ And_CJC on_PRP the_AT0 third_ORD picture_NN1 I_PNP uhm_ITJ assume_VVB that_CJT u
 And_CJC in_PRP the_AT0 background_NN1 I_PNP do_VDB n’t_XX0 know_VVI but_CJC there_EX0 are_VBB also_AV0 like_ITJ people_NN0 ._PUN
 And_CJC yeah_ITJ ._PUN
 In_PRP the_AT0 next_PRP there_EX0 is_VBZ uhm_ITJ the_AT0 man_NN1 and_CJC the_AT0 kid_NN1 and_CJC they_PNP ’re_VBB like_ITJ taking_VVG the_AT0 broken_AJ0 sled_NN1 with_PRP them_PNP and_CJC yeah_ITJ they_PNP both_AV0 look_VVB really_AV0 sad_AJ0 about_PRP it_PNP ._PUN 
-And_CJC on_PRP the_AT0 next_PRP we_PNP can_VM0 see_VVI that_CJT they_PNP try_VVB to_TO0 fix_VVI the_AT0 sled_NN1 and_CJC uhm_ITJ they_PNP not_XX0 fix_VVI it_PNP like_PRP it_PNP was_VBD in_PRP the_AT0 beginning_NN1 so_CJC they_PNP try_VVB to_TO0 do_VDI something_PNI to_TO0 make_VVI something_PNI different_AJ0 out_PRP of_PRF it_PNP ._PUN
+And_CJC on_PRP the_AT0 next_PRP we_PNP can_VM0 see_VVI that_CJT they_PNP try_VVB to_TO0 fix_VVI the_AT0 sled_NN1 and_CJC uhm_ITJ they_PNP not_XX0 fix_VVI it_PNP like_CJS it_PNP was_VBD in_PRP the_AT0 beginning_NN1 so_CJS they_PNP try_VVB to_TO0 do_VDI something_PNI to_TO0 make_VVI something_PNI different_AJ0 out_AVP of_PRF it_PNP ._PUN
 And_CJC on_PRP the_AT0 next_ORD picture_NN1 we_PNP can_VM0 see_VVI that_CJT it_PNP is_VBZ a_AT0 bird_NN1 house_NN1 or_CJC something_PNI like_PRP that_DT0 so_ITJ uhm_ITJ there_EX0 are_VBB a_AT0 lot_NN1 of_PRF bir_ITJ -_PUN birds_NN2 in_PRP it_PNP and_CJC probably_AV0 they_PNP put_VVD some_DT0 food_NN1 in_PRP it_PNP for_PRP them_PNP and_CJC they_PNP ’re_VBB watching_VVG them_PNP take_VVB it_PNP from_PRP the_AT0 window_NN1 ._PUN
 Yeah_ITJ ._PUN
-Uhm_ITJ so_ITJ like_ITJ the_AT0 older_AJC man_NN1 he_PNP has_VHZ a_AT0 uhm_ITJ black_AJ0 t-shirt_NN1 or_CJC something_PNI like_PRP that_DT0 on_PRP and_CJC he_PNP has_VHZ also_AV0 beard_NN1 ._PUN
-And_CJC uhm_ITJ he_PNP always_AV0 looks_VVZ a_AT0 little_AV0 bit_AV0 grumpy_AJ0 and_CJC the_AT0 little_AJ0 son_NN1 or_CJC the_AT0 little_AJ0 child_NN1 uhm_ITJ he_PNP ha_ITJ -_PUN has_VHZ short_AJ0 hairs_NN1 ,_PUN sh_ITJ -_PUN short_AJ0 hairs_NN1 and_CJC he_PNP uhm_ITJ I_PNP think_VVB he_ITJ ’s_VBZ really_AV0 young_AJ0 ._PUN
+Uhm_ITJ so_ITJ like_ITJ the_AT0 older_AJC man_NN1 he_PNP has_VHZ a_AT0 uhm_ITJ black_AJ0 t-shirt_NN1 or_CJC something_PNI like_PRP that_DT0 on_AVP and_CJC he_PNP has_VHZ also_AV0 beard_NN1 ._PUN
+And_CJC uhm_ITJ he_PNP always_AV0 looks_VVZ a_AT0 little_AV0 bit_AV0 grumpy_AJ0 and_CJC the_AT0 little_AJ0 son_NN1 or_CJC the_AT0 little_AJ0 child_NN1 uhm_ITJ he_PNP ha_ITJ -_PUN has_VHZ short_AJ0 hairs_NN1 ,_PUN sh_ITJ -_PUN short_AJ0 hairs_NN1 and_CJC he_PNP uhm_ITJ I_PNP think_VVB he_PNP ’s_VBZ really_AV0 young_AJ0 ._PUN
 Yeah_ITJ ._PUN
-I_PNP think_VVB it_PNP ’s_VBZ like_ITJ a_AT0 cool_AJ0 thing_NN1 because_CJS they_PNP not_XX0 put_VVI uhm_ITJ they_PNP not_XX0 threw_VVB the_AT0 sled_NN1 away_AV0 because_CJS it_PNP ’s_DT0 broken_AJ0 so_CJC they_PNP made_VVD something_PNI different_AJ0 out_PRP of_PRF it_PNP and_CJC I_PNP think_VVB that_DT0 ’s_VBZ really_AV0 cool_AJ0 ._PUN
+I_PNP think_VVB it_PNP ’s_VBZ like_ITJ a_AT0 cool_AJ0 thing_NN1 because_CJS they_PNP not_XX0 put_VVI uhm_ITJ they_PNP not_XX0 threw_VVB the_AT0 sled_NN1 away_AV0 because_CJS it_PNP ’s_DT0 broken_AJ0 so_CJS they_PNP made_VVD something_PNI different_AJ0 out_AVP of_PRF it_PNP and_CJC I_PNP think_VVB that_DT0 ’s_VBZ really_AV0 cool_AJ0 ._PUN
 Yeah_ITJ ._PUN
 
 Picture_Description_Gymnasium_Klasse12
 Okay_ITJ so_ITJ in_PRP the_AT0 first_ORD picture_NN1 you_PNP can_VM0 see_VVI an_AT0 older_AJC man_NN1 and_CJC a_AT0 young_AJ0 boy_NN1 and_CJC they_PNP seem_VVB to_TO0 be_VBI working_VVG on_PRP a_AT0 sled_NN1 I_PNP think_VVB ._PUN
 Uhm_ITJ and_CJC yeah_ITJ they_PNP are_VBB both_AV0 kneeling_VVG on_PRP the_AT0 floor_NN1 and_CJC yeah_ITJ they_PNP are_VBB working_VVG or_CJC repairing_VVG ._PUN
-Yeah_ITJ and_CJC in_PRP the_AT0 second_ORD picture_NN1 you_PNP can_VM0 see_VVI those_DT0 two_CRD persons_NN2 again_AV0 and_CJC they_PNP look_VVB like_PRP they_PNP are_VBB riding_VVG down_PRP a_AT0 hill_NN1 on_PRP the_AT0 sled_NN1 ._PUN
+Yeah_ITJ and_CJC in_PRP the_AT0 second_ORD picture_NN1 you_PNP can_VM0 see_VVI those_DT0 two_CRD persons_NN2 again_AV0 and_CJC they_PNP look_VVB like_CJS they_PNP are_VBB riding_VVG down_PRP a_AT0 hill_NN1 on_PRP the_AT0 sled_NN1 ._PUN
 Uhm_ITJ and_CJC the_AT0 young_AJ0 boy_NN1 is_VBZ sitting_VVG on_PRP the_AT0 back_NN1 of_PRF the_AT0 older_AJC man_NN1 ._PUN
 And_CJC in_PRP the_AT0 third_ORD picture_NN1 you_PNP can_VM0 see_VVI both_DT0 of_AV0 them_PNP crashing_VVG into_PRP something_PNI ._PUN
 And_CJC that_DT0 ’s_VBZ why_AVQ the_AT0 sled_NN1 is_VBZ broken_AJ0 again_AV0 ,_PUN and_CJC it_PNP ’s_VBZ like_ITJ not_XX0 uhm_ITJ ,_PUN 
 Yeah_ITJ ,_PUN yeah_ITJ it_PNP ’s_VBZ not_XX0 ,_PUN
-It_PNP seems_VVZ like_PRP it_PNP needs_VVZ to_TO0 be_VBI repaired_VVN again_AV0 ._PUN
+It_PNP seems_VVZ like_CJS it_PNP needs_VVZ to_TO0 be_VBI repaired_VVN again_AV0 ._PUN
 And_CJC uhm_ITJ the_AT0 young_AJ0 boy_NN1 is_VBZ falling_VVG on_PRP the_AT0 ground_NN1 ._PUN
 Uhm_ITJ in_PRP the_AT0 uhm_ITJ next_ORD picture_NN1 you_PNP can_VM0 see_VVI uhm_ITJ both_DT0 uhm_ITJ of_PRF them_PNP carrying_VVG the_AT0 parts_NN2 of_PRF the_AT0 sled_NN1 uhm_ITJ that_CJT need_VVB to_TO0 be_VBI repaired_VVN again_AV0 ._PUN
-And_CJC the_AT0 ,_PUN the_AT0 young_AJ0 boy_NN1 seems_VVZ to_TO0 be_VBI very_AV0 sad_AJ0 and_CJC the_AT0 older_AJC man_NN1 looks_VVZ like_PRP he_PNP ’s_VBZ a_AT0 little_AV0 bit_AV0 angry_AJ0 ._PUN
+And_CJC the_AT0 ,_PUN the_AT0 young_AJ0 boy_NN1 seems_VVZ to_TO0 be_VBI very_AV0 sad_AJ0 and_CJC the_AT0 older_AJC man_NN1 looks_VVZ like_CJS he_PNP ’s_VBZ a_AT0 little_AV0 bit_AV0 angry_AJ0 ._PUN
 And_CJC in_PRP the_AT0 last_ORD picture_NN1 you_PNP can_VM0 see_VVI uhm_ITJ the_AT0 older_AJC man_NN1 being_VBG on_PRP the_AT0 floor_NN1 again_AV0 and_CJC working_VVG on_PRP the_AT0 sled_NN1 ._PUN
 Uhm_ITJ but_CJC now_AV0 they_PNP are_VBB not_XX0 trying_VVG to_TO0 repair_VVI it_PNP uhm_ITJ as_AV0 a_AT0 sled_NN1 again_AV0 ,_PUN heißt_VVZ des_PNP so_DT0 ?_PUN
 Uhm_ITJ they_PNP are_VBB working_VVG on_PRP it_PNP and_CJC they_PNP use_VVB it_PNP for_PRP something_PNI different_AJ0 ._PUN
@@ -2011,11 +2012,11 @@ And_CJC in_PRP the_AT0 last_ORD picture_NN1 you_PNP can_VM0 see_VVI uhm_ITJ the_
 And_CJC outside_AV0 you_PNP can_VM0 see_VVI uhm_ITJ the_AT0 sled_NN1 being_VBG used_VVN as_AV0 a_AT0 house_NN1 uhm_ITJ for_PRP birds_NN2 to_TO0 get_VVI their_DPS food_NN1 in_PRP ._PUN
 Uhum_ITJ ._PUN
 So_ITJ uhm_ITJ the_AT0 older_AJC man_NN1 has_VHZ a_AT0 mustache_NN1 ._PUN
-And_CJC he_PNP is_VBZ wearing_VVG a_AT0 black_AJ0 jacket_NN1 and_CJC white_AJ0 pants_NN2 and_CJC the_AT0 whole_AJ0 picture_NN1 is_VBZ in_PRP black_AJ0 and_CJC white_AJ0 so_CJC we_PNP do_VDB n’t_XX0 know_VVI if_CJS it_PNP ’s_VBZ black_AJ0 or_CJC dark_AJ0 red_AJ0 or_CJC something_PNI ._PUN 
-And_CJC uhm_ITJ he_PNP ’s_VBZ bald_AJ0 as_AV0 well_AV0 and_CJC the_AT0 young_AJ0 boy_NN1 is_VBZ wearing_VVG uhm_ITJ white_AJ0 clothes_NN2 and_CJC uhm_ITJ yeah_ITJ black_AJ0 shoes_NN2 uhm_ITJ the_AT0 same_DT0 as_AV0 the_AT0 old_AJ0 man_NN1 and_CJC he_ITJ has_VHZ yeah_ITJ longer_AJC hair_NN1 but_CJC not_XX0 very_AV0 long_AJ0 ._PUN
+And_CJC he_PNP is_VBZ wearing_VVG a_AT0 black_AJ0 jacket_NN1 and_CJC white_AJ0 pants_NN2 and_CJC the_AT0 whole_AJ0 picture_NN1 is_VBZ in_PRP black_AJ0 and_CJC white_AJ0 so_CJS we_PNP do_VDB n’t_XX0 know_VVI if_CJS it_PNP ’s_VBZ black_AJ0 or_CJC dark_AJ0 red_AJ0 or_CJC something_PNI ._PUN 
+And_CJC uhm_ITJ he_PNP ’s_VBZ bald_AJ0 as_AV0 well_AV0 and_CJC the_AT0 young_AJ0 boy_NN1 is_VBZ wearing_VVG uhm_ITJ white_AJ0 clothes_NN2 and_CJC uhm_ITJ yeah_ITJ black_AJ0 shoes_NN2 uhm_ITJ the_AT0 same_DT0 as_AV0 the_AT0 old_AJ0 man_NN1 and_CJC he_PNP has_VHZ yeah_ITJ longer_AJC hair_NN1 but_CJC not_XX0 very_AV0 long_AJ0 ._PUN
 Yeah_ITJ ._PUN
-I_PNP think_VVB it_PNP ’s_VBZ a_AT0 very_AV0 good_AJ0 story_NN1 when_AV0 it_PNP comes_VVZ to_PRP uhm_ITJ upcycling_VVG broken_AJ0 things_NN2 ._PUN
-And_CJC I_PNP think_VVB it_PNP ’s_VBZ very_AV0 good_AJ0 to_TO0 see_VVI a_AT0 new_AJ0 use_NN1 in_PRP something_PNI when_AV0 it_PNP ’s_VBZ broken_AJ0 and_CJC not_XX0 just_AV0 throw_VVB it_PNP away_AV0 ._PUN
+I_PNP think_VVB it_PNP ’s_VBZ a_AT0 very_AV0 good_AJ0 story_NN1 when_CJS it_PNP comes_VVZ to_PRP uhm_ITJ upcycling_VVG broken_AJ0 things_NN2 ._PUN
+And_CJC I_PNP think_VVB it_PNP ’s_VBZ very_AV0 good_AJ0 to_TO0 see_VVI a_AT0 new_AJ0 use_NN1 in_PRP something_PNI when_CJS it_PNP ’s_VBZ broken_AJ0 and_CJC not_XX0 just_AV0 throw_VVB it_PNP away_AV0 ._PUN
 And_CJC it_PNP ’s_VBZ a_AT0 very_AV0 creative_AJ0 way_NN1 of_PRF uhm_ITJ using_VVG this_DT0 broken_AJ0 sled_NN1 again_AV0 ._PUN
 So_ITJ in_PRP my_DPS opinion_NN1 it_PNP ’s_VBZ a_AT0 very_AV0 good_AJ0 and_CJC creative_AJ0 story_NN1 ._PUN
 
@@ -2029,20 +2030,20 @@ ride_VVB into_PRP a_AT0 big_AJ0 uhm_ITJ ,_PUN
 uhm_ITJ ,_PUN
 uhm_ITJ a_AT0 ,_PUN
 Yeah_ITJ they_PNP ,_PUN they_PNP ride_VVB into_PRP uhm_ITJ into_PRP something_PNI and_CJC then_AV0 they_PNP uhm_ITJ fall_VVB uhm_ITJ fall_VVB from_PRP the_AT0 sleigh_NN1 and_CJC it_PNP ,_PUN it_PNP breaks_VVZ ._PUN
-In_PRP the_AT0 fourth_ORD picture_NN1 then_AV0 they_PNP take_VVB all_DT0 their_DPS stuff_NN1 uhm_ITJ and_CJC go_VVB back_AVP uhm_ITJ at_PRP home_AV0 ._PUN
+In_PRP the_AT0 fourth_ORD picture_NN1 then_AV0 they_PNP take_VVB all_DT0 their_DPS stuff_NN1 uhm_ITJ and_CJC go_VVB back_AVP uhm_ITJ at_PRP home_NN1 ._PUN
 And_CJC they_PNP think_VVB about_PRP what_DTQ they_PNP want_VVB to_TO0 do_VDI next_ORD with_PRP the_AT0 ,_PUN with_PRP the_AT0 wood_NN1 ._PUN
 They_PNP used_VVD to_TO0 build_VVI a_AT0 sleigh_NN1 and_CJC now_AV0 it_PNP breaks_VVZ and_CJC now_AV0 they_PNP build_VVB another_DT0 thing_NN1 uhm_ITJ and_CJC they_PNP build_VVB something_PNI for_PRP ,_PUN for_PRP the_AT0 birds_NN2 ._PUN
-So_ITJ uhm_ITJ a_AT0 house_NN1 for_PRP the_AT0 birds_NN2 where_AVQ uhm_ITJ there_EX0 are_VBB nuts_NN2 and_CJC where_AVQ they_PNP can_VM0 put_VVI nuts_NN2 and_CJC so_CJC the_AT0 birds_NN2 can_VM0 go_VVI in_PRP the_AT0 winter_NN1 when_AV0 it_PNP ’s_VBZ snow_NN1 and_CJC there_EX0 ’s_VBZ no_DT0 uhm_ITJ nothing_PNI to_TO0 eat_VVI for_PRP them_PNP on_PRP the_AT0 ground_NN1 so_CJC the_AT0 father_NN1 and_CJC the_AT0 son_NN1 uhm_ITJ give_VVB them_PNP something_PNI to_TO0 eat_VVI ._PUN
+So_ITJ uhm_ITJ a_AT0 house_NN1 for_PRP the_AT0 birds_NN2 where_AVQ uhm_ITJ there_EX0 are_VBB nuts_NN2 and_CJC where_AVQ they_PNP can_VM0 put_VVI nuts_NN2 and_CJC so_CJS the_AT0 birds_NN2 can_VM0 go_VVI in_PRP the_AT0 winter_NN1 when_CJS it_PNP ’s_VBZ snow_NN1 and_CJC there_EX0 ’s_VBZ no_AT0 uhm_ITJ nothing_PNI to_TO0 eat_VVI for_PRP them_PNP on_PRP the_AT0 ground_NN1 so_CJS the_AT0 father_NN1 and_CJC the_AT0 son_NN1 uhm_ITJ give_VVB them_PNP something_PNI to_TO0 eat_VVI ._PUN
 Yeah_ITJ ._PUN
 Uhm_ITJ the_AT0 little_AJ0 son_NN1 has_VHZ black_AJ0 hair_NN1 and_CJC wear_VVB long_AJ0 clothes_NN2 because_CJS it_PNP ’s_VBZ winter_NN1 and_CJC uhm_ITJ the_AT0 hair_NN1 looks_VVZ a_AT0 bit_AV0 destroyed_AJ0 ._PUN 
 Uhm_ITJ and_CJC the_AT0 father_NN1 is_VBZ wearing_VVG ,_PUN wearing_VVG a_AT0 black_AJ0 uhm_ITJ pullover_NN1 with_PRP white_AJ0 arms_NN2 maybe_AV0 and_CJC and_CJC uhm_ITJ ,_PUN light_AJ0 pants_NN2 and_CJC black_AJ0 shoes_NN2 ._PUN
-Uhm_ITJ the_AT0 pictures_NN2 are_VBB all_DT0 in_PRP black_AJ0 white_AJ0 ,_PUN black_AJ0 and_CJC white_AJ0 so_CJC we_PNP ,_PUN I_PNP do_VDB n’t_XX0 see_VVI the_AT0 completely_AJ0 colour_NN1 ._PUN
+Uhm_ITJ the_AT0 pictures_NN2 are_VBB all_DT0 in_PRP black_AJ0 white_AJ0 ,_PUN black_AJ0 and_CJC white_AJ0 so_CJS we_PNP ,_PUN I_PNP do_VDB n’t_XX0 see_VVI the_AT0 completely_AJ0 colour_NN1 ._PUN
 I_PNP just_AV0 can_VM0 imagine_VVI ._PUN
 And_CJC uhm_ITJ the_AT0 man_NN1 has_VHZ big_AJ0 ,_PUN big_AJ0 beard_NN1 ._PUN
-Yeah_ITJ and_CJC big_AJ0 eyebrows_NN2 and_CJC he_PNP looks_VVZ a_AT0 bit_AV0 uhm_ITJ angry_AJ0 when_AV0 the_AT0 sleigh_NN1 uhm_ITJ break_VVZ because_CJS he_PNP had_VHD so_AV0 much_DT0 fun_NN1 in_PRP the_AT0 uhm_ITJ picture_NN1 two_CRD ._PUN
-But_CJC in_PRP the_AT0 end_NN1 he_PNP ’s_VBZ happy_AJ0 again_AV0 because_CJS he_ITJ built_VVD something_PNI that_CJT is_VBZ ,_PUN is_VBZ useful_AJ0 for_PRP the_AT0 birds_NN2 ._PUN
-Yeah_ITJ I_PNP like_PRP it_PNP because_CJS it_PNP ’s_VBZ ,_PUN it_PNP ’s_VBZ something_PNI uhm_ITJ beautiful_AJ0 when_AV0 we_PNP ,_PUN when_AV0 you_PNP can_VM0 look_VVI out_PRP of_PRF your_DPS window_NN1 and_CJC you_PNP see_VVB uhm_ITJ the_AT0 birds_NN2 are_VBB eating_VVG in_PRP the_AT0 house_NN1 you_PNP built_VVD on_PRP yourself_PNX ._PUN
-And_CJC uhm_ITJ of_AV0 course_AV0 it_PNP was_DTQ funny_AJ0 to_PRP sli_ITJ -_PUN ,_PUN to_TO0 ride_VVI on_PRP the_AT0 sleigh_NN1 but_CJC in_PRP ,_PUN in_PRP the_AT0 end_NN1 it_PNP ’s_VBZ something_PNI you_PNP can_VM0 uhm_ITJ see_VVI every_DT0 day_NN1 and_CJC you_PNP do_VDB n’t_XX0 have_VHI to_TO0 take_VVI so_AV0 much_DT0 time_NN1 to_TO0 go_VVI outside_AV0 and_CJC uhm_ITJ put_VVB warm_AJ0 clothes_NN2 on_PRP to_TO0 go_VVI into_PRP the_AT0 snow_NN1 ._PUN
+Yeah_ITJ and_CJC big_AJ0 eyebrows_NN2 and_CJC he_PNP looks_VVZ a_AT0 bit_AV0 uhm_ITJ angry_AJ0 when_CJS the_AT0 sleigh_NN1 uhm_ITJ break_VVZ because_CJS he_PNP had_VHD so_AV0 much_DT0 fun_NN1 in_PRP the_AT0 uhm_ITJ picture_NN1 two_CRD ._PUN
+But_CJC in_PRP the_AT0 end_NN1 he_PNP ’s_VBZ happy_AJ0 again_AV0 because_CJS he_PNP built_VVD something_PNI that_CJT is_VBZ ,_PUN is_VBZ useful_AJ0 for_PRP the_AT0 birds_NN2 ._PUN
+Yeah_ITJ I_PNP like_VVB it_PNP because_CJS it_PNP ’s_VBZ ,_PUN it_PNP ’s_VBZ something_PNI uhm_ITJ beautiful_AJ0 when_CJS we_PNP ,_PUN when_CJS you_PNP can_VM0 look_VVI out_AVP of_PRF your_DPS window_NN1 and_CJC you_PNP see_VVB uhm_ITJ the_AT0 birds_NN2 are_VBB eating_VVG in_PRP the_AT0 house_NN1 you_PNP built_VVD on_PRP yourself_PNX ._PUN
+And_CJC uhm_ITJ of_AV0 course_AV0 it_PNP was_DTQ funny_AJ0 to_PRP sli_ITJ -_PUN ,_PUN to_TO0 ride_VVI on_PRP the_AT0 sleigh_NN1 but_CJC in_PRP ,_PUN in_PRP the_AT0 end_NN1 it_PNP ’s_VBZ something_PNI you_PNP can_VM0 uhm_ITJ see_VVI every_AT0 day_NN1 and_CJC you_PNP do_VDB n’t_XX0 have_VHI to_TO0 take_VVI so_AV0 much_DT0 time_NN1 to_TO0 go_VVI outside_AV0 and_CJC uhm_ITJ put_VVB warm_AJ0 clothes_NN2 on_PRP to_TO0 go_VVI into_PRP the_AT0 snow_NN1 ._PUN
 And_CJC uhm_ITJ building_VVG a_AT0 sleigh_NN1 or_CJC building_VVG this_DT0 house_NN1 is_VBZ both_AV0 something_PNI you_PNP can_VM0 do_VDI uhm_ITJ or_CJC the_AT0 little_AJ0 uhm_ITJ son_NN1 does_VDZ with_PRP his_DPS father_NN1 and_CJC uhm_ITJ that_CJT ’s_VBZ very_AV0 important_AJ0 to_TO0 do_VDI something_PNI with_PRP your_DPS family_NN1 ._PUN
 
 Picture_Description_Gymnasium_Klasse12
@@ -2052,7 +2053,7 @@ Maybe_AV0 they_PNP are_VBB father_NN1 and_CJC son_NN1 or_CJC I_PNP ,_PUN I_PNP d
 Well_ITJ in_PRP ,_PUN in_PRP the_AT0 third_ORD picture_NN1 we_PNP can_VM0 see_VVI that_CJT riding_VVG the_AT0 sled_NN1 did_VDD not_XX0 go_VVI well_AV0 for_PRP both_DT0 of_PRF them_PNP because_CJS the_AT0 two_CRD of_AV0 them_PNP had_VHD an_AT0 accident_NN1 that_CJT resulted_VVD in_PRP both_DT0 of_PRF them_PNP falling_VVG down_PRP and_CJC in_PRP the_AT0 sled_NN1 breaking_VVG in_PRP multiple_AJ0 pieces_NN2 ._PUN
 The_AT0 fourth_ORD picture_NN1 uhm_ITJ shows_VVZ the_AT0 two_CRD carrying_VVG the_AT0 many_DT0 different_AJ0 pieces_NN2 of_PRF the_AT0 sled_NN1 and_CJC the_AT0 father_NN1 looks_VVZ a_AT0 bit_AV0 angry_AJ0 however_CJS I_PNP ca_VM0 n’t_XX0 tell_VVI exactly_AV0 ._PUN
 And_CJC the_AT0 child_NN1 looks_VVZ uhm_ITJ a_AT0 bit_AV0 sad_AJ0 I_PNP actually_AV0 think_VVB ._PUN
-Well_ITJ in_PRP the_AT0 fifth_ORD picture_NN1 ,_PUN oh_ITJ that_DT0 ’s_VBZ cute_AJ0 ,_PUN uhm_ITJ we_PNP can_VM0 see_VVI the_AT0 two_CRD of_PRF them_PNP making_VVG some_DT0 -_PUN something_PNI new_AJ0 out_PRP of_PRF the_AT0 parts_NN2 of_PRF the_AT0 sled_NN1 ._PUN
+Well_ITJ in_PRP the_AT0 fifth_ORD picture_NN1 ,_PUN oh_ITJ that_DT0 ’s_VBZ cute_AJ0 ,_PUN uhm_ITJ we_PNP can_VM0 see_VVI the_AT0 two_CRD of_PRF them_PNP making_VVG some_DT0 -_PUN something_PNI new_AJ0 out_AVP of_PRF the_AT0 parts_NN2 of_PRF the_AT0 sled_NN1 ._PUN
 Instead_PRP of_PRF making_VVG a_AT0 new_AJ0 one_PNI they_PNP ’re_VBB building_VVG like_ITJ this_DT0 little_AJ0 house_NN1 using_VVG this_DT0 little_AJ0 roof_NN1 that_CJT they_PNP got_VVD from_PRP somewhere_AV0 ._PUN
 Maybe_AV0 they_PNP build_VVB it_PNP too_AV0 ,_PUN however_CJS you_PNP also_AV0 ca_VM0 n’t_XX0 say_VVI that_DT0 ._PUN
 Well_ITJ in_PRP the_AT0 sixth_ORD picture_NN1 we_PNP can_VM0 see_VVI the_AT0 final_AJ0 result_NN1 because_CJS we_PNP can_VM0 see_VVI the_AT0 new_AJ0 birdhouse_NN1 which_DTQ now_AV0 hosts_VVZ an_AT0 ,_PUN which_DTQ now_AV0 hosts_VVZ like_ITJ four_CRD ,_PUN no_ITJ uhm_ITJ five_CRD birds_NN2 who_PNQ can_VM0 now_AV0 get_VVI something_PNI to_TO0 eat_VVI there_AV0 ._PUN
@@ -2066,7 +2067,7 @@ The_AT0 man_NN1 uhm_ITJ is_VBZ bald_AJ0 and_CJC I_PNP think_VVB he_PNP has_VHZ a
 He_PNP ’s_VBZ wearing_VVG something_PNI black_AJ0 that_CJT with_PRP uhm_ITJ white_AJ0 sleeves_NN2 ,_PUN white_AJ0 pants_NN2 and_CJC uhm_ITJ black_AJ0 shoes_NN2 ._PUN
 He_PNP ’s_VBZ also_AV0 a_AT0 bit_NN1 more_AV0 on_PRP the_AT0 thicker_AJC side_NN1 I_PNP would_VM0 say_VVI ._PUN
 Yes_ITJ ._PUN
-I_PNP think_VVB it_PNP ’s_VBZ actually_AV0 qui_ITJ -_PUN quite_AV0 adorable_AJ0 because_CJS it_PNP shows_VVZ uhm_ITJ the_AT0 two_CRD having_VHG fun_NN1 despite_PRP the_AT0 bad_AJ0 thing_NN1 that_CJT happened_VVD to_PRP them_PNP and_CJC they_PNP really_AV0 just_AV0 made_VVD the_AT0 best_AJS out_PRP of_PRF the_AT0 sit_ITJ -_PUN out_PRP of_PRF the_AT0 situation_NN1 which_DTQ is_VBZ an_AT0 attitude_NN1 that_CJT ’s_VBZ actually_AV0 very_AV0 good_AJ0 for_PRP life_NN1 in_AV0 general_AV0 in_PRP my_DPS opinion_NN1 ._PUN
+I_PNP think_VVB it_PNP ’s_VBZ actually_AV0 qui_ITJ -_PUN quite_AV0 adorable_AJ0 because_CJS it_PNP shows_VVZ uhm_ITJ the_AT0 two_CRD having_VHG fun_NN1 despite_PRP the_AT0 bad_AJ0 thing_NN1 that_CJT happened_VVD to_PRP them_PNP and_CJC they_PNP really_AV0 just_AV0 made_VVD the_AT0 best_AJS out_AVP of_PRF the_AT0 sit_ITJ -_PUN out_AVP of_PRF the_AT0 situation_NN1 which_DTQ is_VBZ an_AT0 attitude_NN1 that_CJT ’s_VBZ actually_AV0 very_AV0 good_AJ0 for_PRP life_NN1 in_AV0 general_AV0 in_PRP my_DPS opinion_NN1 ._PUN
 So_ITJ yeah_ITJ I_PNP think_VVB it_PNP ’s_VBZ a_AT0 pretty_AV0 cute_AJ0 story_NN1 ._PUN
 
 Picture_Description_Gymnasium_Klasse12
@@ -2081,13 +2082,13 @@ But_CJC suddenly_AV0 they_PNP uhm_ITJ uhm_ITJ have_VHB an_AT0 ,_PUN oder_CJC mad
 Afterwards_AV0 they_PNP uhm_ITJ take_VVB these_DT0 broken_AJ0 parts_NN2 uhm_ITJ and_CJC they_PNP also_AV0 look_VVB kind_AV0 of_AV0 annoyed_AJ0 and_CJC maybe_AV0 even_AV0 have_VHB a_AT0 sinis_ITJ -_PUN sinister_AJ0 moo_ITJ -_PUN mood_NN1 ._PUN 
 Then_AV0 uhm_ITJ the_AT0 dad_NN1 is_VBZ trying_VVG to_TO0 repair_VVI it_PNP again_AV0 but_CJC not_XX0 uhm_ITJ turning_VVG it_PNP into_PRP ,_PUN into_PRP a_AT0 uhm_ITJ carriage_NN1 ._PUN
 He_PNP turns_VVZ it_PNP into_PRP uhm_ITJ like_ITJ a_AT0 little_AJ0 house_NN1 ,_PUN house_NN1 where_AVQ uhm_ITJ birds_NN2 can_VM0 live_VVI in_PRP with_PRP uhm_ITJ food_NN1 and_CJC something_PNI to_TO0 drink_VVI ._PUN
-And_CJC uhm_ITJ the_AT0 dad_NN1 and_CJC his_DPS son_NN1 went_VVD inside_AV0 to_TO0 ,_PUN in_AV0 their_DPS home_NN1 and_CJC now_AV0 uhm_ITJ looking_VVG uhm_ITJ peacefully_AV0 uhm_ITJ at_PRP these_DT0 ,_PUN at_PRP ,_PUN at_PRP uhm_ITJ these_DT0 birds_NN2 and_CJC uhm_ITJ how_AVQ they_PNP uhm_ITJ live_VVB in_AV0 their_DPS new_AJ0 uhm_ITJ invention_NN1 ._PUN
+And_CJC uhm_ITJ the_AT0 dad_NN1 and_CJC his_DPS son_NN1 went_VVD inside_AV0 to_TO0 ,_PUN in_PRP their_DPS home_NN1 and_CJC now_AV0 uhm_ITJ looking_VVG uhm_ITJ peacefully_AV0 uhm_ITJ at_PRP these_DT0 ,_PUN at_PRP ,_PUN at_PRP uhm_ITJ these_DT0 birds_NN2 and_CJC uhm_ITJ how_AVQ they_PNP uhm_ITJ live_VVB in_PRP their_DPS new_AJ0 uhm_ITJ invention_NN1 ._PUN
 And_CJC personally_AV0 uhm_ITJ if_CJS you_PNP ask_VVB me_PNP I_PNP think_VVB it_PNP ’s_VBZ a_AT0 kind_AV0 of_AV0 uhm_ITJ sweet_AJ0 story_NN1 between_PRP uhm_ITJ uhm_ITJ a_AT0 dad_NN1 and_CJC his_DPS son_NN1 and_CJC how_AVQ their_DPS bond_NN1 is_VBZ growing_VVG more_AV0 and_CJC more_AV0 by_PRP spending_VVG a_AT0 lot_NN1 of_PRF time_NN1 together_AV0 ._PUN
 And_CJC in_PRP the_AT0 end_NN1 they_PNP ,_PUN
 I_PNP can_VM0 imagine_VVI that_CJT they_PNP ha_ITJ -_PUN have_VHB a_AT0 lot_NN1 in_PRP common_AJ0 together_AV0 yes_ITJ ._PUN
 In_PRP more_DT0 detail_NN1 okay_ITJ ._PUN
 Ah_ITJ yes_ITJ ,_PUN of_AV0 course_AV0 ._PUN
-Uhm_ITJ so_ITJ the_AT0 dad_NN1 uhm_ITJ is_VBZ definitely_AV0 a_AT0 bald_AJ0 man_NN1 so_ITJ he_ITJ has_VHZ no_DT0 hairs_NN1 ,_PUN hairs_NN1 and_CJC I_PNP think_VVB he_PNP ’s_VBZ also_AV0 wearing_VVG like_ITJ a_AT0 kind_AV0 of_AV0 suit_NN1 ._PUN
+Uhm_ITJ so_ITJ the_AT0 dad_NN1 uhm_ITJ is_VBZ definitely_AV0 a_AT0 bald_AJ0 man_NN1 so_ITJ he_PNP has_VHZ no_AT0 hairs_NN1 ,_PUN hairs_NN1 and_CJC I_PNP think_VVB he_PNP ’s_VBZ also_AV0 wearing_VVG like_ITJ a_AT0 kind_AV0 of_AV0 suit_NN1 ._PUN
 Uhm_ITJ I_PNP mean_VVB I_PNP do_VDB n’t_XX0 see_VVI the_AT0 color_NN1 and_CJC such_DT0 right_AV0 now_AV0 but_CJC yeah_ITJ ._PUN
 Uhm_ITJ and_CJC the_AT0 boy_NN1 is_VBZ ,_PUN has_VHZ hairs_NN1 and_CJC is_VBZ also_AV0 dressed_VVN uhm_ITJ for_PRP winter_NN1 of_AV0 course_AV0 becau_ITJ -_PUN because_CJS it_PNP ’s_VBZ definitely_AV0 cold_AJ0 ._PUN
 And_CJC also_AV0 their_DPS facial_AJ0 expression_NN1 are_VBB especially_AV0 at_PRP the_AT0 end_NN1 really_AV0 uhm_ITJ delightfu_ITJ -_PUN also_AV0 ,_PUN  so_ITJ they_PNP are_VBB really_AV0 delightful_AJ0 and_CJC as_AV0 already_AV0 said_VVD uhm_ITJ happy_AJ0 together_AV0 ._PUN
@@ -2107,16 +2108,16 @@ And_CJC the_AT0 son_NN1 yeah_ITJ confused_AJ0 I_PNP think_VVB ._PUN
 And_CJC on_PRP the_AT0 fifth_ORD picture_NN1 they_PNP rebuilding_VVG the_AT0 sled_NN1 ._PUN
 But_CJC they_PNP build_VVB a_AT0 little_AJ0 uhm_ITJ roof_NN1 over_PRP it_PNP ._PUN
 And_CJC the_AT0 son_NN1 is_VBZ helping_VVG his_DPS father_NN1 ._PUN
-And_CJC on_PRP the_AT0 ,_PUN in_PRP the_AT0 sixth_ORD picture_NN1 we_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC his_DPS son_NN1 standing_VVG inside_AV0 a_AT0 house_NN1 looking_VVG out_PRP a_AT0 window_NN1 and_CJC they_PNP built_VVD uhm_ITJ yeah_ITJ a_AT0 station_NN1 for_PRP birds_NN2 with_PRP food_NN1 during_PRP the_AT0 winter_NN1 and_CJC therefore_AV0 they_PNP used_VVD uhm_ITJ the_AT0 crashed_AJ0 sled_NN1 and_CJC now_AV0 they_PNP ’re_VBB watching_VVG the_AT0 birds_NN2 how_AVQ they_PNP eat_VVB their_DPS food_NN1 ._PUN
+And_CJC on_PRP the_AT0 ,_PUN in_PRP the_AT0 sixth_ORD picture_NN1 we_PNP can_VM0 see_VVI the_AT0 man_NN1 and_CJC his_DPS son_NN1 standing_VVG inside_AV0 a_AT0 house_NN1 looking_VVG out_AVP a_AT0 window_NN1 and_CJC they_PNP built_VVD uhm_ITJ yeah_ITJ a_AT0 station_NN1 for_PRP birds_NN2 with_PRP food_NN1 during_PRP the_AT0 winter_NN1 and_CJC therefore_AV0 they_PNP used_VVD uhm_ITJ the_AT0 crashed_AJ0 sled_NN1 and_CJC now_AV0 they_PNP ’re_VBB watching_VVG the_AT0 birds_NN2 how_AVQ they_PNP eat_VVB their_DPS food_NN1 ._PUN
 Oh_ITJ ,_PUN I_PNP think_VVB yeah_ITJ it_PNP ’s_VBZ ,_PUN it_PNP ’s_VBZ a_AT0 realistic_AJ0 story_NN1 ._PUN
-Uhm_ITJ it_PNP could_VM0 be_VBI possible_AJ0 that_CJT a_AT0 dad_NN1 and_CJC a_AT0 son_NN1 are_VBB going_VVG yeah_ITJ in_PRP the_AT0 winter_NN1 to_PRP a_AT0 hill_NN1 with_PRP their_DPS sled_NN1 and_CJC when_AV0 they_PNP crash_VVB and_CJC the_AT0 sled_NN1 is_VBZ broken_AJ0 they_PNP build_VVB something_PNI different_AJ0 out_PRP of_PRF it_PNP ._PUN
+Uhm_ITJ it_PNP could_VM0 be_VBI possible_AJ0 that_CJT a_AT0 dad_NN1 and_CJC a_AT0 son_NN1 are_VBB going_VVG yeah_ITJ in_PRP the_AT0 winter_NN1 to_PRP a_AT0 hill_NN1 with_PRP their_DPS sled_NN1 and_CJC when_CJS they_PNP crash_VVB and_CJC the_AT0 sled_NN1 is_VBZ broken_AJ0 they_PNP build_VVB something_PNI different_AJ0 out_AVP of_PRF it_PNP ._PUN
 I_PNP think_VVB it_PNP ’s_VBZ pretty_AV0 cute_AJ0 uhm_ITJ especially_AV0 because_CJS I_PNP like_VVB birds_NN2 and_CJC I_PNP like_VVB to_TO0 wa_ITJ -_PUN uhm_ITJ watch_VVI birds_NN2 in_PRP the_AT0 winter_NN1 too_AV0 ._PUN
 So_ITJ I_PNP think_VVB yeah_ITJ pretty_AV0 normal_AJ0 ._PUN
 
 Picture_Description_Gymnasium_Klasse12
 And_CJC on_PRP the_AT0 first_ORD picture_NN1 I_PNP can_VM0 see_VVI a_AT0 little_AJ0 boy_NN1 and_CJC a_AT0 ,_PUN an_AT0 older_AJC man_NN1 who_PNQ are_VBB trying_VVG to_TO0 fix_VVI a_AT0 sledge_NN1 ._PUN
 They_PNP have_VHB a_AT0 hammer_NN1 and_CJC the_AT0 man_NN1 the_AT0 older_AJC man_NN1 looks_VVZ a_AT0 bit_AV0 angry_AJ0 I_PNP think_VVB ._PUN
-But_CJC this_DT0 situation_NN1 would_VM0 n’t_XX0 uhm_ITJ suit_VVI an_AT0 angry_AJ0 man_NN1 so_CJC I_PNP do_VDB n’t_XX0 think_VVI he_PNP is_VBZ really_AV0 angry_AJ0 ._PUN
+But_CJC this_DT0 situation_NN1 would_VM0 n’t_XX0 uhm_ITJ suit_VVI an_AT0 angry_AJ0 man_NN1 so_CJS I_PNP do_VDB n’t_XX0 think_VVI he_PNP is_VBZ really_AV0 angry_AJ0 ._PUN
 On_PRP the_AT0 second_ORD picture_NN1 the_AT0 man_NN1 and_CJC the_AT0 kid_NN1 are_VBB sliding_VVG down_PRP a_AT0 hill_NN1 ,_PUN a_AT0 hill_NN1 with_PRP the_AT0 ,_PUN with_PRP the_AT0 sledge_NN1 ._PUN
 The_AT0 kid_NN1 is_VBZ sitting_VVG on_PRP the_AT0 back_NN1 of_PRF the_AT0 man_NN1 and_CJC they_PNP are_VBB yeah_ITJ sliding_VVG down_PRP the_AT0 hill_NN1 ._PUN
 On_PRP the_AT0 third_ORD picture_NN1 they_PNP are_VBB crashing_VVG ._PUN
@@ -2125,7 +2126,7 @@ The_AT0 kid_NN1 is_VBZ laying_VVG on_PRP the_AT0 floor_NN1 and_CJC the_AT0 fathe
 He_PNP is_VBZ flying_VVG away_AV0 ._PUN
 On_PRP the_AT0 fourth_ORD picture_NN1 they_PNP are_VBB collecting_VVG the_AT0 pieces_NN2 of_PRF the_AT0 sledge_NN1 and_CJC bringing_VVG them_PNP somewhere_AV0 maybe_AV0 home_AV0 to_TO0 fixing_VVG ,_PUN fix_VVI them_PNP again_AV0 ._PUN
 On_PRP the_AT0 fifth_ORD picture_NN1 the_AT0 man_NN1 is_VBZ building_VVG a_AT0 roof_NN1 on_PRP the_AT0 sledge_NN1 and_CJC the_AT0 kid_NN1 is_VBZ holding_VVG a_AT0 plank_NN1 ._PUN
-And_CJC on_PRP the_AT0 sixth_ORD picture_NN1 they_PNP made_VVD a_AT0 little_AJ0 birdhouse_NN1 for_PRP the_AT0 ,_PUN for_PRP birds_NN2 out_PRP of_PRF the_AT0 sledge_NN1 and_CJC they_PNP are_VBB looking_VVG from_PRP the_AT0 inside_NN1 at_PRP it_PNP ._PUN
+And_CJC on_PRP the_AT0 sixth_ORD picture_NN1 they_PNP made_VVD a_AT0 little_AJ0 birdhouse_NN1 for_PRP the_AT0 ,_PUN for_PRP birds_NN2 out_AVP of_PRF the_AT0 sledge_NN1 and_CJC they_PNP are_VBB looking_VVG from_PRP the_AT0 inside_NN1 at_PRP it_PNP ._PUN
 Okay_ITJ ._PUN
 Uhm_ITJ ._PUN
 The_AT0 little_AJ0 boy_NN1 has_VHZ black_AJ0 hair_NN1 ._PUN
@@ -2134,7 +2135,7 @@ The_AT0 man_NN1 wea_ITJ -_PUN wears_VVZ black_AJ0 shoes_NN2 and_CJC uhm_ITJ and_
 The_AT0 man_NN1 is_VBZ bald_AJ0 and_CJC has_VHZ a_AT0 wild_AJ0 black_AJ0 beard_NN1 ._PUN
 And_CJC ,_PUN yeah_ITJ ._PUN
 Noch_DT0 irgendwas_PNI ?_PUN
-Yeah_ITJ ,_PUN they_PNP are_VBB not_XX0 very_AV0 detailed_AJ0 so_CJC there_EX0 ’s_VBZ not_XX0 a_AT0 lot_NN1 more_DT0 some_DT0 -_PUN to_TO0 say_VVI ._PUN
+Yeah_ITJ ,_PUN they_PNP are_VBB not_XX0 very_AV0 detailed_AJ0 so_CJS there_EX0 ’s_VBZ not_XX0 a_AT0 lot_NN1 more_DT0 some_DT0 -_PUN to_TO0 say_VVI ._PUN
 I_PNP think_VVB it_PNP ’s_VBZ funny_AJ0 story_NN1 ._PUN
-And_CJC shows_VVZ that_CJT if_CJS something_PNI is_VBZ broken_AJ0 you_PNP can_VM0 still_AV0 use_VVI it_PNP for_PRP other_AJ0 things_NN2 so_CJC that_CJT we_PNP should_VM0 n’t_XX0 waste_VVI broken_AJ0 things_NN2 rather_AV0 use_VVB it_PNP to_TO0 make_VVI other_AJ0 things_NN2 for_AV0 example_AV0 a_AT0 house_NN1 for_PRP the_AT0 ,_PUN a_AT0 house_NN1 for_PRP the_AT0 birds_NN2 ._PUN
+And_CJC shows_VVZ that_CJT if_CJS something_PNI is_VBZ broken_AJ0 you_PNP can_VM0 still_AV0 use_VVI it_PNP for_PRP other_AJ0 things_NN2 so_CJS that_CJT we_PNP should_VM0 n’t_XX0 waste_VVI broken_AJ0 things_NN2 rather_AV0 use_VVB it_PNP to_TO0 make_VVI other_AJ0 things_NN2 for_AV0 example_AV0 a_AT0 house_NN1 for_PRP the_AT0 ,_PUN a_AT0 house_NN1 for_PRP the_AT0 birds_NN2 ._PUN
 So_ITJ I_PNP think_VVB it_PNP ’s_VBZ a_AT0 good_AJ0 story_NN1 with_PRP a_AT0 good_AJ0 message_NN1 even_CJS it_PNP ’s_VBZ a_AT0 bit_AV0 unrealistic_AJ0 ._PUN
