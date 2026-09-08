@@ -127,7 +127,8 @@ def main() -> None:
 	st.caption("Enter text below and or upload a file.")
 	st.markdown(
 		"""
-		This tool allows you to input text and receive predicted tags for each token in the text.
+		This tool allows you to input text and receive predicted tags for each token in the text. The tagset used is the UCREL CLAWS5 Tagset. 
+		This tagger was trained specifically for German Learner's English.
 
 		You can use one of the following methods to provide input text for tagging:
 
@@ -137,6 +138,8 @@ def main() -> None:
 		The tagger will return a list of predicted tags for each token in the input text.
 		Make sure to only upload plain text files (.txt) to avoid any issues with file parsing.
 		Please note that the tagger may not always produce accurate results, and it is recommended to review the predictions carefully.
+
+		Sentences longer than 100 Words may be truncated, and the tagger may not handle them correctly. Please keep this in mind when providing input text.
 		"""
 	)
 
@@ -197,21 +200,22 @@ def main() -> None:
 		if not text.strip():
 			st.warning("Please enter some text first.")
 		else:
-			try:
-				result = _predict(
-					TAGGER_ENDPOINT,
-					text,
-					sorted(st.session_state.selected_sentence_ends),
-					TAGGER_TIMEOUT_SECONDS,
-				)
-				tokens, tags = result.get("tokens"), result.get("tags")
-				if len(tokens) != len(tags):
-					raise ValueError("The number of tokens and tags does not match.")
-				st.session_state.prediction = (tokens, tags)
-			except requests.RequestException as exc:
-				st.error(str(exc))
-			except (ValueError, TypeError) as exc:
-				st.error(f"Invalid tagger response: {exc}")
+			with st.spinner("Please be patient while the model generates the tags..."):
+				try:
+					result = _predict(
+						TAGGER_ENDPOINT,
+						text,
+						sorted(st.session_state.selected_sentence_ends),
+						TAGGER_TIMEOUT_SECONDS,
+					)
+					tokens, tags = result.get("tokens"), result.get("tags")
+					if len(tokens) != len(tags):
+						raise ValueError("The number of tokens and tags does not match.")
+					st.session_state.prediction = (tokens, tags)
+				except requests.RequestException as exc:
+					st.error(str(exc))
+				except (ValueError, TypeError) as exc:
+					st.error(f"Invalid tagger response: {exc}")
 
 	if st.session_state.prediction is not None:
 		tokens, tags = st.session_state.prediction
