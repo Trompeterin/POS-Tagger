@@ -176,6 +176,8 @@ def load_bnc_data(config: Config):
     )
     print(f"Total unique words: {len(all_words):,}")
     print(f"Total unique tags: {len(all_tags)}")
+    #print all tags for comparison in one line
+    print(f"Tags: {', '.join(sorted(all_tags))}")
 
     return sampled_sentences, all_words, all_tags
 
@@ -744,7 +746,7 @@ def load_test_data(config: Config):
         "chat": Path(config.test_data_dir) / "Digital Chat Daten Annotiert.txt",
         "picture": Path(config.test_data_dir) / "Picture Description.txt",
         "short_essay": Path(config.test_data_dir) / "Short Essay.txt",
-        "claws": Path(config.test_data_dir) / "CLAWS Verbessert Neu.txt",
+        #"claws": Path(config.test_data_dir) / "CLAWS Verbessert Neu.txt",
     }
     
     # Initialize age group dictionary
@@ -916,6 +918,8 @@ def run_training_and_evaluation(config: Config):
     # Build vocabulary
     tag2idx, idx2tag = build_vocabulary(train_data)
     print(f"\nUnique tags: {len(tag2idx)}")
+    # print all tags in one line for comparison
+    print(f"Tags: {', '.join(sorted(tag2idx.keys()))}")
     
     # Setup model and training components
     training_components = setup_model_and_training(tag2idx, train_data, device, config)
