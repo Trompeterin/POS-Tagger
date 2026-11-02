@@ -29,6 +29,7 @@ class Config:
     model_save_path: str = "bilstm_pos_tagger_bnc.pth"
     tensorboard_log_dir: str = "runs/bnc_bilstm_pos_exploratory"
     false_predictions_path: str = "false_predictions.txt"
+    all_training_data_path: str = "all_training_data.txt"
     
     # Data loading
     bnc_sample_pct: int = 5  # percentage of BNC sentences to use
@@ -41,7 +42,7 @@ class Config:
     model_name: str = "bert-base-multilingual-cased"
     max_seq_length: int = 128
     hidden_dim: int = 64
-    freeze_bert: bool = True
+    bert_trainable_layers: int = 2
     
     # Training
     batch_size: int = 32
@@ -350,19 +351,26 @@ def pad_batch(batch, tokenizer, device, max_seq_length=None):
 ########################################
 
 class BertBiLSTMTagger(nn.Module):
-    """BiLSTM-based POS tagger with BERT embeddings."""
-    def __init__(self, tagset_size, model_name, hidden_dim=128, freeze_bert=True): 
+    """BiLSTM-based POS tagger with partially fine-tuned BERT embeddings."""
+    def __init__(self, tagset_size, model_name, hidden_dim=128, bert_trainable_layers=2):
         super().__init__()
         self.bert = BertModel.from_pretrained(model_name)
         
-        print("Freezing BERT parameters...")
-        for p in self.bert.parameters():
-            p.requires_grad = False
+        encoder_layers = self.bert.encoder.layer
+        if not 0 <= bert_trainable_layers <= len(encoder_layers):
+            raise ValueError(
+                f"bert_trainable_layers must be between 0 and {len(encoder_layers)}."
+            )
 
-        if not freeze_bert:
-            print("Unfreezing BERT parameters of last 2 layers...")
-            for p in list(self.bert.parameters())[-4:]:  # Unfreeze last 2 layers
-                p.requires_grad = True
+        for parameter in self.bert.parameters():
+            parameter.requires_grad = False
+        for layer in encoder_layers[-bert_trainable_layers:] if bert_trainable_layers else []:
+            for parameter in layer.parameters():
+                parameter.requires_grad = True
+        print(
+            f"Fine-tuning the last {bert_trainable_layers} of "
+            f"{len(encoder_layers)} BERT encoder layers."
+        )
 
         self.lstm = nn.LSTM(
             self.bert.config.hidden_size,
@@ -838,11 +846,14 @@ def setup_model_and_training(tag2idx, train_data, device, config: Config):
         len(tag2idx),
         model_name=config.model_name,
         hidden_dim=config.hidden_dim,
-        freeze_bert=config.freeze_bert
+        bert_trainable_layers=config.bert_trainable_layers,
     ).to(device)
     
     optimizer = optim.AdamW([
-        {"params": model.bert.parameters(), "lr": config.learning_rate_bert},
+        {
+            "params": [p for p in model.bert.parameters() if p.requires_grad],
+            "lr": config.learning_rate_bert,
+        },
         {"params": model.lstm.parameters(), "lr": config.learning_rate_lstm},
         {"params": model.fc.parameters(), "lr": config.learning_rate_fc},
     ])
@@ -895,6 +906,22 @@ def run_training_and_evaluation(config: Config):
     train_data = bnc_sentences[:split1]
     val_data = bnc_sentences[split1:split2]
     test_data_bnc = bnc_sentences[split2:]
+
+    # write train data into file for inspection
+    train_data_path = Path(config.all_training_data_path)
+    train_data_path.parent.mkdir(parents=True, exist_ok=True)
+    with train_data_path.open("w", encoding="utf-8") as f:
+        for sent in train_data:
+            f.write(" ".join(f"{word}" for word, _ in sent) + "\n")
+            f.write(" ".join(f"{tag}" for _, tag in sent) + "\n")
+        f.write("\n" + "="*50 + "\n")
+        f.write("OWN DATA SPLIT\n")
+        f.write("\n" + "="*50 + "\n")
+        for sent in own_data_splits["essay"]["train"] + own_data_splits["chat"]["train"] + \
+                    own_data_splits["picture"]["train"] + own_data_splits["short_essay"]["train"]:
+            f.write(" ".join(f"{word}" for word, _ in sent) + "\n")
+            f.write(" ".join(f"{tag}" for _, tag in sent) + "\n")
+    print(f"Training data written to {train_data_path}")
     
     # Add own data to training and validation
     for category_data in own_data_splits.values():
